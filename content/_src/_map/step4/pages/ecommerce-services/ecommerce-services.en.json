@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Shopify Online Store Service | Unique Logic - Grow your business with a professional Shopify store setup",
+    "description": "Launch and grow your business with professional Shopify store setup, performance-driven paid advertising, and SEM strategies. Our Hong Kong team specializes in Google Ads and PPC campaigns to drive traffic, sales and long-term growth."
+  },
+  "hero": {
+    "back_home": "Back to Home",
+    "breadcrumb": {
+      "home": "Home",
+      "solutions": "Digital Marketing Solutions",
+      "current": "Ecommerce Services"
+    },
+    "tag": "Digital Marketing Solutions",
+    "title_line1": "Shopify",
+    "title_line2": "Ecommerce Services",
+    "subtitle": "Move from offline to online store",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "label": "Service Overview",
+    "title_line1": "Build your global flagship store",
+    "title_highlight": "Expand Your Business Globally",
+    "p1": "We do more than build websites - we create a profit engine designed to convert.",
+    "p2": "From brand design to precision acquisition, we turn your traffic into real brand assets.",
+    "cta_btn": "Get a free quote",
+    "image_alt": "Shopify online store service"
+  },
+  "challenges": {
+    "label": "Why Choose Us",
+    "title_line1": "Solve the",
+    "title_highlight": "Transformation Challenges",
+    "desc": "Why are legacy systems limiting your growth?",
+    "features": {
+      "f1": {
+        "title": "Scalability Limitations",
+        "desc": "Traditional platforms struggle with global expansion across multiple languages and currencies.<br>This leads to missed overseas opportunities."
+      },
+      "f2": {
+        "title": "Maintenance Cost and Security Risk",
+        "desc": "Open-source systems (such as WooCommerce and Magento) often face technical debt, plugin conflicts, and security vulnerabilities.<br>They usually require expensive manual maintenance."
+      },
+      "f3": {
+        "title": "Data Integration Gaps",
+        "desc": "When ad platform data is disconnected from website data, you cannot measure true ROAS.<br>We close the gap between ad spend and conversion value."
+      }
+    }
+  },
+  "results": {
+    "label": "Results-Driven",
+    "title_line1": "Why Choose Our",
+    "title_highlight": "One-Stop Service?",
+    "desc_line1": "We do more than launch websites - we build a sales engine.",
+    "desc_line2": "Built to solve the growth bottlenecks faced by most new sellers.",
+    "cards": {
+      "c1": {
+        "title": "Precise, Real-Time Traffic",
+        "desc": "We integrate Google and Meta advertising capabilities to find the right audience for your products - no wasted spend on low-quality traffic."
+      },
+      "c2": {
+        "title": "Maximize return on investment (ROI)",
+        "desc": "By optimizing the page UI/UX design, we provide two design orientations: narrative-driven and efficient conversion."
+      },
+      "c3": {
+        "title": "Global SEO and AI Search Optimization",
+        "desc": "Not only does it need to be ranked, but it also needs to be recommended. Optimize for traditional search engines and emerging AI search (GEO)."
+      },
+      "c4": {
+        "title": "Advanced Ecommerce Analytics",
+        "desc": "Advanced GA4 event tracking, complete funnel analysis, and full monitoring from \"browse\" to \"purchase\"."
+      },
+      "c5": {
+        "title": "High Stability",
+        "desc": "Compliance and global cloud hosting ensure that the website remains smooth during the peak traffic periods of \"Double 11\" or \"Black Friday\"."
+      },
+      "c6": {
+        "title": "Global Expansion",
+        "desc": "Built-in 100+ currency and language switching functions to help your brand reach global consumers instantly."
+      }
+    }
+  },
+  "process": {
+    "label": "Process",
+    "title_line1": "Professional, Standardized",
+    "title_highlight": "Website Build Workflow",
+    "desc_line1": "From data collection, design, testing to official launch.",
+    "desc_line2": "A transparent 10-12 week launch journey.",
+    "steps": {
+      "s1": {
+        "title": "Asset audit",
+        "desc": "Prepare brand assets, product data, and payment gateway integration."
+      },
+      "s2": {
+        "title": "Architecture and UX Planning",
+        "desc": "Define information architecture and navigation logic."
+      },
+      "s3": {
+        "title": "Development and implementation",
+        "desc": "Custom theme development and app integrations."
+      },
+      "s4": {
+        "title": "End-to-End Testing",
+        "desc": "Stress test checkout process and data postback verification"
+      },
+      "s5": {
+        "title": "Launch and Training",
+        "desc": "Domain connection, backend operation training and official launch"
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "FAQ",
+    "items": {
+      "q01": {
+        "q": "Why is Shopify better than “free” open source platforms?",
+        "a": "If you calculate the \"total cost of ownership (TCO)\", open source platforms are not cheap. Shopify’s SaaS model is more cost-effective and stable in the long run."
+      },
+      "q02": {
+        "q": "How long does a project usually take?",
+        "a": "It usually takes 10-12 weeks to build a high-quality brand official website, depending on the number of products and the complexity of integrating third-party systems."
+      },
+      "q03": {
+        "q": "In addition to Shopify’s monthly fee, are there any other hidden fees I need to pay?",
+        "a": "Cost transparency is our standard. Unique Logic provides a complete annual cost estimate during the planning stage."
+      },
+      "q04": {
+        "q": "Is Shopify good for SEO? Will changing the system affect my search ranking?",
+        "a": "Shopify itself has a very SEO-friendly structure. Unique Logic enforces strict 301 redirect policies and is optimized for AI search (GEO)."
+      },
+      "q05": {
+        "q": "My current physical store has a POS system, can it be synced with Shopify inventory?",
+        "a": "Absolutely. Shopify has a powerful API interface."
+      },
+      "q06": {
+        "q": "I don’t understand technology. Can I modify the content after the website is online?",
+        "a": "Absolutely. Shopify’s admin is intuitive, and we provide one-on-one training plus an operations guide."
+      },
+      "q07": {
+        "q": "My target customers are overseas, how does Shopify handle multi-language and multi-currency?",
+        "a": "We'll help you go global with Shopify Markets features."
+      },
+      "q08": {
+        "q": "Can Shopify’s checkout page be customized?",
+        "a": "The checkout process is standardized under the general plan. For deep customization, it is recommended to upgrade to Shopify Plus or use UI Extensions."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to launch your online store?",
+    "desc": "Let Unique Logic’s professional team build a high-converting Shopify store for you",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  },
+  "floating": {
+    "text": "🛒 Limited time offer: Get a free Shopify store audit report with your first consultation",
+    "btn": "Claim Now"
+  }
+}

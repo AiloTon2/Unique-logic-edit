@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "title": "Web Design Services | Unique Logic - One-Stop Multimedia Design and Website Production",
+    "description": "A one-stop solution for multimedia design, website production, and ongoing optimization. Regularly updating and optimizing your site improves professionalism and credibility while strengthening brand image and business value. Services include custom web design, WordPress CMS, Shopify setup, and mobile-responsive websites."
+  },
+  "hero": {
+    "back_home": "Back to Home",
+    "breadcrumb": {
+      "home": "Home",
+      "solutions": "Digital Marketing Solutions",
+      "current": "Web Design Services"
+    },
+    "tag": "Digital Marketing Solutions",
+    "title_line1": "Web Design",
+    "title_line2": "Services",
+    "subtitle_line1": "One-stop multimedia design and website production services",
+    "subtitle_line2": "Design. Elevate. Engage.",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "label": "Service Overview",
+    "title_line1": "Design. Elevate. Engage.",
+    "title_highlight": "Professional Web Design Services",
+    "p1": "Design plays an important role in conveying information and improving user experience. Its ability to communicate complex information in an intuitive and engaging way while building brand image and identity is of critical value to both individuals and businesses.",
+    "p2": "Therefore, we provide personalized graphic design and web design services to help you enhance your brand image, attract your target audience and provide an excellent user experience.",
+    "p3": "Our professional design team will create unique and impactful design work based on your needs and goals to ensure you stand out in a highly competitive market.",
+    "cta_btn": "Get a free quote",
+    "image_alt": "Web design services"
+  },
+  "web_design": {
+    "label": "Web Design Services",
+    "title_line1": "Professional",
+    "title_highlight": "Web Design Services",
+    "desc_line1": "We provide a full range of web design solutions,",
+    "desc_line2": "Helping you build a professional and compelling online presence.",
+    "features": {
+      "f1": {
+        "title": "Custom Content Management Systems",
+        "desc": "We set up professional CMS platforms such as WordPress and Shopify, so you can manage website content easily and update pages without coding knowledge."
+      },
+      "f2": {
+        "title": "E-commerce web design",
+        "desc": "Professional online store design and setup, including payment integration and shopping cart features, to deliver a seamless shopping experience and help you grow your online business."
+      }
+    }
+  },
+  "offer": {
+    "label": "Service Scope",
+    "title_line1": "What do we offer?",
+    "title_highlight": "Comprehensive web functionality",
+    "desc_line1": "Complete web design package,",
+    "desc_line2": "covering all the features you need.",
+    "cards": {
+      "c1": {
+        "title": "SSL security certificate",
+        "desc": "Keep your website secure and encrypted"
+      },
+      "c2": {
+        "title": "Mobile responsive website",
+        "desc": "Perfectly adaptable to various devices"
+      },
+      "c3": {
+        "title": "Google Maps Integration",
+        "desc": "Make it easier for customers to find you"
+      },
+      "c4": {
+        "title": "YouTube Integration",
+        "desc": "Embed video content"
+      },
+      "c5": {
+        "title": "Video and audio player",
+        "desc": "Multimedia content display"
+      },
+      "c6": {
+        "title": "Online inquiry form",
+        "desc": "Make it easier for customers to contact you"
+      },
+      "c7": {
+        "title": "Image Gallery",
+        "desc": "Display works and products"
+      },
+      "c8": {
+        "title": "Social Media Share Buttons",
+        "desc": "Expand your brand reach"
+      }
+    }
+  },
+  "optimize": {
+    "label": "Website Optimization",
+    "title_line1": "Keep your website regularly updated and",
+    "title_highlight": "Reasons to optimize your web pages",
+    "desc_line1": "Maintain and update your website regularly to",
+    "desc_line2": "Ensure optimal performance and user experience.",
+    "cards": {
+      "c1": {
+        "tag": "Brand",
+        "title": "Professional Image",
+        "items": {
+          "i1": "Enhance your website’s professionalism and credibility",
+          "i2": "Support marketing and branding activities",
+          "i3": "Stay competitive with competitors"
+        }
+      },
+      "c2": {
+        "tag": "Experience",
+        "title": "User Experience",
+        "items": {
+          "i1": "Attract and maintain user attention and interest",
+          "i2": "Provide a good user experience",
+          "i3": "Increase user satisfaction"
+        }
+      },
+      "c3": {
+        "tag": "Performance",
+        "title": "Website performance",
+        "items": {
+          "i1": "Improve web page visibility and search engine rankings",
+          "i2": "Deliver faster browsing speed and better performance",
+          "i3": "Adapt to changing technology and design standards"
+        }
+      }
+    }
+  },
+  "uxui": {
+    "label": "UX/UI design",
+    "title_line1": "Web page",
+    "title_highlight": "UX/UI Design Review Services",
+    "desc_line1": "A UX/UI design review evaluates and analyzes website usability and design quality,",
+    "desc_line2": "to ensure your site delivers excellent",
+    "desc_line3": "user experience and visual design aesthetics.",
+    "desc_line4": "It can optimize user experience, improve website performance, increase conversion rate, enhance brand image and increase market competitiveness.",
+    "features": {
+      "f1": {
+        "title": "UI (User Interface)",
+        "desc": "We review interface flow, usability, and presentation quality, then analyze user needs and behavior patterns to refine UI/UX direction."
+      },
+      "f2": {
+        "title": "UX (User Experience)",
+        "desc": "We use design to solve real user needs and habits, then iterate based on testing to optimize user experience, increase engagement, and support business outcomes."
+      }
+    }
+  },
+  "process": {
+    "label": "Process",
+    "title_line1": "Our service process",
+    "title_highlight": "Professional web design steps",
+    "steps": {
+      "s1": {
+        "title": "Initial consultation",
+        "desc": "Contact us via WhatsApp or fill out the online form to understand your needs and goals"
+      },
+      "s2": {
+        "title": "Requirements Analysis",
+        "desc": "Gain a deep understanding of your brand, target audience, and feature requirements"
+      },
+      "s3": {
+        "title": "Design Proposal",
+        "desc": "Provide design drafts and website architecture to confirm visual style and functional planning"
+      },
+      "s4": {
+        "title": "Development and production",
+        "desc": "Professional team for web development and design implementation"
+      },
+      "s5": {
+        "title": "Launch and support",
+        "desc": "Provide continuous technical support and maintenance services after the website is online"
+      }
+    }
+  },
+  "cta": {
+    "title": "Build a professional website and enhance your brand image!",
+    "desc": "Let Unique Logic’s professional design team create a unique online presence for you",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  },
+  "floating": {
+    "text": "🔥 This month only: Free website audit report with your first consultation",
+    "btn": "Claim Now"
+  }
+}

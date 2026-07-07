@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>關於我們 | Unique Logic - AI 數碼營銷專家</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about-us.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index-v1.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link active">關於我們</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown">
+            數碼營銷方案
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">AI SEO服務 (GEO)</a>
+            <a href="seo-services.html" class="dropdown-item">搜尋引擎優化服務 (SEO)</a>
+            <a href="orm-services.html" class="dropdown-item">網上聲譽管理服務</a>
+            <a href="sem-services.html" class="dropdown-item">搜尋引擎行銷服務 (SEM)</a>
+            <a href="content-marketing-services.html" class="dropdown-item">內容營銷服務</a>
+            <a href="social-media-services.html" class="dropdown-item">社交媒體營銷服務</a>
+            <a href="web-design-services.html" class="dropdown-item">網頁及設計服務</a>
+            <a href="ecommerce-services.html" class="dropdown-item">網上開店服務</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">博客和新聞</a>
+        <a href="contact.html" class="nav-link">聯絡我們</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active">繁</button>
+          <button class="lang-btn">EN</button>
+          <button class="lang-btn">简</button>
+        </div>
+        <a href="contact.html" class="nav-cta">立即查詢</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link active">關於我們</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle">
+          數碼營銷方案
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">AI SEO服務 (GEO)</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">搜尋引擎優化服務 (SEO)</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">網上聲譽管理服務</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">搜尋引擎行銷服務 (SEM)</a>
+          <a href="content-marketing-services.html" class="mobile-dropdown-item">內容營銷服務</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">社交媒體營銷服務</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">網頁及設計服務</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">網上開店服務</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link">博客和新聞</a>
+      <a href="contact.html" class="mobile-link">聯絡我們</a>
+      <div class="mobile-lang">
+        <button class="lang-btn active">繁體中文</button>
+        <button class="lang-btn">English</button>
+        <button class="lang-btn">简体中文</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <a href="index-v1.html" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>返回主頁</span>
+    </a>
+    
+    <div class="about-hero-content">
+      <div class="hero-tag reveal-item">
+        <span class="tag-dot"></span>
+        <span class="tag-text">關於 Unique Logic</span>
+      </div>
+      
+      <h1 class="about-hero-title reveal-item">
+        <span class="title-line">
+          <span class="glitch-text" data-text="為您打造最佳的">為您打造最佳的</span>
+        </span>
+        <span class="title-line">
+          <span class="glitch-text accent" data-text="市場推廣策略">市場推廣策略</span>
+        </span>
+      </h1>
+      
+      <p class="about-hero-subtitle reveal-item">
+        專注提供個性化定製數碼營銷策略的專業團隊｜提供多元化的一條龍數碼營銷服務｜數碼營銷公司 
+      </p>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>往下滾動</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="intro-section">
+    <div class="section-container">
+      <div class="intro-content reveal-item">
+        <h2 class="intro-title">關於Unique Logic的專業團隊的背景及介紹</h2>
+        <div class="intro-body">
+          <p>Unique Logic 是一家香港的數碼營銷公司，致力於幫助客戶在網上建立強大的品牌存在和實現業務增長。我們提供一系列多元化的一條龍數碼營銷服務。我們深入了解客戶的營銷目標、目標市場和競爭環境，並根據這些信息制定量身定制的營銷策略，以確保最大的效果和回報。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Our Mission -->
+  <section class="mission-section">
+    <div class="section-container">
+      <div class="mission-grid">
+        <div class="mission-visual reveal-item">
+          <div class="mission-graphic">
+            <!-- Single unified illustration -->
+            <div class="unified-illustration">
+              <svg viewBox="0 0 500 400" fill="none" class="illustration-svg">
+                <!-- Chat bubbles (top left) -->
+                <g class="icon-group" style="--delay: 0">
+                  <rect x="40" y="60" width="70" height="45" rx="8" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M50 75 L90 75 M50 85 L80 85 M50 95 L70 95" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round"/>
+                  <polygon points="60,105 70,105 65,115" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                </g>
+                
+                <!-- Envelope (top middle) -->
+                <g class="icon-group" style="--delay: 0.5">
+                  <rect x="140" y="40" width="55" height="40" rx="4" stroke="var(--accent-amber)" stroke-width="2" fill="none"/>
+                  <path d="M140 48 L167 65 L195 48" stroke="var(--accent-amber)" stroke-width="2" fill="none"/>
+                </g>
+                
+                <!-- Video player (middle left) -->
+                <g class="icon-group" style="--delay: 1">
+                  <rect x="60" y="150" width="60" height="42" rx="4" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <polygon points="82,162 82,182 98,172" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                </g>
+                
+                <!-- Server/Data center (center) -->
+                <g class="icon-group" style="--delay: 1.5">
+                  <rect x="200" y="100" width="45" height="70" rx="4" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M200 125 L245 125 M200 150 L245 150" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                  <circle cx="212" cy="112" r="4" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <circle cx="212" cy="137" r="4" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <circle cx="212" cy="162" r="4" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <path d="M222 112 L238 112 M222 137 L235 137 M222 162 L232 162" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round"/>
+                </g>
+                
+                <!-- Dashboard/Analytics (left) -->
+                <g class="icon-group" style="--delay: 2">
+                  <rect x="20" y="230" width="100" height="70" rx="6" stroke="var(--accent-purple)" stroke-width="2" fill="none"/>
+                  <circle cx="45" cy="250" r="15" stroke="var(--accent-purple)" stroke-width="1.5" fill="none"/>
+                  <path d="M45 235 L45 250 L55 250" stroke="var(--accent-purple)" stroke-width="1.5"/>
+                  <path d="M75 280 L75 260 M90 280 L90 250 M105 280 L105 265" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round"/>
+                </g>
+                
+                <!-- Tablet with sliders (top right) -->
+                <g class="icon-group" style="--delay: 2.5" transform="rotate(-10 345 110)">
+                  <rect x="300" y="80" width="90" height="60" rx="6" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M310 95 L380 95" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M310 110 L380 110" stroke="var(--accent-amber)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M310 125 L380 125" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="340" cy="95" r="4" fill="var(--accent-cyan)"/>
+                  <circle cx="360" cy="110" r="4" fill="var(--accent-amber)"/>
+                  <circle cx="330" cy="125" r="4" fill="var(--accent-cyan)"/>
+                </g>
+                
+                <!-- UX Phone (right top) -->
+                <g class="icon-group" style="--delay: 3">
+                  <rect x="420" y="40" width="60" height="100" rx="8" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M440 55 L460 55" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round"/>
+                  <text x="450" y="100" text-anchor="middle" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="20" font-weight="bold">UX</text>
+                  <rect x="435" y="115" width="30" height="10" rx="5" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                </g>
+                
+                <!-- Shopping phone (right middle) -->
+                <g class="icon-group" style="--delay: 3.5">
+                  <rect x="400" y="180" width="50" height="85" rx="6" stroke="var(--accent-amber)" stroke-width="2" fill="none"/>
+                  <path d="M400 195 L450 195 M400 250 L450 250" stroke="var(--accent-amber)" stroke-width="1.5"/>
+                  <rect x="410" y="205" width="30" height="8" rx="2" stroke="var(--accent-amber)" stroke-width="1" fill="none"/>
+                  <text x="425" y="235" text-anchor="middle" fill="var(--accent-amber)" font-family="var(--font-mono)" font-size="10">BUY</text>
+                </g>
+                
+                <!-- Magnifying glass (large, center) - Isometric style -->
+                <g class="icon-group" style="--delay: 4">
+                  <!-- Glass lens (3D oval) -->
+                  <ellipse cx="200" cy="300" rx="50" ry="50" stroke="var(--accent-cyan)" stroke-width="3" fill="none"/>
+                  <!-- Inner reflection ring -->
+                  <ellipse cx="200" cy="300" rx="38" ry="38" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none" opacity="0.4"/>
+                  <!-- Highlight arc -->
+                  <path d="M175 280 Q188 265 220 272" stroke="var(--accent-cyan)" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round"/>
+                  <!-- Handle -->
+                  <path d="M235 335 L280 380" stroke="var(--accent-cyan)" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M235 335 L280 380" stroke="var(--bg-primary)" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+                  <!-- Handle grip lines -->
+                  <path d="M250 348 L255 353 M265 363 L270 368" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                </g>
+                
+                <!-- Money/Dollar (bottom center) - Simple -->
+                <g class="icon-group" style="--delay: 4.5">
+                  <!-- Coin circle -->
+                  <circle cx="340" cy="330" r="35" stroke="var(--accent-amber)" stroke-width="2.5" fill="none"/>
+                  <!-- Dollar sign -->
+                  <text x="340" y="342" text-anchor="middle" fill="var(--accent-amber)" font-family="var(--font-mono)" font-size="36" font-weight="bold">$</text>
+                </g>
+                
+                <!-- Small key/search icon (bottom right) -->
+                <g class="icon-group" style="--delay: 5">
+                  <rect x="420" y="320" width="40" height="40" rx="8" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <circle cx="435" cy="335" r="8" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <path d="M441 341 L452 352" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mission-content">
+          <div class="section-label reveal-item">
+            <span class="label-number">01</span>
+            <span class="label-text">我們的使命</span>
+          </div>
+          
+          <h2 class="section-title reveal-item">
+            致力為客戶建立<br>
+            <span class="highlight">強大的品牌曝光度</span>
+          </h2>
+          
+          <div class="mission-text reveal-item">
+            <p>
+              Unique Logic 致力為客戶們在網上建立強大的品牌曝光度和實現業務增長。我們一直與時並進，團隊不斷地鑽研網絡、人工智能、社交平台以及市場上的最新的動態與資訊，並將所吸收的知識與經驗充分在客戶們的服務成果上反映。
+            </p>
+          </div>
+          
+          <div class="services-highlight reveal-item">
+            <p class="services-intro">我們的熱門服務包括</p>
+            <div class="services-tags">
+              <a href="ai-seo-services.html" class="service-tag ai">AI SEO (GEO)</a>
+              <a href="seo-services.html" class="service-tag seo">SEO 搜尋引擎優化</a>
+              <a href="sem-services.html" class="service-tag sem">SEM 搜尋廣告</a>
+              <a href="web-design-services.html" class="service-tag web">網頁設計及製作</a>
+              <span class="service-tag-more">多媒體設計、社交媒體廣告、內容營銷等</span>
+            </div>
+          </div>
+          
+          <div class="mission-cta reveal-item">
+            <div class="cta-card">
+              <p>無論你是一家<strong>初創公司</strong>、<strong>中小企</strong>還是<strong>跨國企業</strong>，Unique Logic 的團隊都能以最專業與現代化的知識去為客戶制定最合適的解決方案。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Our Values - Google Partner -->
+  <section class="values-section">
+    <div class="section-container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">02</span>
+          <span class="label-text">我們的價值</span>
+        </div>
+        <h2 class="section-title centered">
+          Google Partner<br>
+          <span class="highlight">官方認證的專業</span>
+        </h2>
+      </div>
+      
+      <div class="partner-showcase reveal-item">
+        <a href="https://www.google.com/partners/agency?id=8495757419" target="_blank" rel="noopener noreferrer" class="partner-badge">
+          <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="google-partner-logo">
+        </a>
+      </div>
+      
+      <div class="partner-intro reveal-item">
+        <div class="intro-card">
+          <h3>作為 <span class="google-text">Google Partner</span> 官方合作夥伴</h3>
+          <p>我們不僅擁有深厚的廣告操作經驗，更獲得 Google 官方的實力認可。<br>這代表 Unique Logic 能為您帶來：</p>
+        </div>
+      </div>
+      
+      <div class="partner-benefits">
+        <div class="benefit-card reveal-item" style="--delay: 0">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="10" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 28C6 22.4772 10.4772 18 16 18C21.5228 18 26 22.4772 26 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="benefit-content">
+            <h4>頂尖專業團隊</h4>
+            <p>團隊成員皆通過官方認證，精準掌握 Google 演算法，將獲客成本最小化。</p>
+          </div>
+          <div class="benefit-check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="benefit-card reveal-item" style="--delay: 1">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <!-- Headset icon for technical support -->
+              <path d="M6 18V16C6 10.4772 10.4772 6 16 6C21.5228 6 26 10.4772 26 16V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="4" y="18" width="5" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="23" y="18" width="5" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M26 24V25C26 26.6569 24.6569 28 23 28H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="benefit-content">
+            <h4>優先技術支援</h4>
+            <p>享有 Google 官方技術綠色通道，快速解決帳戶問題，確保廣告投放不中斷。</p>
+          </div>
+          <div class="benefit-check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="benefit-card reveal-item" style="--delay: 2">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <!-- Rocket icon for early access -->
+              <path d="M16 4C16 4 12 10 12 18C12 22 14 26 16 28C18 26 20 22 20 18C20 10 16 4 16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="16" cy="16" r="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 20L8 22L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 20L24 22L22 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="benefit-content">
+            <h4>最新功能搶先用</h4>
+            <p>優先試用 Google 最新的 Beta 測試版廣告功能，助您的品牌在市場中搶占先機。</p>
+          </div>
+          <div class="benefit-check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Why Google Partner -->
+  <section class="why-partner-section">
+    <div class="section-container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">03</span>
+          <span class="label-text">合作優勢</span>
+        </div>
+        <h2 class="section-title centered">
+          選擇與 Google Partner<br>
+          <span class="highlight">合作有什麼好處？</span>
+        </h2>
+        <p class="section-desc">
+          在 Digital Marketing 的領域，<span class="mobile-br"></span>「專業」是需要被證明的。<br>
+          身為 Google 合作夥伴，<span class="mobile-br"></span>我們擁有以下四大優勢：
+        </p>
+      </div>
+      
+      <div class="advantages-grid">
+        <div class="advantage-card reveal-item" style="--delay: 0">
+          <div class="advantage-number">1</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">超越標準的帳戶表現</h3>
+            <p class="advantage-desc">
+              Google 官方會持續監測我們的廣告表現。我們必須維持極高的「最佳化分數」，這確保了您的每一分廣告預算都是基於數據驅動的最佳實踐，而非盲目試錯。
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+        
+        <div class="advantage-card reveal-item" style="--delay: 1">
+          <div class="advantage-number">2</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">掌握第一手的市場情報</h3>
+            <p class="advantage-desc">
+              我們能直接獲得來自 Google 的產業趨勢分析與消費者數據報告。這意味著您的行銷策略將比競爭對手更早洞察市場變化，搶奪精準流量。
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+        
+        <div class="advantage-card reveal-item" style="--delay: 2">
+          <div class="advantage-number">3</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">官方技術直連，確保廣告不中斷</h3>
+            <p class="advantage-desc">
+              當帳戶遇到異常或技術瓶頸時，我們擁有專屬的 Google 官方溝通通道。透過 Google 專家團隊的直接技術支援，我們能比一般代理商更快速、精準地排除問題，讓您的行銷計畫始終穩定運行。
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+        
+        <div class="advantage-card reveal-item" style="--delay: 3">
+          <div class="advantage-number">4</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">持續更新的專業，掌握最尖端策略</h3>
+            <p class="advantage-desc">
+              數位市場變化迅速，身為 Google Partner，我們受邀參與官方舉辦的深度培訓與技術更新課程。這保證了我們的操作思維始終與最新的演算法同步，確保您的廣告策略永遠領先市場，不落人後。
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="about-cta-section">
+    <div class="section-container">
+      <div class="cta-wrapper reveal-item">
+        <div class="cta-content">
+          <h2 class="cta-title">準備好提升您的品牌了嗎？</h2>
+          <p class="cta-desc">讓 Unique Logic 的專業團隊為您制定最佳的數碼營銷策略</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">
+              <span>立即聯絡我們</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="index-v1.html#services" class="btn-secondary">
+              <span>查看服務方案</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+      <span class="floating-cta-text">🔥 本月限定：首次諮詢免費送 AI 曝光度報告</span>
+      <a href="contact.html" class="floating-cta-btn">立即領取</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index-v1.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+          </a>
+          <p class="footer-tagline">Boost Traffic. Boost Profit.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">數碼營銷方案</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">AI SEO服務 (GEO)</a></li>
+            <li><a href="seo-services.html">搜尋引擎優化服務 (SEO)</a></li>
+            <li><a href="orm-services.html">網上聲譽管理服務</a></li>
+            <li><a href="sem-services.html">搜尋引擎行銷服務 (SEM)</a></li>
+            <li><a href="content-marketing-services.html">內容營銷服務</a></li>
+            <li><a href="social-media-services.html">社交媒體營銷服務</a></li>
+            <li><a href="web-design-services.html">網頁及設計服務</a></li>
+            <li><a href="ecommerce-services.html">網上開店服務</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">博客和新聞</h4>
+          <ul>
+            <li><a href="#">AI搜尋引擎行銷</a></li>
+            <li><a href="#">SEO搜尋引擎優化</a></li>
+            <li><a href="#">SEM搜尋引擎行銷</a></li>
+            <li><a href="#">數碼營銷</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">聯絡我們</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              香港九龍灣啟祥道 17 號<br>太豐匯 1007 室
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              +852 8400 7393 / +852 3860 7900
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              微信：UniqueLogic393
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:info@uniquelogic.com">info@uniquelogic.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique Logic Limited | 版權所有</p>
+        <div class="footer-legal">
+          <a href="#">隱私政策和 Cookie</a>
+          <a href="#">條款和細則</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

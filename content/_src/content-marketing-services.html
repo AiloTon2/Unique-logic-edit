@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>內容營銷服務 | Unique Logic - 數碼營銷專家</title>
+  <meta name="description" content="內容營銷是一種通過創建有價值、有吸引力的內容來吸引目標受眾、建立品牌關係並達到營銷目標的策略。內容營銷服務通過數據驅動和AI人工智能技術，幫助企業創建有價值的內容並實現營銷目標。數據驅動及AI技術可以加速內容創作和優化過程，實時監測和評估內容表現，提供個性化和高效的內容營銷解決方案。｜Unique Logic">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ai-seo-services.css">
+  <style>
+    /* Responsive grid layouts */
+    .grid-3-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (max-width: 1024px) {
+      .grid-3-col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .grid-3-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index-v1.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link">關於我們</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown active">
+            數碼營銷方案
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">AI SEO服務 (GEO)</a>
+            <a href="seo-services.html" class="dropdown-item">搜尋引擎優化服務 (SEO)</a>
+            <a href="orm-services.html" class="dropdown-item">網上聲譽管理服務</a>
+            <a href="sem-services.html" class="dropdown-item">搜尋引擎行銷服務 (SEM)</a>
+            <a href="content-marketing-services.html" class="dropdown-item active">內容營銷服務</a>
+            <a href="social-media-services.html" class="dropdown-item">社交媒體營銷服務</a>
+            <a href="web-design-services.html" class="dropdown-item">網頁及設計服務</a>
+            <a href="ecommerce-services.html" class="dropdown-item">網上開店服務</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">博客和新聞</a>
+        <a href="contact.html" class="nav-link">聯絡我們</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active">繁</button>
+          <button class="lang-btn">EN</button>
+          <button class="lang-btn">简</button>
+        </div>
+        <a href="contact.html" class="nav-cta">立即查詢</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link">關於我們</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle active">
+          數碼營銷方案
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">AI SEO服務 (GEO)</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">搜尋引擎優化服務 (SEO)</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">網上聲譽管理服務</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">搜尋引擎行銷服務 (SEM)</a>
+          <a href="content-marketing-services.html" class="mobile-dropdown-item active">內容營銷服務</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">社交媒體營銷服務</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">網頁及設計服務</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">網上開店服務</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link">博客和新聞</a>
+      <a href="contact.html" class="mobile-link">聯絡我們</a>
+      <div class="mobile-lang">
+        <button class="lang-btn active">繁體中文</button>
+        <button class="lang-btn">English</button>
+        <button class="lang-btn">简体中文</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="service-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <a href="index-v1.html" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>返回主頁</span>
+    </a>
+    
+    <div class="service-hero-content">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb reveal-item">
+        <a href="index-v1.html">主頁</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="#">數碼營銷方案</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">內容營銷服務</span>
+      </nav>
+      
+      <div class="hero-tag reveal-item">
+        <span class="tag-dot"></span>
+        <span class="tag-text">數碼營銷方案</span>
+      </div>
+      
+      <h1 class="service-hero-title reveal-item">
+        <span class="title-line">
+          <span class="glitch-text" data-text="內容營銷">內容營銷</span>
+        </span>
+        <span class="title-line">
+          <span class="glitch-text accent" data-text="服務">服務</span>
+        </span>
+      </h1>
+      
+      <p class="service-hero-subtitle reveal-item">
+        以數據驅動和AI人工智能技術，助企業創建有價值的內容，<br>實現營銷目標，建立品牌關係。
+      </p>
+      
+      <a href="contact.html" class="btn-primary reveal-item">
+        免費獲取報價
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>往下滾動</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Introduction -->
+  <section class="service-intro">
+    <div class="container">
+      <div class="intro-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">01</span>
+          <span class="label-text">服務簡介</span>
+        </div>
+        
+        <h2 class="section-title">
+          個性化成功策略<br>
+          <span class="highlight">創造有價值的內容</span>
+        </h2>
+        
+        <div class="intro-text">
+          <p>內容營銷服務是通過創作有價值的內容來吸引目標受眾，建立品牌關係並實現營銷目標。它包括內容策略、創作、分發、數據分析和社交媒體管理等方面。利用數據驅動的方法和人工智慧技術，內容優化變得個人化、準確和有效。</p>
+        </div>
+        
+        <a href="contact.html" class="btn-secondary">
+          獲取免費報價
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="intro-visual reveal-item">
+        <div class="visual-image">
+          <img src="asset/thumb_contentmarket.jpg" alt="內容營銷服務" class="service-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Content Marketing Advantages -->
+  <section class="why-ai-seo">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">02</span>
+          <span class="label-text">核心優勢</span>
+        </div>
+        <h2 class="section-title centered">
+          內容營銷<span class="highlight">優勢</span>
+        </h2>
+      </div>
+      
+      <div class="features-grid grid-3-col">
+        <div class="feature-card reveal-item" style="--delay: 0">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Cost reduction icon -->
+              <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 14V26M16 18H24M16 22H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 12L8 8M28 12L32 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+              <path d="M20 8V6M20 34V32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>有效使廣告成本下降</h3>
+          <p>透過優質內容吸引自然流量，減少對付費廣告的依賴，長期降低營銷成本</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 1">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- SEO ranking icon -->
+              <path d="M8 32V20M16 32V14M24 32V18M32 32V10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 16L16 10L24 14L32 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="6" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>提升SEO排名</h3>
+          <p>高質量內容有助於提升搜尋引擎排名，增加網站曝光度和自然流量</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 2">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Trust/loyalty icon (heart with shield) -->
+              <path d="M20 8C16 4 8 6 8 14C8 22 20 32 20 32C20 32 32 22 32 14C32 6 24 4 20 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M20 14V22M16 18H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>提升目標群信任感及忠誠度</h3>
+          <p>持續提供有價值的內容，建立品牌權威，增強客戶信任與忠誠度</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 3">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Word of mouth icon -->
+              <circle cx="14" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+              <circle cx="26" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 28C8 24 10.6863 22 14 22C17.3137 22 20 24 20 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 28C20 24 22.6863 22 26 22C29.3137 22 32 24 32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 10L20 6L26 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>拓展口碑營銷</h3>
+          <p>優質內容容易被分享和傳播，有效擴大品牌影響力和口碑效應</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 4">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Long-term effect icon (clock with growth) -->
+              <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 12V20L26 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M32 8L36 4M8 8L4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>長期及持久的宣傳效果</h3>
+          <p>優質內容具有長期價值，持續為品牌帶來流量和曝光，效果持久</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: How We Execute - with sub-sections -->
+  <section class="results-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">03</span>
+          <span class="label-text">執行方式</span>
+        </div>
+        <h2 class="section-title centered">
+          我們如何執行<br>
+          <span class="highlight">三大核心策略</span>
+        </h2>
+        <p class="section-desc">結合說故事藝術、數據驅動分析和AI人工智能技術，打造高效內容營銷方案</p>
+      </div>
+      
+      <div class="results-grid grid-3-col">
+        <div class="result-card reveal-item" style="--delay: 0">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Storytelling icon (book with sparkle) -->
+              <path d="M8 8H36C38.2091 8 40 9.79086 40 12V40H12C9.79086 40 8 38.2091 8 36V8Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 36C8 33.7909 9.79086 32 12 32H40" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 16H32M16 22H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="34" cy="14" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>說故事</h3>
+          <p>透過引人入勝的敘述，建立情感連結、培養信任並激發行動</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 1">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Data-driven icon -->
+              <path d="M12 36L20 28L28 32L36 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30 20H36V26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>數據驅動</h3>
+          <p>通過數據分析和洞察來指導內容創作和傳播策略</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 2">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- AI icon -->
+              <rect x="12" y="8" width="24" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="18" cy="17" r="2" fill="currentColor"/>
+              <circle cx="30" cy="17" r="2" fill="currentColor"/>
+              <path d="M20 22H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 26V32" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 32H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 32V38M30 32V38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 4V8M8 14H12M36 14H40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>AI 人工智能</h3>
+          <p>運用AI技術加速內容創作、實時監測和優化內容表現</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3.1: Storytelling Detail (Sub-section) -->
+  <section class="service-intro" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="intro-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">03.1</span>
+          <span class="label-text">說故事</span>
+        </div>
+        
+        <h2 class="section-title">
+          說故事的藝術<br>
+          <span class="highlight">建立情感連結</span>
+        </h2>
+        
+        <div class="intro-text">
+          <p>說故事對於與目標受眾建立牢固且有意義的關係起著至關重要的作用。人類天生就會在情感層面上與故事產生連結。</p>
+          <p>透過將說故事納入內容行銷策略，你可以吸引受眾、喚起同理心並創造難忘的體驗。故事有能力以與受眾的信念和願望產生共鳴的方式傳達品牌價值、使命和獨特賣點。</p>
+          <p>透過引人入勝的敘述，建立情感連結、培養信任並激發行動。利用說故事的藝術，我們的內容營銷服務旨在幫助您與目標受眾建立真正持久的聯繫，從而提高參與度、品牌忠誠度，並最終實現業務成功。</p>
+        </div>
+      </div>
+      
+      <div class="intro-visual reveal-item">
+        <div class="visual-image">
+          <img src="asset/thumb_story.jpg" alt="說故事的藝術" class="service-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3.2: Data-Driven Detail (Sub-section) -->
+  <section class="service-intro" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="intro-visual reveal-item">
+        <div class="visual-image">
+          <img src="asset/thumb_data.jpg" alt="數據驅動" class="service-image" style="max-width: 600px;">
+        </div>
+      </div>
+      
+      <div class="intro-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">03.2</span>
+          <span class="label-text">數據驅動</span>
+        </div>
+        
+        <h2 class="section-title">
+          數據驅動<br>
+          <span class="highlight">精準內容策略</span>
+        </h2>
+        
+        <div class="intro-text">
+          <p>內容營銷通過數據分析和洞察來指導內容創作和傳播策略。</p>
+          <p>通過分析受眾行為、興趣和偏好，企業可以了解目標受眾的需求，並根據這些數據來創作和優化內容。</p>
+          <p>數據驅動的內容營銷可以提高內容的準確性、針對性和效果，確保每一篇內容都能精準觸及目標受眾。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3.3: AI Detail (Sub-section) -->
+  <section class="service-intro" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="intro-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">03.3</span>
+          <span class="label-text">AI 人工智能</span>
+        </div>
+        
+        <h2 class="section-title">
+          AI 人工智能<br>
+          <span class="highlight">智能內容優化</span>
+        </h2>
+        
+        <div class="intro-text">
+          <p>人工智能可以幫助企業在大數據中快速識別和分析關鍵洞察，並提供個性化的內容建議。</p>
+          <p>AI還可以自動化內容生產，提高效率，還能夠實時監測和評估內容表現，並提供優化建議，以改進內容營銷策略。</p>
+          <p>透過AI技術，我們能夠為您提供更快速、更精準、更高效的內容營銷解決方案。</p>
+        </div>
+        
+        <a href="contact.html" class="btn-secondary">
+          立即聯絡我們
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="intro-visual reveal-item">
+        <div class="visual-image">
+          <img src="asset/thumb_ai.jpg" alt="AI人工智能" class="service-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Service Categories -->
+  <section class="service-categories">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">04</span>
+          <span class="label-text">服務範疇</span>
+        </div>
+        <h2 class="section-title centered">
+          內容營銷服務<br>
+          <span class="highlight">全方位解決方案</span>
+        </h2>
+        <p class="section-desc">從策略規劃到執行優化，我們提供一站式內容營銷服務</p>
+      </div>
+      
+      <div class="categories-grid grid-3-col">
+        <div class="category-card large reveal-item" style="--delay: 0">
+          <div class="category-header">
+            <span class="category-tag">策略</span>
+            <h3>內容策略和計畫</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              目標受眾分析
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              內容主題規劃
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              發布日程安排
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 1">
+          <div class="category-header">
+            <span class="category-tag">創作</span>
+            <h3>內容創作和優化</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              專業文案撰寫
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              SEO優化內容
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 2">
+          <div class="category-header">
+            <span class="category-tag">推廣</span>
+            <h3>內容分發和推廣</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              多渠道分發
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              精準投放推廣
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 3">
+          <div class="category-header">
+            <span class="category-tag">分析</span>
+            <h3>數據分析和優化</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              內容表現追蹤
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              A/B測試與優化
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 4">
+          <div class="category-header">
+            <span class="category-tag">社交</span>
+            <h3>社交媒體管理</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              社交平台運營
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              互動與社群管理
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CTA Banner -->
+  <section class="service-cta-section">
+    <div class="section-container">
+      <div class="cta-wrapper reveal-item">
+        <div class="cta-content">
+          <h2 class="cta-title">讓優質內容為您的品牌發聲</h2>
+          <p class="cta-desc">立即與 Unique Logic 合作，開啟您的內容營銷之旅</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">
+              <span>獲取免費報價</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="index-v1.html#services" class="btn-secondary">
+              <span>查看更多服務</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+      <span class="floating-cta-text">✨ 讓內容成為您最強大的營銷工具：首次諮詢免費提供內容策略建議</span>
+      <a href="contact.html" class="floating-cta-btn">立即諮詢</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index-v1.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+          </a>
+          <p class="footer-tagline">Boost Traffic. Boost Profit.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">數碼營銷方案</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">AI SEO服務 (GEO)</a></li>
+            <li><a href="seo-services.html">搜尋引擎優化服務 (SEO)</a></li>
+            <li><a href="orm-services.html">網上聲譽管理服務</a></li>
+            <li><a href="sem-services.html">搜尋引擎行銷服務 (SEM)</a></li>
+            <li><a href="content-marketing-services.html">內容營銷服務</a></li>
+            <li><a href="social-media-services.html">社交媒體營銷服務</a></li>
+            <li><a href="web-design-services.html">網頁及設計服務</a></li>
+            <li><a href="ecommerce-services.html">網上開店服務</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">博客和新聞</h4>
+          <ul>
+            <li><a href="#">AI搜尋引擎行銷</a></li>
+            <li><a href="#">SEO搜尋引擎優化</a></li>
+            <li><a href="#">SEM搜尋引擎行銷</a></li>
+            <li><a href="#">數碼營銷</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">聯絡我們</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              香港九龍灣啟祥道 17 號<br>太豐匯 1007 室
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              +852 8400 7393 / +852 3860 7900
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              微信：UniqueLogic393
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:info@uniquelogic.com">info@uniquelogic.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique Logic Limited | 版權所有</p>
+        <div class="footer-legal">
+          <a href="#">隱私政策和 Cookie</a>
+          <a href="#">條款和細則</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

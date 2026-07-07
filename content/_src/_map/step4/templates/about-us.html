@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta.title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about-us.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+       <a href="/" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="{{shared.nav.logo_alt}}" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="/about-us" class="nav-link active">{{shared.nav.menu.about}}</a>
+        <div class="nav-dropdown">
+           <a href="#" class="nav-link has-dropdown">
+            {{shared.nav.menu.solutions}}
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">{{shared.footer.menu.ai_seo}}</a>
+            <a href="seo-services.html" class="dropdown-item">{{shared.footer.menu.seo}}</a>
+            <a href="orm-services.html" class="dropdown-item">{{shared.footer.menu.orm}}</a>
+             <a href="sem-services.html" class="dropdown-item">{{shared.footer.menu.sem}}</a>
+            <a href="content-marketing-services.html" class="dropdown-item">{{shared.footer.menu.content}}</a>
+            <a href="social-media-services.html" class="dropdown-item">{{shared.footer.menu.social}}</a>
+            <a href="web-design-services.html" class="dropdown-item">{{shared.footer.menu.web}}</a>
+            <a href="ecommerce-services.html" class="dropdown-item">{{shared.footer.menu.ecommerce}}</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">{{shared.nav.menu.blog}}</a>
+         <a href="contact.html" class="nav-link">{{shared.nav.menu.contact}}</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <a href="/about-us" class="lang-btn" data-lang="tc">{{shared.nav.lang.zh-hant}}</a>
+          <a href="/en/about-us" class="lang-btn" data-lang="en">{{shared.nav.lang.en}}</a>
+          <a href="/sc/about-us" class="lang-btn" data-lang="sc">{{shared.nav.lang.zh-hans}}</a>
+        </div>
+        <a href="contact.html" class="nav-cta">{{shared.nav.cta}}</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+         <a href="/about-us" class="mobile-link active">{{shared.mobile.menu.about}}</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle">
+          {{shared.mobile.menu.solutions}}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+             <a href="ai-seo-services.html" class="mobile-dropdown-item">{{shared.footer.menu.ai_seo}}</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">{{shared.footer.menu.seo}}</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">{{shared.footer.menu.orm}}</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">{{shared.footer.menu.sem}}</a>
+          <a href="content-marketing-services.html" class="mobile-dropdown-item">{{shared.footer.menu.content}}</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">{{shared.footer.menu.social}}</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">{{shared.footer.menu.web}}</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">{{shared.footer.menu.ecommerce}}</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link">{{shared.mobile.menu.blog}}</a>
+         <a href="contact.html" class="mobile-link">{{shared.mobile.menu.contact}}</a>
+      <div class="mobile-lang">
+        <a href="/about-us" class="lang-btn" data-lang="tc">{{shared.mobile.lang.zh-hant}}</a>
+        <a href="/en/about-us" class="lang-btn" data-lang="en">{{shared.mobile.lang.en}}</a>
+        <a href="/sc/about-us" class="lang-btn" data-lang="sc">{{shared.mobile.lang.zh-hans}}</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    <a href="/" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>{{hero.back_home}}</span>
+    </a>
+    <div class="about-hero-content">
+      <div class="hero-tag reveal-item">
+        <span class="tag-dot"></span>
+        <span class="tag-text">{{hero.tag}}</span>
+      </div>
+      <h1 class="about-hero-title reveal-item">
+        <span class="title-line">
+          <span class="glitch-text" data-text="{{hero.title1}}">{{hero.title1}}</span>
+        </span>
+        <span class="title-line">
+          <span class="glitch-text accent" data-text="{{hero.title2}}">{{hero.title2}}</span>
+        </span>
+      </h1>
+      <p class="about-hero-subtitle reveal-item">
+        {{hero.subtitle}}
+      </p>
+    </div>
+    <div class="hero-scroll">
+      <span>{{hero.scroll_text}}</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Introduction Section -->
+  <section class="intro-section">
+    <div class="section-container">
+      <div class="intro-content reveal-item">
+        <h2 class="intro-title">{{intro.title}}</h2>
+        <div class="intro-body">
+          <p>{{intro.body}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Our Mission -->
+  <section class="mission-section">
+    <div class="section-container">
+      <div class="mission-grid">
+        <div class="mission-visual reveal-item">
+          <div class="mission-graphic">
+            <!-- Single unified illustration -->
+            <div class="unified-illustration">
+              <svg viewBox="0 0 500 400" fill="none" class="illustration-svg">
+                <!-- Chat bubbles (top left) -->
+                <g class="icon-group" style="--delay: 0">
+                  <rect x="40" y="60" width="70" height="45" rx="8" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M50 75 L90 75 M50 85 L80 85 M50 95 L70 95" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round"/>
+                  <polygon points="60,105 70,105 65,115" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                </g>
+                
+                <!-- Envelope (top middle) -->
+                <g class="icon-group" style="--delay: 0.5">
+                  <rect x="140" y="40" width="55" height="40" rx="4" stroke="var(--accent-amber)" stroke-width="2" fill="none"/>
+                  <path d="M140 48 L167 65 L195 48" stroke="var(--accent-amber)" stroke-width="2" fill="none"/>
+                </g>
+                
+                <!-- Video player (middle left) -->
+                <g class="icon-group" style="--delay: 1">
+                  <rect x="60" y="150" width="60" height="42" rx="4" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <polygon points="82,162 82,182 98,172" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                </g>
+                
+                <!-- Server/Data center (center) -->
+                <g class="icon-group" style="--delay: 1.5">
+                  <rect x="200" y="100" width="45" height="70" rx="4" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M200 125 L245 125 M200 150 L245 150" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                  <circle cx="212" cy="112" r="4" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <circle cx="212" cy="137" r="4" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <circle cx="212" cy="162" r="4" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <path d="M222 112 L238 112 M222 137 L235 137 M222 162 L232 162" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round"/>
+                </g>
+                
+                <!-- Dashboard/Analytics (left) -->
+                <g class="icon-group" style="--delay: 2">
+                  <rect x="20" y="230" width="100" height="70" rx="6" stroke="var(--accent-purple)" stroke-width="2" fill="none"/>
+                  <circle cx="45" cy="250" r="15" stroke="var(--accent-purple)" stroke-width="1.5" fill="none"/>
+                  <path d="M45 235 L45 250 L55 250" stroke="var(--accent-purple)" stroke-width="1.5"/>
+                  <path d="M75 280 L75 260 M90 280 L90 250 M105 280 L105 265" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round"/>
+                </g>
+                
+                <!-- Tablet with sliders (top right) -->
+                <g class="icon-group" style="--delay: 2.5" transform="rotate(-10 345 110)">
+                  <rect x="300" y="80" width="90" height="60" rx="6" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M310 95 L380 95" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M310 110 L380 110" stroke="var(--accent-amber)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M310 125 L380 125" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="340" cy="95" r="4" fill="var(--accent-cyan)"/>
+                  <circle cx="360" cy="110" r="4" fill="var(--accent-amber)"/>
+                  <circle cx="330" cy="125" r="4" fill="var(--accent-cyan)"/>
+                </g>
+                
+                <!-- UX Phone (right top) -->
+                <g class="icon-group" style="--delay: 3">
+                  <rect x="420" y="40" width="60" height="100" rx="8" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <path d="M440 55 L460 55" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round"/>
+                  <text x="450" y="100" text-anchor="middle" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="20" font-weight="bold">UX</text>
+                  <rect x="435" y="115" width="30" height="10" rx="5" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                </g>
+                
+                <!-- Shopping phone (right middle) -->
+                <g class="icon-group" style="--delay: 3.5">
+                  <rect x="400" y="180" width="50" height="85" rx="6" stroke="var(--accent-amber)" stroke-width="2" fill="none"/>
+                  <path d="M400 195 L450 195 M400 250 L450 250" stroke="var(--accent-amber)" stroke-width="1.5"/>
+                  <rect x="410" y="205" width="30" height="8" rx="2" stroke="var(--accent-amber)" stroke-width="1" fill="none"/>
+                  <text x="425" y="235" text-anchor="middle" fill="var(--accent-amber)" font-family="var(--font-mono)" font-size="10">BUY</text>
+                </g>
+                
+                <!-- Magnifying glass (large, center) - Isometric style -->
+                <g class="icon-group" style="--delay: 4">
+                  <!-- Glass lens (3D oval) -->
+                  <ellipse cx="200" cy="300" rx="50" ry="50" stroke="var(--accent-cyan)" stroke-width="3" fill="none"/>
+                  <!-- Inner reflection ring -->
+                  <ellipse cx="200" cy="300" rx="38" ry="38" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none" opacity="0.4"/>
+                  <!-- Highlight arc -->
+                  <path d="M175 280 Q188 265 220 272" stroke="var(--accent-cyan)" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round"/>
+                  <!-- Handle -->
+                  <path d="M235 335 L280 380" stroke="var(--accent-cyan)" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M235 335 L280 380" stroke="var(--bg-primary)" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+                  <!-- Handle grip lines -->
+                  <path d="M250 348 L255 353 M265 363 L270 368" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                </g>
+                
+                <!-- Money/Dollar (bottom center) - Simple -->
+                <g class="icon-group" style="--delay: 4.5">
+                  <!-- Coin circle -->
+                  <circle cx="340" cy="330" r="35" stroke="var(--accent-amber)" stroke-width="2.5" fill="none"/>
+                  <!-- Dollar sign -->
+                  <text x="340" y="342" text-anchor="middle" fill="var(--accent-amber)" font-family="var(--font-mono)" font-size="36" font-weight="bold">$</text>
+                </g>
+                
+                <!-- Small key/search icon (bottom right) -->
+                <g class="icon-group" style="--delay: 5">
+                  <rect x="420" y="320" width="40" height="40" rx="8" stroke="var(--accent-cyan)" stroke-width="2" fill="none"/>
+                  <circle cx="435" cy="335" r="8" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <path d="M441 341 L452 352" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mission-content">
+          <div class="section-label reveal-item">
+            <span class="label-number">01</span>
+            <span class="label-text">{{mission.label}}</span>
+          </div>
+          
+          <h2 class="section-title reveal-item">
+            {{mission.title_line1}}<br>
+            <span class="highlight">{{mission.title_highlight}}</span>
+          </h2>
+          
+          <div class="mission-text reveal-item">
+            <p>{{mission.body}}</p>
+          </div>
+          
+          <div class="services-highlight reveal-item">
+            <p class="services-intro">{{mission.services_intro}}</p>
+            <div class="services-tags">
+              <a href="ai-seo-services.html" class="service-tag ai">{{mission.services.ai_seo}}</a>
+              <a href="seo-services.html" class="service-tag seo">{{mission.services.seo}}</a>
+              <a href="sem-services.html" class="service-tag sem">{{mission.services.sem}}</a>
+              <a href="web-design-services.html" class="service-tag web">{{mission.services.web}}</a>
+              <span class="service-tag-more">{{mission.services.more}}</span>
+            </div>
+          </div>
+          
+          <div class="mission-cta reveal-item">
+            <div class="cta-card">
+              <p>{{mission.cta.prefix}}<strong>{{mission.cta.startup}}</strong>{{mission.cta.sep}}<strong>{{mission.cta.sme}}</strong>{{mission.cta.or}}<strong>{{mission.cta.enterprise}}</strong>{{mission.cta.comma}}{{mission.cta.suffix}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Our Values - Google Partner -->
+  <section class="values-section">
+    <div class="section-container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">02</span>
+          <span class="label-text">{{values.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{values.title_line1}}<br>
+          <span class="highlight">{{values.title_highlight}}</span>
+        </h2>
+      </div>
+      
+      <div class="partner-showcase reveal-item">
+        <a href="https://www.google.com/partners/agency?id=8495757419" target="_blank" rel="noopener noreferrer" class="partner-badge">
+          <img src="https://www.gstatic.com/partners/badge/images/2025/PartnerBadgeClickable.svg" alt="Google Partner" class="google-partner-logo">
+        </a>
+      </div>
+      
+      <div class="partner-intro reveal-item">
+        <div class="intro-card">
+          <h3>{{values.partner_intro_title_prefix}} <span class="google-text">{{values.partner_intro_google_text}}</span> {{values.partner_intro_title_suffix}}</h3>
+          <p>{{values.partner_intro_body_line1}}<br>{{values.partner_intro_body_line2}}</p>
+        </div>
+      </div>
+      
+      <div class="partner-benefits">
+        <div class="benefit-card reveal-item" style="--delay: 0">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="10" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 28C6 22.4772 10.4772 18 16 18C21.5228 18 26 22.4772 26 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="benefit-content">
+            <h4>{{values.benefits.benefit1.title}}</h4>
+            <p>{{values.benefits.benefit1.desc}}</p>
+          </div>
+          <div class="benefit-check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="benefit-card reveal-item" style="--delay: 1">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <!-- Headset icon for technical support -->
+              <path d="M6 18V16C6 10.4772 10.4772 6 16 6C21.5228 6 26 10.4772 26 16V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="4" y="18" width="5" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="23" y="18" width="5" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M26 24V25C26 26.6569 24.6569 28 23 28H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="benefit-content">
+            <h4>{{values.benefits.benefit2.title}}</h4>
+            <p>{{values.benefits.benefit2.desc}}</p>
+          </div>
+          <div class="benefit-check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="benefit-card reveal-item" style="--delay: 2">
+          <div class="benefit-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <!-- Rocket icon for early access -->
+              <path d="M16 4C16 4 12 10 12 18C12 22 14 26 16 28C18 26 20 22 20 18C20 10 16 4 16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="16" cy="16" r="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 20L8 22L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 20L24 22L22 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="benefit-content">
+            <h4>{{values.benefits.benefit3.title}}</h4>
+            <p>{{values.benefits.benefit3.desc}}</p>
+          </div>
+          <div class="benefit-check">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Why Google Partner -->
+  <section class="why-partner-section">
+    <div class="section-container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">03</span>
+          <span class="label-text">{{why_partner.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{why_partner.title_line1}}<br>
+          <span class="highlight">{{why_partner.title_highlight}}</span>
+        </h2>
+        <p class="section-desc">
+          {{why_partner.desc_line1}}<span class="mobile-br"></span>{{why_partner.desc_mid}}<br>
+          {{why_partner.desc_line2}}<span class="mobile-br"></span>{{why_partner.desc_tail}}
+        </p>
+      </div>
+      
+      <div class="advantages-grid">
+        <div class="advantage-card reveal-item" style="--delay: 0">
+          <div class="advantage-number">1</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">{{why_partner.advantages.adv1.title}}</h3>
+            <p class="advantage-desc">
+              {{why_partner.advantages.adv1.desc}}
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+        
+        <div class="advantage-card reveal-item" style="--delay: 1">
+          <div class="advantage-number">2</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">{{why_partner.advantages.adv2.title}}</h3>
+            <p class="advantage-desc">
+              {{why_partner.advantages.adv2.desc}}
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+        
+        <div class="advantage-card reveal-item" style="--delay: 2">
+          <div class="advantage-number">3</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">{{why_partner.advantages.adv3.title}}</h3>
+            <p class="advantage-desc">
+              {{why_partner.advantages.adv3.desc}}
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+        
+        <div class="advantage-card reveal-item" style="--delay: 3">
+          <div class="advantage-number">4</div>
+          <div class="advantage-content">
+            <h3 class="advantage-title">{{why_partner.advantages.adv4.title}}</h3>
+            <p class="advantage-desc">
+              {{why_partner.advantages.adv4.desc}}
+            </p>
+          </div>
+          <div class="advantage-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="about-cta-section">
+    <div class="section-container">
+      <div class="cta-wrapper reveal-item">
+        <div class="cta-content">
+          <h2 class="cta-title">{{cta.title}}</h2>
+          <p class="cta-desc">{{cta.desc}}</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">
+              <span>{{cta.primary_btn}}</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="/#services" class="btn-secondary">
+              <span>{{cta.secondary_btn}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+         <span class="floating-cta-text">{{shared.floating_cta.text}}</span>
+      <a href="contact.html" class="floating-cta-btn">{{shared.floating_cta.btn}}</a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="{{shared.footer.logo_alt}}" class="logo-img">
+          </a>
+          <p class="footer-tagline">{{shared.footer.tagline}}</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.facebook_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.linkedin_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.instagram_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-title">{{shared.footer.menu.title}}</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">{{shared.footer.menu.ai_seo}}</a></li>
+            <li><a href="seo-services.html">{{shared.footer.menu.seo}}</a></li>
+            <li><a href="orm-services.html">{{shared.footer.menu.orm}}</a></li>
+            <li><a href="sem-services.html">{{shared.footer.menu.sem}}</a></li>
+            <li><a href="content-marketing-services.html">{{shared.footer.menu.content}}</a></li>
+            <li><a href="social-media-services.html">{{shared.footer.menu.social}}</a></li>
+            <li><a href="web-design-services.html">{{shared.footer.menu.web}}</a></li>
+            <li><a href="ecommerce-services.html">{{shared.footer.menu.ecommerce}}</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-title">{{shared.footer.blog.title}}</h4>
+          <ul>
+            <li><a href="blog.html#category=ai">{{shared.footer.blog.ai_sem}}</a></li>
+            <li><a href="blog.html#category=seo">{{shared.footer.blog.seo}}</a></li>
+            <li><a href="blog.html#category=sem">{{shared.footer.blog.sem}}</a></li>
+            <li><a href="blog.html#category=digital">{{shared.footer.blog.marketing}}</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-title">{{shared.footer.contact.title}}</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              {{shared.footer.contact.address}}
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              {{shared.footer.contact.phone}}
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              {{shared.footer.contact.wechat}}
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:{{shared.footer.contact.email}}">{{shared.footer.contact.email}}</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>{{shared.footer.copyright}}</p>
+        <div class="footer-legal">
+             <a href="#">{{shared.footer.legal.privacy}}</a>
+          <a href="#">{{shared.footer.legal.terms}}</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

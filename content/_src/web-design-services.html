@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一站式多媒體設計及網頁製作優化營銷解決方案，保持網頁定期更新和優化你的網站，可有效提升網頁的專業形象和可信度，助你提升品牌形象及企業價值。｜香港專業網頁設計、公司網站設計、企業網站、設計網頁客製化內容、WordPress內容管理系統、Shopify網店系統設置、手機版響應式網站。｜Unique Logic">
+  <title>網頁及設計服務 | Unique Logic - 一站式多媒體設計及網頁製作服務</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ai-seo-services.css">
+  <style>
+    /* Mobile-only line breaks */
+    .mobile-br {
+      display: none;
+    }
+    
+    /* Responsive grid layouts */
+    .grid-2-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-3-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-4-col {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    @media (max-width: 1024px) {
+      .grid-4-col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-br {
+        display: inline;
+      }
+      
+      .grid-2-col,
+      .grid-3-col,
+      .grid-4-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index-v1.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link">關於我們</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown active">
+            數碼營銷方案
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">AI SEO服務 (GEO)</a>
+            <a href="seo-services.html" class="dropdown-item">搜尋引擎優化服務 (SEO)</a>
+            <a href="orm-services.html" class="dropdown-item">網上聲譽管理服務</a>
+            <a href="sem-services.html" class="dropdown-item">搜尋引擎行銷服務 (SEM)</a>
+            <a href="content-marketing-services.html" class="dropdown-item">內容營銷服務</a>
+            <a href="social-media-services.html" class="dropdown-item">社交媒體營銷服務</a>
+            <a href="web-design-services.html" class="dropdown-item active">網頁及設計服務</a>
+            <a href="ecommerce-services.html" class="dropdown-item">網上開店服務</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">博客和新聞</a>
+        <a href="contact.html" class="nav-link">聯絡我們</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active">繁</button>
+          <button class="lang-btn">EN</button>
+          <button class="lang-btn">简</button>
+        </div>
+        <a href="contact.html" class="nav-cta">立即查詢</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link">關於我們</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle active">
+          數碼營銷方案
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">AI SEO服務 (GEO)</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">搜尋引擎優化服務 (SEO)</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">網上聲譽管理服務</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">搜尋引擎行銷服務 (SEM)</a>
+          <a href="content-marketing-services.html" class="mobile-dropdown-item">內容營銷服務</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">社交媒體營銷服務</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item active">網頁及設計服務</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">網上開店服務</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link">博客和新聞</a>
+      <a href="contact.html" class="mobile-link">聯絡我們</a>
+      <div class="mobile-lang">
+        <button class="lang-btn active">繁體中文</button>
+        <button class="lang-btn">English</button>
+        <button class="lang-btn">简体中文</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="service-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <a href="index-v1.html" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>返回主頁</span>
+    </a>
+    
+    <div class="service-hero-content">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb reveal-item">
+        <a href="index-v1.html">主頁</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="#">數碼營銷方案</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">網頁及設計服務</span>
+      </nav>
+      
+      <div class="hero-tag reveal-item">
+        <span class="tag-dot"></span>
+        <span class="tag-text">數碼營銷方案</span>
+      </div>
+      
+      <h1 class="service-hero-title reveal-item">
+        <span class="title-line">
+          <span class="glitch-text" data-text="網頁及設計">網頁及設計</span>
+        </span>
+        <span class="title-line">
+          <span class="glitch-text accent" data-text="服務">服務</span>
+        </span>
+      </h1>
+      
+      <p class="service-hero-subtitle reveal-item">
+        一站式多媒體設計及網頁製作服務 <br> 設計. 提升. 參與.
+      </p>
+      
+      <a href="contact.html" class="btn-primary reveal-item">
+        免費獲取報價
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>往下滾動</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Introduction -->
+  <section class="service-intro">
+    <div class="container">
+      <div class="intro-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">01</span>
+          <span class="label-text">服務簡介</span>
+        </div>
+        
+        <h2 class="section-title">
+          設計. 提升. 參與.<br>
+          <span class="highlight">專業網頁設計服務</span>
+        </h2>
+        
+        <div class="intro-text">
+          <p>設計在傳達信息和提升使用者體驗等方面扮演著重要的角色。它能以直觀和吸引人的方式傳達複雜信息，同時建立品牌形象和識別，對於個人和企業都具有關鍵價值。</p>
+          <p>因此，我們提供個性化的平面設計和網頁設計服務，助你提升品牌形象、吸引目標受眾並提供卓越的使用者體驗。</p>
+          <p>我們的專業設計團隊將根據你的需求和目標，創造獨特且具有影響力的設計作品，以確保你在競爭激烈的市場中脫穎而出。</p>
+        </div>
+        
+        <a href="contact.html" class="btn-secondary">
+          免費獲取報價
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="intro-visual reveal-item">
+        <div class="visual-image">
+          <img src="asset/thumb_web.jpg" alt="網頁及設計服務" class="service-image" style="max-width: 600px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Web Design Services -->
+  <section class="why-ai-seo">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">02</span>
+          <span class="label-text">網頁設計服務</span>
+        </div>
+        <h2 class="section-title centered">
+          專業<span class="highlight">網頁設計服務</span>
+        </h2>
+        <p class="section-desc">我們提供全方位的網頁設計解決方案，<br>助您建立專業且具吸引力的線上形象。</p>
+      </div>
+      
+      <div class="features-grid grid-2-col">
+        <div class="feature-card reveal-item" style="--delay: 0">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="8" width="28" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 14H34" stroke="currentColor" stroke-width="2"/>
+              <circle cx="10" cy="11" r="1.5" fill="currentColor"/>
+              <circle cx="14" cy="11" r="1.5" fill="currentColor"/>
+              <circle cx="18" cy="11" r="1.5" fill="currentColor"/>
+              <path d="M12 20H22M12 24H28M12 28H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>客製化內容管理系統</h3>
+          <p>WordPress、Shopify等專業內容管理系統設置，讓您輕鬆管理網站內容，<br class="mobile-br">無需編程知識也能更新網頁。</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 1">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="6" width="28" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 12H34" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 32H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 28V32" stroke="currentColor" stroke-width="2"/>
+              <circle cx="10" cy="9" r="1" fill="currentColor"/>
+              <circle cx="14" cy="9" r="1" fill="currentColor"/>
+              <path d="M12 18H18V24H12V18Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M22 18H28M22 21H26M22 24H28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>電子商務網頁設計</h3>
+          <p>專業網店設計與設置，整合支付系統、購物車功能，打造流暢的線上購物體驗，<br class="mobile-br">助您拓展線上業務。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: What We Offer -->
+  <section class="results-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">03</span>
+          <span class="label-text">服務內容</span>
+        </div>
+        <h2 class="section-title centered">
+          我們提供什麼？<br>
+          <span class="highlight">全方位網頁功能</span>
+        </h2>
+        <p class="section-desc">完整的網頁設計配套，<br class="mobile-br">涵蓋所有您需要的功能。</p>
+      </div>
+      
+      <div class="results-grid grid-4-col">
+        <div class="result-card reveal-item" style="--delay: 0">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M24 8L28 16L38 18L30 26L32 36L24 32L16 36L18 26L10 18L20 16L24 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 20V28M20 24H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>SSL安全憑證</h3>
+          <p>確保網站安全加密</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 1">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="14" y="8" width="20" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 12H34M14 36H34" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="38" r="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>手機版響應式網站</h3>
+          <p>完美適配各種設備</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 2">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 28C24 28 36 32 36 40H12C12 32 24 28 24 28Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="24" cy="20" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>加入Google地圖</h3>
+          <p>方便客戶找到您</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 3">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+              <polygon points="20,18 20,30 30,24" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>YouTube鏈接</h3>
+          <p>嵌入影片內容</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 4">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+              <polygon points="20,16 20,32 32,24" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>視音頻播放器</h3>
+          <p>多媒體內容展示</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 5">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="10" width="32" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 18H40" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 26H34M14 32H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>網上查詢表格</h3>
+          <p>方便客戶聯繫您</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 6">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="8" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="26" y="8" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="8" y="26" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="26" y="26" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>圖片集</h3>
+          <p>展示作品與產品</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 7">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 14V24L30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M34 10L38 6M10 10L6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>社交媒體分享按鈕</h3>
+          <p>擴大品牌影響力</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Why Keep Website Updated -->
+  <section class="service-categories">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">04</span>
+          <span class="label-text">網頁優化</span>
+        </div>
+        <h2 class="section-title centered">
+          保持網頁定期更新和<br>
+          <span class="highlight">優化你的網頁的原因</span>
+        </h2>
+        <p class="section-desc">定期維護和更新網站，<br class="mobile-br">確保最佳表現和用戶體驗。</p>
+      </div>
+      
+      <div class="categories-grid grid-3-col">
+        <div class="category-card reveal-item" style="--delay: 0">
+          <div class="category-header">
+            <span class="category-tag">形象</span>
+            <h3>專業形象</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              提升網頁的專業形象和可信度
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              支持營銷和品牌推廣活動
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              與競爭對手保持競爭力
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 1">
+          <div class="category-header">
+            <span class="category-tag">體驗</span>
+            <h3>用戶體驗</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              吸引並保持用戶的關注和興趣
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              提供良好的使用者體驗
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              增加用戶滿意度
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 2">
+          <div class="category-header">
+            <span class="category-tag">效能</span>
+            <h3>網站效能</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              提高網頁的可見性和搜尋引擎排名
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              提供更好的瀏覽速度和性能
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              適應不斷變化的技術和設計標準
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: UX/UI Design Review -->
+  <section class="why-ai-seo">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">05</span>
+          <span class="label-text">UX/UI設計</span>
+        </div>
+        <h2 class="section-title centered">
+          網頁<span class="highlight">UX/UI設計審查服務</span>
+        </h2>
+        <p class="section-desc">網頁UX/UI設計審查是一種評估和分析網頁使用者體驗和設計的過程，<br>旨在確保網站能夠提供優質的<br class="mobile-br">使用者體驗和設計美學。<br>能夠優化使用者體驗、提升網站效能、增加轉換率、提升品牌形象及市場增加競爭力。</p>
+      </div>
+      
+      <div class="features-grid grid-2-col">
+        <div class="feature-card reveal-item" style="--delay: 0">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 14H34" stroke="currentColor" stroke-width="2"/>
+              <rect x="10" y="18" width="8" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M22 18H30M22 22H28M22 26H30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>UI (User Interface) 用戶介面</h3>
+          <p>考慮到介面使用上的流暢度、方便度及呈現方式，審查整體設計美學，透過分析及了解用戶需求及網頁使用習慣，從而審查UX/UI設計。</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 1">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 36C8 28 13 24 20 24C27 24 32 28 32 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 14L18 16L24 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>UX (User Experience) 用戶體驗</h3>
+          <p>以設計解決用戶在使用上的需求與習慣，經測試後作出修改來最佳化用戶體驗，為網站帶來更多的流量、更高的參與度，並最終實現業務目標。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Our Process -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">06</span>
+          <span class="label-text">服務流程</span>
+        </div>
+        <h2 class="section-title centered">
+          我們的服務流程<br>
+          <span class="highlight">專業網頁設計步驟</span>
+        </h2>
+      </div>
+      
+      <div class="process-timeline">
+        <div class="process-step reveal-item" style="--delay: 0">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>初步諮詢</h3>
+            <p>透過WhatsApp或填寫網上表格聯絡我們，了解您的需求和目標</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 1">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>需求分析</h3>
+            <p>深入了解您的品牌、目標受眾和功能需求</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 2">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>設計方案</h3>
+            <p>提供設計草稿和網站架構，確認視覺風格和功能規劃</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 3">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>開發製作</h3>
+            <p>專業團隊進行網頁開發和設計實現</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 4">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <h3>上線與支援</h3>
+            <p>網站上線後提供持續的技術支援和維護服務</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: CTA Banner -->
+  <section class="service-cta-section">
+    <div class="section-container">
+      <div class="cta-wrapper reveal-item">
+        <div class="cta-content">
+          <h2 class="cta-title">打造專業網站，提升品牌形象！</h2>
+          <p class="cta-desc">讓 Unique Logic 的專業設計團隊為您打造獨特的網上形象</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">
+              <span>獲取免費報價</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="index-v1.html#services" class="btn-secondary">
+              <span>查看更多服務</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+      <span class="floating-cta-text">🔥 本月限定：首次諮詢免費送網站審核報告</span>
+      <a href="contact.html" class="floating-cta-btn">立即領取</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index-v1.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+          </a>
+          <p class="footer-tagline">Boost Traffic. Boost Profit.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">數碼營銷方案</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">AI SEO服務 (GEO)</a></li>
+            <li><a href="seo-services.html">搜尋引擎優化服務 (SEO)</a></li>
+            <li><a href="orm-services.html">網上聲譽管理服務</a></li>
+            <li><a href="sem-services.html">搜尋引擎行銷服務 (SEM)</a></li>
+            <li><a href="content-marketing-services.html">內容營銷服務</a></li>
+            <li><a href="social-media-services.html">社交媒體營銷服務</a></li>
+            <li><a href="web-design-services.html">網頁及設計服務</a></li>
+            <li><a href="ecommerce-services.html">網上開店服務</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">博客和新聞</h4>
+          <ul>
+            <li><a href="#">AI搜尋引擎行銷</a></li>
+            <li><a href="#">SEO搜尋引擎優化</a></li>
+            <li><a href="#">SEM搜尋引擎行銷</a></li>
+            <li><a href="#">數碼營銷</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">聯絡我們</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              香港九龍灣啟祥道 17 號<br>太豐匯 1007 室
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              +852 8400 7393 / +852 3860 7900
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              微信：UniqueLogic393
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:info@uniquelogic.com">info@uniquelogic.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique Logic Limited | 版權所有</p>
+        <div class="footer-legal">
+          <a href="#">隱私政策和 Cookie</a>
+          <a href="#">條款和細則</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

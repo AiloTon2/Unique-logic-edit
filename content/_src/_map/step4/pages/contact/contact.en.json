@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Contact Us | Unique Logic - AI Digital Marketing Experts",
+    "description": "Get a free quote! Let our expert team craft the best digital marketing strategy for your business. Contact Unique Logic today to start your digital marketing journey."
+  },
+  "hero": {
+    "back_home": "Back to Home",
+    "tag": "Contact Unique Logic",
+    "title": "Contact Us",
+    "subtitle": "Get a free quote. Let our expert team craft the best digital marketing strategy for your business.",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "title_line1": "Build a Personalized",
+    "title_highlight": "Digital Marketing Strategy",
+    "consult_title": "Book a Consultation",
+    "consult_body": "Get in touch with our professional team. Reach high-quality potential customers within 24 hours, increase traffic quickly, and achieve your sales goals. We are happy to share digital marketing tools and strategies to help you grow your business effectively."
+  },
+  "benefits": {
+    "reply_24h": "Reply Within 24 Hours",
+    "increase_traffic": "Increase Traffic",
+    "sales_target": "Achieve Sales Goals"
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "name_label": "Name",
+    "name_placeholder": "Please enter your name",
+    "phone_label": "Phone Number",
+    "phone_placeholder": "Please enter your phone number",
+    "email_label": "Email",
+    "email_placeholder": "Please enter your email address",
+    "company_label": "Company Name (Optional)",
+    "company_placeholder": "Please enter your company name",
+    "website_label": "Company Website (Optional)",
+    "website_placeholder": "https://example.com",
+    "subject_label": "Subject",
+    "subject_placeholder": "Please select a subject",
+    "subject_options": {
+      "ai_seo": "AI SEO (GEO) Service",
+      "seo": "SEO Optimization",
+      "sem": "SEM Search Ads",
+      "social": "Social Media Marketing",
+      "web": "Web Design & Development",
+      "other": "Other Inquiry"
+    },
+    "message_label": "Details",
+    "message_placeholder": "Please describe your needs or questions...",
+    "submit_btn": "Submit Inquiry",
+    "note": "We will contact you within 24 hours after submission."
+  },
+  "location": {
+    "map_embed_src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0!2d114.206822!3d22.3256766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040132ceb94b0f%3A0x85a2754d36a34013!2sThe%20Bay%20Hub!5e0!3m2!1sen!2shk!4v1707200000000!5m2!1sen!2shk",
+    "section_title": "Contact Information",
+    "details": {
+      "address": {
+        "label": "Address",
+        "value_html": "Room 1007, Tower 1, Enterprise Square Five,<br>38 Wang Chiu Road, Kowloon Bay, Hong Kong"
+      },
+      "phone": {
+        "label": "Phone",
+        "value_line1": "+852 8400 7393",
+        "value_line2": "+852 3860 7900"
+      },
+      "wechat": {
+        "label": "Wechat",
+        "value": "UniqueLogic393"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@uniquelogic.com"
+      }
+    },
+    "social": {
+      "title": "Social Channels",
+      "facebook_aria": "Facebook",
+      "facebook_text": "Facebook",
+      "instagram_aria": "Instagram",
+      "instagram_text": "Instagram",
+      "linkedin_aria": "LinkedIn",
+      "linkedin_text": "LinkedIn"
+    }
+  }
+}

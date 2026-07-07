@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "logo_alt": "Unique Logic",
+    "menu": {
+      "about": "關於我們",
+      "solutions": "數碼營銷方案",
+      "blog": "博客和新聞",
+      "contact": "聯絡我們"
+    },
+    "cta": "立即查詢",
+    "lang": {
+      "zh-hant": "繁",
+      "en": "EN",
+      "zh-hans": "简"
+    }
+  },
+  "mobile": {
+    "menu": {
+      "about": "關於我們",
+      "solutions": "數碼營銷方案",
+      "blog": "博客和新聞",
+      "contact": "聯絡我們"
+    },
+    "lang": {
+      "zh-hant": "繁體中文",
+      "en": "English",
+      "zh-hans": "简体中文"
+    }
+  },
+  "footer": {
+    "logo_alt": "Unique Logic",
+    "tagline": "Boost Traffic. Boost Profit.",
+    "social": {
+      "facebook_aria": "Facebook",
+      "linkedin_aria": "LinkedIn",
+      "instagram_aria": "Instagram",
+      "facebook_href": "https://www.facebook.com/UniqueLogicDigital",
+      "linkedin_href": "https://www.linkedin.com/company/unique-logic/",
+      "instagram_href": "https://instagram.com/uniquelogic_digital?igshid=YmMyMTA2M2Y="
+    },
+    "menu": {
+      "title": "數碼營銷方案",
+      "ai_seo": "AI SEO服務 (GEO)",
+      "seo": "搜尋引擎優化服務 (SEO)",
+      "orm": "網上聲譽管理服務",
+      "sem": "搜尋引擎行銷服務 (SEM)",
+      "content": "內容營銷服務",
+      "social": "社交媒體營銷服務",
+      "web": "網頁及設計服務",
+      "ecommerce": "網上開店服務"
+    },
+    "blog": {
+      "title": "博客和新聞",
+      "ai_sem": "AI搜尋引擎行銷",
+      "seo": "SEO搜尋引擎優化",
+      "sem": "SEM搜尋引擎行銷",
+      "marketing": "數碼營銷"
+    },
+    "contact": {
+      "title": "聯絡我們",
+      "address": "香港九龍灣啟祥道 17 號<br>太豐匯 1007 室",
+      "phone": "+852 8400 7393 / +852 3860 7900",
+      "wechat": "微信：UniqueLogic393",
+      "email": "info@uniquelogic.com"
+    },
+    "legal": {
+      "privacy": "隱私政策和 Cookie",
+      "terms": "條款和細則"
+    },
+    "copyright": "&copy; 2026 Unique Logic Limited | 版權所有"
+  },
+  "floating_cta": {
+    "text": "🔥 本月限定：首次諮詢免費送 AI 曝光度報告",
+    "btn": "立即領取"
+  }
+}

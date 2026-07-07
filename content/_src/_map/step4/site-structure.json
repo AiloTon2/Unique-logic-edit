@@ -1,0 +1,154 @@
+{
+  "site": "Unique Logic",
+  "pages": [
+    {
+      "slug": "/",
+      "title": "Unique Logic | AI 數碼營銷專家",
+      "source": "index.html",
+      "level": 0,
+      "parent": null,
+      "children": [
+        "about-us",
+        "blog",
+        "contact"
+      ]
+    },
+    {
+      "slug": "about-us",
+      "title": "關於我們 | Unique Logic - AI 數碼營銷專家",
+      "navLabel": "關於我們",
+      "source": "about-us.html",
+      "level": 1,
+      "parent": "/",
+      "children": []
+    },
+    {
+      "slug": "services",
+      "title": "數碼營銷方案",
+      "navLabel": "數碼營銷方案",
+      "source": null,
+      "level": 1,
+      "parent": "/",
+      "isVirtualParent": true,
+      "description": "Dropdown grouping in nav — no dedicated landing page exists.",
+      "children": [
+        "ai-seo-services",
+        "seo-services",
+        "orm-services",
+        "sem-services",
+        "content-marketing-services",
+        "social-media-services",
+        "web-design-services",
+        "ecommerce-services"
+      ]
+    },
+    {
+      "slug": "ai-seo-services",
+      "title": "AI SEO服務 (GEO) | Unique Logic - AI 數碼營銷專家",
+      "navLabel": "AI SEO服務 (GEO)",
+      "breadcrumb": ["主頁", "數碼營銷方案", "AI SEO服務 (GEO)"],
+      "source": "ai-seo-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "seo-services",
+      "title": "搜尋引擎優化 SEO服務 | Unique Logic - 數碼營銷專家",
+      "navLabel": "搜尋引擎優化服務 (SEO)",
+      "breadcrumb": ["主頁", "數碼營銷方案", "搜尋引擎優化服務 (SEO)"],
+      "source": "seo-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "orm-services",
+      "title": "網上聲譽管理服務 | Unique Logic - 數碼營銷專家",
+      "navLabel": "網上聲譽管理服務",
+      "breadcrumb": ["主頁", "數碼營銷方案", "網上聲譽管理服務"],
+      "source": "orm-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "sem-services",
+      "title": "搜尋引擎行銷服務 (SEM) | Unique Logic - 數碼營銷專家",
+      "navLabel": "搜尋引擎行銷服務 (SEM)",
+      "breadcrumb": ["主頁", "數碼營銷方案", "搜尋引擎行銷服務 (SEM)"],
+      "source": "sem-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "content-marketing-services",
+      "title": "內容營銷服務 | Unique Logic - 數碼營銷專家",
+      "navLabel": "內容營銷服務",
+      "breadcrumb": ["主頁", "數碼營銷方案", "內容營銷服務"],
+      "source": "content-marketing-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "social-media-services",
+      "title": "社交媒體營銷服務 | Unique Logic - 透過社交媒體代理商提升品牌曝光度",
+      "navLabel": "社交媒體營銷服務",
+      "breadcrumb": ["主頁", "數碼營銷方案", "社交媒體營銷服務"],
+      "source": "social-media-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "web-design-services",
+      "title": "網頁及設計服務 | Unique Logic - 一站式多媒體設計及網頁製作服務",
+      "navLabel": "網頁及設計服務",
+      "breadcrumb": ["主頁", "數碼營銷方案", "網頁及設計服務"],
+      "source": "web-design-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "ecommerce-services",
+      "title": "Shopify 網上開店服務 | Unique Logic - 透過專業Shopify商店設置拓展業務",
+      "navLabel": "網上開店服務",
+      "breadcrumb": ["主頁", "數碼營銷方案", "網上開店服務"],
+      "source": "ecommerce-services.html",
+      "level": 2,
+      "parent": "services",
+      "children": []
+    },
+    {
+      "slug": "blog",
+      "title": "Blogs and News | Unique Logic - AI Digital Marketing Experts",
+      "navLabel": "博客和新聞",
+      "source": "blog.html",
+      "level": 1,
+      "parent": "/",
+      "children": [
+        "blog-article-1"
+      ]
+    },
+    {
+      "slug": "blog-article-1",
+      "title": "AI SEO 如何推動高品質 B2B 潛在客戶開發？ | Unique Logic",
+      "source": "blog-article-1.html",
+      "level": 2,
+      "parent": "blog",
+      "children": []
+    },
+    {
+      "slug": "contact",
+      "title": "聯絡我們 | Unique Logic - AI 數碼營銷專家",
+      "navLabel": "聯絡我們",
+      "source": "contact.html",
+      "level": 1,
+      "parent": "/",
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - 找不到页面 | Unique Logic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* 404 Page Specific Styles */
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 24px 80px;
+    }
+
+    .error-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(0, 212, 232, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 232, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+    }
+
+    .error-content {
+      text-align: center;
+      max-width: 600px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .error-code {
+      font-family: var(--font-heading);
+      font-size: clamp(120px, 25vw, 200px);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .error-code .glitch-text {
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-amber) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: glitch-skew 4s infinite linear alternate-reverse;
+    }
+
+    .error-code::before,
+    .error-code::after {
+      content: '404';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-heading);
+      font-size: inherit;
+      font-weight: 700;
+    }
+
+    .error-code::before {
+      color: var(--accent-cyan);
+      animation: glitch-1 3s infinite linear alternate-reverse;
+      clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+      opacity: 0.8;
+    }
+
+    .error-code::after {
+      color: var(--accent-amber);
+      animation: glitch-2 2s infinite linear alternate-reverse;
+      clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+      opacity: 0.8;
+    }
+
+    @keyframes glitch-1 {
+      0%, 100% { transform: translate(0); }
+      20% { transform: translate(-3px, 2px); }
+      40% { transform: translate(3px, -2px); }
+      60% { transform: translate(-2px, -1px); }
+      80% { transform: translate(2px, 1px); }
+    }
+
+    @keyframes glitch-2 {
+      0%, 100% { transform: translate(0); }
+      20% { transform: translate(3px, -2px); }
+      40% { transform: translate(-3px, 2px); }
+      60% { transform: translate(2px, 1px); }
+      80% { transform: translate(-2px, -1px); }
+    }
+
+    @keyframes glitch-skew {
+      0%, 100% { transform: skew(0deg); }
+      20% { transform: skew(0.5deg); }
+      40% { transform: skew(-0.5deg); }
+      60% { transform: skew(0.3deg); }
+      80% { transform: skew(-0.3deg); }
+    }
+
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: clamp(24px, 5vw, 36px);
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .error-subtitle {
+      font-size: 18px;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Floating particles for 404 */
+    .error-particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .error-particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float-particle 8s infinite ease-in-out;
+    }
+
+    @keyframes float-particle {
+      0%, 100% { 
+        transform: translateY(0) translateX(0); 
+        opacity: 0.3;
+      }
+      50% { 
+        transform: translateY(-30px) translateX(20px); 
+        opacity: 0.6;
+      }
+    }
+
+    /* Suggested links */
+    .suggested-links {
+      margin-top: 50px;
+    }
+
+    .suggested-links h4 {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .suggested-grid {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .suggested-link {
+      padding: 10px 20px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 14px;
+      transition: var(--transition-fast);
+    }
+
+    .suggested-link:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: var(--accent-cyan-dim);
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link">关于我们</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown">
+            数码营销方案
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">AI SEO服务 (GEO)</a>
+            <a href="seo-services.html" class="dropdown-item">搜索引擎优化服务 (SEO)</a>
+            <a href="orm-services.html" class="dropdown-item">网上声誉管理服务</a>
+            <a href="sem-services.html" class="dropdown-item">搜索引擎营销服务 (SEM)</a>
+            <a href="content-marketing-services.html" class="dropdown-item">内容营销服务</a>
+            <a href="social-media-services.html" class="dropdown-item">社交媒体营销服务</a>
+            <a href="web-design-services.html" class="dropdown-item">网页及设计服务</a>
+            <a href="ecommerce-services.html" class="dropdown-item">网上开店服务</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">博客和新闻</a>
+        <a href="contact.html" class="nav-link">联络我们</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn">繁</button>
+          <button class="lang-btn">EN</button>
+          <button class="lang-btn active">简</button>
+        </div>
+        <a href="contact.html" class="nav-cta">立即查询</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link">关于我们</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle">
+          数码营销方案
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">AI SEO服务 (GEO)</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">搜索引擎优化服务 (SEO)</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">网上声誉管理服务</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">搜索引擎营销服务 (SEM)</a>
+          <a href="content-marketing-services.html" class="mobile-dropdown-item">内容营销服务</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">社交媒体营销服务</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">网页及设计服务</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">网上开店服务</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link">博客和新闻</a>
+      <a href="contact.html" class="mobile-link">联络我们</a>
+      <div class="mobile-lang">
+        <button class="lang-btn">繁體中文</button>
+        <button class="lang-btn">English</button>
+        <button class="lang-btn active">简体中文</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 404 Error Section -->
+  <section class="error-page">
+    <div class="error-grid"></div>
+    <div class="error-particles" id="errorParticles"></div>
+    
+    <div class="error-content">
+      <div class="error-code">
+        <span class="glitch-text">404</span>
+      </div>
+      
+      <h1 class="error-title">哎呀！找不到此页面</h1>
+      <p class="error-subtitle">
+        您要寻找的页面可能已被移除、名称已更改，或暂时无法使用。
+      </p>
+      
+      <div class="error-actions">
+        <a href="index.html" class="btn-primary">
+          <span>返回首页</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="contact.html" class="btn-secondary">
+          <span>联络我们</span>
+        </a>
+      </div>
+      
+      <div class="suggested-links">
+        <h4>或者您可以浏览：</h4>
+        <div class="suggested-grid">
+          <a href="about-us.html" class="suggested-link">关于我们</a>
+          <a href="ai-seo-services.html" class="suggested-link">AI SEO服务</a>
+          <a href="blog.html" class="suggested-link">博客和新闻</a>
+          <a href="contact.html" class="suggested-link">联络我们</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+          </a>
+          <p class="footer-tagline">Boost Traffic. Boost Profit.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">数码营销方案</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">AI SEO服务 (GEO)</a></li>
+            <li><a href="seo-services.html">搜索引擎优化服务 (SEO)</a></li>
+            <li><a href="orm-services.html">网上声誉管理服务</a></li>
+            <li><a href="sem-services.html">搜索引擎营销服务 (SEM)</a></li>
+            <li><a href="content-marketing-services.html">内容营销服务</a></li>
+            <li><a href="social-media-services.html">社交媒体营销服务</a></li>
+            <li><a href="web-design-services.html">网页及设计服务</a></li>
+            <li><a href="ecommerce-services.html">网上开店服务</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">博客和新闻</h4>
+          <ul>
+            <li><a href="#">AI搜索引擎营销</a></li>
+            <li><a href="#">SEO搜索引擎优化</a></li>
+            <li><a href="#">SEM搜索引擎营销</a></li>
+            <li><a href="#">数码营销</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">联络我们</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              香港九龙湾启祥道 17 号<br>太丰汇 1007 室
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              +852 8400 7393 / +852 3860 7900
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              微信：UniqueLogic393
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:info@uniquelogic.com">info@uniquelogic.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique Logic Limited | 版权所有</p>
+        <div class="footer-legal">
+          <a href="#">隐私政策和 Cookie</a>
+          <a href="#">条款和细则</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Generate floating particles for 404 page
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('errorParticles');
+      if (!container) return;
+      
+      const colors = ['var(--accent-cyan)', 'var(--accent-purple)', 'var(--accent-amber)'];
+      
+      for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'error-particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        particle.style.animationDuration = (Math.random() * 5 + 6) + 's';
+        container.appendChild(particle);
+      }
+    });
+  </script>
+</body>
+</html>

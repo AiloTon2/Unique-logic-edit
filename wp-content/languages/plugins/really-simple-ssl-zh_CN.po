@@ -1,0 +1,2116 @@
+# Translation of Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-11-14 19:20:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release)\n"
+
+#: settings/config/fields/encryption.php:74
+msgid "Only enable this if you experience mixed content in the admin environment of your WordPress website."
+msgstr "只有当你在WordPress网站的管理环境中遇到混合内容时，才启用此功能。"
+
+#: assets/templates/two_fa/onboarding.php:140
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Onboarding/OnboardingControls.js:201
+msgid "Skip"
+msgstr "跳过"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:132
+#: settings/build/995.1951bdba4c61ca45e7ca.js:1
+#: settings/src/Settings/Settings.js:153
+msgid "Save and continue"
+msgstr "保存并继续"
+
+#: settings/config/fields/encryption.php:27
+msgid "Settings update: .htaccess redirect"
+msgstr "设置更新：.htaccess重定向"
+
+#: security/wordpress/two-fa/providers/class-rsssl-two-factor-email.php:582
+#: settings/config/fields/firewall.php:101
+#: settings/config/fields/firewall.php:106
+#: settings/config/fields/security-headers.php:14
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/DataTable/DataTableWrapper.js:167
+#: settings/src/Settings/DynamicDataTable/DynamicDataTable.js:168
+#: settings/src/Settings/EventLog/EventLogDataTable.js:232
+#: settings/src/Settings/firewall/UserAgentTable.js:273
+#: settings/src/Settings/GeoBlockList/BlockListDatatable.js:362
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:520
+#: settings/src/Settings/GeoBlockList/WhiteListDatatable.js:415
+#: settings/src/Settings/LearningMode/LearningMode.js:386
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:454
+#: settings/src/Settings/LimitLoginAttempts/IpAddressDatatable.js:319
+#: settings/src/Settings/LimitLoginAttempts/UserDatatable.js:281
+#: settings/src/Settings/PermissionsPolicy.js:205
+#: settings/src/Settings/RiskConfiguration/VulnerabilitiesOverview.js:134
+#: settings/src/Settings/RolesDropDown.js:94
+#: settings/src/Settings/TwoFA/TwoFaDataTable.js:315
+#: settings/src/Settings/TwoFA/TwoFaEnabledDropDown.js:133
+msgid "Disabled"
+msgstr "禁用"
+
+#: settings/config/fields/hardening-extended.php:126
+msgid "Users trying to enter via /wp-admin or /wp-login.php will be redirected to this URL."
+msgstr "试图通过/wp-admin或/wp-login.php进入的用户将被重定向到此URL。"
+
+#: settings/config/fields/hardening-extended.php:109
+msgid "Custom login URL"
+msgstr "自定义登录URL"
+
+#: settings/config/fields/hardening-extended.php:108
+msgid "Example: If you want to change your login page from /wp-admin/ to /control/ answer: control"
+msgstr "示例：如果您想将登录页面从/wp-admin/更改为/control/ 对应：control"
+
+#: settings/config/fields/hardening-extended.php:107
+msgid "Enter a custom login URL. This allows you to log in via this custom URL instead of /wp-admin or /wp-login.php"
+msgstr "输入自定义登录URL。这允许您通过这个自定义URL登录，而不是/wp-admin或/wp-login.php"
+
+#: settings/config/fields/hardening-extended.php:96
+msgid "Your login URL has changed to {login_url} to prevent common bot attacks on standard login URLs. Learn more about this feature, common questions and measures to prevent any issues."
+msgstr "您的登录URL已更改为{login_url}，以防止常见的bot对标准登录URL的攻击。了解有关此功能的更多信息、常见问题和预防任何问题的措施。"
+
+#: settings/config/fields/hardening-extended.php:95
+msgid "You have changed your login URL"
+msgstr "您更改了登录URL"
+
+#: settings/config/fields/hardening-extended.php:93
+msgid "Enable Custom login URL"
+msgstr "启用自定义登录URL"
+
+#: settings/config/fields/hardening-extended.php:92
+msgid "Allows you to enter a custom login URL."
+msgstr "允许您输入自定义登录URL。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:235
+msgid "Please adjust the CAA records via your DNS provider to allow Let’s Encrypt SSL certificates"
+msgstr "请通过您的DNS提供商调整CAA记录以允许我们加密SSL证书"
+
+#: mailer/class-mail.php:36
+msgid "This email was sent to"
+msgstr "这封邮件的收件人是"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1642
+msgid "This is a multisite configuration with subdomains. You should generate a wildcard certificate on the root domain."
+msgstr "这是一个带有子域名的多站点配置。你应该在根域上生成一个通配符证书。"
+
+#: settings/config/fields/encryption.php:28
+msgid "The .htaccess redirect has been enabled on your site. If the server configuration is non-standard, this might cause issues. Please check if all pages on your site are functioning properly."
+msgstr "你的网站启用了.htaccess重定向。如果服务器配置是非标准的，这可能会导致问题。请检查您的网站上的所有页面是否正常运行。"
+
+#: settings/config/disable-fields-filter.php:29
+msgid "Enable .htaccess only if you know how to regain access in case of issues."
+msgstr "只有在你知道如何在出现问题时重新获得访问权限时，才启用.htaccess。"
+
+#: settings/config/disable-fields-filter.php:24
+msgid "On Apache you can use a .htaccess redirect, which is usually faster, but may cause issues on some configurations. Read the instructions in the sidebar first."
+msgstr "在Apache上，你可以使用.htaccess重定向，这通常更快，但在某些配置上可能会导致问题。请先阅读侧边栏中的说明。"
+
+#: settings/config/fields/hardening-extended.php:17
+msgid "From now on, the debug.log won’t be publicly accessible whenever wp-debugging is enabled. The debug log will be stored in a randomly named folder in /wp-content/. This prevents possible leakage of sensitive debugging information."
+msgstr "从现在开始，只要启用wp-debugging, debug.log就不会公开访问了。调试日志将存储在/wp-content/下一个随机命名的文件夹中。这可以防止敏感调试信息的泄漏。"
+
+#: settings/config/fields/hardening-extended.php:16
+msgid "Settings update: Debug.log file relocated"
+msgstr "设置更新：重新定位调试日志文件"
+
+#: settings/config/fields/hardening-extended.php:69
+#: settings/config/fields/hardening-extended.php:70
+msgid "This will permanently change your database prefixes and you can NOT rollback this feature. Please make sure you have a back-up."
+msgstr "这将永久更改您的数据库前缀，并且您无法回滚此功能。请确保你有备份。"
+
+#: settings/config/fields/hardening-extended.php:66
+msgid "Security through obscurity. Your site is no longer using the default wp_ prefix for database tables. The process has been designed to only complete and replace the tables after all wp_ tables are successfully renamed. In the unlikely event that this does lead to database issues on your site, please navigate to our troubleshooting article."
+msgstr "通过隐藏实现安全。你的网站不再为数据库表使用默认的wp_前缀。该流程被设计为仅在所有wp_表成功重命名后才完成和替换表。如果这确实导致您的网站上的数据库出现问题，请浏览我们的故障排除文章。"
+
+#: settings/config/fields/hardening-extended.php:65
+msgid "Settings update: Database prefix changed"
+msgstr "设置更新：数据库前缀更改"
+
+#: settings/config/fields/hardening-extended.php:55
+msgid "This will limit or fully disable HTTP requests that are not needed, but could be used with malicious intent."
+msgstr "这将限制或完全禁用不必要的HTTP请求，但可能被恶意使用。"
+
+#: settings/config/fields/hardening-basic.php:108
+msgid "If the username 'admin' currently exists, you can rename it here. Please note that you can no longer use this username, and should use the new username or an email address"
+msgstr "如果用户名“admin“当前存在，你可以在这里重命名它。请注意，你不能再使用这个用户名，应该使用新的用户名或电子邮件地址"
+
+#: settings/config/fields/hardening-basic.php:104
+msgid "As a security precaution, the username ‘admin’ has been changed on %s. From now on, you can login with '%s' or an email address."
+msgstr "为安全起见，%s上的用户名“admin”已更改。从现在起，您可以使用”%s”或电子邮件地址登录。"
+
+#: settings/config/fields/hardening-basic.php:103
+msgid "Settings update: Username 'admin' renamed"
+msgstr "设置更新：用户名“admin”重命名"
+
+#: settings/config/fields/hardening-basic.php:101
+msgid "Block the username 'admin'"
+msgstr "屏蔽用户名“admin”"
+
+#: settings/config/fields/hardening-basic.php:60
+msgid "Prevent login feedback"
+msgstr "防止登录反馈"
+
+#: settings/config/fields/hardening-basic.php:59
+msgid "By default, WordPress shows if a username or email address exists when a login fails. This will change it to generic feedback."
+msgstr "默认情况下，当登录失败时，WordPress会显示用户名或电子邮件地址是否存在。这将把它变成通用反馈。"
+
+#: settings/config/fields/general.php:50
+msgid "Dismiss all notifications"
+msgstr "关闭所有通知"
+
+#: settings/config/fields/general.php:100
+msgid "Get notified of important changes, updates and settings. Recommended when using security features."
+msgstr "获取重要更改、更新和设置的通知。推荐使用安全特性。"
+
+#: settings/config/fields/general.php:99
+msgid "Notifications by email"
+msgstr "电子邮件通知"
+
+#: settings/config/disable-fields-filter.php:29
+#: settings/config/fields/encryption.php:24
+msgid "Redirects your site to https with a SEO friendly 301 redirect if it is requested over http."
+msgstr "如果通过http请求，使用SEO友好的301重定向将您的网站重定向到https。"
+
+#: settings/config/fields/encryption.php:19
+msgid "301 .htaccess redirect (read instructions first)"
+msgstr "301 .htaccess重定向(先读指令)"
+
+#: settings/config/fields/encryption.php:13
+msgid "Changing redirect methods should be done with caution. Please make sure you have read our instructions beforehand at the right-hand side."
+msgstr "更改重定向方法时应谨慎。请确保您已阅读我们右手边的使用说明。"
+
+#: mailer/class-mail.php:35
+msgid "Learn more about our features!"
+msgstr "了解更多关于我们的功能！"
+
+#: mailer/class-mail.php:218 upgrade/upgrade-to-pro.php:341
+#: upgrade/upgrade-to-pro.php:342
+msgid "An error occurred:"
+msgstr "出现错误："
+
+#: mailer/class-mail.php:216
+msgid "Email could not be sent."
+msgstr "无法发送电子邮件。"
+
+#: mailer/class-mail.php:211
+msgid "Email sent! Please check your mail"
+msgstr "电子邮件发送！请查收邮件"
+
+#: mailer/class-mail.php:74
+msgid "Email notifications are only sent for important updates, security notices or when certain features are enabled."
+msgstr "电子邮件通知仅在重要更新、安全通知或启用某些功能时才会发送。"
+
+#: mailer/class-mail.php:73
+msgid "About notifications"
+msgstr "关于的通知"
+
+#: mailer/class-mail.php:70
+msgid "This email is confirmation that any security notices are likely to reach your inbox."
+msgstr "此电子邮件是确认任何安全通知可能到达您的收件箱。"
+
+#: mailer/class-mail.php:66 mailer/class-mail.php:105 mailer/class-mail.php:151
+msgid "Email address not valid"
+msgstr "电子邮件地址无效"
+
+#: mailer/class-mail.php:41
+msgid "You have enabled a feature on %s. We think it's important to let you know a little bit more about this feature so you can use it without worries."
+msgstr "您已经在%s上启用了功能。我们认为让您了解更多关于此功能的信息是很重要的，这样您就可以放心地使用它。"
+
+#: settings/config/fields/security-headers.php:15
+msgid "(recommended)"
+msgstr "（建议）"
+
+#: class-admin.php:2164
+msgid "SSL is now activated. Follow the three steps in this article to check if your website is secure."
+msgstr "SSL现在已经激活。按照本文中的三个步骤来检查你的网站是否安全。"
+
+#: security/wordpress/file-editing.php:28
+msgid "The DISALLOW_FILE_EDIT constant is defined and set to false. You can remove it from your wp-config.php."
+msgstr "定义了DISALLOW_FILE_EDIT常数，并将其设置为错误的。您可以从wp-config.php中删除它。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:882
+msgid "Failed retrieving account."
+msgstr "找回帐户失败。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:113
+msgid "Login credentials incorrect. Please check your login credentials for cPanel."
+msgstr "登录凭据错误。请检查您的cPanel登录凭据。"
+
+#: security/notices.php:94
+msgid "Rename admin user enabled: Please choose a new username of at least 3 characters, which is not in use yet."
+msgstr "启用重命名管理员用户：请选择一个至少3个字符的新用户名，该用户名尚未使用。"
+
+#: upgrade/upgrade-to-pro.php:428
+msgid "Could not rename folder!"
+msgstr "无法重命名文件夹！"
+
+#: settings/config/fields/hardening-basic.php:118
+msgid "Choose new username to replace 'admin'"
+msgstr "选择新的用户名来代替“admin”"
+
+#: core/config/related.php:36 lets-encrypt/config/fields.php:111
+msgid "Terms & Conditions"
+msgstr "条款与条件。"
+
+#: settings/config/fields/general.php:88
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/Support.js:45
+msgid "Send"
+msgstr "发送"
+
+#: settings/config/fields/firewall.php:168
+#: settings/config/fields/firewall.php:213
+#: settings/config/fields/limit-login-attempts.php:139
+#: settings/config/fields/limit-login-attempts.php:184
+#: settings/config/fields/limit-login-attempts.php:230
+#: settings/config/menu.php:506 settings/config/menu.php:574
+#: settings/config/menu.php:600 settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:149
+msgid "Blocked"
+msgstr "封锁"
+
+#: settings/config/menu.php:514 settings/config/menu.php:608
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:148
+msgid "Allowed"
+msgstr "允许"
+
+#: settings/config/menu.php:339 settings/config/menu.php:486
+#: settings/config/menu.php:651 settings/config/menu.php:688
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/DataTable/DataTableWrapper.js:151
+#: settings/src/Settings/EventLog/EventLogDataTable.js:213
+#: settings/src/Settings/firewall/UserAgentTable.js:257
+#: settings/src/Settings/GeoBlockList/BlockListDatatable.js:345
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:502
+#: settings/src/Settings/GeoBlockList/WhiteListDatatable.js:398
+#: settings/src/Settings/LearningMode/LearningMode.js:147
+#: settings/src/Settings/LearningMode/LearningMode.js:320
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:435
+#: settings/src/Settings/LimitLoginAttempts/IpAddressDatatable.js:298
+msgid "All"
+msgstr "全部"
+
+#: class-admin.php:727 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Dashboard/TaskElement.js:72
+#: settings/src/Dashboard/TaskElement.js:76
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:80
+msgid "View"
+msgstr "查看"
+
+#: settings/config/fields/security-headers.php:400
+msgid "Source"
+msgstr "来源"
+
+#: settings/config/fields/security-headers.php:393
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/LearningMode/ManualCspAdditionModal.js:156
+msgid "Directive"
+msgstr "指令"
+
+#: settings/config/fields/security-headers.php:338
+msgid "Allow your domain to be embedded"
+msgstr "允许你的域名被嵌入"
+
+#: settings/config/fields/security-headers.php:319
+msgid "The content security policy has many options, so we always recommend starting in ‘learning mode’ to see what files and scripts are loaded."
+msgstr "内容安全策略有很多选项，所以我们总是建议从“学习模式”开始查看加载了哪些文件和脚本。"
+
+#: settings/config/fields/security-headers.php:318
+msgid "About the Content Security Policy"
+msgstr "内容安全策略"
+
+#: settings/config/fields/security-headers.php:312
+msgid "Serve encrypted and authenticated responses"
+msgstr "提供加密和经过身份验证的响应"
+
+#: settings/config/fields/security-headers.php:303
+msgid "Enable Permissions Policy"
+msgstr "启用权限策略"
+
+#: settings/config/fields/security-headers.php:225
+msgid "Feature"
+msgstr "特征"
+
+#: settings/config/fields/access-control.php:20
+#: settings/config/fields/security-headers.php:221
+msgid "They might be misused if you don’t actively tell the browser to disable these features."
+msgstr "如果你不主动告诉浏览器禁用这些功能，它们可能会被滥用。"
+
+#: settings/config/fields/security-headers.php:221
+msgid "Browser features are plentiful, but most are not needed on your website."
+msgstr "浏览器的功能很多，但大多数在你的网站上并不需要。"
+
+#: settings/config/fields/security-headers.php:220
+msgid "About the Permission Policy"
+msgstr "关于权限策略"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/config/fields/security-headers.php:336
+msgid "Self (Default)"
+msgstr "自身（默认）"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:335
+#: settings/src/Settings/LearningMode/LearningMode.js:343
+#: settings/src/Settings/PermissionsPolicy.js:200
+msgid "Disable"
+msgstr "禁用"
+
+#: settings/config/fields/security-headers.php:143
+msgid "One year"
+msgstr "一年"
+
+#: settings/config/fields/security-headers.php:142
+msgid "One day (for testing only)"
+msgstr "1天（仅供测试）"
+
+#: settings/config/fields/security-headers.php:126
+msgid "Include subdomains"
+msgstr "包括子域"
+
+#: settings/config/fields/security-headers.php:102
+msgid "After enabling this feature, you can submit your site to %shstspreload.org%s"
+msgstr "用此功能后，您可以将您的网站提交到%shstspreload.org%s"
+
+#: settings/config/fields/security-headers.php:101
+msgid "Include preload"
+msgstr "包括预加载"
+
+#: settings/config/fields/security-headers.php:86
+msgid "Leveraging your SSL certificate with HSTS is a staple for every website. Force your website over SSL, mitigating risks of malicious counterfeit websites in your name."
+msgstr "在HSTS中使用SSL证书是每个网站的基本要求。强制您的网站通过SSL，减少以您的名义创建恶意假冒网站的风险。"
+
+#: settings/config/fields/security-headers.php:85
+msgid "About HTTP Strict Transport Security"
+msgstr "关于HTTP严格传输安全"
+
+#: settings/config/fields/security-headers.php:60
+msgid "recommended"
+msgstr "推荐"
+
+#: settings/config/fields/security-headers.php:44
+#: settings/config/fields/security-headers.php:59
+#: settings/config/fields/security-headers.php:162
+#: settings/config/fields/security-headers.php:184
+#: settings/config/fields/security-headers.php:199
+msgid "Off"
+msgstr "关闭"
+
+#: settings/config/fields/security-headers.php:25
+msgid "These security headers are the fundamental security measures to protect your website visitors while visiting your website."
+msgstr "这些安全标头是在访问网站时保护网站访问者的基本安全措施。"
+
+#: settings/config/fields/hardening-basic.php:80
+msgid "Disable user enumeration"
+msgstr "禁用用户枚举"
+
+#: settings/config/fields/hardening-basic.php:70
+msgid "Disable directory browsing"
+msgstr "禁用浏览目录"
+
+#: settings/config/fields/hardening-basic.php:49
+msgid "Hide your WordPress version"
+msgstr "隐藏你的WordPress版本"
+
+#: settings/config/fields/hardening-basic.php:39
+msgid "Prevent code execution in the public 'Uploads' folder"
+msgstr "防止代码在公共”Uploads“文件夹中执行"
+
+#: settings/config/fields/hardening-basic.php:29
+msgid "Disable the built-in file editors"
+msgstr "禁用内置的文件编辑器"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:278
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:295
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:473
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:484
+#: settings/src/Settings/LearningMode/ChangeStatus.js:7
+#: settings/src/Settings/LearningMode/LearningMode.js:276
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:310
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:321
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:330
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:401
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:412
+msgid "Allow"
+msgstr "允许"
+
+#: settings/config/fields/encryption.php:107
+#: settings/config/fields/security-headers.php:386
+msgid "Location"
+msgstr "位置"
+
+#: settings/config/fields/encryption.php:101
+#: settings/config/fields/vulnerability-detection.php:223
+msgid "Description"
+msgstr "描述"
+
+#: settings/config/fields/encryption.php:94
+msgid "Type"
+msgstr "类型"
+
+#: settings/config/fields/encryption.php:89
+msgid "About the Mixed Content Scan"
+msgstr "关于混合内容扫描"
+
+#: settings/config/fields/encryption.php:85
+msgid "Mixed content scan"
+msgstr "混合内容扫描"
+
+#: settings/config/fields/security-headers.php:204
+msgid "Cross Origin Embedder Policy"
+msgstr "跨源嵌入策略"
+
+#: settings/config/fields/security-headers.php:189
+msgid "Cross Origin Resource Policy"
+msgstr "跨源资源策略"
+
+#: settings/config/fields/security-headers.php:174
+msgid "Cross Origin Opener Policy"
+msgstr "跨源Origin Opener策略"
+
+#: settings/config/fields/security-headers.php:171
+msgid "One of the most powerful features, and therefore the most complex are the Cross-Origin headers that can isolate your website so any data leaks are minimized."
+msgstr "其中最强大也是最复杂的功能之一是跨源头信息，它可以隔离你的网站，从而将任何数据泄漏降到最低。"
+
+#: settings/config/fields/security-headers.php:170
+msgid "About Cross Origin Policies"
+msgstr "关于跨域策略"
+
+#: settings/config/fields/security-headers.php:146
+msgid "Choose the max-age for HSTS"
+msgstr "为HSTS选择max-age"
+
+#: settings/config/fields/security-headers.php:144
+msgid "Two years (required for preload)"
+msgstr "两年（预加载所需）"
+
+#: settings/config/fields/hardening-basic.php:20
+msgid "Hardening features limit the possibility of potential weaknesses and vulnerabilities which can be misused."
+msgstr "加固功能限制了可能被滥用的潜在弱点和漏洞的可能性。"
+
+#: settings/config/fields/hardening-basic.php:19
+msgid "About Hardening"
+msgstr "关于硬化"
+
+#: settings/config/fields/hardening-basic.php:13
+msgid "Disable \"anyone can register\""
+msgstr "禁用“任何人都可以注册”功能"
+
+#: settings/config/fields/general.php:70
+msgid "Delete all data on plugin deletion"
+msgstr "删除插件的所有数据"
+
+#: lets-encrypt/config/fields.php:8 settings/config/fields/general.php:61
+#: settings/config/menu.php:717
+msgid "System status"
+msgstr "系统状态"
+
+#: settings/config/fields/encryption.php:73
+msgid "Mixed content fixer - back-end"
+msgstr "混合内容修复程序-后端"
+
+#: settings/config/fields/vulnerability-detection.php:211
+msgid "Action"
+msgstr "处理"
+
+#: settings/config/fields/hardening-xml.php:61
+msgid "Count"
+msgstr "计算"
+
+#: settings/config/fields/hardening-xml.php:55
+msgid "Login status"
+msgstr "登录状态"
+
+#: settings/config/fields/hardening-xml.php:48
+#: settings/config/fields/two-fa.php:181
+msgid "Method"
+msgstr "方式"
+
+#: settings/config/fields/hardening-extended.php:29
+msgid "Disable application passwords"
+msgstr "禁用应用程序密码"
+
+#: settings/config/fields/hardening-extended.php:20
+msgid "Change debug.log file location"
+msgstr "更改debug.log文件位置"
+
+#: settings/config/fields/hardening-extended.php:72
+msgid "Rename and randomize your database prefix"
+msgstr "重命名并随机化数据库前缀"
+
+#: settings/config/fields/hardening-extended.php:56
+msgid "Disable HTTP methods"
+msgstr "禁用HTTP方法"
+
+#: settings/config/fields/hardening-basic.php:151
+msgid "Block user registrations when login and display name are the same"
+msgstr "当登录名和显示名相同时，阻止用户注册"
+
+#: settings/config/fields/hardening-basic.php:142
+msgid "Disable XML-RPC"
+msgstr "禁用XML-RPC"
+
+#: settings/config/fields/firewall.php:248
+#: settings/config/fields/limit-login-attempts.php:160
+#: settings/config/fields/limit-login-attempts.php:206
+#: settings/config/fields/limit-login-attempts.php:266
+#: settings/config/fields/two-fa.php:189
+#: settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/SslLabs/SslLabsHeader.js:5
+msgid "Status"
+msgstr "状态"
+
+#: settings/config/fields/encryption.php:55
+msgid "Mixed content fixer - init hook"
+msgstr "混合内容修复程序-初始化钩子"
+
+#: settings/config/fields/encryption.php:18
+msgid "301 PHP redirect"
+msgstr "301 PHP重定向"
+
+#: settings/config/fields/encryption.php:17
+msgid "No redirect"
+msgstr "没有重定向"
+
+#: settings/config/disable-fields-filter.php:28
+#: settings/config/fields/encryption.php:14
+#: settings/config/fields/encryption.php:23
+msgid "Redirect method"
+msgstr "重定向的方法"
+
+#: lets-encrypt/config/fields.php:21 settings/config/menu.php:740
+msgid "DNS verification"
+msgstr "DNS验证"
+
+#: settings/settings.php:553
+msgid "Complianz - Consent Management as it should be"
+msgstr "Cookie同意管理"
+
+#: lets-encrypt/config/fields.php:12 settings/config/menu.php:725
+msgid "General Settings"
+msgstr "一般设置"
+
+#: settings/config/menu.php:68 settings/build/index.150e63172ef86f413c90.js:1
+#: settings/src/Header.js:32
+msgid "Let's Encrypt"
+msgstr "让我们加密"
+
+#: settings/config/menu.php:52
+msgid "The following information is attached when you send this form: license key, scan results, your domain, .htaccess file, debug log and a list of active plugins."
+msgstr "当您发送此表单时，将附带以下信息:许可证密钥、扫描结果、您的域名、.htaccess文件、调试日志和活动插件列表。"
+
+#: settings/config/menu.php:11
+msgid "Dashboard"
+msgstr "仪表盘"
+
+#: security/wordpress/user-enumeration.php:10
+msgid "forbidden - number in author name not allowed = %s"
+msgstr "禁止 - 作者名中的数字不允许 = %s"
+
+#: security/wordpress/rename-admin-user.php:15
+msgid "Username 'admin' has been changed to %s"
+msgstr "用户名“admin”已更改为%s"
+
+#: security/wordpress/prevent-login-info-leakage.php:9
+msgid "Invalid login details."
+msgstr "无效的登录详细信息。"
+
+#: security/wordpress/block-code-execution-uploads.php:37
+msgid "The code to block code execution in the uploads folder cannot be added automatically on nginx. Add the following code to your nginx.conf file:"
+msgstr "在nginx上，无法自动添加uploads文件夹中用于阻止代码执行的代码。将以下代码添加到nginx.conf文件中："
+
+#: security/wordpress/block-code-execution-uploads.php:24
+msgid "Could not copy code execution test file."
+msgstr "无法复制代码执行测试文件。"
+
+#: security/wordpress/block-code-execution-uploads.php:19
+msgid "Uploads folder not writable."
+msgstr "上传文件夹不可写。"
+
+#: security/wordpress/block-code-execution-uploads.php:14
+msgid "Could not find code execution test file."
+msgstr "找不到代码执行测试文件。"
+
+#: security/sync-settings.php:35
+msgid "Changed debug.log location to:"
+msgstr "更改debug.log位置为："
+
+#: security/notices.php:33 security/notices.php:41 security/notices.php:60
+msgid "Please add the following lines to your .htaccess, or set it to writable:"
+msgstr "请将以下内容添加到.htaccess中，或者将其设置为可写的："
+
+#: security/notices.php:33
+msgid "An option that requires the .htaccess file is enabled, but the file is not writable."
+msgstr "启用了一个需要.htaccess文件的选项，但这个文件不可写。"
+
+#: security/notices.php:32
+msgid ".htaccess not writable"
+msgstr ".htaccess不可写"
+
+#: security/firewall-manager.php:764
+msgid "Please set the wp-content folder to writable:"
+msgstr "请将wp-content文件夹设置为可写："
+
+#: security/firewall-manager.php:764
+msgid "A firewall rule was enabled, but /the wp-content/ folder is not writable."
+msgstr "启用了防火墙规则，但/ wp-content/文件夹不可写。"
+
+#: security/firewall-manager.php:758
+msgid "Please set the wp-config.php to writable until the rule has been written."
+msgstr "请将wp-config.php设置为可写，直到规则被写入。"
+
+#: security/notices.php:93 settings/config/fields/limit-login-attempts.php:153
+#: settings/config/fields/two-fa.php:165
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/LimitLoginAttempts/AddUserModal.js:60
+msgid "Username"
+msgstr "用户名"
+
+#: security/notices.php:79
+msgid "We have detected administrator roles where the login and display names are the same."
+msgstr "我们已经检测到登录名和显示名相同的管理员角色。"
+
+#: security/notices.php:60
+msgid "An option that requires the .htaccess file in the uploads directory is enabled, but the file is not writable."
+msgstr "启用了一个选项，需要上传目录中的.htaccess文件，但该文件不可写。"
+
+#: security/notices.php:59
+msgid ".htaccess in uploads not writable"
+msgstr ".htaccess在上传时不可写"
+
+#: security/notices.php:41
+msgid "An option that requires the .htaccess file is enabled, but the file does not exist."
+msgstr "有一个选项需要.htaccess文件，但这个文件不存在。"
+
+#: security/notices.php:40
+msgid ".htaccess does not exist"
+msgstr ".htaccess不存在"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:108
+#: lets-encrypt/integrations/cpanel/cpanel.php:192
+msgid "Your website's ip address is blocked. Please add your domain's ip address to the security policy in CPanel"
+msgstr "您的网站的ip地址被屏蔽。请将域名的ip地址添加到CPanel的安全策略中"
+
+#: lets-encrypt/config/notices.php:169 lets-encrypt/config/notices.php:172
+msgid "Renew certificate"
+msgstr "更新证书"
+
+#: lets-encrypt/config/notices.php:166
+msgid "Renew installation"
+msgstr "重新安装"
+
+#: lets-encrypt/config/fields.php:396
+msgid "Do you want to store these credentials for renewal purposes?"
+msgstr "是否要存储这些凭据以进行更新?"
+
+#: lets-encrypt/config/fields.php:356
+msgid "Plesk username and password"
+msgstr "控制面板用户名和密码"
+
+#: security/firewall-manager.php:758
+msgid "A firewall rule was enabled, but the wp-config.php is not writable."
+msgstr "防火墙规则已启用，但wp-config.php不可写。"
+
+#: core/app/Services/SettingsConfigService.php:51
+#: core/app/Services/SettingsConfigService.php:118
+#: security/firewall-manager.php:757 security/firewall-manager.php:763
+#: security/firewall-manager.php:779 settings/config/menu.php:529
+#: settings/config/menu.php:547 modal/build/index.dc39341c6b0a7592427c.js:1
+#: modal/src/components/DeactivationModal/DeactivationModal.js:76
+#: settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/Progress/ProgressFooter.js:44
+#: settings/src/Dashboard/Progress/ProgressFooter.js:48
+msgid "Firewall"
+msgstr "防火墙"
+
+#: rlrsssl-really-simple-ssl.php:197
+msgid "Visit the plugins overview or %srenew your license%s."
+msgstr "访问插件概述或%s恢复您的许可证%s。"
+
+#: rlrsssl-really-simple-ssl.php:195
+msgid "Update Really Simple SSL Pro: the plugin needs to be updated to the latest version to be compatible."
+msgstr "更新Really Simple SSL Pro：插件需要更新到最新版本以兼容。"
+
+#: placeholders/class-placeholder.php:436
+msgid "Widget with mixed content"
+msgstr "具有混合内容的小部件"
+
+#: placeholders/class-placeholder.php:431
+msgid "Widget area"
+msgstr "小部件区域"
+
+#: placeholders/class-placeholder.php:385
+msgid "Mixed content in post: %s"
+msgstr "文章中的混合内容：%s"
+
+#: placeholders/class-placeholder.php:357
+#: placeholders/class-placeholder.php:398
+#: placeholders/class-placeholder.php:424
+#: placeholders/class-placeholder.php:449
+msgid "Copyright warning!"
+msgstr "版权警告！"
+
+#: placeholders/class-placeholder.php:356
+#: placeholders/class-placeholder.php:397
+#: placeholders/class-placeholder.php:423
+#: placeholders/class-placeholder.php:448
+msgid "Import and insert file"
+msgstr "导入和插入文件"
+
+#: placeholders/class-placeholder.php:343
+msgid "Mixed content in %s"
+msgstr "%s中的混合内容"
+
+#: placeholders/class-placeholder.php:331
+#: placeholders/class-placeholder.php:348
+#: placeholders/class-placeholder.php:372
+#: placeholders/class-placeholder.php:389
+#: placeholders/class-placeholder.php:415
+#: placeholders/class-placeholder.php:440
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:90
+#: settings/src/Settings/RiskConfiguration/RiskData.js:115
+msgid "Details"
+msgstr "详细"
+
+#: placeholders/class-placeholder.php:327
+msgid "Mixed content in PHP file in %s"
+msgstr "PHP文件中的混合内容在%s"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:184
+#: settings/config/menu.php:755 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:74
+#: settings/src/Onboarding/OnboardingControls.js:192
+#: settings/src/Settings/License/License.js:49
+msgid "Activate"
+msgstr "激活"
+
+#: settings/config/fields/security-headers.php:215
+msgid "Permissions Policy"
+msgstr "权限政策"
+
+#: settings/config/fields/security-headers.php:79
+msgid "HTTP Strict Transport Security"
+msgstr "HTTP严格传输安全"
+
+#: settings/config/menu.php:88 settings/config/menu.php:90
+msgid "Mixed Content Scan"
+msgstr "混合内容扫描"
+
+#: settings/config/menu.php:264
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: class-admin.php:3456 settings/config/menu.php:254
+msgid "Advanced Hardening"
+msgstr "高级硬化"
+
+#: settings/config/menu.php:233 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/Vulnerabilities/VulnerabilitiesHeader.js:15
+msgid "Hardening"
+msgstr "硬化"
+
+#: lets-encrypt/config/fields.php:332
+msgid "Plesk admin URL"
+msgstr "控制面板管理员URL"
+
+#: lets-encrypt/config/fields.php:307 lets-encrypt/config/fields.php:312
+msgid "CloudWays API key"
+msgstr "CloudWays API密钥"
+
+#: lets-encrypt/config/fields.php:231
+msgid "Direct Admin URL"
+msgstr "直接管理员URL"
+
+#: lets-encrypt/config/fields.php:145 lets-encrypt/config/fields.php:148
+msgid "Include alias"
+msgstr "包括别名"
+
+#: lets-encrypt/config/fields.php:123 lets-encrypt/config/fields.php:126
+msgid "Disable OCSP stapling"
+msgstr "禁用OCSP装订"
+
+#: lets-encrypt/config/fields.php:110
+msgid "I agree to the Terms & Conditions from Let's Encrypt."
+msgstr "我同意让我们加密的条款和条件。"
+
+#: lets-encrypt/class-le-restapi.php:235
+msgid "Test not found."
+msgstr "未找到测试。"
+
+#: lets-encrypt/class-le-restapi.php:166 lets-encrypt/class-le-restapi.php:227
+msgid "Permission denied."
+msgstr "没有权限"
+
+#: class-site-health.php:218
+msgid "Read more about security concerns with debug display enabled"
+msgstr "阅读更多关于启用调试显示的安全问题的信息"
+
+#: class-site-health.php:212
+msgid "The value, WP_DEBUG_DISPLAY, has either been enabled by WP_DEBUG or added to your configuration file. This will make errors display on the front end of your site."
+msgstr "值WP_DEBUG_DISPLAY已经由WP_DEBUG启用，或者添加到配置文件中。这将使错误信息显示在网站的前端。"
+
+#: class-site-health.php:204
+msgid "Your site is set to display errors on your website"
+msgstr "您的网站设置为在您的网站上显示错误"
+
+#. translators: Accessibility text.
+#: class-site-health.php:190 class-site-health.php:220
+#: class-site-health.php:250
+msgid "(opens in a new tab)"
+msgstr "（打开一个新的标签页）"
+
+#: class-site-health.php:182
+msgid "The value, WP_DEBUG_LOG, has been added to this website’s configuration file. This means any errors on the site will be written to a file which is potentially available to all users."
+msgstr "值WP_DEBUG_LOG已经添加到这个网站的配置文件中。这意味着网站上的任何错误都将被写入一个所有用户都可能访问的文件。"
+
+#: placeholders/class-placeholder.php:410
+msgid "Mixed content in the postmeta table"
+msgstr "postmeta表中的混合内容"
+
+#: class-site-health.php:174
+msgid "Your site is set to log errors to a potentially public file"
+msgstr "您的网站被设置为将错误记录到一个潜在的公共文件中"
+
+#: class-multisite.php:111
+msgid "A networkwide SSL activation process has been started, but has not been completed. Please go to the SSL settings page to complete the process."
+msgstr "网络范围的SSL激活过程已经启动，但还没有完成。请转到SSL设置页面完成此过程。"
+
+#: class-multisite.php:110
+msgid "SSL activation in progress"
+msgstr "正在进行SSL激活"
+
+#: class-multisite.php:83
+msgid "SSL is not enabled on your network"
+msgstr "您的网络没有启用SSL"
+
+#: class-admin.php:208
+msgid "Improve security - Upgrade"
+msgstr "提升安全性-升级"
+
+#: class-admin.php:2363
+msgid "See which recommended security headers are not present on your website."
+msgstr "查看哪些推荐的安全标头不在你的网站上。"
+
+#: class-admin.php:2112
+msgid "To safely enable SSL on your server configuration, you should add the following line of code to your wp-config.php."
+msgstr "为了在服务器配置中安全地启用SSL，您应该将以下代码添加到wp-config.php中。"
+
+#: class-admin.php:2049 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:21
+msgid "Upgrade"
+msgstr "升级"
+
+#: upgrade/upgrade-to-pro.php:557
+msgid "Your license key has reached its activation limit."
+msgstr "您的许可证密钥已达到其激活限制。"
+
+#: upgrade/upgrade-to-pro.php:554
+msgid "This appears to be an invalid license key for this plugin."
+msgstr "这似乎是此插件的无效许可证密钥。"
+
+#: upgrade/upgrade-to-pro.php:551
+msgid "Your license is not active for this URL."
+msgstr "您的许可证对此 URL 无效。"
+
+#: upgrade/upgrade-to-pro.php:548
+msgid "Invalid license."
+msgstr "无效的许可证。"
+
+#: upgrade/upgrade-to-pro.php:545
+msgid "Missing license."
+msgstr "缺少许可证。"
+
+#: upgrade/upgrade-to-pro.php:542
+msgid "Your license key has been disabled."
+msgstr "您的许可证密钥已被禁用。"
+
+#: upgrade/upgrade-to-pro.php:536
+msgid "Your license key expired on %s."
+msgstr "您的许可证密钥已于 %s 过期。"
+
+#: upgrade/upgrade-to-pro.php:528 upgrade/upgrade-to-pro.php:560
+msgid "An error occurred, please try again."
+msgstr "发生错误，请重试。"
+
+#: upgrade/upgrade-to-pro.php:342
+msgid "Check your %slicense%s."
+msgstr "检查您的 %slicense%s。"
+
+#: upgrade/upgrade-to-pro.php:341
+msgid "Install %sManually%s."
+msgstr "安装 %s手动%s。"
+
+#: upgrade/upgrade-to-pro.php:336
+msgid "Visit Dashboard"
+msgstr "访问仪表板"
+
+#: upgrade/upgrade-to-pro.php:325
+msgid "Installing"
+msgstr "安装"
+
+#: upgrade/upgrade-to-pro.php:300
+msgid "Recommended by Really Simple Plugins"
+msgstr "由真正简单的插件推荐"
+
+#: upgrade/upgrade-to-pro.php:199
+msgid "Installation finished"
+msgstr "安装完成"
+
+#: upgrade/upgrade-to-pro.php:143
+msgid "One click SSL optimization"
+msgstr "一键SSL优化"
+
+#: upgrade/upgrade-to-pro.php:130
+msgid "GDPR/CCPA Privacy Suite"
+msgstr "GDPR/CCPA 隐私套件"
+
+#: upgrade/upgrade-to-pro.php:107
+msgid "Failed to activate plugin"
+msgstr "无法激活插件"
+
+#: upgrade/upgrade-to-pro.php:106
+msgid "Plugin activated"
+msgstr "插件激活"
+
+#: upgrade/upgrade-to-pro.php:105
+msgid "Activating plugin..."
+msgstr "激活插件..."
+
+#: upgrade/upgrade-to-pro.php:100
+msgid "Failed to install plugin"
+msgstr "安装插件失败"
+
+#: upgrade/upgrade-to-pro.php:99
+msgid "Plugin installed"
+msgstr "已安装插件"
+
+#: upgrade/upgrade-to-pro.php:98
+msgid "Installing plugin..."
+msgstr "正在安装插件..."
+
+#: upgrade/upgrade-to-pro.php:93
+msgid "Failed to gather package information"
+msgstr "无法收集包裹信息"
+
+#: upgrade/upgrade-to-pro.php:92
+msgid "Package information retrieved"
+msgstr "检索到的包裹信息"
+
+#: upgrade/upgrade-to-pro.php:91
+msgid "Retrieving package information..."
+msgstr "正在检索包裹信息..."
+
+#: upgrade/upgrade-to-pro.php:86
+msgid "License invalid"
+msgstr "许可证无效"
+
+#: upgrade/upgrade-to-pro.php:85
+msgid "License valid"
+msgstr "许可证有效"
+
+#: upgrade/upgrade-to-pro.php:84
+msgid "Validating license..."
+msgstr "正在验证许可证..."
+
+#: upgrade/upgrade-to-pro.php:79
+msgid "Destination folder already exists"
+msgstr "目标文件夹已存在"
+
+#: upgrade/upgrade-to-pro.php:78
+msgid "Able to create destination folder"
+msgstr "能够创建目标文件夹"
+
+#: upgrade/upgrade-to-pro.php:77
+msgid "Checking if plugin folder exists..."
+msgstr "检查插件文件夹是否存在..."
+
+#: class-admin.php:2217
+msgid "Check manually"
+msgstr "手动检查"
+
+#: class-admin.php:2212
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:107
+msgid "Could not test certificate"
+msgstr "无法测试证书"
+
+#: class-admin.php:2213
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:107
+msgid "Automatic certificate detection is not possible on your server."
+msgstr "在您的服务器上无法进行自动证书检测。"
+
+#: lets-encrypt/config/fields.php:422
+msgid "Checking host..."
+msgstr "检查主机..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1204
+msgid "We have not detected any known hosting limitations."
+msgstr "我们没有检测到任何已知的托管限制。"
+
+#: class-admin.php:2197
+msgid "The wp-config.php file is not writable, and needs to be edited. Please set this file to writable."
+msgstr "wp-config.php 文件不可写，需要编辑。请将此文件设置为可写。"
+
+#: class-multisite.php:239 class-multisite.php:240 class-site-health.php:93
+#: class-site-health.php:124 class-site-health.php:155
+#: class-site-health.php:177 class-site-health.php:207
+#: class-site-health.php:237 class-site-health.php:268
+#: class-site-health.php:308 settings/settings.php:226
+#: settings/settings.php:227 settings/settings.php:259
+msgid "Security"
+msgstr "安全"
+
+#: class-admin.php:2372
+msgid "Recommended security headers enabled."
+msgstr "已启用推荐的安全标头。"
+
+#: lets-encrypt/config/fields.php:124
+msgid "OCSP stapling is configured as enabled by default. You can disable this option if this is not supported by your hosting provider."
+msgstr "默认情况下应启用 OCSP 装订。如果您的托管服务提供商不支持此功能，您可以禁用。"
+
+#: lets-encrypt/functions.php:12
+msgid "For more information, please read this %sarticle%s"
+msgstr "有关详细信息，请阅读此 %sarticle%s"
+
+#: lets-encrypt/config/fields.php:506
+msgid "Checking if Terms & Conditions are accepted..."
+msgstr "检查条款和条件是否被接受..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1059
+msgid "The Terms & Conditions were not accepted. Please accept in the general settings."
+msgstr "条款和条件未被接受。请在常规设置中接受。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1055
+msgid "Terms & Conditions are accepted."
+msgstr "接受条款和条件。"
+
+#. translators: %s is replaced with the plugin name.
+#: class-admin.php:2419
+msgid "We have detected the %s plugin on your website."
+msgstr "我们在您的网站上检测到 %s 插件。"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:114
+msgid "No SSL certificate has been detected."
+msgstr "未检测到 SSL 证书。"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:114
+msgid "Please refresh the SSL status if a certificate has been installed recently."
+msgstr "如果最近安装了证书，请刷新SSL状态。"
+
+#: lets-encrypt/config/notices.php:128
+msgid "Your server provides shell functionality, which offers additional methods to install SSL. If installing SSL using the default methods is not possible, you can install the shell add on."
+msgstr "您的服务器提供 shell 功能，它提供了安装 SSL 的其他方法。如果无法使用默认方法安装 SSL，您可以安装 shell 插件。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:491
+msgid "If you entered your DNS records before, they need to be changed."
+msgstr "如果您之前输入了 DNS 记录，则需要更改它们。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:488
+msgid "Order ID mismatch, regenerate order."
+msgstr "订单 ID 不匹配，重新生成订单。"
+
+#: settings/config/fields/general.php:60
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/LetsEncrypt/Installation.js:95
+#: settings/src/LetsEncrypt/Installation.js:100
+#: settings/src/LetsEncrypt/Installation.js:104
+msgid "Download"
+msgstr "下载"
+
+#: lets-encrypt/config/notices.php:71
+msgid "Your certificate is valid until: %s"
+msgstr "您的证书对: %s 有效"
+
+#: settings/config/menu.php:213 settings/build/995.1951bdba4c61ca45e7ca.js:1
+#: settings/src/Settings/Settings.js:164
+msgid "Notifications"
+msgstr "通知"
+
+#: lets-encrypt/config/notices.php:28
+msgid "Your Key and Certificate directories are not properly protected."
+msgstr "您的密钥和证书目录未得到适当保护。"
+
+#: lets-encrypt/config/notices.php:111
+msgid "Your certificate will be renewed and installed automatically."
+msgstr "您的证书将自动更新和安装。"
+
+#: lets-encrypt/config/notices.php:104
+msgid "Automatic renewal of your certificate was not possible. The SSL certificate should be %srenewed%s manually."
+msgstr "无法自动更新您的证书。 SSL 证书应手动 %srenewed%s。"
+
+#: lets-encrypt/config/notices.php:97
+msgid "The SSL certificate has been renewed, and requires manual %sinstallation%s in your hosting dashboard."
+msgstr "SSL 证书已更新，需要在您的主机仪表板中手动 %s安装%s。"
+
+#: lets-encrypt/config/notices.php:90
+msgid "The automatic installation of your certificate has failed. Please check your credentials, and retry the %sinstallation%s."
+msgstr "证书的自动安装失败。请检查您的凭据，然后重试 %s安装%s。"
+
+#: lets-encrypt/config/notices.php:75
+msgid "Your certificate will expire on %s. You can renew it %shere%s."
+msgstr "您的证书将于 %s 到期。您可以在 %shere%s 续订。"
+
+#: lets-encrypt/config/notices.php:43
+msgid "The www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "您网站的 www 版本不指向本网站。建议这样做，因为它也允许您将其添加到证书中。"
+
+#: lets-encrypt/config/notices.php:41
+msgid "The non-www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "您网站的非 www 版本不指向本网站。建议这样做，因为它也允许您将其添加到证书中。"
+
+#: lets-encrypt/config/fields.php:532
+msgid "Searching for link to SSL installation page on your server..."
+msgstr "正在您的服务器上搜索 SSL 安装页面的链接..."
+
+#: lets-encrypt/config/fields.php:29 settings/config/menu.php:750
+msgid "Installation"
+msgstr "安装"
+
+#: lets-encrypt/config/fields.php:25 settings/config/menu.php:745
+msgid "Generation"
+msgstr "一代"
+
+#: lets-encrypt/config/fields.php:480
+msgid "Retrieving DNS verification token..."
+msgstr "正在检索 DNS 验证令牌..."
+
+#: lets-encrypt/config/fields.php:474 lets-encrypt/config/fields.php:512
+msgid "Creating account..."
+msgstr "正在创建帐户..."
+
+#: lets-encrypt/config/fields.php:453
+msgid "Checking challenge directory reachable over http..."
+msgstr "检查可通过 http 访问的质询目录..."
+
+#: lets-encrypt/config/fields.php:446
+msgid "Checking permissions..."
+msgstr "正在检查权限..."
+
+#: lets-encrypt/config/fields.php:440
+msgid "Checking certs directory..."
+msgstr "检查证书目录..."
+
+#: lets-encrypt/config/fields.php:434
+msgid "Checking key directory..."
+msgstr "正在检查密钥目录..."
+
+#: lets-encrypt/config/fields.php:428
+msgid "Checking challenge directory..."
+msgstr "检查挑战目录..."
+
+#: lets-encrypt/config/fields.php:17 settings/config/menu.php:735
+msgid "Directories"
+msgstr "目录"
+
+#: settings/config/menu.php:729
+msgid "Hosting"
+msgstr "托管"
+
+#: settings/config/menu.php:708
+msgid "We have tried to make our Wizard as simple and fast as possible. Although these questions are all necessary, if there’s any way you think we can improve the plugin, please let us %sknow%s!"
+msgstr "我们试图使我们的向导尽可能简单和快速。虽然这些问题都是必要的，但如果您认为我们可以改进插件，请让我们%sknow%s！"
+
+#: settings/config/menu.php:710
+msgid " Please note that you can always save and finish the wizard later, use our %sdocumentation%s for additional information or log a %ssupport ticket%s if you need our assistance."
+msgstr " 请注意，您可以随时保存并在以后完成向导，如果需要我们的帮助，请使用我们的%s证明文件%s获取更多信息，或记录%s支持请求%s。"
+
+#: lets-encrypt/config/fields.php:76
+msgid "Checking for website configuration..."
+msgstr "正在检查网站配置..."
+
+#: lets-encrypt/config/fields.php:70
+msgid "Checking alias domain..."
+msgstr "正在检查别名域..."
+
+#: lets-encrypt/config/fields.php:64
+msgid "Checking server software..."
+msgstr "正在检查服务器软件..."
+
+#: lets-encrypt/config/fields.php:58
+msgid "Checking if CURL is available..."
+msgstr "检查 CURL 是否可用..."
+
+#: lets-encrypt/config/fields.php:52
+msgid "Checking SSL certificate..."
+msgstr "正在检查 SSL 证书..."
+
+#: lets-encrypt/config/fields.php:47
+msgid "Detected status of your setup."
+msgstr "检测到您的设置状态。"
+
+#: lets-encrypt/config/fields.php:400
+msgid "Store for renewal purposes. If not stored, renewal may need to be done manually."
+msgstr "存储用于更新目的。如果未存储，则可能需要手动进行更新。"
+
+#: lets-encrypt/config/fields.php:377
+msgid "Plesk password"
+msgstr "Plesk 密码"
+
+#: lets-encrypt/config/fields.php:357
+msgid "You can find your Plesk username and password in %s"
+msgstr "您可以在 %s 中找到您的 Plesk 用户名和密码"
+
+#: lets-encrypt/config/fields.php:353
+msgid "Plesk username"
+msgstr "Plesk 用户名"
+
+#: lets-encrypt/config/fields.php:333
+msgid "The URL you use to access your Plesk dashboard. Ends on :8443."
+msgstr "您用于访问 Plesk 仪表板的 URL。结束于：8443。"
+
+#: lets-encrypt/config/fields.php:329
+msgid "Plesk host"
+msgstr "Plesk 主机"
+
+#: lets-encrypt/config/fields.php:313
+msgid "You can find your api key %shere%s (make sure you're logged in with your main account)."
+msgstr "您可以在 %shere%s 找到您的 api 密钥（确保您使用主帐户登录）。"
+
+#: lets-encrypt/config/fields.php:291
+msgid "CloudWays user email"
+msgstr "CloudWays 用户电子邮件"
+
+#: lets-encrypt/config/fields.php:271
+msgid "DirectAdmin password"
+msgstr "DirectAdmin 密码"
+
+#: lets-encrypt/config/fields.php:252
+msgid "DirectAdmin username"
+msgstr "DirectAdmin 用户名"
+
+#: lets-encrypt/config/fields.php:232
+msgid "The URL you use to access your DirectAdmin dashboard. Ends on :2222."
+msgstr "您用于访问 DirectAdmin 仪表板的 URL。结束于：2222。"
+
+#: lets-encrypt/config/fields.php:228
+msgid "DirectAdmin host"
+msgstr "DirectAdmin 主机"
+
+#: lets-encrypt/config/fields.php:209
+msgid "CPanel password"
+msgstr "面板密码"
+
+#: lets-encrypt/config/fields.php:190
+msgid "CPanel username"
+msgstr "CPanel 用户名"
+
+#: lets-encrypt/config/fields.php:170
+msgid "The URL you use to access your cPanel dashboard. Ends on :2083."
+msgstr "您用于访问 cPanel 仪表板的 URL。结束于：2083。"
+
+#: lets-encrypt/config/fields.php:166 lets-encrypt/config/fields.php:169
+msgid "CPanel host"
+msgstr "CPanel主机"
+
+#: settings/config/fields/general.php:32
+msgid "Hosting provider"
+msgstr "托管服务提供商"
+
+#: lets-encrypt/config/fields.php:150
+msgid "You should have the www domain pointed to the same website as the non-www domain."
+msgstr "您应该将 www 域指向与非 www 域相同的网站。"
+
+#: lets-encrypt/config/fields.php:149
+msgid "This will include both the www. and non-www. version of your domain."
+msgstr "这将包括 www.和非万维网。您的域的版本。"
+
+#: lets-encrypt/config/fields.php:134 lets-encrypt/config/notices.php:51
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/LetsEncrypt/DnsVerification.js:62
+msgid "Domain"
+msgstr "领域"
+
+#: settings/settings.php:559
+msgid "Terms and Conditions"
+msgstr "条款和条件"
+
+#: lets-encrypt/config/fields.php:94 lets-encrypt/config/fields.php:97
+#: settings/config/fields/general.php:78
+msgid "Email address"
+msgstr "电子邮件地址"
+
+#: lets-encrypt/config/fields.php:98
+msgid "This email address is used to create a Let's Encrypt account. This is also where you will receive renewal notifications."
+msgstr "此电子邮件地址将用于创建 Let&#39;s Encrypt 帐户。这也是您将收到续订通知的地方。"
+
+#: lets-encrypt/config/fields.php:550
+msgid "Checking for subdomain setup..."
+msgstr "正在检查子域设置..."
+
+#: lets-encrypt/config/fields.php:518
+msgid "Generating SSL certificate..."
+msgstr "正在生成 SSL 证书..."
+
+#: lets-encrypt/integrations/plesk/plesk.php:90
+msgid "Successfully installed SSL"
+msgstr "成功安装 SSL"
+
+#: lets-encrypt/integrations/plesk/functions.php:33
+msgid "Installing SSL certificate using PLESK API..."
+msgstr "使用 PLESK API 安装 SSL 证书..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:107
+#: lets-encrypt/integrations/directadmin/functions.php:35
+msgid "Attempting to install certificate..."
+msgstr "正在尝试安装证书..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:100
+msgid "Attempting to set DNS txt record..."
+msgstr "正在尝试设置 DNS txt 记录..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:91
+msgid "Attempting to install certificate using AutoSSL..."
+msgstr "正在尝试使用 AutoSSL 安装证书..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:63
+msgid "The system is not ready for the DNS verification yet. Please run the wizard again."
+msgstr "系统尚未准备好进行 DNS 验证。请再次运行向导。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:310
+#: lets-encrypt/integrations/cpanel/cpanel.php:329
+msgid "Could not automatically add TXT record. Please proceed manually, following the steps below."
+msgstr "无法自动添加 TXT 记录。请按照以下步骤手动进行。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:306
+#: lets-encrypt/integrations/cpanel/cpanel.php:325
+msgid "Successfully added TXT record."
+msgstr "成功添加 TXT 记录。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:298
+msgid "Login credentials incorrect"
+msgstr "登录凭据不正确"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:294
+msgid "Unable to connect to cPanel"
+msgstr "无法连接到 cPanel"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:128
+#: lets-encrypt/integrations/cpanel/cpanel.php:207
+msgid "Errors were reported during installation."
+msgstr "安装过程中报错。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:123
+#: lets-encrypt/integrations/directadmin/directadmin.php:124
+msgid "SSL successfully installed on %s"
+msgstr "SSL 已成功安装在 %s"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:66
+#: lets-encrypt/integrations/directadmin/directadmin.php:66
+msgid "No valid list of domains."
+msgstr "没有有效的域列表。"
+
+#: lets-encrypt/integrations/cloudways/functions.php:49
+msgid "Enabling auto renew..."
+msgstr "启用自动续订..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:43
+msgid "Installing SSL certificate..."
+msgstr "正在安装 SSL 证书..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:37
+msgid "Retrieving Cloudways server data..."
+msgstr "正在检索 Cloudways 服务器数据..."
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:252
+msgid "Could not retrieve server list"
+msgstr "无法检索服务器列表"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:212
+#: lets-encrypt/integrations/cloudways/cloudways.php:245
+msgid "Successfully retrieved server id and app id"
+msgstr "成功检索到服务器 id 和应用程序 id"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:196
+msgid "Error enabling auto renew for Let's Encrypt"
+msgstr "为 Let&#39;s Encrypt 启用自动更新时出错"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:181
+#: lets-encrypt/integrations/cloudways/cloudways.php:187
+msgid "Successfully installed Let's Encrypt"
+msgstr "成功安装 Let&#39;s Encrypt"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:161
+msgid "Failed retrieving access token"
+msgstr "获取访问令牌失败"
+
+#: lets-encrypt/functions.php:406
+msgid "You can follow these %sinstructions%s."
+msgstr "您可以遵循这些 %s说明%s。"
+
+#: lets-encrypt/functions.php:404
+msgid "Your hosting environment does not allow automatic SSL installation."
+msgstr "您的托管环境不允许自动安装 SSL。"
+
+#: lets-encrypt/functions.php:395
+msgid "You already have free SSL on your hosting environment."
+msgstr "您的托管环境中已经有免费的 SSL。"
+
+#: lets-encrypt/functions.php:393 lets-encrypt/functions.php:397
+#: lets-encrypt/functions.php:407
+msgid "After completing the installation, you can continue to the next step to complete your configuration."
+msgstr "完成安装后，您可以继续下一步以完成您的配置。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1219
+#: lets-encrypt/functions.php:391
+msgid "According to our information, your hosting provider supplies your account with an SSL certificate by default. Please contact your %shosting support%s if this is not the case."
+msgstr "根据我们的信息，您的托管服务提供商默认为您的帐户提供 SSL 证书。如果不是这种情况，请联系您的 %shosting 支持%s。"
+
+#: lets-encrypt/functions.php:386
+msgid "Go to installation"
+msgstr "去安装"
+
+#: lets-encrypt/functions.php:385
+msgid "Go to activation"
+msgstr "前往激活"
+
+#: lets-encrypt/functions.php:384
+msgid "Please activate it on your dashboard %smanually%s"
+msgstr "请在您的仪表板上激活它%s手动%s"
+
+#: lets-encrypt/functions.php:383
+msgid "Please complete %smanually%s"
+msgstr "请手动完成 %s%s"
+
+#: lets-encrypt/functions.php:381
+msgid "Please activate it manually on your hosting dashboard."
+msgstr "请在您的托管仪表板上手动激活它。"
+
+#: lets-encrypt/functions.php:380
+msgid "Please complete manually in your hosting dashboard."
+msgstr "请在您的托管仪表板中手动完成。"
+
+#: lets-encrypt/download.php:49
+msgid "File missing. Please retry the previous steps."
+msgstr "文件丢失。请重试前面的步骤。"
+
+#: security/cron.php:96
+msgid "Once every 5 minutes"
+msgstr "每 5 分钟一次"
+
+#: security/cron.php:100
+msgid "Once every day"
+msgstr "每天一次"
+
+#: security/cron.php:108
+msgid "Once every week"
+msgstr "每周一次"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1866
+#: lets-encrypt/integrations/cloudways/functions.php:22
+#: lets-encrypt/integrations/cpanel/functions.php:17
+#: lets-encrypt/integrations/cpanel/functions.php:35
+#: lets-encrypt/integrations/directadmin/functions.php:16
+#: lets-encrypt/integrations/plesk/functions.php:16
+msgid "The system is not ready for the installation yet. Please run the wizard again."
+msgstr "系统尚未准备好安装。请再次运行向导。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1861
+msgid "Installation failed."
+msgstr "安装失败。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1856
+msgid "Not recognized server."
+msgstr "无法识别的服务器。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1826
+msgid "The certificate installation was rate limited. Please try again later."
+msgstr "证书安装受速率限制。请稍后再试。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1364
+#: lets-encrypt/class-letsencrypt-handler.php:1368
+#: lets-encrypt/class-letsencrypt-handler.php:1747
+msgid "Error code %s"
+msgstr "错误代码 %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1730
+msgid "Please create a folder 'rsssl' in the uploads directory, with 644 permissions."
+msgstr "请在上传目录中创建一个文件夹“rsssl”，具有 644 权限。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1729
+msgid "Could not create test folder and file."
+msgstr "无法创建测试文件夹和文件。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1700
+msgid "If this is not the case, don't add this alias to your certificate."
+msgstr "如果不是这种情况，请不要将此别名添加到您的证书中。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1700
+msgid "Could not verify alias domain."
+msgstr "无法验证别名域。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1698
+msgid "Please check if the www version of your site also points to this website."
+msgstr "请检查您网站的 www 版本是否也指向该网站。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1696
+msgid "Please check if the non www version of your site also points to this website."
+msgstr "请检查您网站的非 www 版本是否也指向该网站。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1677
+msgid "Alias domain check is not relevant for a subdomain"
+msgstr "别名域检查与子域无关"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1647
+msgid "No subdomain setup detected."
+msgstr "未检测到子域设置。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1375
+#: lets-encrypt/class-letsencrypt-handler.php:1707
+#: lets-encrypt/class-letsencrypt-handler.php:1758
+msgid "Successfully verified alias domain."
+msgstr "已成功验证别名域。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1350
+msgid "Challenge directory not writable."
+msgstr "挑战目录不可写。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1344
+msgid "Could not reach challenge directory over %s."
+msgstr "无法通过 %s 到达质询目录。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1340
+#: lets-encrypt/class-letsencrypt-handler.php:1684
+msgid "no response"
+msgstr "没有反应"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1282
+msgid "The certs directory was successfully created."
+msgstr "certs 目录已成功创建。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1278
+msgid "The certs directory is not created yet."
+msgstr "尚未创建 certs 目录。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1264
+msgid "The key directory was successfully created."
+msgstr "密钥目录已成功创建。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1256
+msgid "Trying to create directory in root of website."
+msgstr "试图在网站的根目录中创建目录。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1252
+msgid "The key directory is not created yet."
+msgstr "尚未创建密钥目录。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1239
+msgid "The challenge directory was successfully created."
+msgstr "挑战目录已成功创建。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1235
+msgid "The challenge directory is not created yet."
+msgstr "挑战目录尚未创建。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1191
+msgid "The required directories have the necessary writing permissions."
+msgstr "所需目录具有必要的写入权限。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1184
+msgid "Set permissions to 644 to enable SSL generation."
+msgstr "将权限设置为 644 以启用 SSL 生成。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1184
+msgid "The following directories do not have the necessary writing permissions."
+msgstr "以下目录没有必要的写入权限。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1168
+msgid "Please complete the following step(s) first: %s"
+msgstr "请先完成以下步骤：%s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:907
+msgid "Order successfully retrieved."
+msgstr "订单已成功检索。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:891
+msgid "Order successfully created."
+msgstr "订单创建成功。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:801
+msgid "Bundle not available yet..."
+msgstr "捆绑包还没有..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:717
+#: lets-encrypt/class-letsencrypt-handler.php:793
+msgid "Files not created yet..."
+msgstr "文件尚未创建..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:787
+msgid "Successfully generated certificate."
+msgstr "成功生成证书。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:773
+msgid "OCSP not supported, the certificate will be generated without OCSP."
+msgstr "不支持 OCSP，证书将在没有 OCSP 的情况下生成。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:765
+msgid "As your order will be regenerated, you'll need to update your DNS text records."
+msgstr "由于您的订单将被重新生成，您需要更新您的 DNS 文本记录。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:484
+#: lets-encrypt/class-letsencrypt-handler.php:762
+msgid "The order is invalid, possibly due to too many failed authorization attempts. Please start at the previous step."
+msgstr "订单无效，可能是授权尝试失败次数过多。请从上一步开始。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:741
+msgid "Authorization not completed yet."
+msgstr "授权尚未完成。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:711
+msgid "Certificate already generated. It was renewed if required."
+msgstr "已生成证书。如果需要，它已更新。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:672
+msgid "DNS records were not verified yet. Please complete the previous step."
+msgstr "DNS 记录尚未验证。请完成上一步。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:658
+msgid "Please double check your DNS txt record."
+msgstr "请仔细检查您的 DNS txt 记录。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:595
+msgid "Could not verify TXT record for domain %s"
+msgstr "无法验证域 %s 的 TXT 记录"
+
+#: lets-encrypt/class-letsencrypt-handler.php:585
+msgid "The DNS response for %s was %s, while it should be %s."
+msgstr "%s 的 DNS 响应是 %s，而它应该是 %s。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:575
+msgid "Successfully verified DNS records"
+msgstr "已成功验证 DNS 记录"
+
+#: lets-encrypt/class-letsencrypt-handler.php:561
+#: lets-encrypt/integrations/cpanel/functions.php:47
+msgid "Token not generated. Please complete the previous step."
+msgstr "未生成令牌。请完成上一步。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:519
+msgid "Configured for HTTP challenge"
+msgstr "为 HTTP 质询配置"
+
+#: lets-encrypt/class-letsencrypt-handler.php:469
+msgid "Token not received yet."
+msgstr "令牌尚未收到。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:416
+msgid "The email address was not set. Please set the email address"
+msgstr "未设置电子邮件地址。请设置邮箱地址"
+
+#: lets-encrypt/class-letsencrypt-handler.php:408
+msgid "Please change your email address %shere%s and try again."
+msgstr "请更改您的电子邮件地址 %shere%s，然后重试。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:407
+msgid "The used domain for your email address is not allowed."
+msgstr "不允许您的电子邮件地址使用的域。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:400
+msgid "Successfully retrieved account"
+msgstr "成功检索帐户"
+
+#: lets-encrypt/class-letsencrypt-handler.php:380
+msgid "The PHP function CURL has successfully been detected."
+msgstr "已成功检测到 PHP 函数 CURL。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:376
+msgid "The PHP function CURL is not available on your server, which is required. Please contact your hosting provider."
+msgstr "PHP 函数 CURL 在您的服务器上不可用，这是必需的。请联系您的托管服务提供商。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:360
+msgid "DirectAdmin recognized. Possibly the certificate can be installed automatically."
+msgstr "DirectAdmin 已识别。可能证书可以自动安装。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:357
+msgid "Plesk recognized. Possibly the certificate can be installed automatically."
+msgstr "Plesk 认出了。可能证书可以自动安装。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:354
+msgid "CPanel recognized. Possibly the certificate can be installed automatically."
+msgstr "CPanel 识别。可能证书可以自动安装。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:350
+msgid "The Hosting Panel software was not recognized. Depending on your hosting provider, the generated certificate may need to be installed manually."
+msgstr "无法识别主机面板软件。根据您的托管服务提供商，可能需要手动安装生成的证书。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:319
+msgid "SSL certificate should be generated and installed."
+msgstr "应生成并安装 SSL 证书。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:313
+msgid "You already have a valid SSL certificate."
+msgstr "您已经拥有有效的 SSL 证书。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:309
+msgid "Continue to renew."
+msgstr "继续更新。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:309
+msgid "Your certificate will expire on %s."
+msgstr "您的证书将于 %s 到期。"
+
+#: class-admin.php:2101 lets-encrypt/class-letsencrypt-handler.php:303
+msgid "(unknown)"
+msgstr "（未知）"
+
+#: lets-encrypt/class-letsencrypt-handler.php:239
+msgid "Your domain meets the requirements for Let's Encrypt."
+msgstr "您的域符合 Let&#39;s Encrypt 的要求。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:221
+msgid "It is not possible to install Let's Encrypt on a localhost environment."
+msgstr "无法在 localhost 环境中安装 Let&#39;s Encrypt。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:231
+msgid "It is not possible to install Let's Encrypt on a subfolder configuration."
+msgstr "无法在子文件夹配置上安装 Let&#39;s Encrypt。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:226
+msgid "It is not possible to install Let's Encrypt on a subsite. Please go to the main site of your website."
+msgstr "无法在子站点上安装 Let&#39;s Encrypt。请访问您网站的主站点。"
+
+#: class-admin.php:2232 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Dashboard/TaskElement.js:66
+msgid "Re-check"
+msgstr "重新检查"
+
+#. translators: %s is replaced with date.
+#: class-admin.php:2225
+msgid "SSL certificate will expire on %s."
+msgstr "SSL 证书将于 %s 到期。"
+
+#: class-admin.php:2222
+msgid "Your SSL certificate will expire soon."
+msgstr "您的 SSL 证书即将过期。"
+
+#: class-admin.php:2202
+msgid "No SSL detected. Use the retry button to check again."
+msgstr "未检测到 SSL。使用重试按钮再次检查。"
+
+#: class-admin.php:2206 class-admin.php:2216 class-admin.php:2231
+msgid "Install SSL certificate"
+msgstr "安装 SSL 证书"
+
+#: class-admin.php:2207
+msgid "Retry"
+msgstr "重试"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:99
+msgid "An SSL certificate has been detected"
+msgstr "已检测到 SSL 证书"
+
+#: class-site-health.php:31
+msgid "SSL Status Test"
+msgstr "SSL状态测试"
+
+#: class-site-health.php:36
+msgid "Security Headers Test"
+msgstr "测试安全标头"
+
+#: class-admin.php:2201 class-site-health.php:337
+msgid "No SSL detected"
+msgstr "未检测到SSL"
+
+#: class-site-health.php:354
+msgid "Enable 301 redirect"
+msgstr "启用301重定向"
+
+#: class-site-health.php:349
+msgid "To ensure all traffic passes through SSL, please enable a 301 redirect."
+msgstr "为确保所有流量通过SSL，请启用301重定向。"
+
+#: class-site-health.php:346
+msgid "No 301 redirect to SSL enabled."
+msgstr "没有301重定向到SSL启用。"
+
+#: class-site-health.php:322
+msgid "SSL is not enabled."
+msgstr "SSL未启用。"
+
+#: class-admin.php:2046
+msgid "Completed"
+msgstr "完成"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:200
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:216
+#: upgrade/upgrade-to-pro.php:132 upgrade/upgrade-to-pro.php:145
+#: settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:73
+msgid "Install"
+msgstr "安装"
+
+#: upgrade/upgrade-to-pro.php:156 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:24
+msgid "Installed"
+msgstr "已安装"
+
+#: class-admin.php:2048
+msgid "Open"
+msgstr "打开"
+
+#: class-admin.php:2047 settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:58
+msgid "Warning"
+msgstr "警告"
+
+#: class-admin.php:2309
+msgid "WordPress 301 redirect enabled. We recommend to enable a 301 .htaccess redirect."
+msgstr "WordPress 301 重定向已启用。我们建议启用 301 .htaccess 重定向。"
+
+#: class-admin.php:2352
+msgid "Your site uses Divi. This can require some additional steps before getting the secure lock."
+msgstr "您的网站使用了Divi。这可能需要额外的设置，才能获得安全防护。"
+
+#: class-admin.php:2338
+msgid "Your site uses Elementor. This can require some additional steps before getting the secure lock."
+msgstr "您的网站正在使用Elementor。这可能需要额外的设置，才能获得安全防护。"
+
+#: class-multisite.php:79
+msgid "SSL is enabled networkwide."
+msgstr "网络范围内启用了SSL。"
+
+#: class-site-health.php:333 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Dashboard/Progress/ProgressFooter.js:24
+#: settings/src/Onboarding/OnboardingControls.js:168
+msgid "Activate SSL"
+msgstr "激活SSL"
+
+#: settings/config/menu.php:23 settings/config/menu.php:29
+#: settings/config/menu.php:386
+msgid "General"
+msgstr "一般"
+
+#: class-admin.php:2263
+msgid "Mixed content fixer not enabled. Enable the option to fix mixed content on your site."
+msgstr "混合内容修复未启用。启用该选项以修复您网站上的混合内容。"
+
+#: class-admin.php:2086
+msgid "No recommended redirect rules detected."
+msgstr "未检测到推荐的重定向规则。"
+
+#: class-site-health.php:100 class-site-health.php:131
+#: class-site-health.php:162 class-site-health.php:248
+#: class-site-health.php:290
+#: settings/config/fields/vulnerability-detection.php:236
+#: settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/src/Dashboard/SslLabs/SslLabs.js:320
+#: settings/src/LetsEncrypt/DnsVerification.js:57
+msgid "Read more"
+msgstr "阅读更多"
+
+#: class-admin.php:2180
+msgid "SSL is not enabled yet."
+msgstr "SSL尚未启用。"
+
+#: progress/class-progress.php:93
+msgid "SSL is not yet enabled on this site."
+msgstr "SSL尚未在该网站启用。"
+
+#: class-admin.php:203 settings/build/index.150e63172ef86f413c90.js:1
+#: settings/src/Header.js:45
+msgid "Support"
+msgstr "支持"
+
+#: class-admin.php:2252
+msgid "The mixed content fixer is active, but was not detected on the frontpage."
+msgstr "混合内容修复已启用，但是无法在前端页面检测到。"
+
+#. translators: %1$ and %2$ are replaced with opening and closing a tag
+#. containing hyperlink
+#: class-admin.php:1860
+msgid "Hi, Really Simple Security has kept your site secure for some time now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %1$smessage%2$s."
+msgstr "嗨，Really Simple SSL已经使您的网站安全了一段时间了，太棒了！ 如果有时间，请考虑在WordPress.org上发表评论以广而告之。 非常感谢！ 如果您有任何疑问或反馈，请和我们%s联络%s。"
+
+#: class-admin.php:1892
+msgid "Don't show again"
+msgstr "不再显示"
+
+#. translators: %s is replaced with the error description.
+#: class-admin.php:2270
+msgid "The mixed content fixer could not be detected due to a cURL error: %s. cURL errors are often caused by an outdated version of PHP or cURL and don't affect the front-end of your site. Contact your hosting provider for a fix."
+msgstr "由于一个 cURL 错误：%s，混合内容修复无法检测。cURL 错误常常是由于旧版的 PHP 或 cURL导致，不会影响到您网站的前端。请联系您的空间服务商寻求修复。"
+
+#: class-admin.php:2257
+msgid "Error occurred when retrieving the webpage."
+msgstr "获取网页时发生错误。"
+
+#: core/app/Features/Onboarding/OnboardingStepsGenerator.php:162
+#: settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:116
+msgid "Enable"
+msgstr "启用"
+
+#: class-site-health.php:361
+msgid "The 301 .htaccess redirect is the fastest and most reliable redirect option."
+msgstr "301 .htaccess 重定向通常是最快且最可靠的重定向方法。"
+
+#: class-site-health.php:358
+msgid "301 .htaccess redirect is not enabled."
+msgstr "301 .htaccess重定向未启用。"
+
+#: class-site-health.php:305
+msgid "301 SSL redirect enabled"
+msgstr "已启用301 SSL重定向"
+
+#: class-site-health.php:313
+msgid "You have set a 301 redirect to SSL. This is important for SEO purposes"
+msgstr "您已为SSL设置了一个301重定向。这对于SEO而言很重要"
+
+#: class-admin.php:2147
+msgid "The 'force-deactivate.php' file has to be renamed to .txt. Otherwise your ssl can be deactivated by anyone on the internet."
+msgstr "'force-deactivate.php'文件必须重命名为.txt。 否则，互联网上的任何人都可以停用您的ssl。"
+
+#: class-admin.php:1887
+msgid "Maybe later"
+msgstr "也许以后"
+
+#: class-admin.php:1883
+msgid "Leave a review"
+msgstr "发表评论"
+
+#. translators: %1$ and %2$ are replaced with opening and closing a tag
+#. containing hyperlink
+#: class-admin.php:1867
+msgid "Hi, Really Simple Security has kept your site secure for a month now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %1$smessage%2$s."
+msgstr "嗨，你现在已经使用Really Simple SSL一个月了，棒极了！如果您有时间，请考虑在WordPress.org上留下评论来宣传。我们非常感谢！如果您有任何问题或反馈，请给我们留言%s信息%s。"
+
+#: class-multisite.php:128
+msgid "Activate SSL per site or install a wildcard certificate to fix this."
+msgstr "逐一每站开启 SSL或安装一反遮罩凭证来修护。"
+
+#: class-multisite.php:127
+msgid "This leads to issues when activating SSL networkwide since subdomains will be forced over SSL as well while they don't have a valid certificate."
+msgstr "这会在启动 SSL 网际网路时导致些问题，因为子网域也会被强制通过 SSL，而且它并没有有效的 SSL 凭证。"
+
+#: class-multisite.php:126
+msgid "You run a Multisite installation with subdomains, but your site doesn't have a wildcard certificate."
+msgstr "透过子网域你执行多重式网站的安装，但是你的网站没有反遮罩凭证。"
+
+#: upgrade/upgrade-to-pro.php:339 modal/build/433.db1479f1e30c6b53cbd8.js:1
+#: modal/src/components/Modal/RssslModal.js:68
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Settings/firewall/UserAgentModal.js:151
+#: settings/src/Settings/GeoBlockList/TrustIpAddressModal.js:140
+#: settings/src/Settings/LearningMode/ManualCspAdditionModal.js:190
+#: settings/src/Settings/LimitLoginAttempts/AddIpAddressModal.js:110
+#: settings/src/Settings/LimitLoginAttempts/AddUserModal.js:90
+msgid "Cancel"
+msgstr "取消"
+
+#: class-admin.php:727 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/build/536.897efe11fe4881a252b6.js:1
+#: settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/build/995.1951bdba4c61ca45e7ca.js:1
+#: settings/src/Dashboard/TaskElement.js:65 settings/src/Settings/Help.js:24
+msgid "More info"
+msgstr "更多资料"
+
+#. translators: %s is replaced with the hyperlink
+#: class-admin.php:253
+msgid "Really Simple Security and Really Simple Security add-ons do not process any personal identifiable information, so the GDPR does not apply to these plugins or usage of these plugins on your website. You can find our privacy policy <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">here</a>."
+msgstr "Really Simple SSL 和Really Simple SSL 附加组件不会处理任何个人身份信息，因此GDPR不适用于这些插件或在您的网站上使用这些插件。您可以在这里找到我们的<a href=\"%s\" target=\"_blank\">隐私政策</a>。"
+
+#: core/app/Features/Vulnerability/Services/VulnerabilityEmailService.php:86
+#: mailer/class-mail.php:33 mailer/class-mail.php:37
+#: settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:192
+msgid "Learn more"
+msgstr "读取更多"
+
+#: class-site-health.php:366
+msgid "Enable 301 .htaccess redirect"
+msgstr "启动301.htaccess导向"
+
+#: class-admin.php:2287
+msgid "No 301 redirect is set. Enable the WordPress 301 redirect in the settings to get a 301 permanent redirect."
+msgstr "301导向没有被设定。请在设定中取得一301永久导向以启动WordPress 301导向。"
+
+#: class-admin.php:2283
+msgid "301 redirect to https set."
+msgstr "301重定向到https设置。"
+
+#: class-multisite.php:112
+msgid "View settings page"
+msgstr "查看设置页面"
+
+#: settings/config/fields/general.php:210 settings/config/menu.php:51
+msgid "Premium Support"
+msgstr "优质支援服務"
+
+#: lets-encrypt/functions.php:376 lets-encrypt/functions.php:377
+#: settings/build/995.1951bdba4c61ca45e7ca.js:1
+#: settings/src/Settings/SettingsGroup.js:100
+msgid "Instructions"
+msgstr "指示程序"
+
+#: class-admin.php:2176
+msgid "SSL is enabled on your site."
+msgstr "SSL 已在您网站启用。"
+
+#: class-admin.php:2110
+msgid "Your wp-config.php has to be edited, but is not writable."
+msgstr "你的wp-config.php 必须要编辑，可是并非可写。"
+
+#: class-admin.php:2111 class-admin.php:2132
+msgid "Set your wp-config.php to writable and reload this page."
+msgstr "您的wp-config.php设置为可写的并重新加载此页面。"
+
+#. Plugin URI of the plugin
+#: rlrsssl-really-simple-ssl.php
+msgid "https://really-simple-ssl.com"
+msgstr "https://really-simple-ssl.com"
+
+#: settings/config/fields/general.php:220
+msgid "Stop editing the .htaccess file"
+msgstr "停止编辑 .htaccess 档案"
+
+#: settings/config/menu.php:208
+msgid "Configuration"
+msgstr "配置"
+
+#: settings/config/fields/encryption.php:46
+msgid "Mixed content fixer"
+msgstr "混合内容修复程序"
+
+#: class-admin.php:196 class-admin.php:198 settings/config/menu.php:17
+#: settings/config/menu.php:394 settings/build/366.cdae799ade6d811e7edd.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:237
+#: settings/src/Dashboard/Vulnerabilities/VulnerabilitiesFooter.js:24
+msgid "Settings"
+msgstr "设置"
+
+#: class-multisite.php:97
+msgid "Because the $_SERVER[\"HTTPS\"] variable is not set, your website may experience redirect loops."
+msgstr "因为这$_SERVER[\"HTTPS\"] 变数尚未设好，你的网站可能会经历重导向回圈。"
+
+#: class-admin.php:2148 settings/build/635.572d18e3e2185b3ba2e9.js:1
+#: settings/src/Onboarding/Items/ListItem.js:46
+msgid "Check again"
+msgstr "再检查一遍"
+
+#: class-multisite.php:96
+msgid "You run a Multisite installation with subfolders, which prevents this plugin from fixing your missing server variable in the wp-config.php."
+msgstr "你用子资料夹去执行多站点的安装，会阻止这插件修复你在 wp-config.php 里遗失的伺服器变数。"
+
+#: class-multisite.php:98
+msgid "Activate networkwide to fix this."
+msgstr "在全网络上启用来修复此问题。"

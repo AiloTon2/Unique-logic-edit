@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "聯絡我們 | Unique Logic - AI 數碼營銷專家",
+    "description": "獲取免費報價！讓我們的專業團隊為您制定最佳的數碼營銷策略。立即聯絡Unique Logic，開始您的數碼營銷之旅。"
+  },
+  "hero": {
+    "back_home": "返回主頁",
+    "tag": "聯絡 Unique Logic",
+    "title": "聯絡我們",
+    "subtitle": "獲取免費報價！讓我們的專業團隊為您制定最佳的數碼營銷策略",
+    "scroll_text": "往下滾動"
+  },
+  "intro": {
+    "title_line1": "立即建立個性化定製",
+    "title_highlight": "數碼營銷策略",
+    "consult_title": "預約諮詢",
+    "consult_body": "請與我們的專業團隊聯絡，於24小時內接觸優質的潛在客戶，短時間內增加流量，達成銷售目標。我們很樂意與你分享數碼營銷工具及策略，助你有效發展業務。"
+  },
+  "benefits": {
+    "reply_24h": "24小時內回覆",
+    "increase_traffic": "增加流量",
+    "sales_target": "實現銷售目標"
+  },
+  "form": {
+    "title": "給我們發訊息",
+    "name_label": "姓名",
+    "name_placeholder": "請輸入您的姓名",
+    "phone_label": "聯絡電話",
+    "phone_placeholder": "請輸入您的電話號碼",
+    "email_label": "電子郵件",
+    "email_placeholder": "請輸入您的電子郵件",
+    "company_label": "公司名稱（可選）",
+    "company_placeholder": "請輸入公司名稱",
+    "website_label": "公司網站（可選）",
+    "website_placeholder": "https://example.com",
+    "subject_label": "主題",
+    "subject_placeholder": "請選擇主題",
+    "subject_options": {
+      "ai_seo": "AI SEO (GEO) 服務",
+      "seo": "SEO 搜尋引擎優化",
+      "sem": "SEM 搜尋廣告",
+      "social": "社交媒體營銷",
+      "web": "網頁設計及製作",
+      "other": "其他查詢"
+    },
+    "message_label": "詳細資料",
+    "message_placeholder": "請描述您的需求或問題...",
+    "submit_btn": "提交查詢",
+    "note": "提交後我們將於 24 小時內與您聯繫"
+  },
+  "location": {
+    "map_embed_src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0!2d114.206822!3d22.3256766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040132ceb94b0f%3A0x85a2754d36a34013!2sThe%20Bay%20Hub!5e0!3m2!1sen!2shk!4v1707200000000!5m2!1sen!2shk",
+    "section_title": "聯絡方式",
+    "details": {
+      "address": {
+        "label": "地址",
+        "value_html": "香港九龍灣啟祥道 17 號<br>太豐匯 1007 室"
+      },
+      "phone": {
+        "label": "電話",
+        "value_line1": "+852 8400 7393",
+        "value_line2": "+852 3860 7900"
+      },
+      "wechat": {
+        "label": "微信",
+        "value": "UniqueLogic393"
+      },
+      "email": {
+        "label": "電郵",
+        "value": "info@uniquelogic.com"
+      }
+    },
+    "social": {
+      "title": "社交平台",
+      "facebook_aria": "Facebook",
+      "facebook_text": "Facebook",
+      "instagram_aria": "Instagram",
+      "instagram_text": "Instagram",
+      "linkedin_aria": "LinkedIn",
+      "linkedin_text": "LinkedIn"
+    }
+  }
+}

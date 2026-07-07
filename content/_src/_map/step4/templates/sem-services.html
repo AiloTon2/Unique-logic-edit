@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ai-seo-services.css">
+  <style>
+    /* Responsive grid layouts */
+    .grid-2-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-3-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-5-col {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    
+    @media (max-width: 1024px) {
+      .grid-5-col {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .grid-2-col,
+      .grid-3-col,
+      .grid-5-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index-v1.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="{{shared.nav.logo_alt}}" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link">{{shared.nav.menu.about}}</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown active">
+            {{shared.nav.menu.solutions}}
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">{{shared.footer.menu.ai_seo}}</a>
+            <a href="seo-services.html" class="dropdown-item">{{shared.footer.menu.seo}}</a>
+            <a href="orm-services.html" class="dropdown-item">{{shared.footer.menu.orm}}</a>
+            <a href="sem-services.html" class="dropdown-item active">{{shared.footer.menu.sem}}</a>
+            <a href="content-marketing-services.html" class="dropdown-item">{{shared.footer.menu.content}}</a>
+            <a href="social-media-services.html" class="dropdown-item">{{shared.footer.menu.social}}</a>
+            <a href="web-design-services.html" class="dropdown-item">{{shared.footer.menu.web}}</a>
+            <a href="ecommerce-services.html" class="dropdown-item">{{shared.footer.menu.ecommerce}}</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">{{shared.nav.menu.blog}}</a>
+        <a href="contact.html" class="nav-link">{{shared.nav.menu.contact}}</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active">{{shared.nav.lang.zh-hant}}</button>
+          <button class="lang-btn">{{shared.nav.lang.en}}</button>
+          <button class="lang-btn">{{shared.nav.lang.zh-hans}}</button>
+        </div>
+        <a href="contact.html" class="nav-cta">{{shared.nav.cta}}</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link">{{shared.mobile.menu.about}}</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle active">
+          {{shared.mobile.menu.solutions}}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">{{shared.footer.menu.ai_seo}}</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">{{shared.footer.menu.seo}}</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">{{shared.footer.menu.orm}}</a>
+          <a href="sem-services.html" class="mobile-dropdown-item active">{{shared.footer.menu.sem}}</a>
+          <a href="content-marketing-services.html" class="mobile-dropdown-item">{{shared.footer.menu.content}}</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">{{shared.footer.menu.social}}</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">{{shared.footer.menu.web}}</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">{{shared.footer.menu.ecommerce}}</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link">{{shared.mobile.menu.blog}}</a>
+      <a href="contact.html" class="mobile-link">{{shared.mobile.menu.contact}}</a>
+      <div class="mobile-lang">
+        <button class="lang-btn active">{{shared.mobile.lang.zh-hant}}</button>
+        <button class="lang-btn">{{shared.mobile.lang.en}}</button>
+        <button class="lang-btn">{{shared.mobile.lang.zh-hans}}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="service-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <a href="index-v1.html" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>{{hero.back_home}}</span>
+    </a>
+    
+    <div class="service-hero-content">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb reveal-item">
+        <a href="index-v1.html">{{hero.breadcrumb.home}}</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="#">{{hero.breadcrumb.solutions}}</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">{{hero.breadcrumb.current}}</span>
+      </nav>
+      
+      <div class="hero-tag reveal-item">
+        <span class="tag-dot"></span>
+        <span class="tag-text">{{hero.tag}}</span>
+      </div>
+      
+      <h1 class="service-hero-title reveal-item">
+        <span class="title-line">
+          <span class="glitch-text" data-text="{{hero.title_line1}}">{{hero.title_line1}}</span>
+        </span>
+        <span class="title-line">
+          <span class="glitch-text accent" data-text="{{hero.title_line2}}">{{hero.title_line2}}</span>
+        </span>
+      </h1>
+      
+      <p class="service-hero-subtitle reveal-item">
+        {{hero.subtitle_line1}}<br>{{hero.subtitle_line2}}
+      </p>
+      
+      <a href="contact.html" class="btn-primary reveal-item">
+        {{hero.cta_btn}}
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>{{hero.scroll_text}}</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Introduction -->
+  <section class="service-intro">
+    <div class="container">
+      <div class="intro-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">01</span>
+          <span class="label-text">{{intro.label}}</span>
+        </div>
+        
+        <h2 class="section-title">
+          {{intro.title_line1}}<br>
+          <span class="highlight">{{intro.title_highlight}}</span>
+        </h2>
+        
+        <div class="intro-text">
+          <p>{{intro.p1}}</p>
+        </div>
+        
+        <a href="contact.html" class="btn-secondary">
+          {{intro.cta_btn}}
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="intro-visual reveal-item">
+        <div class="visual-image">
+          <img src="asset/package3.jpg" alt="{{intro.image_alt}}" class="service-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Challenges -->
+  <section class="why-ai-seo">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">02</span>
+          <span class="label-text">{{challenges.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{challenges.title_line1}}<span class="highlight">{{challenges.title_highlight}}</span>
+        </h2>
+      </div>
+      
+      <div class="features-grid grid-2-col">
+        <div class="feature-card reveal-item" style="--delay: 0">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Competition/battle icon -->
+              <path d="M10 30L20 20L30 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 10L20 20L30 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="30" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>{{challenges.features.f1.title}}</h3>
+          <p>{{challenges.features.f1.desc}}</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 1">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Money/coins flowing out icon -->
+              <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 14V26M16 18H24M16 22H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 12L36 8M32 28L36 32M8 12L4 8M8 28L4 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>{{challenges.features.f2.title}}</h3>
+          <p>{{challenges.features.f2.desc}}</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 2">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Trash/waste icon -->
+              <path d="M12 14H28L26 34H14L12 14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M8 14H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 14V10C16 8.89543 16.8954 8 18 8H22C23.1046 8 24 8.89543 24 10V14" stroke="currentColor" stroke-width="2"/>
+              <path d="M17 20V28M20 20V28M23 20V28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>{{challenges.features.f3.title}}</h3>
+          <p>{{challenges.features.f3.desc}}</p>
+        </div>
+        
+        <div class="feature-card reveal-item" style="--delay: 3">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <!-- Declining chart icon -->
+              <path d="M8 10V32H32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 16L18 22L24 18L30 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="30" cy="26" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>{{challenges.features.f4.title}}</h3>
+          <p>{{challenges.features.f4.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Why Partner With Us -->
+  <section class="results-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">03</span>
+          <span class="label-text">{{success.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{success.title_line1}}<br>
+          <span class="highlight">{{success.title_highlight}}</span>
+        </h2>
+        <p class="section-desc">{{success.desc}}</p>
+      </div>
+      
+      <div class="results-grid grid-3-col">
+        <div class="result-card reveal-item" style="--delay: 0">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M12 36L20 28L28 32L36 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30 20H36V26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>{{success.cards.c1.title}}</h3>
+          <p>{{success.cards.c1.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 1">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 16V24L30 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>{{success.cards.c2.title}}</h3>
+          <p>{{success.cards.c2.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 2">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="20" width="8" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="20" y="14" width="8" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="32" y="8" width="8" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 16L24 10L36 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          <h3>{{success.cards.c3.title}}</h3>
+          <p>{{success.cards.c3.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 3">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>{{success.cards.c4.title}}</h3>
+          <p>{{success.cards.c4.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 4">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 24H30M18 30H26M18 18H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>{{success.cards.c5.title}}</h3>
+          <p>{{success.cards.c5.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 5">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Simple human head icon -->
+              <circle cx="24" cy="18" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 44C10 35.1634 16.268 28 24 28C31.732 28 38 35.1634 38 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>{{success.cards.c6.title}}</h3>
+          <p>{{success.cards.c6.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Service Categories -->
+  <section class="service-categories">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">04</span>
+          <span class="label-text">{{categories.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{categories.title_line1}}<br>
+          <span class="highlight">{{categories.title_highlight}}</span>
+        </h2>
+        <p class="section-desc">{{categories.desc_line1}}<br>{{categories.desc_line2}}</p>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card large reveal-item" style="--delay: 0">
+          <div class="category-header">
+            <span class="category-tag">{{categories.cards.c1.tag}}</span>
+            <h3>{{categories.cards.c1.title}}</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c1.items.i1}}
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c1.items.i2}}
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c1.items.i3}}
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 1">
+          <div class="category-header">
+            <span class="category-tag">{{categories.cards.c2.tag}}</span>
+            <h3>{{categories.cards.c2.title}}</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c2.items.i1}}
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c2.items.i2}}
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 2">
+          <div class="category-header">
+            <span class="category-tag">{{categories.cards.c3.tag}}</span>
+            <h3>{{categories.cards.c3.title}}</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c3.items.i1}}
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c3.items.i2}}
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 3">
+          <div class="category-header">
+            <span class="category-tag">{{categories.cards.c4.tag}}</span>
+            <h3>{{categories.cards.c4.title}}</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c4.items.i1}}
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c4.items.i2}}
+            </li>
+          </ul>
+        </div>
+        
+        <div class="category-card reveal-item" style="--delay: 4">
+          <div class="category-header">
+            <span class="category-tag">{{categories.cards.c5.tag}}</span>
+            <h3>{{categories.cards.c5.title}}</h3>
+          </div>
+          <ul class="category-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{categories.cards.c5.items.i1}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Ad Types -->
+  <section class="results-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">05</span>
+          <span class="label-text">{{ad_types.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{ad_types.title_line1}}<br>
+          <span class="highlight">{{ad_types.title_highlight}}</span>
+        </h2>
+        <p class="section-desc">{{ad_types.desc}}</p>
+      </div>
+      
+      <div class="results-grid grid-5-col">
+        <div class="result-card reveal-item" style="--delay: 0">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Magnifier icon -->
+              <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M30 30L40 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M14 20H26M20 14V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>{{ad_types.cards.c1.title}}</h3>
+          <p>{{ad_types.cards.c1.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 1">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 16V18M24 30V32M16 24H18M30 24H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>{{ad_types.cards.c2.title}}</h3>
+          <p>{{ad_types.cards.c2.desc}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 2">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 20H40M16 28H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>{{ad_types.cards.c3.title}}</h3>
+          <p>{{ad_types.cards.c3.desc_line1}}<br>{{ad_types.cards.c3.desc_line2}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 3">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Affiliate/handshake partnership icon -->
+              <path d="M8 28L16 20L22 26L26 22L34 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="14" r="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="36" cy="14" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 19V24M36 19V24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 36H28M18 40H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 30V36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>{{ad_types.cards.c4.title}}</h3>
+          <p>{{ad_types.cards.c4.desc_line1}}<br>{{ad_types.cards.c4.desc_line2}}</p>
+        </div>
+        
+        <div class="result-card reveal-item" style="--delay: 4">
+          <div class="result-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <!-- Programmatic/robot icon -->
+              <rect x="12" y="8" width="24" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="18" cy="17" r="2" fill="currentColor"/>
+              <circle cx="30" cy="17" r="2" fill="currentColor"/>
+              <path d="M20 22H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 26V32" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 32H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 32V38M30 32V38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 4V8M8 14H12M36 14H40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>{{ad_types.cards.c5.title}}</h3>
+          <p>{{ad_types.cards.c5.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Our Process -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">06</span>
+          <span class="label-text">{{process.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{process.title_line1}}<br>
+          <span class="highlight">{{process.title_highlight}}</span>
+        </h2>
+      </div>
+      
+      <div class="process-timeline">
+        <div class="process-step reveal-item" style="--delay: 0">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>{{process.steps.s1.title}}</h3>
+            <p>{{process.steps.s1.desc}}</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 1">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>{{process.steps.s2.title}}</h3>
+            <p>{{process.steps.s2.desc}}</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 2">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>{{process.steps.s3.title}}</h3>
+            <p>{{process.steps.s3.desc}}</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 3">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>{{process.steps.s4.title}}</h3>
+            <p>{{process.steps.s4.desc}}</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+        
+        <div class="process-step reveal-item" style="--delay: 4">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <h3>{{process.steps.s5.title}}</h3>
+            <p>{{process.steps.s5.desc}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Why Partner With Us -->
+  <section class="partner-section">
+    <div class="container">
+      <div class="partner-content reveal-item">
+        <div class="section-label">
+          <span class="label-number">07</span>
+          <span class="label-text">{{partner.label}}</span>
+        </div>
+        
+        <h2 class="section-title">
+          {{partner.title_line1}}<br>
+          <span class="highlight">{{partner.title_highlight}}</span>
+        </h2>
+        
+        <div class="partner-text">
+          <p>{{partner.p1}}</p>
+          <p>{{partner.p2}}</p>
+        </div>
+        
+        <div class="partner-benefits">
+          <div class="partner-benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{partner.benefits.b1}}</span>
+          </div>
+          <div class="partner-benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{partner.benefits.b2}}</span>
+          </div>
+          <div class="partner-benefit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{partner.benefits.b3}}</span>
+          </div>
+        </div>
+        
+        <a href="contact.html" class="btn-primary">
+          {{partner.cta_btn}}
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <div class="section-label centered">
+          <span class="label-number">08</span>
+          <span class="label-text">{{faq.label}}</span>
+        </div>
+        <h2 class="section-title centered">
+          {{faq.title}}
+        </h2>
+      </div>
+      
+      <div class="faq-list">
+        <div class="faq-item reveal-item" style="--delay: 0">
+          <button class="faq-question">
+            <span class="faq-number">01</span>
+            <span class="faq-text">{{faq.items.q01.q}}</span>
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>{{faq.items.q01.a}}</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal-item" style="--delay: 1">
+          <button class="faq-question">
+            <span class="faq-number">02</span>
+            <span class="faq-text">{{faq.items.q02.q}}</span>
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>{{faq.items.q02.a}}</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal-item" style="--delay: 2">
+          <button class="faq-question">
+            <span class="faq-number">03</span>
+            <span class="faq-text">{{faq.items.q03.q}}</span>
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>{{faq.items.q03.a}}</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal-item" style="--delay: 3">
+          <button class="faq-question">
+            <span class="faq-number">04</span>
+            <span class="faq-text">{{faq.items.q04.q}}</span>
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>{{faq.items.q04.a}}</p>
+          </div>
+        </div>
+        
+        <div class="faq-item reveal-item" style="--delay: 4">
+          <button class="faq-question">
+            <span class="faq-number">05</span>
+            <span class="faq-text">{{faq.items.q05.q}}</span>
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p>{{faq.items.q05.a}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9: CTA Banner -->
+  <section class="service-cta-section">
+    <div class="section-container">
+      <div class="cta-wrapper reveal-item">
+        <div class="cta-content">
+          <h2 class="cta-title">{{cta.title}}</h2>
+          <p class="cta-desc">{{cta.desc}}</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">
+              <span>{{cta.primary_btn}}</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="index-v1.html#services" class="btn-secondary">
+              <span>{{cta.secondary_btn}}</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+      <span class="floating-cta-text">{{floating.text}}</span>
+      <a href="contact.html" class="floating-cta-btn">{{floating.btn}}</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index-v1.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="{{shared.footer.logo_alt}}" class="logo-img">
+          </a>
+          <p class="footer-tagline">{{shared.footer.tagline}}</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.facebook_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.linkedin_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.instagram_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">{{shared.footer.menu.title}}</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">{{shared.footer.menu.ai_seo}}</a></li>
+            <li><a href="seo-services.html">{{shared.footer.menu.seo}}</a></li>
+            <li><a href="orm-services.html">{{shared.footer.menu.orm}}</a></li>
+            <li><a href="sem-services.html">{{shared.footer.menu.sem}}</a></li>
+            <li><a href="content-marketing-services.html">{{shared.footer.menu.content}}</a></li>
+            <li><a href="social-media-services.html">{{shared.footer.menu.social}}</a></li>
+            <li><a href="web-design-services.html">{{shared.footer.menu.web}}</a></li>
+            <li><a href="ecommerce-services.html">{{shared.footer.menu.ecommerce}}</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">{{shared.footer.blog.title}}</h4>
+          <ul>
+            <li><a href="blog.html#category=ai">{{shared.footer.blog.ai_sem}}</a></li>
+            <li><a href="blog.html#category=seo">{{shared.footer.blog.seo}}</a></li>
+            <li><a href="blog.html#category=sem">{{shared.footer.blog.sem}}</a></li>
+            <li><a href="blog.html#category=digital">{{shared.footer.blog.marketing}}</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">{{shared.footer.contact.title}}</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              {{shared.footer.contact.address}}
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              {{shared.footer.contact.phone}}
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              {{shared.footer.contact.wechat}}
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:{{shared.footer.contact.email}}">{{shared.footer.contact.email}}</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>{{shared.footer.copyright}}</p>
+        <div class="footer-legal">
+          <a href="#">{{shared.footer.legal.privacy}}</a>
+          <a href="#">{{shared.footer.legal.terms}}</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

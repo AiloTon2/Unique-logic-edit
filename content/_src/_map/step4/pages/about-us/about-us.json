@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "關於我們 | Unique Logic - AI 數碼營銷專家",
+    "description": "專注提供個性化定製數碼營銷策略的專業團隊｜提供多元化的一條龍數碼營銷服務｜數碼營銷公司"
+  },
+  "hero": {
+    "tag": "關於 Unique Logic",
+    "title1": "為您打造最佳的",
+    "title2": "市場推廣策略",
+    "subtitle": "專注提供個性化定製數碼營銷策略的專業團隊｜提供多元化的一條龍數碼營銷服務｜數碼營銷公司",
+    "scroll_text": "往下滾動",
+    "back_home": "返回主頁"
+  },
+  "intro": {
+    "title": "關於Unique Logic的專業團隊的背景及介紹",
+    "body": "Unique Logic 是一家香港的數碼營銷公司，致力於幫助客戶在網上建立強大的品牌存在和實現業務增長。我們提供一系列多元化的一條龍數碼營銷服務。我們深入了解客戶的營銷目標、目標市場和競爭環境，並根據這些信息制定量身定制的營銷策略，以確保最大的效果和回報。"
+  },
+  "mission": {
+    "label": "我們的使命",
+    "title_line1": "致力為客戶建立",
+    "title_highlight": "強大的品牌曝光度",
+    "body": "Unique Logic 致力為客戶們在網上建立強大的品牌曝光度和實現業務增長。我們一直與時並進，團隊不斷地鑽研網絡、人工智能、社交平台以及市場上的最新的動態與資訊，並將所吸收的知識與經驗充分在客戶們的服務成果上反映。",
+    "services_intro": "我們的熱門服務包括",
+    "services": {
+      "ai_seo": "AI SEO (GEO)",
+      "seo": "SEO 搜尋引擎優化",
+      "sem": "SEM 搜尋廣告",
+      "web": "網頁設計及製作",
+      "more": "多媒體設計、社交媒體廣告、內容營銷等"
+    },
+    "cta": {
+      "prefix": "無論你是一家",
+      "sep": "、",
+      "startup": "初創公司",
+      "sme": "中小企",
+      "or": "還是",
+      "enterprise": "跨國企業",
+      "comma": "，",
+      "suffix": "Unique Logic 的團隊都能以最專業與現代化的知識去為客戶制定最合適的解決方案。"
+    }
+  },
+  "values": {
+    "label": "我們的價值",
+    "title_line1": "Google Partner",
+    "title_highlight": "官方認證的專業",
+    "partner_intro_title_prefix": "作為",
+    "partner_intro_google_text": "Google Partner",
+    "partner_intro_title_suffix": "官方合作夥伴",
+    "partner_intro_body_line1": "我們不僅擁有深厚的廣告操作經驗，更獲得 Google 官方的實力認可。",
+    "partner_intro_body_line2": "這代表 Unique Logic 能為您帶來：",
+    "benefits": {
+      "benefit1": {
+        "title": "頂尖專業團隊",
+        "desc": "團隊成員皆通過官方認證，精準掌握 Google 演算法，將獲客成本最小化。"
+      },
+      "benefit2": {
+        "title": "優先技術支援",
+        "desc": "享有 Google 官方技術綠色通道，快速解決帳戶問題，確保廣告投放不中斷。"
+      },
+      "benefit3": {
+        "title": "最新功能搶先用",
+        "desc": "優先試用 Google 最新的 Beta 測試版廣告功能，助您的品牌在市場中搶占先機。"
+      }
+    }
+  },
+  "why_partner": {
+    "label": "合作優勢",
+    "title_line1": "選擇與 Google Partner",
+    "title_highlight": "合作有什麼好處？",
+    "desc_line1": "在 Digital Marketing 的領域，",
+    "desc_mid": "「專業」是需要被證明的。",
+    "desc_line2": "身為 Google 合作夥伴，",
+    "desc_tail": "我們擁有以下四大優勢：",
+    "advantages": {
+      "adv1": {
+        "title": "超越標準的帳戶表現",
+        "desc": "Google 官方會持續監測我們的廣告表現。我們必須維持極高的「最佳化分數」，這確保了您的每一分廣告預算都是基於數據驅動的最佳實踐，而非盲目試錯。"
+      },
+      "adv2": {
+        "title": "掌握第一手的市場情報",
+        "desc": "我們能直接獲得來自 Google 的產業趨勢分析與消費者數據報告。這意味著您的行銷策略將比競爭對手更早洞察市場變化，搶奪精準流量。"
+      },
+      "adv3": {
+        "title": "官方技術直連，確保廣告不中斷",
+        "desc": "當帳戶遇到異常或技術瓶頸時，我們擁有專屬的 Google 官方溝通通道。透過 Google 專家團隊的直接技術支援，我們能比一般代理商更快速、精準地排除問題，讓您的行銷計畫始終穩定運行。"
+      },
+      "adv4": {
+        "title": "持續更新的專業，掌握最尖端策略",
+        "desc": "數位市場變化迅速，身為 Google Partner，我們受邀參與官方舉辦的深度培訓與技術更新課程。這保證了我們的操作思維始終與最新的演算法同步，確保您的廣告策略永遠領先市場，不落人後。"
+      }
+    }
+  },
+  "cta": {
+    "title": "準備好提升您的品牌了嗎？",
+    "desc": "讓 Unique Logic 的專業團隊為您制定最佳的數碼營銷策略",
+    "primary_btn": "立即聯絡我們",
+    "secondary_btn": "查看服務方案"
+  }
+}

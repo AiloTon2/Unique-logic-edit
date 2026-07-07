@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Social Media Marketing Services | Unique Logic - Boost Brand Visibility Through Social Media",
+    "description": "Low engagement on your brand channels? Our social media specialists craft and optimize ad strategies to attract high-intent audiences, increase brand awareness, and drive meaningful engagement. Contact us to start your next growth chapter."
+  },
+  "hero": {
+    "back_home": "Back to Home",
+    "breadcrumb": {
+      "home": "Home",
+      "solutions": "Digital Marketing Solutions",
+      "current": "Social Media Marketing Services"
+    },
+    "tag": "Digital Marketing Solutions",
+    "title_line1": "Social Media",
+    "title_line2": "Marketing Services",
+    "subtitle_line1": "Boost brand visibility through social media marketing",
+    "subtitle_line2": "Reach the right audience and turn attention into customers",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "label": "Service Overview",
+    "title_line1": "Strategic social media marketing",
+    "title_highlight": "Drive Business Growth",
+    "p1": "Struggling to increase your brand exposure on Facebook, Instagram or LinkedIn?",
+    "p2": "Our data-driven social media strategy helps businesses increase engagement, attract high-intent traffic, and improve conversions.",
+    "p3": "Precise social media marketing brings you real customers.",
+    "cta_btn": "Get a free quote",
+    "image_alt": "Social media marketing service"
+  },
+  "why_choose": {
+    "label": "Why Choose Us",
+    "title_line1": "Start converting fans into",
+    "title_highlight": "Real Customers",
+    "desc_line1": "Not every follower becomes a buyer -",
+    "desc_line2": "will yours?",
+    "desc_line3": "Our data-driven strategy connects social engagement with measurable conversions, helping you attract, engage, and convert high-intent customers.",
+    "desc_line4": "Here is how we make social media",
+    "desc_line5": "work harder for your business:",
+    "features": {
+      "f1": {
+        "title": "Reach the Right Audience Precisely",
+        "desc": "Stop spending ad budget on people who are unlikely to buy.<br>We refine audience targeting to reach users who are ready to take action."
+      },
+      "f2": {
+        "title": "Increase Engagement and Sales",
+        "desc": "Our high-impact content and ad creatives encourage action and help convert followers into customers."
+      },
+      "f3": {
+        "title": "Save time and simplify growth",
+        "desc": "Ad management is complex and time-consuming. We handle the entire process for you, allowing you to focus on running your business while achieving substantial results."
+      }
+    }
+  },
+  "results": {
+    "label": "Results-Driven",
+    "title_line1": "Your Success",
+    "title_highlight": "Is Our Strategy",
+    "desc_line1": "We create strategic, high-impact campaigns that turn exposure into real business growth.",
+    "desc_line2": "What sets us apart:",
+    "cards": {
+      "c1": {
+        "title": "Up to 50% engagement growth in one month",
+        "desc": "Social strategies that work quickly"
+      },
+      "c2": {
+        "title": "Accurate advertising",
+        "desc": "Target high-converting audiences"
+      },
+      "c3": {
+        "title": "Social media account audit",
+        "desc": "Strategic diagnostics and optimization recommendations"
+      },
+      "c4": {
+        "title": "Tailored Campaign Strategy",
+        "desc": "Dedicated strategies aligned with brand goals"
+      },
+      "c5": {
+        "title": "Transparent fees",
+        "desc": "No hidden fees, just results"
+      },
+      "c6": {
+        "title": "Cross-Industry Expert Team",
+        "desc": "Professional support across multiple platforms"
+      }
+    }
+  },
+  "categories": {
+    "label": "Service scope",
+    "title_line1": "We create efficient",
+    "title_highlight": "Social Media Campaigns",
+    "desc_line1": "Across Facebook, Instagram, LinkedIn, and other major platforms, we",
+    "desc_line2": "plan strategic, high-impact advertising campaigns.",
+    "desc_line3": "We help businesses improve engagement and reach target audiences accurately,",
+    "desc_line4": "driving meaningful business growth.",
+    "cards": {
+      "c1": {
+        "tag": "Core",
+        "title": "Brand building and promotion",
+        "items": {
+          "i1": "Demonstrate brand values ​​on social media",
+          "i2": "Tell your brand story and uniqueness",
+          "i3": "Attract user attention and engagement"
+        }
+      },
+      "c2": {
+        "tag": "Management",
+        "title": "Community Management",
+        "items": {
+          "i1": "Manage user interactions and responses",
+          "i2": "Maintain a good brand image"
+        }
+      },
+      "c3": {
+        "tag": "Flexible",
+        "title": "Flexible advertising budget",
+        "items": {
+          "i1": "Develop delivery strategies based on needs",
+          "i2": "Flexible ad serving options"
+        }
+      },
+      "c4": {
+        "tag": "Media Buying",
+        "title": "Advertising",
+        "items": {
+          "i1": "Targeted advertising",
+          "i2": "Multi-form advertising tools"
+        }
+      },
+      "c5": {
+        "tag": "Analytics",
+        "title": "Social media monitoring and analysis",
+        "items": {
+          "i1": "Data analysis platform tracking results",
+          "i2": "Optimize and adjust based on data"
+        }
+      },
+      "c6": {
+        "tag": "Creative",
+        "title": "Content strategy and creation",
+        "items": {
+          "i1": "Audience-aligned content strategy",
+          "i2": "Create valuable multimedia content"
+        }
+      }
+    }
+  },
+  "platforms": {
+    "label": "Platforms",
+    "title_line1": "Social Media",
+    "title_highlight": "Platforms",
+    "desc_line1": "Popular social platforms such as Facebook, Instagram, Twitter, LinkedIn, and YouTube have massive user bases",
+    "desc_line2": "and highly active communities.",
+    "desc_line3": "Social media marketing services leverage the advertising and promotion capabilities of these platforms to help you interact with your target audience,",
+    "desc_line4": "increase brand awareness, and drive more sales and conversions.",
+    "instagram": {
+      "title": "Instagram Advertising & Marketing",
+      "desc": "Instagram is one of the most influential social platforms, with over 1.3 billion active users worldwide as of 2023 - making it ideal for brand marketing.",
+      "items": {
+        "i1": "Viral Marketing",
+        "i2": "Instagram ads",
+        "i3": "Instagram Brand Page",
+        "i4": "Instagram Stories Ads",
+        "i5": "Instagram Shopping",
+        "i6": "Instagram Influencer Marketing"
+      }
+    },
+    "facebook": {
+      "title": "Facebook Advertising & Marketing",
+      "desc": "Facebook remains one of the world's largest social media platforms, with over 3 billion monthly active users as of 2023. Its ad formats and tools help businesses increase visibility and sales.",
+      "items": {
+        "i1": "Viral Marketing",
+        "i2": "Facebook ads",
+        "i3": "Facebook Brand Page",
+        "i4": "Facebook Groups",
+        "i5": "Facebook Messenger Ads",
+        "i6": "Facebook Influencer Marketing"
+      }
+    }
+  },
+  "process": {
+    "label": "Service Process",
+    "title_line1": "Our process",
+    "title_highlight": "Steps and Expected Outcomes",
+    "steps": {
+      "s1": {
+        "title": "Initial consultation",
+        "desc": "Contact us via WhatsApp or fill in the online form"
+      },
+      "s2": {
+        "title": "Submit information",
+        "desc": "Provide information about your website, pain points and target regions"
+      },
+      "s3": {
+        "title": "Confirm plan",
+        "desc": "Finalize service scope, keywords and timetable"
+      },
+      "s4": {
+        "title": "Strategy formulation and execution",
+        "desc": "Social media strategy, planning and execution services"
+      },
+      "s5": {
+        "title": "Performance Review and Optimization",
+        "desc": "Review performance every month to continuously increase website traffic and exposure"
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "FAQ",
+    "items": {
+      "q01": {
+        "q": "Which social media platforms do you support for marketing promotions?",
+        "a": "We can develop strategic promotion programs for major social platforms such as Facebook, Instagram, LinkedIn, Twitter and YouTube."
+      },
+      "q02": {
+        "q": "How do you ensure that your ads accurately reach your target customers?",
+        "a": "We combine precise audience targeting with advanced analytics to ensure ads are shown to users with strong purchase intent."
+      },
+      "q03": {
+        "q": "What results can I expect from using your social media marketing services?",
+        "a": "You can expect growth in engagement, website traffic, and conversion rate. In some cases, engagement has improved by up to 50%."
+      },
+      "q04": {
+        "q": "Will you create content for social media promotion?",
+        "a": "Yes. We create high-performing content assets, including copy, images, videos, and ad creatives tailored to your brand."
+      },
+      "q05": {
+        "q": "How do you evaluate and optimize the effectiveness of social media promotions?",
+        "a": "Utilize advanced monitoring tools and analysis platforms to continuously optimize promotion strategies based on data insights."
+      }
+    }
+  },
+  "cta": {
+    "title": "Boost Brand Visibility with a Free Social Media Audit",
+    "desc": "Let Unique Logic’s team of professionals develop the best social media marketing strategy for you",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  },
+  "floating": {
+    "text": "🔥 This month only: Get a free social media account audit report with your first consultation",
+    "btn": "Claim Now"
+  }
+}

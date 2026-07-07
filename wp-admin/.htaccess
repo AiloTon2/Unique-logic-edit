@@ -1,0 +1,24 @@
+#Deny access using specific IP address or range of IP addresses
+order allow,deny
+# Isaac VPN
+allow from 103.199.105.215
+# Klaus VPN
+allow from 103.199.105.235
+# Locke VPN
+allow from 103.199.105.236
+# Tommy VPN
+allow from 103.199.105.214
+# Charlotte VPN
+allow from 103.199.105.216
+# Debbie VPN
+allow from 103.199.105.219
+# Felix VPN
+allow from 103.199.105.221
+# Eric VPN
+allow from 103.199.105.248
+# Davi VPN
+#allow from 103.199.105.227
+
+<FilesMatch admin-ajax\.php>
+	Allow from all
+</FilesMatch>

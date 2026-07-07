@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{post.title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="blog-article.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index-v1.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="{{shared.nav.logo_alt}}" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link">{{shared.nav.menu.about}}</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown">
+            {{shared.nav.menu.solutions}}
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">{{shared.footer.menu.ai_seo}}</a>
+            <a href="seo-services.html" class="dropdown-item">{{shared.footer.menu.seo}}</a>
+            <a href="orm-services.html" class="dropdown-item">{{shared.footer.menu.orm}}</a>
+            <a href="sem-services.html" class="dropdown-item">{{shared.footer.menu.sem}}</a>
+            <a href="#" class="dropdown-item">{{shared.footer.menu.content}}</a>
+            <a href="social-media-services.html" class="dropdown-item">{{shared.footer.menu.social}}</a>
+            <a href="web-design-services.html" class="dropdown-item">{{shared.footer.menu.web}}</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link active">{{shared.nav.menu.blog}}</a>
+        <a href="contact.html" class="nav-link">{{shared.nav.menu.contact}}</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active">{{shared.nav.lang.zh-hant}}</button>
+          <button class="lang-btn">{{shared.nav.lang.en}}</button>
+          <button class="lang-btn">{{shared.nav.lang.zh-hans}}</button>
+        </div>
+        <a href="contact.html" class="nav-cta">{{shared.nav.cta}}</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link">{{shared.mobile.menu.about}}</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle">
+          {{shared.mobile.menu.solutions}}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">{{shared.footer.menu.ai_seo}}</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">{{shared.footer.menu.seo}}</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">{{shared.footer.menu.orm}}</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">{{shared.footer.menu.sem}}</a>
+          <a href="#" class="mobile-dropdown-item">{{shared.footer.menu.content}}</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">{{shared.footer.menu.social}}</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">{{shared.footer.menu.web}}</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link active">{{shared.mobile.menu.blog}}</a>
+      <a href="contact.html" class="mobile-link">{{shared.mobile.menu.contact}}</a>
+      <div class="mobile-lang">
+        <button class="lang-btn active">{{shared.mobile.lang.zh-hant}}</button>
+        <button class="lang-btn">{{shared.mobile.lang.en}}</button>
+        <button class="lang-btn">{{shared.mobile.lang.zh-hans}}</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Hero Section -->
+  <section class="article-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <!-- Back Button -->
+    <a href="blog.html" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      {{post.back_to_blog}}
+    </a>
+    
+    <div class="article-hero-content">
+      <div class="article-meta">
+        <span class="article-category ai">{{post.category}}</span>
+        <time class="article-date">{{post.date}}</time>
+      </div>
+      <h1 class="article-hero-title reveal-text">
+        {{post.title}}
+      </h1>
+      <p class="article-hero-intro reveal-text">
+        {{post.excerpt}}
+      </p>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>{{post.scroll_text}}</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article class="article-content">
+    <div class="article-container">
+      
+      <!-- Featured Image (injected by JS if present) -->
+      <div class="article-featured-image reveal-item" id="post-featured-image"></div>
+      
+      <!-- Full post body from WordPress -->
+      <div class="article-body reveal-item" id="post-body"></div>
+      
+    </div>
+  </article>
+
+  <!-- Article CTA Section -->
+  <section class="article-cta reveal-item">
+    <div class="article-cta-container">
+      <div class="cta-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+          <path d="M24 16V26M24 32V32.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2>{{post.cta_title}}</h2>
+      <p>{{post.cta_desc}}</p>
+      <a href="contact.html" class="cta-button">
+        {{post.cta_btn}}
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Related Articles Section (injected by JS) -->
+  <section class="related-articles" id="related-articles-section"></section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+      <span class="floating-cta-text">{{shared.floating_cta.text}}</span>
+      <a href="contact.html" class="floating-cta-btn">{{shared.floating_cta.btn}}</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index-v1.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="{{shared.footer.logo_alt}}" class="logo-img">
+          </a>
+          <p class="footer-tagline">{{shared.footer.tagline}}</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.facebook_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.linkedin_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="{{shared.footer.social.instagram_aria}}">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">{{shared.footer.menu.title}}</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">{{shared.footer.menu.ai_seo}}</a></li>
+            <li><a href="seo-services.html">{{shared.footer.menu.seo}}</a></li>
+            <li><a href="orm-services.html">{{shared.footer.menu.orm}}</a></li>
+            <li><a href="sem-services.html">{{shared.footer.menu.sem}}</a></li>
+            <li><a href="#">{{shared.footer.menu.content}}</a></li>
+            <li><a href="social-media-services.html">{{shared.footer.menu.social}}</a></li>
+            <li><a href="web-design-services.html">{{shared.footer.menu.web}}</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">{{shared.nav.menu.blog}}</h4>
+          <ul>
+            <li><a href="blog.html#category=ai">{{shared.footer.blog.ai_sem}}</a></li>
+            <li><a href="blog.html#category=seo">{{shared.footer.blog.seo}}</a></li>
+            <li><a href="blog.html#category=sem">{{shared.footer.blog.sem}}</a></li>
+            <li><a href="blog.html#category=digital">{{shared.footer.blog.marketing}}</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">{{shared.nav.menu.contact}}</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              {{shared.footer.contact.address}}
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              {{shared.footer.contact.phone}}
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              {{shared.footer.contact.wechat}}
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:{{shared.footer.contact.email}}">{{shared.footer.contact.email}}</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>{{shared.footer.copyright}}</p>
+        <div class="footer-legal">
+          <a href="#">{{shared.footer.legal.privacy}}</a>
+          <a href="#">{{shared.footer.legal.terms}}</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

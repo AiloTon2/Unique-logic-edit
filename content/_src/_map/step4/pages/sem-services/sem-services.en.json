@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Search Engine Marketing Services (SEM) | Unique Logic - Digital Marketing Expert",
+    "description": "Partner with Unique Logic, one of Hong Kong's leading SEM agencies, to grow your sales. Our performance-driven SEM and paid advertising services maximize return on investment through strategic optimization and data analytics."
+  },
+  "hero": {
+    "back_home": "Return to homepage",
+    "breadcrumb": {
+      "home": "Home",
+      "solutions": "Digital Marketing Solutions",
+      "current": "Search Engine Marketing Services (SEM)"
+    },
+    "tag": "Digital Marketing Solutions",
+    "title_line1": "Search Engine Marketing",
+    "title_line2": "SEM Services",
+    "subtitle_line1": "Performance-driven SEM and paid advertising that maximizes your return on investment.",
+    "subtitle_line2": "Powered by data analytics to accelerate measurable growth.",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "label": "Service Overview",
+    "title_line1": "Drive Immediate Traffic",
+    "title_highlight": "Maximize ROI",
+    "p1": "Traffic alone is not enough - conversions are what truly matter. With a trusted SEM partner, your campaigns are professionally optimized to attract high-intent users, increase engagement, and convert visitors into paying customers.",
+    "cta_btn": "Get a free quote",
+    "image_alt": "Search engine marketing services"
+  },
+  "challenges": {
+    "label": "Solving Challenges",
+    "title_line1": "Start solving your Google advertising problems",
+    "title_highlight": "Biggest Challenges",
+    "features": {
+      "f1": {
+        "title": "1. Competition is fierce",
+        "desc": "Competitors bidding aggressively and driving up ad costs? Our SEM services help you outperform rivals and secure premium placements."
+      },
+      "f2": {
+        "title": "2. Budget Drain",
+        "desc": "Spending budget but missing prime windows? We schedule your Google Search Ads for peak audience activity to improve ad performance."
+      },
+      "f3": {
+        "title": "3. Wasted Ad Spend",
+        "desc": "Budget going to low-converting keywords? We optimize your SEM strategy to reach high-value audiences and reduce inefficient exposure."
+      },
+      "f4": {
+        "title": "4. Weak Results",
+        "desc": "High traffic but low leads or sales? We diagnose root causes and optimize campaigns end-to-end so every click has stronger conversion potential."
+      }
+    }
+  },
+  "success": {
+    "label": "Path to Success",
+    "title_line1": "Your path to SEM success",
+    "title_highlight": "Start with a trusted partner",
+    "desc": "Transparent, data-driven, and results-focused",
+    "cards": {
+      "c1": {
+        "title": "Data-driven optimization",
+        "desc": "We use deep insights and trend forecasting to maximize your return on investment"
+      },
+      "c2": {
+        "title": "Ultimate control",
+        "desc": "Combining machine learning with expert management for precise budget control"
+      },
+      "c3": {
+        "title": "Be smart about bidding",
+        "desc": "Use smart keywords and ad copy strategies to effectively control costs"
+      },
+      "c4": {
+        "title": "Tailor-made strategy",
+        "desc": "Develop customized SEM solutions based on your business needs"
+      },
+      "c5": {
+        "title": "Transparent management",
+        "desc": "Every dollar of ad spend is clearly tracked for full transparency"
+      },
+      "c6": {
+        "title": "Expert Team",
+        "desc": "Managed by former Google advertising specialists to guide your growth"
+      }
+    }
+  },
+  "categories": {
+    "label": "Service Scope",
+    "title_line1": "Comprehensive SEM Solutions",
+    "title_highlight": "From clicks to conversions",
+    "desc_line1": "We build high-performance Search, Display, Video, and Demand Gen campaigns",
+    "desc_line2": "and Performance Max advertising campaigns.",
+    "cards": {
+      "c1": {
+        "tag": "Maximize",
+        "title": "Performance",
+        "items": {
+          "i1": "Google Ads Management",
+          "i2": "Keyword research",
+          "i3": "Competitor and market analysis"
+        }
+      },
+      "c2": {
+        "tag": "Performance",
+        "title": "Analysis",
+        "items": {
+          "i1": "High-converting keywords",
+          "i2": "Quality score review, budget planning, and cost allocation"
+        }
+      },
+      "c3": {
+        "tag": "Optimization",
+        "title": "Performance",
+        "items": {
+          "i1": "Audience segmentation",
+          "i2": "Ad copy A/B testing and bidding strategies"
+        }
+      },
+      "c4": {
+        "tag": "Improve",
+        "title": "Conversion Rate",
+        "items": {
+          "i1": "Remarketing and new customer development",
+          "i2": "Local targeting, conversion tracking and goal setting"
+        }
+      },
+      "c5": {
+        "tag": "Performance",
+        "title": "Insight",
+        "items": {
+          "i1": "Transparent monthly reports, bidding analysis, and actionable recommendations"
+        }
+      }
+    }
+  },
+  "ad_types": {
+    "label": "Ad Types",
+    "title_line1": "Performance Marketing and",
+    "title_highlight": "Digital Advertising Services",
+    "desc": "Common forms of performance marketing",
+    "cards": {
+      "c1": {
+        "title": "Search Engine Marketing (SEM)",
+        "desc": "Place targeted ads through search engines"
+      },
+      "c2": {
+        "title": "Pay Per Click Advertising (PPC)",
+        "desc": "Pay-per-click targeted advertising"
+      },
+      "c3": {
+        "title": "Google Display Network (GDN)",
+        "desc_line1": "On the Google network",
+        "desc_line2": "Display brand ads"
+      },
+      "c4": {
+        "title": "Affiliate Advertising",
+        "desc_line1": "Affiliate Advertising",
+        "desc_line2": "Affiliate Marketing"
+      },
+      "c5": {
+        "title": "Programmatic Advertising",
+        "desc": "Automated media buying powered by data and targeting"
+      }
+    }
+  },
+  "process": {
+    "label": "Service process",
+    "title_line1": "Our SEM process",
+    "title_highlight": "Step-by-Step Process and Expected Outcomes",
+    "steps": {
+      "s1": {
+        "title": "Initial consultation",
+        "desc": "Contact us via WhatsApp or fill out the online form"
+      },
+      "s2": {
+        "title": "Submit information",
+        "desc": "Provide information about your website, pain points and target regions"
+      },
+      "s3": {
+        "title": "Confirm the Plan",
+        "desc": "Finalize service scope, keywords and timetable"
+      },
+      "s4": {
+        "title": "Strategy and Execution",
+        "desc": "We design and implement a tailored SEM optimization plan for your business"
+      },
+      "s5": {
+        "title": "Performance Review and Optimization",
+        "desc": "Review performance monthly to continuously improve advertising effectiveness and return on investment"
+      }
+    }
+  },
+  "partner": {
+    "label": "Partnership Advantages",
+    "title_line1": "Why choose Unique Logic",
+    "title_highlight": "As your SEM partner?",
+    "p1": "The biggest difference between Unique Logic and other Hong Kong SEM agencies is our data-centric and fully transparent operation model. Our team comes from Google and combines advanced machine learning technology with rich talent experience to maximize your return on investment.",
+    "p2": "We will tailor a SEM strategy based on your business needs and provide clear reports so you know where every ad budget goes.",
+    "benefits": {
+      "b1": "Former Google Team Operators",
+      "b2": "Data-Driven Decision Making",
+      "b3": "Transparent Reporting"
+    },
+    "cta_btn": "Contact us now"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "FAQ",
+    "items": {
+      "q01": {
+        "q": "How is Unique Logic different? Why is it trustworthy?",
+        "a": "The biggest difference between Unique Logic and other Hong Kong SEM agencies is our data-centric and fully transparent operation model. Our team comes from Google and combines advanced machine learning technology with rich talent experience to maximize your return on investment. We will tailor a SEM strategy based on your business needs and provide clear reports so you know where every ad budget goes."
+      },
+      "q02": {
+        "q": "How do I make sure my Google Ads budget isn't wasted?",
+        "a": "We focus on high-intent keywords and continually optimize your campaigns to weed out ineffective ads. Our SEM management includes audience segmentation, ad copy A/B testing, and smart bidding strategies to ensure every dollar of your budget delivers real results."
+      },
+      "q03": {
+        "q": "How long does it take for my ads to show results?",
+        "a": "Most clients will see an increase in traffic and conversion rates within the first month, but actual results will vary depending on the size of the campaign and industry. We provide transparent reports every month so you can clearly track progress and return on investment."
+      },
+      "q04": {
+        "q": "What types of SEM campaigns do you manage?",
+        "a": "We provide end-to-end SEM services, including Search, Display, Video, Demand Gen, and Performance Max campaigns. From keyword research and competitor analysis to conversion tracking and remarketing, we manage every stage in Google Ads."
+      },
+      "q05": {
+        "q": "Why is localized SEM important for Hong Kong businesses?",
+        "a": "Localized SEM can ensure that your ads reach the right target audience at the right time, especially in a highly competitive market like Hong Kong. Through localized targeting and optimization for Hong Kong search habits, we help you attract high-quality potential customers and outperform your competitors."
+      }
+    }
+  },
+  "cta": {
+    "title": "Stop losing potential customers to competitors",
+    "desc": "Let every dollar of your budget pay off! Partner with Unique Logic today",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  },
+  "floating": {
+    "text": "🚀 Maximize your advertising investment return: free SEM audit report for your first consultation",
+    "btn": "Get it now"
+  }
+}

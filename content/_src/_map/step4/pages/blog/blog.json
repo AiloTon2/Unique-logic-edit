@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "title": "部落格與新聞|獨特邏輯-AI數位行銷專家",
+    "description": "掌握數碼趨勢，重新定義數碼營銷的可能。探索AI搜尋行銷、SEO優化、SEM搜尋廣告及數碼營銷最新資訊與專業見解。"
+  },
+  "nav": {
+    "logo_alt": "獨特的邏輯",
+    "menu": {
+      "about": "關於我們",
+      "solutions": "數位行銷計劃",
+      "blog": "部落格和新聞",
+      "contact": "聯絡我們"
+    },
+    "dropdown": {
+      "ai_seo": "人工智慧SEO服務（GEO）",
+      "seo": "搜尋引擎優化服務",
+      "orm": "線上聲譽管理",
+      "sem": "搜尋引擎行銷服務",
+      "content": "內容行銷服務",
+      "social": "社群媒體行銷",
+      "web": "網頁設計服務",
+      "ecommerce": "電子商務服務"
+    },
+    "lang": {
+      "en": "EN",
+      "zh_hant": "繁",
+      "zh_hans": "简"
+    },
+    "cta": "立即諮詢"
+  },
+  "mobile": {
+    "menu": {
+      "about": "關於我們",
+      "solutions": "數位行銷計劃",
+      "blog": "部落格和新聞",
+      "contact": "聯絡我們"
+    },
+    "dropdown": {
+      "ai_seo": "人工智慧SEO服務（GEO）",
+      "seo": "搜尋引擎優化服務",
+      "orm": "線上聲譽管理",
+      "sem": "搜尋引擎行銷服務",
+      "content": "內容行銷服務",
+      "social": "社群媒體行銷",
+      "web": "網頁設計服務",
+      "ecommerce": "電子商務服務"
+    },
+    "lang": {
+      "en": "English",
+      "zh_hant": "繁體中文",
+      "zh_hans": "简体中文"
+    }
+  },
+  "hero": {
+    "back_home": "回首頁",
+    "tag": "部落格和新聞",
+    "title": "部落格和新聞",
+    "subtitle": "掌握數位趨勢，重新定義數位行銷的可能",
+    "scroll_text": "向下捲動"
+  },
+  "filters": {
+    "all": "全部",
+    "ai": "人工智慧搜尋行銷",
+    "sem": "SEM搜尋行銷",
+    "seo": "搜尋引擎優化",
+    "digital": "數位行銷"
+  },
+  "posts": {
+    "p1": {
+      "image_alt": "AI SEO 如何推動高品質 B2B 潛在客戶開發",
+      "category": "人工智慧搜尋行銷",
+      "date": "2026年6月2日",
+      "title": "AI SEO 如何推動高品質 B2B 潛在客戶開發",
+      "link_text": "閱讀文章",
+      "link_href": "blog-article-1.html"
+    },
+    "p2": {
+      "image_alt": "2026 年人工智慧搜尋優化指南：如何讓 LLM 發現內容",
+      "category": "人工智慧搜尋行銷",
+      "date": "30/01/2026",
+      "title": "2026 年人工智慧搜尋優化指南：如何讓 LLM 發現內容",
+      "link_text": "閱讀文章",
+      "link_href": "#"
+    },
+    "p3": {
+      "image_alt": "人工智慧SEO真的和傳統SEO一樣有效嗎？",
+      "category": "人工智慧搜尋行銷",
+      "date": "21/01/2026",
+      "title": "人工智慧SEO真的和傳統SEO一樣有效嗎？",
+      "link_text": "閱讀文章",
+      "link_href": "#"
+    }
+  },
+  "pagination": {
+    "prev": "上一頁",
+    "next": "下一個"
+  },
+  "sidebar": {
+    "subscribe": {
+      "title": "訂閱我們的部落格和新聞",
+      "desc": "獲取每日行業洞察",
+      "placeholder": "電子郵件",
+      "btn": "立即取得免費診斷報告"
+    },
+    "social": {
+      "title": "關注我們",
+      "desc": "社群媒體平台",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "featured": {
+      "title": "最新文章",
+      "category": "人工智慧搜尋行銷",
+      "headline": "AI SEO 如何推動高品質 B2B 潛在客戶開發",
+      "date": "2026年6月2日",
+      "link": "閱讀全文",
+      "href": "blog-article-1.html"
+    }
+  },
+  "floating": {
+    "text": "🔥 僅限本月：第一次諮詢時免費獲得人工智慧可見性報告",
+    "btn": "立即領取"
+  },
+  "footer": {
+    "logo_alt": "獨特的邏輯",
+    "tagline": "增加流量。提高利潤。",
+    "menu": {
+      "title": "數位行銷計劃",
+      "ai_seo": "人工智慧SEO服務（GEO）",
+      "seo": "搜尋引擎優化服務",
+      "orm": "線上聲譽管理",
+      "sem": "搜尋引擎行銷服務",
+      "content": "內容行銷服務",
+      "social": "社群媒體行銷",
+      "web": "網頁設計服務",
+      "ecommerce": "電子商務服務"
+    },
+    "blog": {
+      "title": "部落格和新聞",
+      "ai": "人工智慧搜尋行銷",
+      "seo": "搜尋引擎優化",
+      "sem": "SEM搜尋行銷",
+      "digital": "數位行銷"
+    },
+    "contact": {
+      "title": "聯絡我們",
+      "address": "香港九龍灣啟祥道17大豐樓1007室",
+      "phone": "+852 8400 7393 / +852 3860 7900",
+      "wechat": "微信：UniqueLogic393",
+      "email": "info@uniquelogic.com"
+    },
+    "copyright": "&copy; 2026 Unique Logic Limited | All rights reserved",
+    "legal": {
+      "privacy": "隱私政策 &amp; Cookies",
+      "terms": "條款及細則"
+    },
+    "social": {
+      "facebook_aria": "Facebook",
+      "linkedin_aria": "領英",
+      "instagram_aria": "Instagram",
+      "facebook_href": "https://www.facebook.com/UniqueLogicDigital",
+      "linkedin_href": "https://www.linkedin.com/company/unique-logic/",
+      "instagram_href": "https://instagram.com/uniquelogic_digital?igshid=YmMyMTA2M2Y="
+    }
+  }
+}

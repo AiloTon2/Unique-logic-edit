@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "title": "Online Reputation Management Services | Unique Logic - Digital Marketing Expert",
+    "description": "Online reputation management is a key digital strategy for building a positive brand image, reducing the impact of negative reviews, and removing harmful content. Through professional SEO and digital marketing strategies, we help brands improve credibility, attract potential customers, and unlock new business opportunities. As a professional online reputation management company, we are committed to helping you protect and strengthen your online reputation in Hong Kong."
+  },
+  "hero": {
+    "back_home": "Return to home page",
+    "breadcrumb": {
+      "home": "Home",
+      "solutions": "Digital Marketing Solutions",
+      "current": "Online Reputation Management Services"
+    },
+    "tag": "Digital Marketing Solutions",
+    "title_line1": "Online Reputation Management",
+    "title_line2": "Services",
+    "subtitle_line1": "Establish a positive image, downplay negative comments, and remove negative information.",
+    "subtitle_line2": "Enhance brand value and attract potential customers through professional SEO and digital marketing strategies.",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "label": "Service Overview",
+    "title_line1": "Strong brand reputation",
+    "title_highlight": "Builds Customer Trust",
+    "p1": "When a brand has a good reputation, it inspires customer trust and loyalty, establishes authority in the industry, and becomes an important driver of revenue and growth.",
+    "p2": "However, a negative reputation can hurt sales and customer retention. As a professional online reputation management company, we are committed to helping you maintain and enhance your online reputation.",
+    "cta_btn": "Get a free consultation",
+    "image_alt": "Online Reputation Management Services"
+  },
+  "why_choose": {
+    "label": "Why Choose ORM",
+    "title_line1": "Online Reputation Management",
+    "title_highlight": "What is it?",
+    "desc": "Online reputation management is one of the important strategies for online promotion. It can help build a positive image, downplay negative reviews,<br>and remove unfavorable information. Through professional SEO and digital marketing strategies, we can effectively enhance brand value, attract potential customers, and increase business opportunities.",
+    "features": {
+      "f1": {
+        "title": "Create a positive image",
+        "desc": "Create a positive brand image and enhance public awareness"
+      },
+      "f2": {
+        "title": "Minimize Negative Reviews",
+        "desc": "Strategically handle negative reviews to reduce negative impact"
+      },
+      "f3": {
+        "title": "Remove negative information",
+        "desc": "Professional means to remove content that is harmful to your brand"
+      },
+      "f4": {
+        "title": "Enhance brand value",
+        "desc": "Enhance brand competitiveness through professional SEO strategies"
+      },
+      "f5": {
+        "title": "Attract potential customers",
+        "desc": "A good reputation brings more business opportunities"
+      }
+    }
+  },
+  "results": {
+    "label": "Results-Driven",
+    "title_line1": "Why online reputation",
+    "title_highlight": "Matter So Much?",
+    "desc": "In today's society, most people conduct online searches and read reviews, testimonials, and other people's opinions before making a purchase decision to determine whether a brand or product is trustworthy. If your online reputation is affected by negative reviews or unfavorable information, this can seriously damage your brand and corporate image and lead to the loss of potential customers.",
+    "cards": {
+      "c1": {
+        "title": "Impact on purchasing decisions",
+        "desc": "Customers review online ratings before making a purchase"
+      },
+      "c2": {
+        "title": "Trust Building",
+        "desc": "Good reviews increase customer confidence"
+      },
+      "c3": {
+        "title": "Brand image maintenance",
+        "desc": "Protect the long-term brand value of the company"
+      },
+      "c4": {
+        "title": "Avoid customer churn",
+        "desc": "Reduce the loss of potential customers due to negative reviews"
+      }
+    }
+  },
+  "categories": {
+    "label": "Service Scope",
+    "title_line1": "Online Reputation Management Services",
+    "title_highlight": "Comprehensive Solutions",
+    "desc_line1": "As a professional digital marketing management company, our online reputation management team provides comprehensive solutions.",
+    "desc_line2": "to help you maintain and improve your reputation.",
+    "cards": {
+      "c1": {
+        "tag": "Core",
+        "title": "Monitor and evaluate",
+        "items": {
+          "i1": "Monitor brand online mentions in real time",
+          "i2": "Assess existing reputation status",
+          "i3": "Identify potential reputational risks"
+        }
+      },
+      "c2": {
+        "tag": "Response",
+        "title": "Feedback and Response",
+        "items": {
+          "i1": "Respond professionally to negative reviews",
+          "i2": "Crisis communication support"
+        }
+      },
+      "c3": {
+        "tag": "Optimization",
+        "title": "Keyword Optimization",
+        "items": {
+          "i1": "SEO optimization improves positive content rankings",
+          "i2": "Suppress negative search results"
+        }
+      },
+      "c4": {
+        "tag": "Build",
+        "title": "Positive Content",
+        "items": {
+          "i1": "Create high-quality brand content",
+          "i2": "Build a positive brand narrative"
+        }
+      },
+      "c5": {
+        "tag": "Analysis",
+        "title": "Monitor competitors",
+        "items": {
+          "i1": "Competitor reputation analysis"
+        }
+      }
+    }
+  },
+  "process": {
+    "label": "Service process",
+    "title_line1": "Our reputation management process",
+    "title_highlight": "Help you succeed",
+    "steps": {
+      "s1": {
+        "title": "Free consultation",
+        "desc": "Contact us via WhatsApp or fill out the online form to learn about your reputation management needs"
+      },
+      "s2": {
+        "title": "Reputation review",
+        "desc": "Comprehensive assessment of your current online reputation status, identifying issues and opportunities"
+      },
+      "s3": {
+        "title": "Strategy Development",
+        "desc": "Develop a personalized reputation management strategy based on audit results"
+      },
+      "s4": {
+        "title": "Execution & Implementation",
+        "desc": "Professional team executes reputation management plan, including content creation and SEO optimization"
+      },
+      "s5": {
+        "title": "Continuous monitoring",
+        "desc": "Regular reporting and ongoing monitoring to ensure continued reputation improvement"
+      }
+    }
+  },
+  "partner": {
+    "label": "Partnership Advantages",
+    "title_line1": "Why choose us",
+    "title_highlight": "As a reputation management partner?",
+    "p1": "Whether you are an individual or a business, our online reputation management services can help you build a positive online image, attract more customers and improve your chances of business success.",
+    "p2": "As a digital marketing management company, our online reputation management team is committed to helping you maintain and enhance your online reputation using professional SEO and digital marketing strategies.",
+    "benefits": {
+      "b1": "Professional team support",
+      "b2": "Comprehensive monitoring services",
+      "b3": "Tailor-made strategy"
+    },
+    "cta_btn": "Contact us now"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "FAQ",
+    "items": {
+      "q01": {
+        "q": "How long does it take for online reputation management services to be effective?",
+        "a": "Reputation management is an ongoing process. Initial results are usually visible within 1-3 months, but building a solid positive reputation requires long-term and sustained effort. The exact timing depends on the existing reputational status and the severity of the problem."
+      },
+      "q02": {
+        "q": "Can negative reviews be removed entirely?",
+        "a": "It depends on the situation. If a comment violates platform policies or laws, we can assist with requesting removal. For legitimate negative reviews, we will dilute their impact by creating positive content and SEO strategies."
+      },
+      "q03": {
+        "q": "What services does reputation management include?",
+        "a": "Our services include: real-time monitoring and evaluation, feedback and response management, keyword optimization, positive content creation, competitor monitoring, and regular reporting and strategy adjustments."
+      },
+      "q04": {
+        "q": "Does it apply to both individuals and businesses?",
+        "a": "Yes, our online reputation management services are available for individuals and businesses. Whether you are a professional, a public figure or a corporate brand, we can provide tailor-made reputation management solutions."
+      },
+      "q05": {
+        "q": "How do I get started?",
+        "a": "Just contact us for a free consultation. We'll first understand your needs, conduct an initial reputation audit, and then develop a personalized reputation management strategy and quote for you."
+      }
+    }
+  },
+  "cta": {
+    "title": "Stop losing potential customers to competitors",
+    "desc": "Let Unique Logic’s professional team manage and enhance your online reputation for you",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  },
+  "floating": {
+    "text": "🛡️ Protect your brand reputation: Get a free reputation audit report for your first consultation",
+    "btn": "Get it now"
+  }
+}

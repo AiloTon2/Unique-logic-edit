@@ -1,0 +1,118 @@
+<?php
+/**
+ * One-time script: seed About Us custom fields for TC/EN/SC from step4 JSON.
+ *
+ * Run:
+ *   docker exec -u www-data wordpress wp eval-file /var/www/html/wp-content/seed-about-us-meta.php
+ */
+
+function build_meta_map( $data ) {
+	return array(
+		'hero_tag'            => $data['hero']['tag'] ?? '',
+		'hero_title1'         => $data['hero']['title1'] ?? '',
+		'hero_title2'         => $data['hero']['title2'] ?? '',
+		'hero_subtitle'       => $data['hero']['subtitle'] ?? '',
+		'hero_scroll_text'    => $data['hero']['scroll_text'] ?? '',
+		'hero_back_home'      => $data['hero']['back_home'] ?? '',
+		'intro_title'         => $data['intro']['title'] ?? '',
+		'intro_body'          => $data['intro']['body'] ?? '',
+		'mission_label'       => $data['mission']['label'] ?? '',
+		'mission_title_line1' => $data['mission']['title_line1'] ?? '',
+		'mission_title_highlight' => $data['mission']['title_highlight'] ?? '',
+		'mission_body'        => $data['mission']['body'] ?? '',
+		'mission_services_intro' => $data['mission']['services_intro'] ?? '',
+		'mission_services_ai_seo' => $data['mission']['services']['ai_seo'] ?? '',
+		'mission_services_seo' => $data['mission']['services']['seo'] ?? '',
+		'mission_services_sem' => $data['mission']['services']['sem'] ?? '',
+		'mission_services_web' => $data['mission']['services']['web'] ?? '',
+		'mission_services_more' => $data['mission']['services']['more'] ?? '',
+		'mission_cta_prefix'  => $data['mission']['cta']['prefix'] ?? '',
+		'mission_cta_sep'     => $data['mission']['cta']['sep'] ?? '',
+		'mission_cta_startup' => $data['mission']['cta']['startup'] ?? '',
+		'mission_cta_sme'     => $data['mission']['cta']['sme'] ?? '',
+		'mission_cta_or'      => $data['mission']['cta']['or'] ?? '',
+		'mission_cta_enterprise' => $data['mission']['cta']['enterprise'] ?? '',
+		'mission_cta_comma'   => $data['mission']['cta']['comma'] ?? '',
+		'mission_cta_suffix'  => $data['mission']['cta']['suffix'] ?? '',
+		'values_label'        => $data['values']['label'] ?? '',
+		'values_title_line1' => $data['values']['title_line1'] ?? '',
+		'values_title_highlight' => $data['values']['title_highlight'] ?? '',
+		'values_partner_intro_title_prefix' => $data['values']['partner_intro_title_prefix'] ?? '',
+		'values_partner_intro_google_text'  => $data['values']['partner_intro_google_text'] ?? '',
+		'values_partner_intro_title_suffix' => $data['values']['partner_intro_title_suffix'] ?? '',
+		'values_partner_intro_body_line1'   => $data['values']['partner_intro_body_line1'] ?? '',
+		'values_partner_intro_body_line2'   => $data['values']['partner_intro_body_line2'] ?? '',
+		'values_benefit1_title' => $data['values']['benefits']['benefit1']['title'] ?? '',
+		'values_benefit1_desc' => $data['values']['benefits']['benefit1']['desc'] ?? '',
+		'values_benefit2_title' => $data['values']['benefits']['benefit2']['title'] ?? '',
+		'values_benefit2_desc' => $data['values']['benefits']['benefit2']['desc'] ?? '',
+		'values_benefit3_title' => $data['values']['benefits']['benefit3']['title'] ?? '',
+		'values_benefit3_desc' => $data['values']['benefits']['benefit3']['desc'] ?? '',
+		'why_partner_label'   => $data['why_partner']['label'] ?? '',
+		'why_partner_title_line1' => $data['why_partner']['title_line1'] ?? '',
+		'why_partner_title_highlight' => $data['why_partner']['title_highlight'] ?? '',
+		'why_partner_desc_line1' => $data['why_partner']['desc_line1'] ?? '',
+		'why_partner_desc_mid' => $data['why_partner']['desc_mid'] ?? '',
+		'why_partner_desc_line2' => $data['why_partner']['desc_line2'] ?? '',
+		'why_partner_desc_tail' => $data['why_partner']['desc_tail'] ?? '',
+		'why_partner_adv1_title' => $data['why_partner']['advantages']['adv1']['title'] ?? '',
+		'why_partner_adv1_desc' => $data['why_partner']['advantages']['adv1']['desc'] ?? '',
+		'why_partner_adv2_title' => $data['why_partner']['advantages']['adv2']['title'] ?? '',
+		'why_partner_adv2_desc' => $data['why_partner']['advantages']['adv2']['desc'] ?? '',
+		'why_partner_adv3_title' => $data['why_partner']['advantages']['adv3']['title'] ?? '',
+		'why_partner_adv3_desc' => $data['why_partner']['advantages']['adv3']['desc'] ?? '',
+		'why_partner_adv4_title' => $data['why_partner']['advantages']['adv4']['title'] ?? '',
+		'why_partner_adv4_desc' => $data['why_partner']['advantages']['adv4']['desc'] ?? '',
+		'cta_title'           => $data['cta']['title'] ?? '',
+		'cta_desc'            => $data['cta']['desc'] ?? '',
+		'cta_primary_btn'     => $data['cta']['primary_btn'] ?? '',
+		'cta_secondary_btn'   => $data['cta']['secondary_btn'] ?? '',
+	);
+}
+
+function read_json_file( $path ) {
+	if ( ! is_readable( $path ) ) return null;
+	$data = json_decode( file_get_contents( $path ), true );
+	return is_array( $data ) ? $data : null;
+}
+
+$base = dirname( __DIR__ ) . '/content/_src/_map/step4/pages/';
+$lang_files = array(
+	'tc' => 'about-us/about-us.json',
+	'en'      => 'about-us/about-us.en.json',
+	'sc' => 'about-us/about-us.sc.json',
+);
+
+global $wpdb;
+$source_id = (int) $wpdb->get_var( $wpdb->prepare(
+	"SELECT ID FROM {$wpdb->posts} WHERE post_type = 'page' AND post_name = %s LIMIT 1",
+	'about-us'
+) );
+if ( ! $source_id ) {
+	echo "About Us page (slug about-us) not found.\n";
+	exit( 1 );
+}
+
+$targets = array( 'tc' => $source_id );
+if ( function_exists( 'pll_get_post' ) ) {
+	$targets['en'] = (int) pll_get_post( $source_id, 'en' );
+	$targets['sc'] = (int) pll_get_post( $source_id, 'sc' );
+}
+
+foreach ( $lang_files as $lang => $file ) {
+	$page_id = (int) ( $targets[ $lang ] ?? 0 );
+	if ( ! $page_id ) {
+		echo "Skip {$lang}: translation page not found.\n";
+		continue;
+	}
+	$data = read_json_file( $base . $file );
+	if ( ! $data ) {
+		echo "Skip {$lang}: JSON not found/invalid ({$file}).\n";
+		continue;
+	}
+	$meta_map = build_meta_map( $data );
+	foreach ( $meta_map as $key => $value ) {
+		update_post_meta( $page_id, $key, $value );
+	}
+	echo "Seeded " . count( $meta_map ) . " custom fields for {$lang} page (ID {$page_id}).\n";
+}

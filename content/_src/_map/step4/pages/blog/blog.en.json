@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "title": "Blogs and News | Unique Logic - AI Digital Marketing Experts",
+    "description": "Master digital trends and redefine the possibilities of digital marketing. Explore the latest insights on AI search marketing, SEO optimization, SEM advertising, and digital marketing strategies."
+  },
+  "nav": {
+    "logo_alt": "Unique Logic",
+    "menu": {
+      "about": "About Us",
+      "solutions": "Digital marketing plan",
+      "blog": "Blogs and News",
+      "contact": "Contact us"
+    },
+    "dropdown": {
+      "ai_seo": "AI SEO Services (GEO)",
+      "seo": "SEO Services",
+      "orm": "Online Reputation Management",
+      "sem": "SEM Services",
+      "content": "Content Marketing Services",
+      "social": "Social Media Marketing",
+      "web": "Web Design Services",
+      "ecommerce": "eCommerce Services"
+    },
+    "lang": {
+      "en": "EN",
+      "zh_hant": "繁",
+      "zh_hans": "简"
+    },
+    "cta": "Inquire now"
+  },
+  "mobile": {
+    "menu": {
+      "about": "About Us",
+      "solutions": "Digital marketing plan",
+      "blog": "Blogs and News",
+      "contact": "Contact us"
+    },
+    "dropdown": {
+      "ai_seo": "AI SEO Services (GEO)",
+      "seo": "SEO Services",
+      "orm": "Online Reputation Management",
+      "sem": "SEM Services",
+      "content": "Content Marketing Services",
+      "social": "Social Media Marketing",
+      "web": "Web Design Services",
+      "ecommerce": "eCommerce Services"
+    },
+    "lang": {
+      "en": "English",
+      "zh_hant": "繁體中文",
+      "zh_hans": "简体中文"
+    }
+  },
+  "hero": {
+    "back_home": "Back to Home",
+    "tag": "Blogs and News",
+    "title": "Blogs and News",
+    "subtitle": "Mastering Digital Trends: Redefining the Future of Marketing",
+    "scroll_text": "Scroll down"
+  },
+  "filters": {
+    "all": "All",
+    "ai": "AI Search Marketing",
+    "sem": "SEM Search Marketing",
+    "seo": "SEO Optimization",
+    "digital": "Digital Marketing"
+  },
+  "posts": {
+    "p1": {
+      "image_alt": "How AI SEO Drives High-Quality B2B Lead Generation",
+      "category": "AI Search Marketing",
+      "date": "06/02/2026",
+      "title": "How AI SEO Drives High-Quality B2B Lead Generation",
+      "link_text": "Read article",
+      "link_href": "blog-article-1.html"
+    },
+    "p2": {
+      "image_alt": "AI Search Optimization Guide 2026: How to Get Content Discovered by LLMs",
+      "category": "AI Search Marketing",
+      "date": "30/01/2026",
+      "title": "AI Search Optimization Guide 2026: How to Get Content Discovered by LLMs",
+      "link_text": "Read article",
+      "link_href": "#"
+    },
+    "p3": {
+      "image_alt": "Is AI SEO Really as Effective as Traditional SEO?",
+      "category": "AI Search Marketing",
+      "date": "21/01/2026",
+      "title": "Is AI SEO Really as Effective as Traditional SEO?",
+      "link_text": "Read article",
+      "link_href": "#"
+    }
+  },
+  "pagination": {
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "sidebar": {
+    "subscribe": {
+      "title": "Subscribe to our Blog and News",
+      "desc": "Get daily industry insights",
+      "placeholder": "Email address",
+      "btn": "Get your free diagnostic report now"
+    },
+    "social": {
+      "title": "Follow Us",
+      "desc": "Social media platforms",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "featured": {
+      "title": "Latest Articles",
+      "category": "AI Search Marketing",
+      "headline": "How AI SEO Drives High-Quality B2B Lead Generation",
+      "date": "06/02/2026",
+      "link": "Read full article",
+      "href": "blog-article-1.html"
+    }
+  },
+  "floating": {
+    "text": "🔥 This month only: Free AI visibility report with your first consultation",
+    "btn": "Claim now"
+  },
+  "footer": {
+    "logo_alt": "Unique Logic",
+    "tagline": "Boost Traffic. Boost Profit.",
+    "menu": {
+      "title": "Digital Marketing Plans",
+      "ai_seo": "AI SEO Services (GEO)",
+      "seo": "SEO Services",
+      "orm": "Online Reputation Management",
+      "sem": "SEM Services",
+      "content": "Content Marketing Services",
+      "social": "Social Media Marketing",
+      "web": "Web Design Services",
+      "ecommerce": "eCommerce Services"
+    },
+    "blog": {
+      "title": "Blogs and News",
+      "ai": "AI Search Marketing",
+      "seo": "SEO Optimization",
+      "sem": "SEM Search Marketing",
+      "digital": "Digital Marketing"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "17 Kai Cheung Road, Kowloon Bay,<br>Hong Kong, Room 1007 Tai Fung House",
+      "phone": "+852 8400 7393 / +852 3860 7900",
+      "wechat": "Wechat：UniqueLogic393",
+      "email": "info@uniquelogic.com"
+    },
+    "copyright": "&copy; 2026 Unique Logic Limited | All rights reserved",
+    "legal": {
+      "privacy": "Privacy Policy &amp; Cookies",
+      "terms": "Terms &amp; Conditions"
+    },
+    "social": {
+      "facebook_aria": "Facebook",
+      "linkedin_aria": "LinkedIn",
+      "instagram_aria": "Instagram",
+      "facebook_href": "https://www.facebook.com/UniqueLogicDigital",
+      "linkedin_href": "https://www.linkedin.com/company/unique-logic/",
+      "instagram_href": "https://instagram.com/uniquelogic_digital?igshid=YmMyMTA2M2Y="
+    }
+  }
+}

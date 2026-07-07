@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs and News | Unique Logic - AI Digital Marketing Experts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index-v1.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link has-dropdown">
+            Digital marketing plan
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="ai-seo-services.html" class="dropdown-item">AI SEO Services (GEO)</a>
+            <a href="seo-services.html" class="dropdown-item">SEO Services</a>
+            <a href="orm-services.html" class="dropdown-item">Online Reputation Management</a>
+            <a href="sem-services.html" class="dropdown-item">SEM Services</a>
+            <a href="#" class="dropdown-item">Content Marketing Services</a>
+            <a href="social-media-services.html" class="dropdown-item">Social Media Marketing</a>
+            <a href="web-design-services.html" class="dropdown-item">Web Design Services</a>
+            <a href="ecommerce-services.html" class="dropdown-item">eCommerce Services</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link active">Blogs and News</a>
+        <a href="contact.html" class="nav-link">Contact us</a>
+      </div>
+      
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn">繁</button>
+          <button class="lang-btn">简</button>
+        </div>
+        <a href="contact.html" class="nav-cta">Inquire now</a>
+      </div>
+      
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link">About Us</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle">
+          Digital marketing plan
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-menu">
+          <a href="ai-seo-services.html" class="mobile-dropdown-item">AI SEO Services (GEO)</a>
+          <a href="seo-services.html" class="mobile-dropdown-item">SEO Services</a>
+          <a href="orm-services.html" class="mobile-dropdown-item">Online Reputation Management</a>
+          <a href="sem-services.html" class="mobile-dropdown-item">SEM Services</a>
+          <a href="#" class="mobile-dropdown-item">Content Marketing Services</a>
+          <a href="social-media-services.html" class="mobile-dropdown-item">Social Media Marketing</a>
+          <a href="web-design-services.html" class="mobile-dropdown-item">Web Design Services</a>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item">eCommerce Services</a>
+        </div>
+      </div>
+      <a href="blog.html" class="mobile-link active">Blogs and News</a>
+      <a href="contact.html" class="mobile-link">Contact us</a>
+      <div class="mobile-lang">
+        <button class="lang-btn active">English</button>
+        <button class="lang-btn">繁體中文</button>
+        <button class="lang-btn">简体中文</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="blog-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <a href="index-v1.html" class="back-home-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Back to Home</span>
+    </a>
+    
+    <div class="blog-hero-content">
+      <div class="hero-tag reveal-item">
+        <span class="tag-dot"></span>
+        <span class="tag-text"> Blogs and News</span>
+      </div>
+      
+      <h1 class="blog-hero-title reveal-item">
+        <span class="title-line">
+          <span class="glitch-text" data-text="Blogs and News">Blogs and News</span>
+        </span>
+      </h1>
+      
+      <p class="blog-hero-subtitle reveal-item">
+        Get a free quote!
+      </p>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>Scroll down</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Main Section -->
+  <section class="blog-main">
+    <div class="blog-container">
+      <!-- Left: Blog Content -->
+      <div class="blog-content">
+        <!-- Category Filter Tabs (Desktop) -->
+        <div class="category-filters reveal-item desktop-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="ai">AI Search Marketing</button>
+          <button class="filter-btn" data-category="sem">SEM Search Marketing</button>
+          <button class="filter-btn" data-category="seo">SEO Optimization</button>
+          <button class="filter-btn" data-category="digital">Digital Marketing</button>
+        </div>
+        
+        <!-- Category Filter Dropdown (Mobile) -->
+        <div class="category-filters-mobile reveal-item">
+          <div class="filter-dropdown">
+            <button class="filter-dropdown-toggle" id="filterDropdownToggle">
+              <span class="filter-dropdown-label">All</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="filter-dropdown-menu" id="filterDropdownMenu">
+              <button class="filter-dropdown-item active" data-category="all">All</button>
+              <button class="filter-dropdown-item" data-category="ai">AI Search Marketing</button>
+              <button class="filter-dropdown-item" data-category="sem">SEM Search Marketing</button>
+              <button class="filter-dropdown-item" data-category="seo">SEO Optimization</button>
+              <button class="filter-dropdown-item" data-category="digital">Digital Marketing</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+          <!-- AI Posts -->
+          <article class="blog-card reveal-item" data-category="ai">
+            <div class="blog-card-image">
+              <img src="asset/blog1.png" alt="How AI SEO Drives High-Quality B2B Lead Generation" class="blog-thumbnail">
+            </div>
+            <div class="blog-card-inner">
+              <span class="blog-category ai">AI Search Marketing</span>
+              <time class="blog-date">06/02/2026</time>
+              <h3 class="blog-title">How AI SEO Drives High-Quality B2B Lead Generation</h3>
+              <a href="blog-article-1.html" class="blog-link">
+                Read article
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <article class="blog-card reveal-item" data-category="ai">
+            <div class="blog-card-image">
+              <img src="asset/blog2.png" alt="AI Search Optimization Guide 2026: How to Get Content Discovered by LLMs" class="blog-thumbnail">
+            </div>
+            <div class="blog-card-inner">
+              <span class="blog-category ai">AI Search Marketing</span>
+              <time class="blog-date">30/01/2026</time>
+              <h3 class="blog-title">AI Search Optimization Guide 2026: How to Get Content Discovered by LLMs</h3>
+              <a href="#" class="blog-link">
+                Read article
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+          <article class="blog-card reveal-item" data-category="ai">
+            <div class="blog-card-image">
+              <img src="asset/blog3.png" alt="Is AI SEO Really as Effective as Traditional SEO?" class="blog-thumbnail">
+            </div>
+            <div class="blog-card-inner">
+              <span class="blog-category ai">AI Search Marketing</span>
+              <time class="blog-date">21/01/2026</time>
+              <h3 class="blog-title">Is AI SEO Really as Effective as Traditional SEO?</h3>
+              <a href="#" class="blog-link">
+                Read article
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+          
+        </div>
+        
+        <!-- Pagination (shown when enough posts) -->
+        <div class="blog-pagination" id="blogPagination" style="display:none">
+          <button class="page-btn prev" id="prevPage" disabled>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Previous</span>
+          </button>
+          <div class="page-numbers" id="pageNumbers"></div>
+          <button class="page-btn next" id="nextPage">
+            <span>Next</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Right: Sidebar -->
+      <aside class="blog-sidebar">
+        <!-- Subscribe Box -->
+        <div class="sidebar-box subscribe-box reveal-item">
+          <h3>Subscribe to our Blog and News</h3>
+          <p>Get daily industry insights</p>
+          <form class="subscribe-form" id="subscribeForm">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit" class="btn-primary">
+              Get your free diagnostic report now
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Social Links Box -->
+        <div class="sidebar-box social-box reveal-item">
+          <h3>Follow Us</h3>
+          <p>Social media platforms</p>
+          <div class="sidebar-social">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Featured Post Box -->
+        <div class="sidebar-box featured-box reveal-item">
+          <h3>Featured Article</h3>
+          <div class="featured-post">
+            <span class="blog-category ai">AI Search Marketing</span>
+            <h4>How AI SEO Drives High-Quality B2B Lead Generation</h4>
+            <time>06/02/2026</time>
+            <a href="blog-article-1.html" class="featured-link">Read full article</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Floating CTA Bar -->
+  <div class="floating-cta" id="floatingCta">
+    <div class="floating-cta-content">
+      <span class="floating-cta-text">🔥 This month only: Free AI visibility report with your first consultation</span>
+      <a href="contact.html" class="floating-cta-btn">Claim now</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index-v1.html" class="footer-logo">
+            <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+          </a>
+          <p class="footer-tagline">Boost Traffic. Boost Profit.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="15" cy="5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">Digital Marketing Plans</h4>
+          <ul>
+            <li><a href="ai-seo-services.html">AI SEO Services (GEO)</a></li>
+            <li><a href="seo-services.html">SEO Services</a></li>
+            <li><a href="orm-services.html">Online Reputation Management</a></li>
+            <li><a href="sem-services.html">SEM Services</a></li>
+            <li><a href="#">Content Marketing Services</a></li>
+            <li><a href="social-media-services.html">Social Media Marketing</a></li>
+            <li><a href="web-design-services.html">Web Design Services</a></li>
+            <li><a href="ecommerce-services.html">eCommerce Services</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">Blogs and News</h4>
+          <ul>
+            <li><a href="#">AI Search Marketing</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+            <li><a href="#">SEM Search Marketing</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact Us</h4>
+          <address>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              17 Kai Cheung Road, Kowloon Bay,<br>Hong Kong, Room 1007 Tai Fung House
+            </p>
+            <p>
+              <span class="call-icon" aria-hidden="true"></span>
+              +852 8400 7393 / +852 3860 7900
+            </p>
+            <p>
+              <span class="wechat-icon" aria-hidden="true"></span>
+              Wechat：UniqueLogic393
+            </p>
+            <p>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <a href="mailto:info@uniquelogic.com">info@uniquelogic.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique Logic Limited | All rights reserved</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy &amp; Cookies</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

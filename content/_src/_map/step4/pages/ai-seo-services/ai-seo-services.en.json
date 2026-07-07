@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "AI SEO Services (GEO) | Unique Logic - AI Digital Marketing Expert",
+    "description": "Leverage advanced AI SEO services and GEO optimization to boost your online visibility. Improve rankings, grow revenue, and future-proof your business. Get a free AI SEO audit today."
+  },
+  "hero": {
+    "back_home": "Return to home page",
+    "breadcrumb": {
+      "home": "Home page",
+      "solutions": "Digital marketing plan",
+      "current": "AI SEO Services (GEO)"
+    },
+    "tag": "Digital marketing plan",
+    "title_line1": "AI SEO services",
+    "title_line2": "(GEO)",
+    "subtitle_line1": "Use advanced AI SEO services and GEO optimization to comprehensively improve your online exposure.",
+    "subtitle_line2": "Help you improve your ranking, increase your income, and prepare for the future development of your company.",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "scroll down"
+  },
+  "intro": {
+    "label": "Service introduction",
+    "title_line1": "Unlock the future of digital marketing",
+    "title_highlight": "Led by our AI SEO services",
+    "p1": "As a professional AI intelligent SEO agency, we focus on artificial intelligence SEO services, using advanced AI, machine learning and generative engine optimization (GEO) strategies to comprehensively improve the search engine performance of your website.",
+    "p2": "Whether you want to gain an overview of Google AI or dominate AI-driven search results, our tailor-made AI SEO solutions will definitely help you increase your online exposure and drive business growth.",
+    "cta_btn": "Get a free consultation",
+    "image_alt": "AI SEO services"
+  },
+  "why_choose": {
+    "label": "Reason for selection",
+    "title_line1": "Why choose",
+    "title_highlight": "AI SEO?",
+    "features": {
+      "f1": {
+        "title": "Industry-leading AI SEO strategy",
+        "desc": "Data-driven, AI intelligent leadership"
+      },
+      "f2": {
+        "title": "Comprehensive AI SEO campaign management",
+        "desc": "Planning, execution and continuous optimization"
+      },
+      "f3": {
+        "title": "AI content optimization service",
+        "desc": "Natural language processing and machine learning to improve content relevance"
+      },
+      "f4": {
+        "title": "AI SEO consultants and service providers",
+        "desc": "Expert guidance throughout the process"
+      },
+      "f5": {
+        "title": "Generative AI SEO solution",
+        "desc": "Increase exposure on emerging AI search engines"
+      }
+    }
+  },
+  "results": {
+    "label": "Results oriented",
+    "title_line1": "No more empty promises",
+    "title_highlight": "Just deliver results",
+    "desc": "We provide transparent, AI-driven SEO solutions that bring measurable and lasting results to businesses of all types.",
+    "cards": {
+      "c1": {
+        "title": "Flexible AI SEO plan",
+        "desc": "Customize plan according to budget"
+      },
+      "c2": {
+        "title": "High-intent target traffic",
+        "desc": "Attract visitors with conversion potential"
+      },
+      "c3": {
+        "title": "AI-enhanced conversion optimization",
+        "desc": "Intelligent automation increases the value of each click"
+      },
+      "c4": {
+        "title": "Free AI SEO Audit",
+        "desc": "Uncover your biggest growth opportunities instantly"
+      }
+    }
+  },
+  "categories": {
+    "label": "Service scope",
+    "title_line1": "Leading AI SEO Agency",
+    "title_highlight": "Revolutionizing Search Engine Optimization",
+    "desc_line1": "As a pioneer in the industry, AI SEO agency integrates AI SEO strategies for brands seeking local and enterprise-level results.",
+    "desc_line2": "Our expert team applies the latest AI SEO tools to help you stand out in traditional and AI intelligent searches.",
+    "cards": {
+      "c1": {
+        "tag": "extreme",
+        "title": "success",
+        "items": {
+          "i1": "AI content optimization and creation",
+          "i2": "Advanced AI Keyword Research",
+          "i3": "Competitor analysis based on AI insights"
+        }
+      },
+      "c2": {
+        "tag": "optimization",
+        "title": "Performance",
+        "items": {
+          "i1": "Conversion tracking",
+          "i2": "Google tool settings"
+        }
+      },
+      "c3": {
+        "tag": "promote",
+        "title": "visibility",
+        "items": {
+          "i1": "On-site and off-site GEO optimization",
+          "i2": "Backlink analysis, creation and review"
+        }
+      },
+      "c4": {
+        "tag": "Enhance",
+        "title": "interactivity",
+        "items": {
+          "i1": "Website content optimization",
+          "i2": "Customized article blog"
+        }
+      },
+      "c5": {
+        "tag": "Performance",
+        "title": "analyze",
+        "items": {
+          "i1": "Transparent monthly and quarterly reporting"
+        }
+      }
+    }
+  },
+  "process": {
+    "label": "Service process",
+    "title_line1": "Our AI SEO process",
+    "title_highlight": "Help you succeed",
+    "steps": {
+      "s1": {
+        "title": "Free AI SEO consultation",
+        "desc": "Contact us via WhatsApp or fill in the online form"
+      },
+      "s2": {
+        "title": "Submit information",
+        "desc": "Submit website information and goals for in-depth AI SEO review"
+      },
+      "s3": {
+        "title": "Confirm plan",
+        "desc": "Finalize service scope, keywords and timetable"
+      },
+      "s4": {
+        "title": "AI SEO strategy and execution",
+        "desc": "Provide and implement customized AI SEO solutions"
+      },
+      "s5": {
+        "title": "Effectiveness review and optimization",
+        "desc": "Review performance every month to continuously increase website traffic and exposure"
+      }
+    }
+  },
+  "partner": {
+    "label": "Advantages of cooperation",
+    "title_line1": "Why choose us",
+    "title_highlight": "As an AI SEO partner?",
+    "p1": "By working with our AI SEO company, you will receive data support, significant improvements in rankings and revenue, and have a team of experts to guide you throughout the process.",
+    "p2": "We focus on Google AI overview and generative engine optimization (GEO) of mainstream AI platforms, and tailor industry-specific strategies for you. Whether it is an enterprise-level solution or local AI SEO promotion, comprehensive support will help you lead the market.",
+    "benefits": {
+      "b1": "data driven decision making",
+      "b2": "Expert guidance throughout the process",
+      "b3": "Industry specific strategies"
+    },
+    "cta_btn": "Contact us now"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "FAQ",
+    "items": {
+      "q01": {
+        "q": "How long does it take for AI SEO services to be effective?",
+        "a": "If there is a solid website foundation, the results of AI SEO will be visible within a few weeks. It will take several months for a new website to gain optimal exposure and citations in AI search results."
+      },
+      "q02": {
+        "q": "How is AI SEO different from traditional SEO?",
+        "a": "AI SEO uses machine learning, natural language processing and GEO strategies, not only targeting Google, but also covering emerging platforms such as AI Overview and ChatGPT, requiring a comprehensive and multi-channel layout."
+      },
+      "q03": {
+        "q": "How to measure AI SEO effectiveness?",
+        "a": "We will track rankings, AI citations, traffic and interactions, and provide transparent reports on a monthly/quarterly basis."
+      },
+      "q04": {
+        "q": "What is GEO? Why is it important?",
+        "a": "Generative engine optimization (GEO) is an optimization process for AI-generated responses and overviews, which is extremely critical for improving Google AI overviews and AI search engine exposure."
+      },
+      "q05": {
+        "q": "Is AI SEO right for my business?",
+        "a": "If you want evergreen online exposure and lead traditional and AI searches, AI SEO is absolutely indispensable."
+      }
+    }
+  },
+  "cta": {
+    "title": "Improve your ranking with free AI SEO audit!",
+    "desc": "Let Unique Logic’s professional team develop the best AI SEO strategy for you",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  }
+}

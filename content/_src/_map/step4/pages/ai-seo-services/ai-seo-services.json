@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "AI SEO服務 (GEO) | Unique Logic - AI 數碼營銷專家",
+    "description": "運用先進AI SEO服務及GEO優化，全面提升您的網上曝光率。助您排名提升、收入增長，為企業未來發展做好準備。立即申請免費AI SEO審核。"
+  },
+  "hero": {
+    "back_home": "返回主頁",
+    "breadcrumb": {
+      "home": "主頁",
+      "solutions": "數碼營銷方案",
+      "current": "AI SEO服務 (GEO)"
+    },
+    "tag": "數碼營銷方案",
+    "title_line1": "AI SEO服務",
+    "title_line2": "(GEO)",
+    "subtitle_line1": "運用先進AI SEO服務及GEO優化，全面提升您的網上曝光率。",
+    "subtitle_line2": "助您排名提升、收入增長，為企業未來發展做好準備。",
+    "cta_btn": "免費獲取報價",
+    "scroll_text": "往下滾動"
+  },
+  "intro": {
+    "label": "服務簡介",
+    "title_line1": "開啟數碼營銷未來",
+    "title_highlight": "由我們的AI SEO服務帶領",
+    "p1": "作為專業AI智能SEO代理，我們專注於人工智能SEO服務，運用先進AI、機器學習及生成式引擎優化（GEO）策略，全面提升您網站的搜尋引擎表現。",
+    "p2": "不論您想針對Google AI概覽，還是希望主導AI驅動的搜尋結果，我們度身訂造的AI SEO方案，定必助您提升網上曝光，推動業務增長。",
+    "cta_btn": "獲取免費諮詢",
+    "image_alt": "AI SEO服務"
+  },
+  "why_choose": {
+    "label": "選擇理由",
+    "title_line1": "為何選擇",
+    "title_highlight": "AI SEO？",
+    "features": {
+      "f1": {
+        "title": "領先業界的AI SEO策略",
+        "desc": "數據驅動，AI智能引領"
+      },
+      "f2": {
+        "title": "全方位AI SEO活動管理",
+        "desc": "規劃、執行及持續優化"
+      },
+      "f3": {
+        "title": "AI內容優化服務",
+        "desc": "自然語言處理及機器學習，提升內容相關性"
+      },
+      "f4": {
+        "title": "AI SEO顧問及服務供應商",
+        "desc": "專家全程指導"
+      },
+      "f5": {
+        "title": "生成式AI SEO方案",
+        "desc": "提升在新興AI搜尋引擎的曝光"
+      }
+    }
+  },
+  "results": {
+    "label": "成果導向",
+    "title_line1": "不再空談承諾",
+    "title_highlight": "只交付成果",
+    "desc": "我們提供透明、AI驅動的SEO解決方案，為各類型企業帶來可衡量且持久的成效。",
+    "cards": {
+      "c1": {
+        "title": "靈活AI SEO計劃",
+        "desc": "按預算自訂方案"
+      },
+      "c2": {
+        "title": "高意向目標流量",
+        "desc": "吸納有轉換潛力的訪客"
+      },
+      "c3": {
+        "title": "AI強化轉換優化",
+        "desc": "智能自動化，提升每次點擊價值"
+      },
+      "c4": {
+        "title": "免費AI SEO審核",
+        "desc": "即時發掘最大增長機會"
+      }
+    }
+  },
+  "categories": {
+    "label": "服務範疇",
+    "title_line1": "領先AI SEO代理",
+    "title_highlight": "變革搜尋引擎最佳化",
+    "desc_line1": "作為業界先驅的AI SEO代理公司，為尋求本地及企業級成效的品牌，整合AI SEO策略。",
+    "desc_line2": "我們的專家團隊應用最新AI SEO工具，助您在傳統及AI智能搜尋中脫穎而出。",
+    "cards": {
+      "c1": {
+        "tag": "極致",
+        "title": "成功",
+        "items": {
+          "i1": "AI內容優化及創建",
+          "i2": "先進AI關鍵字研究",
+          "i3": "AI洞察下的競爭對手分析"
+        }
+      },
+      "c2": {
+        "tag": "優化",
+        "title": "表現",
+        "items": {
+          "i1": "轉換追蹤",
+          "i2": "Google工具設置"
+        }
+      },
+      "c3": {
+        "tag": "提升",
+        "title": "可見度",
+        "items": {
+          "i1": "站內及站外GEO優化",
+          "i2": "反向鏈接分析、建立及審查"
+        }
+      },
+      "c4": {
+        "tag": "增強",
+        "title": "互動性",
+        "items": {
+          "i1": "網站內容優化",
+          "i2": "定製化文章博客"
+        }
+      },
+      "c5": {
+        "tag": "表現",
+        "title": "分析",
+        "items": {
+          "i1": "透明化月度及季度報告"
+        }
+      }
+    }
+  },
+  "process": {
+    "label": "服務流程",
+    "title_line1": "我們的AI SEO流程",
+    "title_highlight": "助您成功",
+    "steps": {
+      "s1": {
+        "title": "免費AI SEO諮詢",
+        "desc": "透過WhatsApp或填寫網上表格聯絡我們"
+      },
+      "s2": {
+        "title": "資料提交",
+        "desc": "提交網站資料與目標，進行AI SEO深入審核"
+      },
+      "s3": {
+        "title": "確認方案",
+        "desc": "最終確定服務範圍、關鍵字及時間表"
+      },
+      "s4": {
+        "title": "AI SEO策略及執行",
+        "desc": "提供並實施自訂AI SEO方案"
+      },
+      "s5": {
+        "title": "成效檢討與優化",
+        "desc": "每月檢視成效，持續提升網站流量及曝光率"
+      }
+    }
+  },
+  "partner": {
+    "label": "合作優勢",
+    "title_line1": "為何選擇我們",
+    "title_highlight": "作為AI SEO合作夥伴？",
+    "p1": "與我們AI SEO公司合作，您將獲得數據支持、排名與收入的顯著提升，並有專家團隊全程指導。",
+    "p2": "我們專注於Google AI概覽及主流AI平台的生成式引擎優化（GEO），為您度身訂造行業專屬策略。無論是企業級方案還是本地AI SEO推廣，全面支援助您領先市場。",
+    "benefits": {
+      "b1": "數據驅動決策",
+      "b2": "專家全程指導",
+      "b3": "行業專屬策略"
+    },
+    "cta_btn": "立即聯絡我們"
+  },
+  "faq": {
+    "label": "常見問題",
+    "title": "常見問題",
+    "items": {
+      "q01": {
+        "q": "AI SEO服務多久見效？",
+        "a": "如有穩固網站基礎，AI SEO成效數週內可見。全新網站則需數月，方可於AI搜尋結果獲得最佳曝光及引用。"
+      },
+      "q02": {
+        "q": "AI SEO與傳統SEO有何不同？",
+        "a": "AI SEO運用機器學習、自然語言處理及GEO策略，不僅針對Google，更覆蓋AI概覽、ChatGPT等新興平台，需全方位多渠道佈局。"
+      },
+      "q03": {
+        "q": "如何衡量AI SEO成效？",
+        "a": "我們會追蹤排名、AI引用、流量及互動，並按月/季度提供透明報告。"
+      },
+      "q04": {
+        "q": "什麼是GEO？為何重要？",
+        "a": "生成式引擎優化（GEO）是針對AI生成回應及概覽的優化過程，對於提升Google AI概覽和AI搜尋引擎曝光極為關鍵。"
+      },
+      "q05": {
+        "q": "AI SEO適合我的業務嗎？",
+        "a": "如您希望網上曝光長青及領先傳統與AI搜尋，AI SEO絕對不可或缺。"
+      }
+    }
+  },
+  "cta": {
+    "title": "提升排名，免費AI SEO審核！",
+    "desc": "讓 Unique Logic 的專業團隊為您制定最佳的 AI SEO 策略",
+    "primary_btn": "獲取免費報價",
+    "secondary_btn": "查看更多服務"
+  }
+}

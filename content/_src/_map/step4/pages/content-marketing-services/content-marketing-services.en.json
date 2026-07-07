@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "Content Marketing Services | Unique Logic - Digital Marketing Expert",
+    "description": "Content marketing is a strategy that attracts target audiences, builds brand relationships, and achieves business goals through valuable, engaging content. Our content marketing services combine data-driven insights and AI to accelerate content production, improve performance in real time, and deliver personalized, high-impact marketing solutions."
+  },
+  "hero": {
+    "back_home": "Return to homepage",
+    "breadcrumb": {
+      "home": "Home",
+      "solutions": "Digital Marketing Solutions",
+      "current": "Content Marketing Services"
+    },
+    "tag": "Digital Marketing Solutions",
+    "title_line1": "Content Marketing",
+    "title_line2": "Services",
+    "subtitle_line1": "Leverage data-driven and AI-powered strategies to create valuable content.",
+    "subtitle_line2": "Achieve marketing goals while building stronger brand relationships.",
+    "cta_btn": "Get a free quote",
+    "scroll_text": "Scroll Down"
+  },
+  "intro": {
+    "label": "Service Overview",
+    "title_line1": "A Personalized Strategy for Success",
+    "title_highlight": "Create High-Value Content",
+    "p1": "Content marketing attracts target audiences through valuable content, strengthens brand relationships, and drives measurable outcomes. It covers strategy, creation, distribution, analytics, and social media management. With a data-driven and AI-assisted approach, content optimization becomes more personalized, accurate, and effective.",
+    "cta_btn": "Get a free quote",
+    "image_alt": "Content marketing services"
+  },
+  "advantages": {
+    "label": "Core advantages",
+    "title_line1": "Content Marketing",
+    "title_highlight": "Advantages",
+    "features": {
+      "f1": {
+        "title": "Reduce Advertising Costs",
+        "desc": "Attract organic traffic with high-quality content, reduce reliance on paid ads, and lower long-term marketing costs."
+      },
+      "f2": {
+        "title": "Improve SEO Rankings",
+        "desc": "High-quality content helps improve search engine rankings, increase website exposure and organic traffic"
+      },
+      "f3": {
+        "title": "Build Trust and Loyalty",
+        "desc": "Continuously provide valuable content, build brand authority, and enhance customer trust and loyalty."
+      },
+      "f4": {
+        "title": "Expand Word-of-Mouth Reach",
+        "desc": "High-quality content is easy to share and disseminate, effectively expanding brand influence and word-of-mouth effects"
+      },
+      "f5": {
+        "title": "Long-Term Marketing Impact",
+        "desc": "High-quality content delivers long-term value, generating sustained traffic and brand exposure."
+      }
+    }
+  },
+  "execution": {
+    "label": "Execution Approach",
+    "title_line1": "How We Execute",
+    "title_highlight": "Three core strategies",
+    "desc": "We combine storytelling, data-driven analysis, and AI to build high-performance content marketing strategies.",
+    "cards": {
+      "c1": {
+        "title": "Storytelling",
+        "desc": "Build emotional connections, foster trust and inspire action through engaging narratives"
+      },
+      "c2": {
+        "title": "Data-Driven",
+        "desc": "Use data analysis and insights to guide content creation and communication strategies"
+      },
+      "c3": {
+        "title": "AI",
+        "desc": "Use AI technology to accelerate content creation, monitor and optimize content performance in real time"
+      }
+    }
+  },
+  "storytelling": {
+    "label": "Storytelling",
+    "title_line1": "The Art of Storytelling",
+    "title_highlight": "Build emotional connections",
+    "p1": "Storytelling plays a vital role in building strong and meaningful relationships with your target audience. Humans are wired to connect to stories on an emotional level.",
+    "p2": "By incorporating storytelling into your content marketing strategy, you can engage your audience, evoke empathy, and create unforgettable experiences. Stories have the power to communicate brand values, mission, and unique selling points in a way that resonates with the beliefs and desires of your audience.",
+    "p3": "Build emotional connections, foster trust and inspire action through engaging narratives. Leveraging the art of storytelling, our content marketing services are designed to help you create truly lasting connections with your target audience, leading to increased engagement, brand loyalty, and ultimately business success.",
+    "image_alt": "The Art of Storytelling"
+  },
+  "data_driven": {
+    "label": "Data-Driven",
+    "title_line1": "Data-Driven",
+    "title_highlight": "Precise content strategy",
+    "p1": "Content marketing uses data analysis and insights to guide content creation and communication strategies.",
+    "p2": "By analyzing audience behavior, interests and preferences, businesses can understand the needs of their target audience and create and optimize content based on this data.",
+    "p3": "Data-driven content marketing can improve the accuracy, pertinence and effectiveness of content, ensuring that each piece of content can accurately reach the target audience.",
+    "image_alt": "data driven"
+  },
+  "ai": {
+    "label": "AI",
+    "title_line1": "AI",
+    "title_highlight": "Smart content optimization",
+    "p1": "Artificial intelligence can help enterprises quickly identify and analyze key insights in big data and provide personalized content recommendations.",
+    "p2": "AI can also automate content production and improve efficiency. It can also monitor and evaluate content performance in real time and provide optimization suggestions to improve content marketing strategies.",
+    "p3": "Through AI technology, we can provide you with faster, more accurate and more efficient content marketing solutions.",
+    "cta_btn": "Contact us now",
+    "image_alt": "AI"
+  },
+  "categories": {
+    "label": "Service Scope",
+    "title_line1": "Content Marketing Services",
+    "title_highlight": "Comprehensive Solutions",
+    "desc": "From strategic planning to execution and optimization, we provide end-to-end content marketing services.",
+    "cards": {
+      "c1": {
+        "tag": "Strategy",
+        "title": "Content strategy and planning",
+        "items": {
+          "i1": "Target audience analysis",
+          "i2": "Content theme planning",
+          "i3": "Publishing schedule"
+        }
+      },
+      "c2": {
+        "tag": "Creation",
+        "title": "Content creation and optimization",
+        "items": {
+          "i1": "Professional copywriting",
+          "i2": "SEO optimized content"
+        }
+      },
+      "c3": {
+        "tag": "Distribution",
+        "title": "Content distribution and promotion",
+        "items": {
+          "i1": "Multi-channel distribution",
+          "i2": "Precise placement and promotion"
+        }
+      },
+      "c4": {
+        "tag": "Analytics",
+        "title": "Data analysis and optimization",
+        "items": {
+          "i1": "Content performance tracking",
+          "i2": "A/B testing and optimization"
+        }
+      },
+      "c5": {
+        "tag": "Social",
+        "title": "Social Media Management",
+        "items": {
+          "i1": "Social platform operation",
+          "i2": "Interaction and community management"
+        }
+      }
+    }
+  },
+  "cta": {
+    "title": "Let quality content speak for your brand",
+    "desc": "Start your content marketing journey with Unique Logic today",
+    "primary_btn": "Get a free quote",
+    "secondary_btn": "View more services"
+  },
+  "floating": {
+    "text": "✨ Make content your most powerful marketing tool: Free content strategy advice with your first consultation",
+    "btn": "Consult now"
+  }
+}

@@ -1,0 +1,2 @@
+<?php
+return ['x-generator'=>'GlotPress/4.0.1','translation-revision-date'=>'2021-05-23 06:14:29+0000','plural-forms'=>'nplurals=1; plural=0;','project-id-version'=>'Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release)','language'=>'zh_TW','messages'=>[]];

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "About Us | Unique Logic - AI Digital Marketing Experts",
+    "description": "A professional team focused on tailored digital marketing strategies, offering one-stop full-service digital marketing solutions."
+  },
+  "hero": {
+    "tag": "About Unique Logic",
+    "title1": "Build Your Best",
+    "title2": "Growth Strategy",
+    "subtitle": "A professional team focused on tailored digital marketing strategies,<br>offering one-stop full-service digital marketing solutions.",
+    "scroll_text": "Scroll Down",
+    "back_home": "Back to Home"
+  },
+  "intro": {
+    "title": "About the Background of Unique Logic's Professional Team",
+    "body": "Unique Logic is a Hong Kong digital marketing company dedicated to helping clients build a strong online brand presence and achieve business growth. We provide a diversified one-stop suite of digital marketing services. We deeply understand each client's marketing goals, target market, and competitive landscape, then design tailored strategies to maximize effectiveness and return on investment."
+  },
+  "mission": {
+    "label": "Our Mission",
+    "title_line1": "Committed to Building",
+    "title_highlight": "Strong Brand Visibility",
+    "body": "Unique Logic is committed to helping clients build powerful online brand visibility and drive business growth. We stay ahead of change, continuously researching the latest developments across web technology, AI, social platforms, and market trends, then applying that knowledge and experience to deliver measurable client outcomes.",
+    "services_intro": "Our popular services include",
+    "services": {
+      "ai_seo": "AI SEO (GEO)",
+      "seo": "SEO Optimization",
+      "sem": "SEM Search Ads",
+      "web": "Web Design & Development",
+      "more": "Multimedia design, social media ads, content marketing, and more"
+    },
+    "cta": {
+      "prefix": "Whether you are a",
+      "sep": ", ",
+      "startup": "startup",
+      "sme": "SME",
+      "or": ", or ",
+      "enterprise": "global enterprise",
+      "comma": ", ",
+      "suffix": "Unique Logic can craft the most suitable solution with professional, modern expertise."
+    }
+  },
+  "values": {
+    "label": "Our Value",
+    "title_line1": "Google Partner",
+    "title_highlight": "Officially Certified Expertise",
+    "partner_intro_title_prefix": "As an official",
+    "partner_intro_google_text": "Google Partner",
+    "partner_intro_title_suffix": "agency",
+    "partner_intro_body_line1": "We not only bring deep advertising execution expertise, but also official recognition from Google.",
+    "partner_intro_body_line2": "That means Unique Logic can deliver:",
+    "benefits": {
+      "benefit1": {
+        "title": "Top-tier Professional Team",
+        "desc": "Our team members are Google-certified and deeply understand Google algorithms to minimize acquisition costs."
+      },
+      "benefit2": {
+        "title": "Priority Technical Support",
+        "desc": "Access to Google technical support channels helps resolve account issues quickly and keep campaigns running."
+      },
+      "benefit3": {
+        "title": "Early Access to New Features",
+        "desc": "Get early access to Google's latest beta ad features to help your brand move ahead in the market."
+      }
+    }
+  },
+  "why_partner": {
+    "label": "Partnership Advantages",
+    "title_line1": "Why Work with a Google Partner",
+    "title_highlight": "What Benefits Do You Get?",
+    "desc_line1": "In digital marketing,",
+    "desc_mid": "professionalism must be proven.",
+    "desc_line2": "As a Google Partner,",
+    "desc_tail": "we provide four major advantages:",
+    "advantages": {
+      "adv1": {
+        "title": "Account Performance Beyond Standard",
+        "desc": "Google continuously monitors our ad performance. We must maintain high optimization scores, ensuring each ad dollar follows data-driven best practice instead of trial-and-error."
+      },
+      "adv2": {
+        "title": "First-hand Market Intelligence",
+        "desc": "We receive direct industry trend insights and consumer data from Google, helping your strategy detect market shifts earlier than competitors."
+      },
+      "adv3": {
+        "title": "Direct Official Technical Access",
+        "desc": "When accounts face anomalies or technical bottlenecks, we can use dedicated Google channels for faster and more accurate issue resolution."
+      },
+      "adv4": {
+        "title": "Continuously Updated Expertise",
+        "desc": "As a Google Partner, we are invited to advanced official training and technical updates, keeping your strategy aligned with the latest algorithms."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Elevate Your Brand?",
+    "desc": "Let Unique Logic's experts build the best digital marketing strategy for your business.",
+    "primary_btn": "Contact Us Now",
+    "secondary_btn": "View Service Plans"
+  }
+}

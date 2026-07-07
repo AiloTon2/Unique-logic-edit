@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "logo_alt": "Unique Logic",
+    "menu": {
+      "about": "About Us",
+      "solutions": "Digital Marketing Solutions",
+      "blog": "Blog & News",
+      "contact": "Contact Us"
+    },
+    "cta": "Get a Quote",
+    "lang": {
+      "zh-hant": "TC",
+      "en": "EN",
+      "zh-hans": "SC"
+    }
+  },
+  "mobile": {
+    "menu": {
+      "about": "About Us",
+      "solutions": "Digital Marketing Solutions",
+      "blog": "Blog & News",
+      "contact": "Contact Us"
+    },
+    "lang": {
+      "zh-hant": "Traditional Chinese",
+      "en": "English",
+      "zh-hans": "Simplified Chinese"
+    }
+  },
+  "footer": {
+    "logo_alt": "Unique Logic",
+    "tagline": "Boost Traffic. Boost Profit.",
+    "social": {
+      "facebook_aria": "Facebook",
+      "linkedin_aria": "LinkedIn",
+      "instagram_aria": "Instagram",
+      "facebook_href": "https://www.facebook.com/UniqueLogicDigital",
+      "linkedin_href": "https://www.linkedin.com/company/unique-logic/",
+      "instagram_href": "https://instagram.com/uniquelogic_digital?igshid=YmMyMTA2M2Y="
+    },
+    "menu": {
+      "title": "Digital Marketing Solutions",
+      "ai_seo": "AI SEO Services (GEO)",
+      "seo": "SEO Services",
+      "orm": "Online Reputation Management",
+      "sem": "Search Engine Marketing (SEM)",
+      "content": "Content Marketing Services",
+      "social": "Social Media Marketing Services",
+      "web": "Web Design & Development",
+      "ecommerce": "Ecommerce Services"
+    },
+    "blog": {
+      "title": "Blog & News",
+      "ai_sem": "AI Search Marketing",
+      "seo": "SEO Optimization",
+      "sem": "SEM Search Marketing",
+      "marketing": "Digital Marketing"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "Room 1007, Tower 1, Enterprise Square Five,<br>38 Wang Chiu Road, Kowloon Bay, Hong Kong",
+      "phone": "+852 8400 7393 / +852 3860 7900",
+      "wechat": "Wechat：UniqueLogic393",
+      "email": "info@uniquelogic.com"
+    },
+    "legal": {
+      "privacy": "Privacy & Cookie Policy",
+      "terms": "Terms & Conditions"
+    },
+    "copyright": "&copy; 2026 Unique Logic Limited | All Rights Reserved"
+  },
+  "floating_cta": {
+    "text": "🔥 Limited Offer: Free AI Visibility Report on First Consultation",
+    "btn": "Claim Now"
+  }
+}
