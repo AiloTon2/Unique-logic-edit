@@ -1986,6 +1986,19 @@ section {
   color: var(--bg-primary);
 }
 
+.floating-cta-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.floating-cta-subtext {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(12, 12, 15, 0.7);
+}
+
 .floating-cta-btn {
   padding: 8px 20px;
   font-size: 0.875rem;

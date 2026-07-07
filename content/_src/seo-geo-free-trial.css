@@ -1,0 +1,342 @@
+/* ============================================
+   SEO / GEO FREE TRIAL — LANDING PAGE
+   Page-specific layout. Inherits brand tokens
+   and base styles from styles.css.
+   ============================================ */
+
+/* Restore a normal cursor on this standalone page.
+   (styles.css hides the cursor because the main site
+   renders a custom cursor via script.js, which we do
+   not load here.) */
+body,
+a,
+button,
+input,
+textarea,
+select,
+[role="button"] {
+  cursor: auto;
+}
+
+.lp-body {
+  background: var(--bg-primary);
+}
+
+/* ---------- Minimal top bar (logo only, no nav links) ---------- */
+.lp-topbar {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(12, 12, 15, 0.6);
+}
+
+.lp-topbar .lp-logo {
+  height: 32px;
+  width: auto;
+}
+
+/* ---------- Hero ---------- */
+.lp-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 96px 24px 88px;
+  text-align: center;
+}
+
+.lp-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.lp-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--accent-cyan-dim);
+  border: 1px solid rgba(0, 212, 232, 0.2);
+  border-radius: 50px;
+  margin-bottom: 28px;
+}
+
+.lp-hero-tag .tag-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+}
+
+.lp-hero-tag span:last-child {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: var(--accent-cyan);
+}
+
+.lp-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.lp-hero-title .accent {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lp-fineprint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+}
+
+/* ---------- Lead form (email + CTA) ---------- */
+.lp-lead-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.lp-lead-input {
+  flex: 1 1 280px;
+  min-width: 240px;
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  transition: var(--transition-base);
+}
+
+.lp-lead-input::placeholder {
+  color: var(--text-muted);
+}
+
+.lp-lead-input:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px var(--accent-cyan-dim);
+}
+
+.lp-lead-form .btn-primary {
+  flex: 0 0 auto;
+  justify-content: center;
+}
+
+/* ---------- Section rhythm ---------- */
+.lp-section {
+  padding: 88px 0;
+}
+
+.lp-section-alt {
+  background: var(--bg-secondary);
+}
+
+/* ---------- Trust / logos ---------- */
+.lp-logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.lp-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  opacity: 0.75;
+  transition: var(--transition-base);
+}
+
+.lp-logo-item:hover {
+  opacity: 1;
+  border-color: var(--border-glow);
+}
+
+.lp-logo-item img {
+  max-height: 36px;
+  width: auto;
+}
+
+/* ---------- Advantage cards (SEO / GEO) ---------- */
+.lp-adv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.lp-adv-card {
+  padding: 36px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: var(--transition-base);
+}
+
+.lp-adv-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.lp-adv-index {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: var(--accent-cyan);
+  margin-bottom: 16px;
+}
+
+.lp-adv-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.lp-adv-card p {
+  font-size: 0.975rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.lp-adv-card--geo .lp-adv-index {
+  color: var(--accent-purple);
+}
+
+.lp-adv-card--geo:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+/* ---------- Bottom "why it matters" ---------- */
+.lp-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.lp-why-block {
+  padding: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.lp-why-block h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.lp-why-block .lp-why-kicker {
+  color: var(--accent-cyan);
+}
+
+.lp-why-block--geo .lp-why-kicker {
+  color: var(--accent-purple);
+}
+
+.lp-why-block p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+/* ---------- Floating CTA (self-conversion → scrolls to hero form) ---------- */
+.lp-floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 55%, var(--accent-amber) 100%);
+}
+
+.lp-floating-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.lp-floating-cta-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--bg-primary);
+}
+
+.lp-floating-cta-btn {
+  padding: 9px 22px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  background: var(--bg-primary);
+  border-radius: 50px;
+  transition: var(--transition-base);
+}
+
+.lp-floating-cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- Minimal footer (no nav links back to main site) ---------- */
+.lp-footer {
+  padding: 40px 24px 96px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.lp-footer p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .lp-adv-grid {
+    grid-template-columns: 1fr;
+  }
+  .lp-why-grid {
+    grid-template-columns: 1fr;
+  }
+  .lp-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .lp-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lp-lead-form .btn-primary {
+    width: 100%;
+  }
+}
