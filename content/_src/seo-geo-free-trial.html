@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=3">
-  <link rel="stylesheet" href="seo-geo-free-trial.css?v=6">
+  <link rel="stylesheet" href="seo-geo-free-trial.css?v=12">
 </head>
 <body class="lp-body">
 
@@ -61,24 +61,26 @@
           </linearGradient>
         </defs>
 
-        <!-- ===== Bottom-right cluster (previous large-arc curvature restored;
-             only the right/bottom ends are extended so the lines reach further
-             down into the Hero). Widths/colours unchanged. ===== -->
+        <!-- ===== Bottom-right cluster — EXACT 淺藍系列 curves, each extended
+             along its OWN curvature (t>1 sub-curve) so the thin end reaches the
+             very bottom edge of the Hero (圖1's full range). Lines are static;
+             only the flowing light beam travels leftward inside each line.
+             Widths/colours unchanged. ===== -->
         <g class="lp-arc lp-arc-b1">
-          <path class="lp-arc-base" d="M1320,920 C1060,650 760,560 520,470" stroke="url(#lpBlue1)" stroke-width="9"/>
-          <path class="lp-arc-flow" d="M1320,920 C1060,650 760,560 520,470"/>
+          <path class="lp-arc-base" d="M1195,780 C908,539.7 612,548.9 271.5,355.6" stroke="url(#lpBlue1)" stroke-width="9"/>
+          <path class="lp-arc-flow" d="M1195,780 C908,539.7 612,548.9 271.5,355.6"/>
         </g>
         <g class="lp-arc lp-arc-b2">
-          <path class="lp-arc-base" d="M1325,790 C1075,540 800,470 560,540" stroke="url(#lpBlue2)" stroke-width="6"/>
-          <path class="lp-arc-flow" d="M1325,790 C1075,540 800,470 560,540"/>
+          <path class="lp-arc-base" d="M1205,655 C1000.3,513.3 779,465.2 523.8,551.4" stroke="url(#lpBlue2)" stroke-width="6"/>
+          <path class="lp-arc-flow" d="M1205,655 C1000.3,513.3 779,465.2 523.8,551.4"/>
         </g>
         <g class="lp-arc lp-arc-b3">
-          <path class="lp-arc-base" d="M1235,940 C1040,690 840,600 620,610" stroke="url(#lpBlue3)" stroke-width="4"/>
-          <path class="lp-arc-flow" d="M1235,940 C1040,690 840,600 620,610"/>
+          <path class="lp-arc-base" d="M1120,800 C996.4,655.8 830.4,596.5 600,611.1" stroke="url(#lpBlue3)" stroke-width="4"/>
+          <path class="lp-arc-flow" d="M1120,800 C996.4,655.8 830.4,596.5 600,611.1"/>
         </g>
         <g class="lp-arc lp-arc-b4">
-          <path class="lp-arc-base" d="M1305,860 C1085,620 900,520 700,560" stroke="url(#lpBlue2)" stroke-width="2.5"/>
-          <path class="lp-arc-flow" d="M1305,860 C1085,620 900,520 700,560"/>
+          <path class="lp-arc-base" d="M1190,720 C1000.4,589.7 852.9,487.4 581.2,596.2" stroke="url(#lpBlue2)" stroke-width="2.5"/>
+          <path class="lp-arc-flow" d="M1190,720 C1000.4,589.7 852.9,487.4 581.2,596.2"/>
         </g>
 
         <!-- ===== Top-left cluster (kept small / subtle) ===== -->
@@ -305,7 +307,7 @@
         <h2 data-i18n="cta_h2">準備好讓 AI 主動推薦您的品牌了嗎？</h2>
         <p data-i18n="cta_p">立即領取 2 個月免費 SEO / GEO 服務，搶佔 AI 搜尋時代的先機。</p>
       </div>
-      <a href="#lpHero" class="btn-primary lp-cta-band-btn">
+      <a href="#leadModal" class="btn-primary lp-cta-band-btn" data-open-lead-modal>
         <span data-i18n="cta_btn">立即領取免費方案</span>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -335,6 +337,40 @@
           <p data-i18n="why_geo_p">GEO（AI 搜索優化）是企業在智能交互時代布局的新賽道。隨著大語言模型成為用戶獲取信息的主要入口，用戶不再僅僅通過關鍵詞搜索，而是通過向智能回答引擎發起對話式的複雜提問。GEO 的核心在於通過高質量、邏輯嚴密的結構化內容體系，為 AI 引擎提供權威的參考數據，使您的品牌在智能回答中被「引用」與「推薦」。如果說 SEO 是在傳統搜索中贏取「入口」，那麼 GEO 就是在 AI 交互中確立「權威」。建立在穩固 SEO 基礎之上的 GEO 策略，能讓您的品牌在智能回答的生成場景中佔據不可替代的位置，從而實現從被動檢索到主動品牌植入的跨越。</p>
         </div>
       </div>
+
+      <section class="lp-offer-panel" aria-labelledby="lpOfferTitle">
+        <div class="lp-offer-copy">
+          <span class="section-tag" data-i18n="offer_tag">LIMITED SEO / GEO OFFER</span>
+          <h2 id="lpOfferTitle" data-i18n-html="offer_title">別再等待。<br><span>立即領取 2 個月免費 SEO / GEO 服務。</span></h2>
+          <p data-i18n="offer_desc">讓 Unique Logic 為您的網站檢視 AI 曝光度、搜尋排名與內容機會，找出下一步最值得投放的增長位置。</p>
+          <a href="#leadModal" class="btn-primary lp-offer-btn" data-open-lead-modal>
+            <span data-i18n="offer_btn">立即領取免費方案</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <small data-i18n="offer_note">名額有限，適用於簽約 9 個月及以上的合同。</small>
+        </div>
+
+        <div class="lp-offer-visual" aria-hidden="true">
+          <div class="lp-offer-ticket">
+            <div class="lp-ticket-stub">SEO / GEO PASS</div>
+            <div class="lp-ticket-main">
+              <span class="lp-ticket-kicker">2 MONTHS FREE</span>
+              <div class="lp-ticket-code">AI-SEO-02</div>
+              <div class="lp-ticket-barcode">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <span class="lp-offer-orb lp-offer-orb-1"></span>
+          <span class="lp-offer-orb lp-offer-orb-2"></span>
+          <span class="lp-offer-line lp-offer-line-1"></span>
+          <span class="lp-offer-line lp-offer-line-2"></span>
+        </div>
+      </section>
     </div>
   </section>
 
@@ -478,6 +514,13 @@
         });
       }
 
+      document.querySelectorAll('[data-open-lead-modal]').forEach(function (trigger) {
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          openModal();
+        });
+      });
+
       modal.addEventListener('click', function (e) {
         if (e.target.closest('[data-close]')) closeModal();
       });
@@ -494,7 +537,7 @@
   </script>
 
   <!-- Language switcher (繁 / EN / 简) — self-contained, does not touch rerenderer.js -->
-  <script src="seo-geo-i18n.js?v=1"></script>
+  <script src="seo-geo-i18n.js?v=2"></script>
 
 </body>
 </html>
