@@ -1,3 +1,11 @@
+# Local dev: never cache the editable front-end source assets so UI edits
+# (templates / JSON / CSS / HTML under /content/_src/) always show immediately.
+<IfModule mod_headers.c>
+  SetEnvIf Request_URI "^/content/_src/" UL_DEV_ASSET
+  Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0" env=UL_DEV_ASSET
+  Header set Pragma "no-cache" env=UL_DEV_ASSET
+</IfModule>
+
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.

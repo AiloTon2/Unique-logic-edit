@@ -1988,13 +1988,14 @@ section {
 
 .floating-cta-copy {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
 }
 
 .floating-cta-subtext {
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 400;
   color: rgba(12, 12, 15, 0.7);
 }
@@ -2499,5 +2500,16 @@ section {
   
   .floating-cta-text {
     font-size: 0.8rem;
+  }
+}
+
+/* Phone: stack the floating-CTA copy and centre the fine print
+   (on desktop / iPad the main text and fine print sit side by side). */
+@media (max-width: 640px) {
+  .floating-cta-copy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
   }
 }

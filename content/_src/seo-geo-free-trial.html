@@ -9,180 +9,492 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="seo-geo-free-trial.css">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="seo-geo-free-trial.css?v=6">
 </head>
 <body class="lp-body">
 
-  <!-- Top bar: logo only, intentionally NO navigation links back to the main site -->
+  <!-- Top bar: logo LEFT-aligned to match the main site header (圖10);
+       language switcher RIGHT-aligned, occupying the main site's 立即查詢
+       position (圖1). Intentionally NO navigation links back to the main site. -->
   <header class="lp-topbar">
-    <img src="asset/textlogo.svg" alt="Unique Logic" class="lp-logo">
+    <div class="container lp-topbar-inner">
+      <img src="asset/textlogo.svg" alt="Unique Logic" class="lp-logo">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" type="button" data-lang="zh-Hant">繁</button>
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
+        <button class="lang-btn" type="button" data-lang="zh-hans">简</button>
+      </div>
+    </div>
   </header>
 
   <!-- ============================================
-       1. HERO
+       1. HERO  (headline + conversion + certification logos,
+                 over a large free-floating Technology-Wave backdrop)
        ============================================ -->
-  <section class="lp-hero">
+  <section class="lp-hero" id="lpHero">
     <div class="hero-grid"></div>
-    <div class="hero-particles" id="particles"></div>
 
-    <div class="lp-hero-content">
-      <div class="lp-hero-tag">
+    <!-- Technology Wave — free-floating background layer (z-index behind content),
+         overall scene rotated ~-38deg. MULTIPLE twisting organic arcs (blue
+         monochrome). A bright "flowing light" segment travels along each arc
+         (right→left, top→bottom). Bottom-right cluster is tucked into the corner;
+         the top-left cluster stays small. Plus ambient blue glow + particles. -->
+    <div class="lp-tech-wave" aria-hidden="true">
+      <div class="lp-wave-glow lp-wave-glow-1"></div>
+      <div class="lp-wave-glow lp-wave-glow-2"></div>
+
+      <svg class="lp-wave-svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- blue-only base gradients -->
+          <linearGradient id="lpBlue1" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(0,220,255,0.45)"/>
+            <stop offset="100%" stop-color="rgba(30,100,255,0.30)"/>
+          </linearGradient>
+          <linearGradient id="lpBlue2" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(100,200,255,0.45)"/>
+            <stop offset="100%" stop-color="rgba(50,150,255,0.28)"/>
+          </linearGradient>
+          <linearGradient id="lpBlue3" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(180,235,255,0.40)"/>
+            <stop offset="100%" stop-color="rgba(0,180,255,0.26)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- ===== Bottom-right cluster (previous large-arc curvature restored;
+             only the right/bottom ends are extended so the lines reach further
+             down into the Hero). Widths/colours unchanged. ===== -->
+        <g class="lp-arc lp-arc-b1">
+          <path class="lp-arc-base" d="M1320,920 C1060,650 760,560 520,470" stroke="url(#lpBlue1)" stroke-width="9"/>
+          <path class="lp-arc-flow" d="M1320,920 C1060,650 760,560 520,470"/>
+        </g>
+        <g class="lp-arc lp-arc-b2">
+          <path class="lp-arc-base" d="M1325,790 C1075,540 800,470 560,540" stroke="url(#lpBlue2)" stroke-width="6"/>
+          <path class="lp-arc-flow" d="M1325,790 C1075,540 800,470 560,540"/>
+        </g>
+        <g class="lp-arc lp-arc-b3">
+          <path class="lp-arc-base" d="M1235,940 C1040,690 840,600 620,610" stroke="url(#lpBlue3)" stroke-width="4"/>
+          <path class="lp-arc-flow" d="M1235,940 C1040,690 840,600 620,610"/>
+        </g>
+        <g class="lp-arc lp-arc-b4">
+          <path class="lp-arc-base" d="M1305,860 C1085,620 900,520 700,560" stroke="url(#lpBlue2)" stroke-width="2.5"/>
+          <path class="lp-arc-flow" d="M1305,860 C1085,620 900,520 700,560"/>
+        </g>
+
+        <!-- ===== Top-left cluster (kept small / subtle) ===== -->
+        <g class="lp-arc lp-arc-t1">
+          <path class="lp-arc-base" d="M760,150 C520,240 300,180 80,70" stroke="url(#lpBlue1)" stroke-width="2.5"/>
+          <path class="lp-arc-flow" d="M760,150 C520,240 300,180 80,70"/>
+        </g>
+        <g class="lp-arc lp-arc-t2">
+          <path class="lp-arc-base" d="M620,205 C430,250 250,235 60,150" stroke="url(#lpBlue3)" stroke-width="2"/>
+          <path class="lp-arc-flow" d="M620,205 C430,250 250,235 60,150"/>
+        </g>
+      </svg>
+
+      <!-- glowing particles -->
+      <div class="lp-particles">
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+        <span class="lp-particle"></span>
+      </div>
+    </div>
+
+    <div class="container lp-hero-content">
+      <div class="lp-hero-tag lp-anim-headline">
         <span class="tag-dot"></span>
-        <span>SEO / GEO 限時方案</span>
+        <span data-i18n="hero_tag">SEO / GEO 限時方案</span>
       </div>
 
-      <h1 class="lp-hero-title">
+      <h1 class="lp-hero-title lp-anim-headline" data-i18n-html="hero_title">
         在每一次推薦中，<br>
         <span class="accent">您的品牌始終是核心答案。</span><br>
         獲取 2 個月免費 SEO/GEO 服務。
       </h1>
 
-      <p class="lp-fineprint">*簽約 9 個月及以上的合同</p>
+      <p class="lp-fineprint lp-anim-form" data-i18n="fineprint">*簽約 9 個月及以上的合同</p>
 
       <!-- Static skeleton form. Submission wiring comes later (deferred). -->
-      <form class="lp-lead-form" id="leadForm" action="#" method="post" onsubmit="return false;">
+      <form class="lp-lead-form lp-anim-form" id="leadForm" action="#" method="post" onsubmit="return false;">
         <input
           type="email"
           class="lp-lead-input"
           name="email"
           placeholder="輸入您的電郵地址"
-          aria-label="電郵地址"
-          required>
+          data-i18n-ph="hero_email_ph"
+          aria-label="電郵地址">
         <button type="submit" class="btn-primary">
-          <span>領取您的免費 AI 曝光度診斷報告</span>
+          <span data-i18n="hero_cta">領取您的免費 AI 曝光度診斷報告</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <!-- Certification / partner badges — moved into the hero, sitting below
+           the CTA and overlapping the upper part of the wave. ~70% width. -->
+      <div class="lp-hero-badges lp-anim-form">
+        <p class="lp-logos-heading" data-i18n="logos_heading">權威認證 · 深受業界信賴</p>
+        <div class="lp-logos">
+          <div class="lp-logo-item"><img src="asset/lp-google-partner.png" alt="Google Partner"></div>
+          <div class="lp-logo-item"><img src="asset/lp-shopify.png" alt="Shopify Partner"></div>
+          <div class="lp-logo-item"><img src="asset/lp-designrush.png" alt="DesignRush Accredited Agency"></div>
+          <div class="lp-logo-item"><img src="asset/lp-itrate.png" alt="iTRate Top Company"></div>
+          <div class="lp-logo-item"><img src="asset/lp-seoblog.png" alt="SEOblog Top Rated SEO Agency"></div>
+          <div class="lp-logo-item"><img src="asset/lp-10seos.png" alt="Verified by 10SEOS"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       2. TRUST — WHY UNIQUE LOGIC  +  MOVING BAR
+       ============================================ -->
+  <section class="lp-section lp-section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="why_tag">WHY UNIQUE LOGIC</span>
+        <h2 class="section-title" data-i18n="why_title">為什麼選擇 Unique Logic？</h2>
+        <p class="section-desc" data-i18n="why_desc">從初創品牌到跨國企業，Unique Logic 助力各行業先行者實現收益倍增。</p>
+      </div>
+    </div>
+
+    <!-- Moving bar — identical rhythm to the main site's client marquee (圖9) -->
+    <div class="lp-marquee">
+      <p class="clients-label" data-i18n="marquee_label">深受各行業領先企業信賴</p>
+      <div class="clients-wrapper">
+        <div class="clients-grid">
+          <div class="client-logo"><img src="asset/client1.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client2.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client3.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client4.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client5.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client6.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client7.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client8.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client9.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client10.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client11.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client12.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client13.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client14.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client15.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client16.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client17.svg" alt="Client logo"></div>
+          <!-- duplicate set for a seamless loop -->
+          <div class="client-logo"><img src="asset/client1.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client2.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client3.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client4.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client5.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client6.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client7.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client8.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client9.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client10.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client11.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client12.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client13.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client14.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client15.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client16.svg" alt="Client logo"></div>
+          <div class="client-logo"><img src="asset/client17.svg" alt="Client logo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. CORE ADVANTAGES  (SEO 三大 + GEO 三大)
+       ============================================ -->
+  <section class="lp-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="seo_tag">SEO ADVANTAGES</span>
+        <h2 class="section-title" data-i18n="seo_title">SEO 三大核心優勢</h2>
+      </div>
+
+      <div class="lp-adv-grid">
+        <article class="lp-adv-card">
+          <div class="lp-adv-index">01</div>
+          <h3 data-i18n="seo1_h">直擊搜索痛點</h3>
+          <p data-i18n="seo1_p">我們深知，如果網站無法出現在 Google 搜索結果的第一頁，品牌將失去絕大多數的曝光機會。針對這一核心難題，我們通過深入的網站審計與關鍵詞優化，解決網站「有內容卻無流量」的困境，確保您的業務在用戶主動搜索時出現在最關鍵的位置。</p>
+        </article>
+
+        <article class="lp-adv-card">
+          <div class="lp-adv-index">02</div>
+          <h3 data-i18n="seo2_h">量身定制的執行方案</h3>
+          <p data-i18n="seo2_p">我們不提供標準化的模板，而是針對不同行業的痛點與競爭環境，制定精準的 SEO 執行方案。從競爭對手分析到站內內容優化，我們致力於解決每一位客戶的具體需求，確保每一項 SEO 工作都切實作用於您的業務增長。</p>
+        </article>
+
+        <article class="lp-adv-card">
+          <div class="lp-adv-index">03</div>
+          <h3 data-i18n="seo3_h">結果導向的實戰路徑</h3>
+          <p data-i18n="seo3_p">我們提供的是實實在在的 SEO 技術服務，而非營銷空談。我們專注於解決網站架構、關鍵詞布局以及反向鏈接中的實際問題，通過持續的技術支持，將您的網站轉化為吸引精準客戶的有效資產，從而顯著提升獲客率與銷售額。</p>
+        </article>
+      </div>
+
+      <div class="section-header lp-subhead">
+        <span class="section-tag" data-i18n="geo_tag">GEO ADVANTAGES</span>
+        <h2 class="section-title" data-i18n="geo_title">GEO 三大核心優勢</h2>
+      </div>
+
+      <div class="lp-adv-grid">
+        <article class="lp-adv-card lp-adv-card--geo">
+          <div class="lp-adv-index">01</div>
+          <h3 data-i18n="geo1_h">AI 智能語義覆蓋</h3>
+          <p data-i18n="geo1_p">我們優化您的網站內容以適配大語言模型的邏輯，確保在 AI 聊天機器人（如 ChatGPT/Gemini）生成回答時，您的品牌被自然引用並作為權威建議。</p>
+        </article>
+
+        <article class="lp-adv-card lp-adv-card--geo">
+          <div class="lp-adv-index">02</div>
+          <h3 data-i18n="geo2_h">結構化數據精準觸達</h3>
+          <p data-i18n="geo2_p">通過將您的業務信息進行結構化改造，我們能讓 AI 更準確地識別您的品牌價值，確保在智能推薦場景中展現出最符合用戶意圖的信息。</p>
+        </article>
+
+        <article class="lp-adv-card lp-adv-card--geo">
+          <div class="lp-adv-index">03</div>
+          <h3 data-i18n="geo3_h">人機雙贏的搜索布局</h3>
+          <p data-i18n="geo3_p">我們的 GEO 策略不僅提升 AI 搜索權重，同時強化內容的邏輯深度，確保 AI 搜索的權威性提升與用戶的主動檢索體驗同步增長。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4. RESULTS / STATS  (our own metrics)
+       ============================================ -->
+  <section class="lp-section lp-section-alt">
+    <div class="container">
+      <div class="lp-stats">
+        <div class="lp-stat">
+          <span class="lp-stat-num">200<span class="lp-stat-plus">+</span></span>
+          <span class="lp-stat-label" data-i18n="stat1_label">成功案例</span>
+        </div>
+        <div class="lp-stat">
+          <span class="lp-stat-num">98<span class="lp-stat-plus">%</span></span>
+          <span class="lp-stat-label" data-i18n="stat2_label">客戶滿意度</span>
+        </div>
+        <div class="lp-stat">
+          <span class="lp-stat-num">10<span class="lp-stat-plus">+</span></span>
+          <span class="lp-stat-label" data-i18n="stat3_label">年行業經驗</span>
+        </div>
+        <div class="lp-stat">
+          <span class="lp-stat-num">24<span class="lp-stat-plus">/7</span></span>
+          <span class="lp-stat-label" data-i18n="stat4_label">專業支援</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       5. BOTTOM CTA BAND  (scrolls back to the single hero lead form)
+       ============================================ -->
+  <section class="lp-cta-band">
+    <div class="container lp-cta-band-inner">
+      <div class="lp-cta-band-copy">
+        <h2 data-i18n="cta_h2">準備好讓 AI 主動推薦您的品牌了嗎？</h2>
+        <p data-i18n="cta_p">立即領取 2 個月免費 SEO / GEO 服務，搶佔 AI 搜尋時代的先機。</p>
+      </div>
+      <a href="#lpHero" class="btn-primary lp-cta-band-btn">
+        <span data-i18n="cta_btn">立即領取免費方案</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       6. WHY SEO & GEO MATTERS  (explanation)
+       ============================================ -->
+  <section class="lp-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="seogeo_tag">SEO &amp; GEO</span>
+        <h2 class="section-title" data-i18n="seogeo_title">為什麼 SEO 與 GEO 至關重要？</h2>
+      </div>
+
+      <div class="lp-why-grid">
+        <div class="lp-why-block">
+          <h3 data-i18n-html="why_seo_h"><span class="lp-why-kicker">SEO</span> 搜索引擎優化</h3>
+          <p data-i18n="why_seo_p">SEO（搜索引擎優化）是通過深度優化網站架構、技術規範與內容質量，確保品牌在搜索引擎結果頁面 (SERP) 中佔據核心位置的戰略過程。在當前數字化環境下，用戶 75% 的行為依賴於搜索首頁的直接結果，SEO 不僅能有效解決品牌因排名靠後而導致的曝光缺失與流量瓶頸，更是品牌構建長期行業權威與獲取精準獲客的關鍵資產。通過 SEO，我們不僅僅是在提升點擊率，更是在優化整個網站的轉化路徑，讓每一位搜索訪客都能成為品牌的潛在價值來源。</p>
+        </div>
+
+        <div class="lp-why-block lp-why-block--geo">
+          <h3 data-i18n-html="why_geo_h"><span class="lp-why-kicker">GEO</span> AI 搜索優化</h3>
+          <p data-i18n="why_geo_p">GEO（AI 搜索優化）是企業在智能交互時代布局的新賽道。隨著大語言模型成為用戶獲取信息的主要入口，用戶不再僅僅通過關鍵詞搜索，而是通過向智能回答引擎發起對話式的複雜提問。GEO 的核心在於通過高質量、邏輯嚴密的結構化內容體系，為 AI 引擎提供權威的參考數據，使您的品牌在智能回答中被「引用」與「推薦」。如果說 SEO 是在傳統搜索中贏取「入口」，那麼 GEO 就是在 AI 交互中確立「權威」。建立在穩固 SEO 基礎之上的 GEO 策略，能讓您的品牌在智能回答的生成場景中佔據不可替代的位置，從而實現從被動檢索到主動品牌植入的跨越。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BOTTOM BAR — compact footer: only the brand block (left) and the
+       contact block (right) from the main site footer (圖2 + 圖3);
+       the large service / blog navigation columns are intentionally omitted.
+       ============================================ -->
+  <footer class="lp-footer">
+    <div class="container lp-footer-inner">
+      <div class="lp-footer-brand">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="lp-footer-logo">
+        <p class="lp-footer-tagline">Boost Traffic. Boost Profit.</p>
+        <!-- Social buttons copied from the main site footer (圖4): same icons,
+             classes (.footer-social / .social-link), hrefs and hover styling. -->
+        <div class="footer-social">
+          <a href="https://www.facebook.com/UniqueLogicDigital" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 7H11.5C10.6716 7 10 7.67157 10 8.5V18M8 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/unique-logic/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="2" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M6 9V14M6 6V6.01M10 14V11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/uniquelogic_digital?igshid=YmMyMTA2M2Y%3D" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="15" cy="5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="lp-footer-contact">
+        <h4 class="lp-footer-title" data-i18n="footer_title">聯絡我們</h4>
+        <address>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 14C8 14 13 10 13 6.5C13 3.46243 10.7614 1 8 1C5.23858 1 3 3.46243 3 6.5C3 10 8 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="8" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span data-i18n="footer_addr">香港九龍灣啟祥道 17 號 太豐匯 1007 室</span>
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 3H6L7 8L5.5 9C6 11 8 13 10 13.5L11 12L15 13V16C15 16 8 16 3 11C-1 6 3 3 3 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            +852 8400 7393 / +852 3860 7900
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 2C3.24 2 1 3.9 1 6.25C1 7.6 1.76 8.8 2.94 9.56L2.5 11L4.1 10.2C4.7 10.4 5.34 10.5 6 10.5C8.76 10.5 11 8.6 11 6.25C11 3.9 8.76 2 6 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            </svg>
+            <span data-i18n="footer_wechat">微信：UniqueLogic393</span>
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="3" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M2 5L8 9L14 5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            info@uniquelogic.com
+          </p>
+        </address>
+      </div>
+    </div>
+
+    <div class="lp-footer-bottom">
+      <p data-i18n="copyright">&copy; 2026 Unique Logic Limited | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       LEAD DETAILS MODAL — opens when the hero CTA is submitted.
+       Collects the visitor's details (name / phone / email / website),
+       then forwards to the thank-you page.
+       ============================================ -->
+  <div class="lp-modal" id="leadModal" aria-hidden="true">
+    <div class="lp-modal-backdrop" data-close></div>
+    <div class="lp-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+      <button type="button" class="lp-modal-close" data-close aria-label="關閉">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <h2 id="leadModalTitle" class="lp-modal-title" data-i18n="modal_title">請填寫您的資料</h2>
+      <p class="lp-modal-sub" data-i18n="modal_sub">填妥後，我們的數碼策略師將盡快為您準備免費 AI 曝光度診斷報告。</p>
+      <form class="lp-modal-form" id="leadDetailsForm" action="#" method="post">
+        <div class="lp-field-row">
+          <input type="text" name="firstname" placeholder="名字 *" data-i18n-ph="modal_ph_name" aria-label="名字" required>
+          <input type="tel" name="phone" placeholder="聯絡電話 *" data-i18n-ph="modal_ph_phone" aria-label="聯絡電話" required>
+        </div>
+        <div class="lp-field-row">
+          <input type="email" name="email" placeholder="電郵地址 *" data-i18n-ph="modal_ph_email" aria-label="電郵地址" required>
+          <input type="text" name="website" placeholder="網站網址（可選）" data-i18n-ph="modal_ph_website" aria-label="網站網址">
+        </div>
+        <button type="submit" class="btn-primary lp-modal-submit">
+          <span data-i18n="modal_submit">領取我的免費 AI 曝光度診斷報告</span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
       </form>
     </div>
-  </section>
-
-  <!-- ============================================
-       2. WHY UNIQUE LOGIC (TRUST) + LOGOS
-       ============================================ -->
-  <section class="lp-section lp-section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">WHY UNIQUE LOGIC</span>
-        <h2 class="section-title">為什麼選擇 Unique Logic？</h2>
-        <p class="section-desc">從初創品牌到跨國企業，Unique Logic 助力各行業先行者實現收益倍增。</p>
-      </div>
-
-      <!-- Placeholder client logos — final assets to be supplied later -->
-      <div class="lp-logos">
-        <div class="lp-logo-item"><img src="asset/client1.svg" alt="Client logo"></div>
-        <div class="lp-logo-item"><img src="asset/client2.svg" alt="Client logo"></div>
-        <div class="lp-logo-item"><img src="asset/client3.svg" alt="Client logo"></div>
-        <div class="lp-logo-item"><img src="asset/client4.svg" alt="Client logo"></div>
-        <div class="lp-logo-item"><img src="asset/client5.svg" alt="Client logo"></div>
-        <div class="lp-logo-item"><img src="asset/client6.svg" alt="Client logo"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       3. SEO 三大核心優勢
-       ============================================ -->
-  <section class="lp-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">SEO ADVANTAGES</span>
-        <h2 class="section-title">SEO 三大核心優勢</h2>
-      </div>
-
-      <div class="lp-adv-grid">
-        <article class="lp-adv-card">
-          <div class="lp-adv-index">01</div>
-          <h3>直擊搜索痛點</h3>
-          <p>我們深知，如果網站無法出現在 Google 搜索結果的第一頁，品牌將失去絕大多數的曝光機會。針對這一核心難題，我們通過深入的網站審計與關鍵詞優化，解決網站「有內容卻無流量」的困境，確保您的業務在用戶主動搜索時出現在最關鍵的位置。</p>
-        </article>
-
-        <article class="lp-adv-card">
-          <div class="lp-adv-index">02</div>
-          <h3>量身定制的執行方案</h3>
-          <p>我們不提供標準化的模板，而是針對不同行業的痛點與競爭環境，制定精準的 SEO 執行方案。從競爭對手分析到站內內容優化，我們致力於解決每一位客戶的具體需求，確保每一項 SEO 工作都切實作用於您的業務增長。</p>
-        </article>
-
-        <article class="lp-adv-card">
-          <div class="lp-adv-index">03</div>
-          <h3>結果導向的實戰路徑</h3>
-          <p>我們提供的是實實在在的 SEO 技術服務，而非營銷空談。我們專注於解決網站架構、關鍵詞布局以及反向鏈接中的實際問題，通過持續的技術支持，將您的網站轉化為吸引精準客戶的有效資產，從而顯著提升獲客率與銷售額。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       4. GEO 三大核心優勢
-       ============================================ -->
-  <section class="lp-section lp-section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">GEO ADVANTAGES</span>
-        <h2 class="section-title">GEO 三大核心優勢</h2>
-      </div>
-
-      <div class="lp-adv-grid">
-        <article class="lp-adv-card lp-adv-card--geo">
-          <div class="lp-adv-index">01</div>
-          <h3>AI 智能語義覆蓋</h3>
-          <p>我們優化您的網站內容以適配大語言模型的邏輯，確保在 AI 聊天機器人（如 ChatGPT/Gemini）生成回答時，您的品牌被自然引用並作為權威建議。</p>
-        </article>
-
-        <article class="lp-adv-card lp-adv-card--geo">
-          <div class="lp-adv-index">02</div>
-          <h3>結構化數據精準觸達</h3>
-          <p>通過將您的業務信息進行結構化改造，我們能讓 AI 更準確地識別您的品牌價值，確保在智能推薦場景中展現出最符合用戶意圖的信息。</p>
-        </article>
-
-        <article class="lp-adv-card lp-adv-card--geo">
-          <div class="lp-adv-index">03</div>
-          <h3>人機雙贏的搜索布局</h3>
-          <p>我們的 GEO 策略不僅提升 AI 搜索權重，同時強化內容的邏輯深度，確保 AI 搜索的權威性提升與用戶的主動檢索體驗同步增長。</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       5. WHY SEO & GEO MATTERS (BOTTOM)
-       ============================================ -->
-  <section class="lp-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">SEO &amp; GEO</span>
-        <h2 class="section-title">為什麼 SEO 與 GEO 至關重要？</h2>
-      </div>
-
-      <div class="lp-why-grid">
-        <div class="lp-why-block">
-          <h3><span class="lp-why-kicker">SEO</span> 搜索引擎優化</h3>
-          <p>SEO（搜索引擎優化）是通過深度優化網站架構、技術規範與內容質量，確保品牌在搜索引擎結果頁面 (SERP) 中佔據核心位置的戰略過程。在當前數字化環境下，用戶 75% 的行為依賴於搜索首頁的直接結果，SEO 不僅能有效解決品牌因排名靠後而導致的曝光缺失與流量瓶頸，更是品牌構建長期行業權威與獲取精準獲客的關鍵資產。通過 SEO，我們不僅僅是在提升點擊率，更是在優化整個網站的轉化路徑，讓每一位搜索訪客都能成為品牌的潛在價值來源。</p>
-        </div>
-
-        <div class="lp-why-block lp-why-block--geo">
-          <h3><span class="lp-why-kicker">GEO</span> AI 搜索優化</h3>
-          <p>GEO（AI 搜索優化）是企業在智能交互時代布局的新賽道。隨著大語言模型成為用戶獲取信息的主要入口，用戶不再僅僅通過關鍵詞搜索，而是通過向智能回答引擎發起對話式的複雜提問。GEO 的核心在於通過高質量、邏輯嚴密的結構化內容體系，為 AI 引擎提供權威的參考數據，使您的品牌在智能回答中被「引用」與「推薦」。如果說 SEO 是在傳統搜索中贏取「入口」，那麼 GEO 就是在 AI 交互中確立「權威」。建立在穩固 SEO 基礎之上的 GEO 策略，能讓您的品牌在智能回答的生成場景中佔據不可替代的位置，從而實現從被動檢索到主動品牌植入的跨越。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Floating CTA — self-conversion only: scrolls back up to the hero email form.
-       Per navigation rules, it does NOT link to any main-site page. -->
-  <div class="lp-floating-cta" id="lpFloatingCta">
-    <div class="lp-floating-cta-content">
-      <span class="lp-floating-cta-text">🔥 本月限定：首次諮詢免費送 AI 曝光度報告</span>
-      <a href="#leadForm" class="lp-floating-cta-btn">立即領取</a>
-    </div>
   </div>
 
-  <!-- Minimal footer: copyright only, no navigation back to the main site -->
-  <footer class="lp-footer">
-    <p>&copy; 2026 Unique Logic Limited | All Rights Reserved</p>
-  </footer>
+  <!-- Page-specific behaviour only (does NOT touch rerenderer.js). -->
+  <script>
+    (function () {
+      var heroForm = document.getElementById('leadForm');
+      var modal = document.getElementById('leadModal');
+      var detailsForm = document.getElementById('leadDetailsForm');
+      if (!modal || !detailsForm) return;
+
+      function openModal() {
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        // carry over the email typed in the hero, if any
+        var heroEmail = heroForm ? heroForm.querySelector('[name="email"]') : null;
+        var modalEmail = detailsForm.querySelector('[name="email"]');
+        if (heroEmail && modalEmail && heroEmail.value) modalEmail.value = heroEmail.value;
+        var firstField = detailsForm.querySelector('input');
+        if (firstField) setTimeout(function () { firstField.focus(); }, 60);
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      if (heroForm) {
+        heroForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          openModal();
+        });
+      }
+
+      modal.addEventListener('click', function (e) {
+        if (e.target.closest('[data-close]')) closeModal();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+      });
+
+      detailsForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        window.location.href = 'seo-geo-thank-you.html';
+      });
+    })();
+  </script>
+
+  <!-- Language switcher (繁 / EN / 简) — self-contained, does not touch rerenderer.js -->
+  <script src="seo-geo-i18n.js?v=1"></script>
 
 </body>
 </html>
