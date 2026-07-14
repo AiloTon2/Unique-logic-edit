@@ -77,7 +77,7 @@
       modal_ph_name: "First name *",
       modal_ph_phone: "Contact number *",
       modal_ph_email: "Email address *",
-      modal_ph_website: "Website (optional)",
+      modal_ph_website: "Website *",
       modal_submit: "Apply for 2 months free service now",
       /* ---- thank-you page ---- */
       back_btn: "Back to the previous page",
@@ -147,7 +147,7 @@
       modal_ph_name: "名字 *",
       modal_ph_phone: "联络电话 *",
       modal_ph_email: "电邮地址 *",
-      modal_ph_website: "网站网址（可选）",
+      modal_ph_website: "网站网址 *",
       modal_submit: "立即申请 2 个月免费服务",
       back_btn: "返回上一页",
       ty_title: '服务即将开通！<br><span class="accent">我们已收到您的查询。</span>',

@@ -1973,11 +1973,16 @@ section {
 
 .floating-cta-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 10px;
   max-width: 1280px;
   margin: 0 auto;
+  text-align: center;
+  /* Headline + fine print + button are stacked and centred as a group. The
+     fixed WhatsApp button lives in its own layer (position:fixed, right side)
+     and overlaps the banner background without shifting this centred content. */
 }
 
 .floating-cta-text {
@@ -1988,10 +1993,10 @@ section {
 
 .floating-cta-copy {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 4px 12px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
 }
 
 .floating-cta-subtext {
@@ -2008,6 +2013,9 @@ section {
   background: var(--bg-primary);
   border-radius: 50px;
   transition: var(--transition-base);
+  /* Keep the label on a single line and never let flex shrink it. */
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .floating-cta-btn:hover {

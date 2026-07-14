@@ -12,9 +12,105 @@ add_action('wp_head', function () {
 	echo '<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">';
 	echo '<link rel="preload" href="/content/_src/styles.css" as="style">';
 	echo '<link rel="icon" href="https://uniquelogic.com/wp-content/uploads/2026/03/cropped-image-1-32x32.png" sizes="32x32" />';
-	echo '<style>#ul-whatsapp-btn{
-	right:90px !important;bottom:15px !important;width:60px !important;height:60px !important;	}</style>';
+	echo <<<'ULWA'
+<style id="ul-wa-responsive">
+/* Desktop (>=1025px): WhatsApp button stays exactly as it is now. */
+@media (min-width: 1025px){
+	#ul-whatsapp-btn{right:90px !important;bottom:15px !important;width:60px !important;height:60px !important;}
+	#ul-wa-dock{display:none !important;}
+}
+/* Mobile / tablet (<=1024px): the WhatsApp button never floats up on its own.
+   A lime pull-tab hugs the right edge; tapping it (or reaching the page bottom)
+   slides out the WhatsApp button plus a same-size slot beneath it. Any scroll,
+   outside tap, or button press collapses it back to the edge. The stack sits on
+   the empty right side of the fixed CTA banner — over its block, never its
+   text/button. */
+@media (max-width: 1024px){
+	/* Keep the site's own WhatsApp icon + steady glow, but drop the pulsing /
+	   spreading conic light so nothing "flares" on hover. */
+	#ul-whatsapp-btn{animation:none !important;}
+	#ul-wa-dock #ul-whatsapp-btn::before{display:none !important;opacity:0 !important;}
+	#ul-wa-dock{position:fixed;right:0;bottom:24px;width:0;height:0;z-index:2147482000;}
+	/* The two buttons fan out diagonally toward the upper-left, above the CTA
+	   banner (WhatsApp on top-left, empty slot lower-right near the tab). */
+	#ul-wa-stack{position:absolute;right:46px;bottom:40px;width:128px;height:128px;pointer-events:none;transform-origin:bottom right;transition:transform .42s cubic-bezier(.34,1.56,.64,1),opacity .3s ease;}
+	#ul-wa-dock:not(.ul-wa-open) #ul-wa-stack{transform:translate(48px,48px) scale(.35);opacity:0;}
+	#ul-wa-dock.ul-wa-open #ul-wa-stack{transform:none;opacity:1;}
+	#ul-wa-stack>*{position:absolute;pointer-events:auto;}
+	#ul-wa-dock #ul-whatsapp-btn{position:absolute !important;left:0 !important;top:0 !important;right:auto !important;bottom:auto !important;margin:0 !important;width:54px !important;height:54px !important;opacity:1 !important;transform:none !important;pointer-events:auto !important;}
+	#ul-wa-slot{right:0;bottom:0;width:54px;height:54px;border-radius:50%;border:2px dashed rgba(0,212,232,.4);background:rgba(0,212,232,.06);}
+	/* Pull-tab: dark gradient + cyan edge to match the site; no drop shadow. */
+	#ul-wa-tab{position:absolute;right:0;bottom:0;width:26px;height:60px;padding:0;cursor:pointer;pointer-events:auto;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a24 100%);border:1.5px solid rgba(0,212,232,.45);border-right:0;border-top-left-radius:60px;border-bottom-left-radius:60px;box-shadow:none;display:flex;align-items:center;justify-content:center;}
+	#ul-wa-tab svg{width:15px;height:15px;transition:transform .4s ease;}
+	#ul-wa-dock.ul-wa-open #ul-wa-tab svg{transform:rotate(180deg);}
+}
+</style>
+ULWA;
 }, 1);
+
+// Task 2: WhatsApp button — on mobile/tablet it lives in a right-edge
+// collapsible dock (lime pull-tab -> WhatsApp + same-size empty slot); on
+// desktop it stays exactly as designed. Done via this loader only; the
+// rerenderer.js file is never modified.
+add_action('wp_footer', function () {
+	echo <<<'ULWAJS'
+<script>
+(function(){
+	function ready(cb){if(document.readyState!=="loading"){cb();}else{document.addEventListener("DOMContentLoaded",cb);}}
+	ready(function(){
+		var tries=0;
+		var timer=setInterval(function(){
+			var btn=document.getElementById("ul-whatsapp-btn");
+			if(btn){clearInterval(timer);init(btn);}
+			else if(++tries>60){clearInterval(timer);}
+		},150);
+		function isMT(){return window.innerWidth<=1024;}
+		function init(btn){
+			var dock=document.getElementById("ul-wa-dock");
+			var stack,slot;
+			function open(){if(isMT()){dock.classList.add("ul-wa-open");}}
+			function close(){dock.classList.remove("ul-wa-open");}
+			if(!dock){
+				dock=document.createElement("div");dock.id="ul-wa-dock";
+				stack=document.createElement("div");stack.id="ul-wa-stack";
+				slot=document.createElement("div");slot.id="ul-wa-slot";slot.setAttribute("aria-hidden","true");
+				var tab=document.createElement("button");tab.id="ul-wa-tab";tab.type="button";
+				tab.setAttribute("aria-label","\u5c55\u958b\u806f\u7d61\u6309\u9215");
+				tab.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-6 7 6 7" fill="none" stroke="#00d4e8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+				stack.appendChild(slot);
+				dock.appendChild(stack);dock.appendChild(tab);
+				document.body.appendChild(dock);
+				// Hover / touch / click on the tab pops the buttons out.
+				tab.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();open();});
+				tab.addEventListener("mouseenter",open);
+				tab.addEventListener("touchstart",function(){open();},{passive:true});
+				dock.addEventListener("mouseenter",open);
+				// Leaving the dock with the pointer collapses it back.
+				dock.addEventListener("mouseleave",close);
+			}
+			stack=document.getElementById("ul-wa-stack");
+			slot=document.getElementById("ul-wa-slot");
+			function placeBtn(){
+				if(isMT()){if(btn.parentNode!==stack){stack.insertBefore(btn,slot);}}
+				else{if(btn.parentNode!==document.body){document.body.appendChild(btn);}close();}
+			}
+			function onScroll(){
+				if(!isMT()){close();return;}
+				var y=window.scrollY||window.pageYOffset||0;
+				var nearBottom=(window.innerHeight+y)>=(document.documentElement.scrollHeight-48);
+				if(nearBottom){open();}else{close();}
+			}
+			window.addEventListener("scroll",onScroll,{passive:true});
+			window.addEventListener("resize",function(){placeBtn();onScroll();});
+			document.addEventListener("click",function(e){if(!dock.contains(e.target)){close();}},true);
+			btn.addEventListener("click",function(){close();});
+			placeBtn();onScroll();
+		}
+	});
+})();
+</script>
+ULWAJS;
+});
 
 // Remove WP emoji scripts (conflict with body wipe).
 remove_action('wp_head', 'print_emoji_detection_script', 7);
