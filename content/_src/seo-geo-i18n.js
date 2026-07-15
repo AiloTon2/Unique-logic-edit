@@ -82,7 +82,7 @@
       /* ---- thank-you page ---- */
       back_btn: "Back to the previous page",
       ty_title: 'Your service is being activated!<br><span class="accent">We’ve received your inquiry.</span>',
-      ty_sub: "Your dedicated digital strategist will contact you within one business day to arrange and activate your 2 months of free SEO/GEO service.",
+      ty_sub: "Our team will contact you within one business day to arrange and activate your 2 months of free SEO/GEO service.",
       ty_call: "Prefer to talk now? Call <strong>+852 8400 7393</strong>",
       loc_section_title: "Contact Details",
       loc_addr_label: "ADDRESS",
@@ -151,7 +151,7 @@
       modal_submit: "立即申请 2 个月免费服务",
       back_btn: "返回上一页",
       ty_title: '服务即将开通！<br><span class="accent">我们已收到您的查询。</span>',
-      ty_sub: "您的专属数码策略师将于一个工作天内与您联系，为您安排并启动 2 个月免费的 SEO/GEO 服务。",
+      ty_sub: "我们的团队将于一个工作天内与您联系，为您安排并启动 2 个月免费的 SEO/GEO 服务。",
       ty_call: "想立即与我们对谈？请致电 <strong>+852 8400 7393</strong>",
       loc_section_title: "联络方式",
       loc_addr_label: "地址",

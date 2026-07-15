@@ -11,17 +11,14 @@
    theme. Scoped to .lp-body so nothing else is affected.
    ============================================ */
 
-/* ---------- Dark theme (matches the MAIN Unique Logic site palette) ----------
-   Backgrounds now use the main site's neutral near-black family (#0c0c0f …)
-   with cyan / amber / purple accents and soft dark gradients.
-   Previous palettes are preserved as stylesheets you can swap the <link> to:
-     • seo-geo-free-trial-light.css        ("淺色版")
-     • seo-geo-free-trial-不太靚的深.css   (the earlier navy dark version) */
+/* ---------- Dark theme (matches the main Unique Logic deep-navy site) ----------
+   The original light palette is preserved in seo-geo-free-trial-light.css
+   ("淺色版"). Swap the stylesheet <link> to that file to restore the light look. */
 .lp-body {
-  --bg-primary: #0c0c0f;
-  --bg-secondary: #121216;
-  --bg-tertiary: #1a1a1f;
-  --bg-card: #101014;
+  --bg-primary: #0a0f1f;
+  --bg-secondary: #10182b;
+  --bg-tertiary: #1a2440;
+  --bg-card: #0f1729;
 
   /* Brand accents (unchanged) */
   --accent-cyan: #00d4e8;
@@ -36,22 +33,18 @@
   --lp-purple-text: #c79bff;
 
   --text-primary: #ffffff;
-  --text-secondary: #a8a8b3;
-  --text-muted: #6b6b76;
+  --text-secondary: #aab2c6;
+  --text-muted: #737c93;
 
-  --border-color: #2a2a32;
-  --border-glow: rgba(0, 212, 232, 0.3);
+  --border-color: #253048;
+  --border-glow: rgba(0, 212, 232, 0.35);
 
   /* wave gradient stops — bright brand hues */
   --lp-wave-a: #00d4e8;
   --lp-wave-b: #a855f7;
   --lp-wave-c: #f5a623;
 
-  /* Soft dark gradient backdrop: faint cyan + purple glows over near-black. */
-  background:
-    radial-gradient(1200px 720px at 82% -6%, rgba(0, 212, 232, 0.10), transparent 60%),
-    radial-gradient(1040px 700px at 8% 4%, rgba(168, 85, 247, 0.10), transparent 62%),
-    linear-gradient(180deg, #0e0e13 0%, var(--bg-primary) 46%);
+  background: var(--bg-primary);
   color: var(--text-primary);
 }
 
@@ -84,20 +77,9 @@ select,
   position: relative;
   z-index: 20;
   padding: 20px 0;
-  /* Solid, visibly distinct top bar using the main site's dark palette. */
-  border-bottom: 1px solid rgba(0, 212, 232, 0.14);
-  background: #111111;
-  backdrop-filter: blur(16px);
-}
-
-/* Landing and thank-you pages share the same cyan→purple accent glow. */
-.lp-home .lp-topbar,
-.lp-thank-you .lp-topbar {
-  background:
-    linear-gradient(90deg,
-      rgba(168, 85, 247, 0.16) 0%,
-      rgba(0, 212, 232, 0.16) 100%),
-    var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(10, 15, 31, 0.72);
+  backdrop-filter: blur(20px);
 }
 
 .lp-topbar-inner {
@@ -114,7 +96,7 @@ select,
 /* Reuse the main site's .lang-toggle / .lang-btn (from styles.css). Only
    nudge the active pill's text colour so it stays legible on the light theme. */
 .lp-body .lang-btn.active {
-  color: var(--bg-primary);
+  color: #06222a;
 }
 
 /* ============================================
@@ -310,7 +292,7 @@ select,
   max-width: 96%;
   height: 78%;
   transform: translateX(-50%);
-  background: radial-gradient(ellipse 60% 60% at 50% 40%, rgba(12, 12, 15, 0.86), rgba(12, 12, 15, 0) 72%);
+  background: radial-gradient(ellipse 60% 60% at 50% 40%, rgba(10, 15, 31, 0.86), rgba(10, 15, 31, 0) 72%);
   z-index: -1;
   pointer-events: none;
 }
@@ -379,7 +361,7 @@ select,
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  box-shadow: 0 4px 18px rgba(10, 10, 14, 0.05);
+  box-shadow: 0 4px 18px rgba(12, 16, 32, 0.05);
   transition: var(--transition-base);
 }
 
@@ -419,7 +401,7 @@ select,
   text-transform: uppercase;
   margin: 0 auto 26px;
   padding: 4px 14px;
-  background: rgba(18, 18, 22, 0.6);
+  background: rgba(15, 23, 41, 0.6);
   border-radius: 999px;
   backdrop-filter: blur(8px);
 }
@@ -429,33 +411,6 @@ select,
   grid-template-columns: repeat(6, 1fr);
   gap: 18px;
   align-items: center;
-}
-
-/* On wide screens (single 6-across row) enlarge the credential cards ~1.4x so
-   the logos read bigger and more premium. Overridden below 900px. */
-@media (min-width: 901px) {
-  .lp-logos {
-    gap: 24px;
-  }
-  .lp-logo-item {
-    height: 120px;
-    padding: 14px;
-  }
-}
-
-/* Widest screens: the 6 logos form a single row. Stretch the whole strip
-   wider (~1.4x, mainly width) so each card reads larger and more premium. */
-@media (min-width: 1101px) {
-  .lp-hero-badges {
-    max-width: 1180px;
-  }
-  .lp-logos {
-    gap: 26px;
-  }
-  .lp-logo-item {
-    height: 132px;
-    padding: 16px;
-  }
 }
 
 /* Authority / certification seals — dark "glass" cards that sit close to the
@@ -472,7 +427,7 @@ select,
   border: 1px solid rgba(125, 211, 230, 0.22);
   border-radius: var(--radius-md);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
-    0 12px 28px rgba(0, 0, 0, 0.5);
+    0 12px 28px rgba(2, 8, 20, 0.5);
   backdrop-filter: blur(6px);
   transition: var(--transition-base);
 }
@@ -496,7 +451,7 @@ select,
   transform: translateY(-3px);
   border-color: rgba(125, 211, 230, 0.5);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 18px 38px rgba(0, 0, 0, 0.6);
+    0 18px 38px rgba(2, 8, 20, 0.6);
 }
 
 /* ============================================
@@ -568,14 +523,14 @@ select,
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 30px rgba(10, 10, 14, 0.05);
+  box-shadow: 0 8px 30px rgba(12, 16, 32, 0.05);
   transition: var(--transition-base);
 }
 
 .lp-adv-card:hover {
   transform: translateY(-6px);
   border-color: var(--border-glow);
-  box-shadow: 0 16px 44px rgba(10, 10, 14, 0.1);
+  box-shadow: 0 16px 44px rgba(12, 16, 32, 0.1);
 }
 
 .lp-adv-index {
@@ -678,7 +633,7 @@ select,
 
 .lp-body .lp-cta-band-btn.btn-primary:hover {
   background: #1b2236;
-  box-shadow: 0 12px 32px rgba(10, 10, 14, 0.35);
+  box-shadow: 0 12px 32px rgba(12, 16, 32, 0.35);
 }
 
 /* ---------- Bottom "why it matters" ---------- */
@@ -694,7 +649,7 @@ select,
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 30px rgba(10, 10, 14, 0.05);
+  box-shadow: 0 8px 30px rgba(12, 16, 32, 0.05);
 }
 
 .lp-why-block h3 {
@@ -731,10 +686,10 @@ select,
   background:
     radial-gradient(circle at 82% 18%, rgba(100, 200, 255, 0.20), transparent 32%),
     radial-gradient(circle at 14% 80%, rgba(47, 224, 176, 0.14), transparent 30%),
-    linear-gradient(135deg, rgba(18, 18, 22, 0.98), rgba(26, 26, 31, 0.92));
+    linear-gradient(135deg, rgba(15, 23, 41, 0.98), rgba(20, 30, 54, 0.92));
   border: 1px solid var(--border-color);
   border-radius: calc(var(--radius-lg) + 8px);
-  box-shadow: 0 22px 70px rgba(10, 10, 14, 0.10);
+  box-shadow: 0 22px 70px rgba(12, 16, 32, 0.10);
 }
 
 .lp-offer-panel::before {
@@ -807,7 +762,7 @@ select,
   overflow: hidden;
   background:
     radial-gradient(circle at 80% 18%, rgba(100, 200, 255, 0.20), transparent 34%),
-    linear-gradient(135deg, rgba(18, 18, 22, 0.96), rgba(26, 26, 31, 0.92));
+    linear-gradient(135deg, rgba(17, 26, 46, 0.96), rgba(22, 33, 58, 0.92));
   border: 1px solid rgba(0, 212, 232, 0.28);
   border-radius: 26px;
   box-shadow: 0 24px 60px rgba(50, 150, 255, 0.20);
@@ -1349,7 +1304,7 @@ select,
 .lp-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(10, 10, 14, 0.55);
+  background: rgba(12, 16, 32, 0.55);
   backdrop-filter: blur(4px);
   animation: fadeIn 0.25s ease both;
 }
@@ -1361,7 +1316,7 @@ select,
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: 0 30px 80px rgba(10, 10, 14, 0.28);
+  box-shadow: 0 30px 80px rgba(12, 16, 32, 0.28);
   padding: 44px 40px 40px;
   animation: lpModalIn 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -1517,7 +1472,7 @@ select,
   border: 1px solid var(--border-color);
   border-radius: 50px;
   background: var(--bg-card);
-  box-shadow: 0 6px 20px rgba(10, 10, 14, 0.06);
+  box-shadow: 0 6px 20px rgba(12, 16, 32, 0.06);
   font-size: 1rem;
   color: var(--text-secondary);
   animation: fadeInUp 0.8s ease both;
@@ -1584,7 +1539,7 @@ select,
   border: 1px solid var(--border-color);
   min-height: 420px;
   background: var(--bg-card);
-  box-shadow: 0 12px 40px rgba(10, 10, 14, 0.08);
+  box-shadow: 0 12px 40px rgba(12, 16, 32, 0.08);
 }
 
 .lp-body .map-wrapper iframe {
@@ -1600,7 +1555,7 @@ select,
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   padding: 40px;
-  box-shadow: 0 12px 40px rgba(10, 10, 14, 0.06);
+  box-shadow: 0 12px 40px rgba(12, 16, 32, 0.06);
 }
 
 .lp-body .contact-details-wrapper .section-title {
