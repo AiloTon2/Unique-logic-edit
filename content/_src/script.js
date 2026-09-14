@@ -186,9 +186,21 @@ function initNavigation() {
       // Remove active from all buttons in the same group
       const parent = btn.parentElement;
       parent.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+      btn.classList.add('active');
+
+      const label = (btn.dataset.lang || btn.textContent || '').trim().toLowerCase();
+      const lang = label.includes('简') || label.includes('hans') ? 'zh-Hans' : 'zh-Hant';
+      document.documentElement.setAttribute('lang', lang);
+
+      document.querySelectorAll('[data-i18n-hant][data-i18n-hans]').forEach(el => {
+        el.textContent = lang === 'zh-Hans' ? el.dataset.i18nHans : el.dataset.i18nHant;
+      });
+
+      document.querySelectorAll('[data-i18n-html-hant][data-i18n-html-hans]').forEach(el => {
+        el.innerHTML = lang === 'zh-Hans' ? el.dataset.i18nHtmlHans : el.dataset.i18nHtmlHant;
+      });
+    });
   });
-});
 
   // Blog Category Filter & Pagination
   initBlogPagination();

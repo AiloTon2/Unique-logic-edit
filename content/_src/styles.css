@@ -330,9 +330,72 @@ button:hover ~ .cursor-dot {
   transition: all 0.2s ease;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item.active {
   color: var(--accent-cyan);
   background: rgba(0, 212, 255, 0.1);
+}
+
+.dropdown-group {
+  position: relative;
+}
+
+.dropdown-parent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.dropdown-submenu-arrow {
+  flex: 0 0 auto;
+  opacity: 0.72;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.dropdown-group:hover .dropdown-submenu-arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+.dropdown-submenu {
+  position: absolute;
+  top: -12px;
+  left: calc(100% + 10px);
+  min-width: 320px;
+  padding: 12px 0;
+  background: rgba(18, 18, 22, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-6px);
+  transition: all 0.2s ease;
+  visibility: hidden;
+}
+
+.dropdown-submenu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -12px;
+  width: 12px;
+}
+
+.dropdown-group:hover .dropdown-submenu,
+.dropdown-group:focus-within .dropdown-submenu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.dropdown-subitem {
+  white-space: normal;
 }
 
 .nav-actions {
@@ -487,8 +550,32 @@ button:hover ~ .cursor-dot {
   transition: all 0.2s ease;
 }
 
-.mobile-dropdown-item:hover {
+.mobile-dropdown-item:hover,
+.mobile-dropdown-item.active {
   color: var(--accent-cyan);
+}
+
+.mobile-dropdown-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 0;
+}
+
+.mobile-dropdown-heading {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 24px 2px;
+}
+
+.mobile-dropdown-heading.active {
+  color: var(--accent-cyan);
+}
+
+.mobile-dropdown-subitem {
+  font-size: 0.95rem;
+  padding-left: 42px;
 }
 
 .mobile-lang {
