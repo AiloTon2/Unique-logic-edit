@@ -2227,3 +2227,24 @@
     padding: 54px 24px;
   }
 }
+
+/* Restore service hero vertical position to match the original service pages. */
+.service-hero {
+  min-height: 100vh;
+  padding: 120px 24px 80px;
+}
+
+.service-hero-content {
+  transform: none;
+}
+
+.service-hero .hero-scroll {
+  bottom: 40px;
+}
+
+@media (max-width: 760px) {
+  .service-hero {
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+  }
+}
