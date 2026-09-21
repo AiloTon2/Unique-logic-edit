@@ -1802,3 +1802,97 @@
     transform: none;
   }
 }
+
+/* Final polish requested after visual review. */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card h3 {
+  height: 3.8em;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card p {
+  min-height: 4.8em;
+}
+
+.service-hero {
+  min-height: 108vh;
+  padding-bottom: 132px;
+}
+
+.service-hero-content {
+  transform: translateY(-28px);
+}
+
+.service-hero .hero-scroll {
+  bottom: 24px;
+}
+
+.intent-card,
+.module-points > div,
+.tech-lane > div,
+.backlink-grid > div {
+  border-style: dashed;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012));
+}
+
+.seo-module-block {
+  border-color: rgba(0, 212, 255, 0.12);
+}
+
+.seo-module-block + .seo-module-block {
+  margin-top: 14px;
+}
+
+.module-points.two-col {
+  border-top: 1px dashed rgba(0, 212, 255, 0.18);
+  padding-top: 18px;
+}
+
+.strategy-cycle {
+  min-height: 680px;
+}
+
+.cycle-node {
+  border-radius: 26px;
+}
+
+@media (min-width: 1181px) {
+  .features-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1180px) {
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .feature-card h3,
+  .feature-card p {
+    min-height: 0;
+  }
+
+  .service-hero {
+    min-height: 100vh;
+    padding-bottom: 96px;
+  }
+
+  .service-hero-content {
+    transform: none;
+  }
+}
