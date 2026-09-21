@@ -164,7 +164,7 @@
 .intro-content .section-label {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   margin-bottom: 24px;
 }
 
@@ -284,7 +284,10 @@
 }
 
 .section-label.centered {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  gap: 18px;
   margin-bottom: 16px;
 }
 
@@ -423,6 +426,117 @@
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+
+
+.strategy-loop {
+  position: relative;
+  max-width: 1080px;
+  min-height: 620px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+}
+
+.strategy-loop::before {
+  content: "";
+  position: absolute;
+  inset: 92px 160px;
+  border: 1px solid rgba(0, 212, 255, 0.26);
+  border-radius: 50%;
+  box-shadow: 0 0 36px rgba(0, 212, 255, 0.08), inset 0 0 42px rgba(0, 212, 255, 0.05);
+}
+
+.strategy-loop::after {
+  content: "";
+  position: absolute;
+  top: 84px;
+  right: 248px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid var(--accent-cyan);
+  border-right: 2px solid var(--accent-cyan);
+  transform: rotate(38deg);
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
+}
+
+.loop-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 190px;
+  height: 190px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.18), rgba(0, 212, 255, 0.04) 64%, rgba(13, 13, 18, 0.9));
+  border: 1px solid rgba(0, 212, 255, 0.36);
+  box-shadow: 0 0 46px rgba(0, 212, 255, 0.16);
+  z-index: 2;
+}
+
+.loop-node {
+  position: absolute;
+  width: 245px;
+  min-height: 154px;
+  padding: 24px 22px;
+  background: rgba(18, 18, 26, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26);
+  text-align: left;
+  z-index: 3;
+}
+
+.loop-node::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.75);
+}
+
+.loop-number {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.1);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.loop-node h3 {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.loop-node p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.loop-node-1 { top: 0; left: 50%; transform: translateX(-50%); }
+.loop-node-1::before { left: 50%; bottom: -36px; transform: translateX(-50%); }
+.loop-node-2 { top: 168px; right: 0; }
+.loop-node-2::before { left: -34px; top: 50%; transform: translateY(-50%); }
+.loop-node-3 { right: 120px; bottom: 0; }
+.loop-node-3::before { left: 22px; top: -30px; }
+.loop-node-4 { left: 120px; bottom: 0; }
+.loop-node-4::before { right: 22px; top: -30px; }
+.loop-node-5 { top: 168px; left: 0; }
+.loop-node-5::before { right: -34px; top: 50%; transform: translateY(-50%); }
 
 /* ============================================
    SECTION 4: SERVICE CATEGORIES
@@ -837,6 +951,28 @@
   .results-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .strategy-loop {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .strategy-loop::before,
+  .strategy-loop::after,
+  .loop-center,
+  .loop-node::before {
+    display: none;
+  }
+
+  .loop-node {
+    position: relative;
+    inset: auto;
+    width: auto;
+    min-height: auto;
+    transform: none;
+  }
   
   .results-grid.results-grid-6 .result-card {
     flex: 0 0 calc(50% - 12px);
@@ -891,6 +1027,10 @@
   .features-grid,
   .results-grid,
   .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-loop {
     grid-template-columns: 1fr;
   }
   
