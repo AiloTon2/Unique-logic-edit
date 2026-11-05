@@ -2575,6 +2575,158 @@
   }
 }
 
+.audit-modules .categories-grid {
+  align-items: start;
+}
+
+.audit-modules .category-card.large {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+}
+
+.audit-modules .category-card:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.audit-modules .category-card:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.audit-modules .category-monitor {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.audit-modules .category-expand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.audit-modules .category-expand-icon {
+  display: flex;
+  color: var(--accent-cyan);
+  filter: drop-shadow(0 0 8px rgba(0, 212, 232, 0.45));
+}
+
+.audit-modules .category-expand-icon svg {
+  animation: geo-expand-nudge 2.8s ease-in-out infinite;
+}
+
+.audit-modules .category-list {
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.audit-modules.is-measuring,
+.audit-modules.is-measuring * {
+  transition: none !important;
+  animation: none !important;
+}
+
+.audit-modules.is-reserved .category-expand {
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.audit-modules.is-reserved .category-list {
+  max-height: none;
+  margin-top: 16px;
+  visibility: visible;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1.15s cubic-bezier(0.22, 1, 0.36, 1), transform 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.audit-modules.is-reserved .category-monitor {
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: start;
+}
+
+.audit-modules.is-reserved .category-monitor .monitor-body,
+.audit-modules.is-reserved .category-monitor .category-header {
+  display: contents;
+}
+
+.audit-modules.is-reserved .category-monitor .category-tag {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.audit-modules.is-reserved .category-monitor .category-header h3 {
+  grid-column: 1;
+  grid-row: 2;
+  margin-bottom: 24px;
+}
+
+.audit-modules.is-reserved .category-monitor .category-lead {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.audit-modules.is-reserved .category-monitor .category-expand {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.audit-modules.is-reserved .category-monitor .category-list {
+  grid-column: 2;
+  grid-row: 2 / span 3;
+  margin-top: 0;
+  align-self: start;
+  transform: translateX(22px);
+}
+
+.audit-modules.is-reserved .category-monitor .category-list li:first-child {
+  padding-top: 2px;
+}
+
+.audit-modules.is-reserved .category-card.is-open .category-list {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 1024px) {
+  .audit-modules .category-card.large,
+  .audit-modules .category-card:nth-child(2),
+  .audit-modules .category-card:nth-child(3),
+  .audit-modules .category-monitor,
+  .audit-modules .category-monitor.is-open,
+  .audit-modules.is-reserved .category-monitor {
+    grid-column: auto;
+    grid-row: auto;
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audit-modules .category-expand-icon svg {
+    animation: none;
+  }
+}
+
 .seo-advantages .features-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2948,6 +3100,62 @@
 .local-compare .result-card:hover .result-icon,
 .geo-position .result-card:hover .result-icon {
   background: transparent;
+}
+
+.audit-intro .audit-flow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 28px;
+}
+
+.audit-intro .audit-flow span {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(0, 212, 255, 0.06);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.audit-intro .audit-flow svg {
+  flex: none;
+  color: var(--accent-cyan);
+}
+
+.audit-intro .audit-flow span.audit-flow-final {
+  font-size: 0.95rem;
+}
+
+.service-intro.audit-intro .container {
+  align-items: end;
+}
+
+.audit-intro .visual-image {
+  width: 502px;
+  height: 377px;
+}
+
+@media (min-width: 1025px) {
+  .service-intro.audit-intro .container {
+    align-items: start;
+  }
+
+  .audit-intro .intro-visual {
+    margin-top: 54px;
+  }
+}
+
+.audit-intro .service-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
 }
 
 .local-modules .category-expand {
