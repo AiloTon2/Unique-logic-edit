@@ -181,26 +181,64 @@ function initNavigation() {
 
   // Language toggle
   const langBtns = document.querySelectorAll('.lang-btn');
+
+  function normalizeLanguage(value) {
+    const label = (value || '').trim().toLowerCase();
+    if (label === 'en' || label.includes('english')) return 'en';
+    if (label.includes('简') || label.includes('hans')) return 'zh-Hans';
+    return 'zh-Hant';
+  }
+
+  function applyLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
+
+    langBtns.forEach(btn => {
+      btn.classList.toggle('active', normalizeLanguage(btn.dataset.lang || btn.textContent) === lang);
+    });
+
+    document.querySelectorAll('[data-i18n-hant][data-i18n-hans][data-i18n-en]').forEach(el => {
+      el.textContent = lang === 'en'
+        ? el.dataset.i18nEn
+        : (lang === 'zh-Hans' ? el.dataset.i18nHans : el.dataset.i18nHant);
+      if (el.hasAttribute('data-text')) {
+        el.setAttribute('data-text', el.textContent);
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-html-hant][data-i18n-html-hans][data-i18n-html-en]').forEach(el => {
+      el.innerHTML = lang === 'en'
+        ? el.dataset.i18nHtmlEn
+        : (lang === 'zh-Hans' ? el.dataset.i18nHtmlHans : el.dataset.i18nHtmlHant);
+    });
+
+    const pageTitle = document.querySelector('title[data-title-hant][data-title-hans][data-title-en]');
+    if (pageTitle) {
+      pageTitle.textContent = lang === 'en'
+        ? pageTitle.dataset.titleEn
+        : (lang === 'zh-Hans' ? pageTitle.dataset.titleHans : pageTitle.dataset.titleHant);
+    }
+  }
+
   langBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Remove active from all buttons in the same group
-      const parent = btn.parentElement;
-      parent.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const label = (btn.dataset.lang || btn.textContent || '').trim().toLowerCase();
-      const lang = label.includes('简') || label.includes('hans') ? 'zh-Hans' : 'zh-Hant';
-      document.documentElement.setAttribute('lang', lang);
-
-      document.querySelectorAll('[data-i18n-hant][data-i18n-hans]').forEach(el => {
-        el.textContent = lang === 'zh-Hans' ? el.dataset.i18nHans : el.dataset.i18nHant;
-      });
-
-      document.querySelectorAll('[data-i18n-html-hant][data-i18n-html-hans]').forEach(el => {
-        el.innerHTML = lang === 'zh-Hans' ? el.dataset.i18nHtmlHans : el.dataset.i18nHtmlHant;
-      });
+      const lang = normalizeLanguage(btn.dataset.lang || btn.textContent);
+      try {
+        localStorage.setItem('uniqueLogicLanguage', lang);
+      } catch (error) {
+        // Language switching still works when browser storage is unavailable.
+      }
+      applyLanguage(lang);
     });
   });
+
+  let initialLanguage = normalizeLanguage(document.documentElement.lang);
+  try {
+    const savedLanguage = localStorage.getItem('uniqueLogicLanguage');
+    if (savedLanguage) initialLanguage = normalizeLanguage(savedLanguage);
+  } catch (error) {
+    // Use the page language when browser storage is unavailable.
+  }
+  applyLanguage(initialLanguage);
 
   // Blog Category Filter & Pagination
   initBlogPagination();
