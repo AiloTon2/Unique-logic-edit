@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case study 01</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+/* Case studies (testimonial card layout) */
+.home-cases {
+  background: var(--bg-secondary);
+}
+
+.home-cases .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+}
+
+.case-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.case-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-cyan-dim);
+  border-radius: var(--radius-md);
+  color: var(--accent-cyan);
+}
+
+/* Only the cyan rule marks the main figure; no full background fill. */
+.case-focus {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 4px 0 4px 18px;
+  background: none;
+  border-left: 3px solid var(--accent-cyan);
+}
+
+.case-focus-value {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-cyan);
+  white-space: nowrap;
+}
+
+.case-focus-label {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+/* Both secondary results share one line of small type under the main figure. */
+.case-notes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 0;
+  margin: 0 0 20px;
+  padding-left: 21px;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.case-note {
+  min-width: 0;
+}
+
+.case-note + .case-note::before {
+  content: "·";
+  margin: 0 0.45em;
+  color: var(--text-muted);
+}
+
+.case-notes .result-value {
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.case-link {
+  margin-top: auto;
+}
+
+/* Case studies sit closer to the review strip. The middle card steps down
+   slightly, like the staggered cards in the reference, while the outer two stay level. */
+.home-cases {
+  padding-bottom: 80px;
+}
+
+@media (min-width: 769px) {
+  .home-cases .testimonials-grid > .case-card:nth-child(2) {
+    position: relative;
+    top: 26px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- Case Studies -->
+  <section class="testimonials home-cases" id="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// CASE STUDIES</span>
+        <h2 class="section-title reveal-text" data-i18n-hant="真實成績，數據說話" data-i18n-en="Real results, backed by data" data-i18n-hans="真實成績，數據說話">真實成績，數據說話</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card case-card reveal-item" style="--delay: 0">
+          <div class="case-head">
+            <div class="case-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7 16V11M12 16V7M17 16V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 9L11 6L15 8L19 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="author-info">
+              <span class="author-name" data-i18n-hant="[客戶名稱或行業]" data-i18n-en="[Client or industry]" data-i18n-hans="[客戶名稱或行業]">[客戶名稱或行業]</span>
+              <span class="author-company" data-i18n-hant="使用服務：[SEO / SEM / 社交媒體]" data-i18n-en="Services: [SEO / SEM / Social]" data-i18n-hans="使用服務：[SEO / SEM / 社交媒體]">使用服務：[SEO / SEM / 社交媒體]</span>
+            </div>
+          </div>
+          <div class="case-focus">
+            <span class="case-focus-value">[+X%]</span>
+            <span class="case-focus-label" data-i18n-hant="自然搜尋流量（[X] 個月內）" data-i18n-en="organic traffic in [X] months" data-i18n-hans="自然搜尋流量（[X] 個月內）">自然搜尋流量（[X] 個月內）</span>
+          </div>
+          <p class="case-notes">
+            <span class="case-note"><span class="result-value">[+X%]</span> <span data-i18n-hant="網上查詢" data-i18n-en="enquiries" data-i18n-hans="網上查詢">網上查詢</span></span>
+            <span class="case-note"><span class="result-value">[X]</span> <span data-i18n-hant="個關鍵字進入 Google 首頁" data-i18n-en="keywords on page one of Google" data-i18n-hans="個關鍵字進入 Google 首頁">個關鍵字進入 Google 首頁</span></span>
+          </p>
+          <span class="service-link case-link">
+            <span data-i18n-hant="閱讀案例" data-i18n-en="Read the case study" data-i18n-hans="閱讀案例">閱讀案例</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+
+        <div class="testimonial-card case-card reveal-item" style="--delay: 1">
+          <div class="case-head">
+            <div class="case-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 10V14L9 13V11L5 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 11L20 7V17L9 13" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 14.5V17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div class="author-info">
+              <span class="author-name" data-i18n-hant="[客戶名稱或行業]" data-i18n-en="[Client or industry]" data-i18n-hans="[客戶名稱或行業]">[客戶名稱或行業]</span>
+              <span class="author-company" data-i18n-hant="使用服務：[SEO / SEM / 社交媒體]" data-i18n-en="Services: [SEO / SEM / Social]" data-i18n-hans="使用服務：[SEO / SEM / 社交媒體]">使用服務：[SEO / SEM / 社交媒體]</span>
+            </div>
+          </div>
+          <div class="case-focus">
+            <span class="case-focus-value">[+X%]</span>
+            <span class="case-focus-label" data-i18n-hant="自然搜尋流量（[X] 個月內）" data-i18n-en="organic traffic in [X] months" data-i18n-hans="自然搜尋流量（[X] 個月內）">自然搜尋流量（[X] 個月內）</span>
+          </div>
+          <p class="case-notes">
+            <span class="case-note"><span class="result-value">[+X%]</span> <span data-i18n-hant="網上查詢" data-i18n-en="enquiries" data-i18n-hans="網上查詢">網上查詢</span></span>
+            <span class="case-note"><span class="result-value">[X]</span> <span data-i18n-hant="個關鍵字進入 Google 首頁" data-i18n-en="keywords on page one of Google" data-i18n-hans="個關鍵字進入 Google 首頁">個關鍵字進入 Google 首頁</span></span>
+          </p>
+          <span class="service-link case-link">
+            <span data-i18n-hant="閱讀案例" data-i18n-en="Read the case study" data-i18n-hans="閱讀案例">閱讀案例</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+
+        <div class="testimonial-card case-card reveal-item" style="--delay: 2">
+          <div class="case-head">
+            <div class="case-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 15.5L20 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M11 8V11L13 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div class="author-info">
+              <span class="author-name" data-i18n-hant="[客戶名稱或行業]" data-i18n-en="[Client or industry]" data-i18n-hans="[客戶名稱或行業]">[客戶名稱或行業]</span>
+              <span class="author-company" data-i18n-hant="使用服務：[SEO / SEM / 社交媒體]" data-i18n-en="Services: [SEO / SEM / Social]" data-i18n-hans="使用服務：[SEO / SEM / 社交媒體]">使用服務：[SEO / SEM / 社交媒體]</span>
+            </div>
+          </div>
+          <div class="case-focus">
+            <span class="case-focus-value">[+X%]</span>
+            <span class="case-focus-label" data-i18n-hant="自然搜尋流量（[X] 個月內）" data-i18n-en="organic traffic in [X] months" data-i18n-hans="自然搜尋流量（[X] 個月內）">自然搜尋流量（[X] 個月內）</span>
+          </div>
+          <p class="case-notes">
+            <span class="case-note"><span class="result-value">[+X%]</span> <span data-i18n-hant="網上查詢" data-i18n-en="enquiries" data-i18n-hans="網上查詢">網上查詢</span></span>
+            <span class="case-note"><span class="result-value">[X]</span> <span data-i18n-hant="個關鍵字進入 Google 首頁" data-i18n-en="keywords on page one of Google" data-i18n-hans="個關鍵字進入 Google 首頁">個關鍵字進入 Google 首頁</span></span>
+          </p>
+          <span class="service-link case-link">
+            <span data-i18n-hant="閱讀案例" data-i18n-en="Read the case study" data-i18n-hans="閱讀案例">閱讀案例</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
