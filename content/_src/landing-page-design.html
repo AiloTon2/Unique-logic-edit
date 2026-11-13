@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page 設計及 UI/UX 優化｜高轉換落地頁｜Unique Logic</title>
+  <meta name="description" content="按廣告訊息設計落地頁，找出訪客由進站到查詢的流失點，表格、WhatsApp 及電話查詢全部追蹤，並以 A/B 測試持續改善轉換率。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=seo-nav-20260914">
+  <link rel="stylesheet" href="ai-seo-services.css?v=geo-equal-cards-20261106">
+  <link rel="stylesheet" href="paid-ads.css?v=sem-rebuild-20261113">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img">
+      </a>
+
+      <div class="nav-links">
+        <a href="about-us.html" class="nav-link" data-i18n-hant="關於我們" data-i18n-en="About us" data-i18n-hans="关于我们">關於我們</a>
+        <div class="nav-dropdown">
+          <a href="index.html#services" class="nav-link has-dropdown active">
+            <span data-i18n-hant="數碼營銷方案" data-i18n-en="Digital marketing solutions" data-i18n-hans="数字营销方案">數碼營銷方案</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+                    <div class="dropdown-menu">
+            <div class="dropdown-group has-submenu">
+              <a href="seo-services.html" class="dropdown-item dropdown-parent">
+                <span data-i18n-hant="SEO與GEO優化" data-i18n-en="SEO and GEO optimisation" data-i18n-hans="SEO 与 GEO 优化">SEO與GEO優化</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="seo-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="SEO (Google SEO)" data-i18n-en="SEO (Google SEO)" data-i18n-hans="SEO (Google SEO)">SEO (Google SEO)</a>
+                <a href="ai-seo-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="生成式 AI 搜索引擎優化 (GEO / AI SEO)" data-i18n-en="Generative Engine Optimisation (GEO / AI SEO)" data-i18n-hans="生成式 AI 搜索引擎优化 (GEO / AI SEO)">生成式 AI 搜索引擎優化 (GEO / AI SEO)</a>
+                <a href="local-seo-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="本地搜索優化 (Local SEO)" data-i18n-en="Local SEO" data-i18n-hans="本地搜索优化 (Local SEO)">本地搜索優化 (Local SEO)</a>
+                <a href="seo-audit-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="SEO 審計與內容重構 (SEO Audit)" data-i18n-en="SEO audit and content restructuring" data-i18n-hans="SEO 审计与内容重构 (SEO Audit)">SEO 審計與內容重構 (SEO Audit)</a>
+              </div>
+            </div>
+            <div class="dropdown-group has-submenu">
+              <a href="sem-services.html" class="dropdown-item dropdown-parent">
+                <span data-i18n-hant="SEM 及付費廣告" data-i18n-en="SEM and paid ads" data-i18n-hans="SEM 及付费广告">SEM 及付費廣告</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="sem-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="Google 廣告及 Microsoft Bing 廣告" data-i18n-en="Google Ads and Microsoft Bing Ads" data-i18n-hans="Google 广告及 Microsoft Bing 广告">Google 廣告及 Microsoft Bing 廣告</a>
+                <a href="baidu-ads.html" class="dropdown-item dropdown-subitem" data-i18n-hant="百度廣告" data-i18n-en="Baidu Ads" data-i18n-hans="百度广告">百度廣告</a>
+                <a href="meta-ads.html" class="dropdown-item dropdown-subitem" data-i18n-hant="Meta 廣告" data-i18n-en="Meta Ads" data-i18n-hans="Meta 广告">Meta 廣告</a>
+              </div>
+            </div>
+            <div class="dropdown-group has-submenu">
+              <a href="orm-services.html" class="dropdown-item dropdown-parent">
+                <span data-i18n-hant="網絡聲譽管理及數碼公關" data-i18n-en="ORM and digital PR" data-i18n-hans="网络声誉管理及数字公关">網絡聲譽管理及數碼公關</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="press-release.html" class="dropdown-item dropdown-subitem" data-i18n-hant="新聞稿發布" data-i18n-en="Press release distribution" data-i18n-hans="新闻稿发布">新聞稿發布</a>
+                <a href="orm-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="網絡聲譽管理" data-i18n-en="Online reputation management" data-i18n-hans="网络声誉管理">網絡聲譽管理</a>
+                <a href="social-listening.html" class="dropdown-item dropdown-subitem" data-i18n-hant="社群輿情監控" data-i18n-en="Social listening" data-i18n-hans="社群舆情监控">社群輿情監控</a>
+              </div>
+            </div>
+            <div class="dropdown-group has-submenu">
+              <a href="content-marketing-services.html" class="dropdown-item dropdown-parent">
+                <span data-i18n-hant="內容營銷及文案" data-i18n-en="Content marketing and copywriting" data-i18n-hans="内容营销及文案">內容營銷及文案</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="thought-leadership.html" class="dropdown-item dropdown-subitem" data-i18n-hant="白皮書及思想領導力" data-i18n-en="Whitepapers and thought leadership" data-i18n-hans="白皮书及思想领导力">白皮書及思想領導力</a>
+                <a href="content-marketing-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="SEO 內容行銷" data-i18n-en="SEO content marketing" data-i18n-hans="SEO 内容行销">SEO 內容行銷</a>
+                <a href="copywriting.html" class="dropdown-item dropdown-subitem" data-i18n-hant="中英雙語文案" data-i18n-en="Bilingual Chinese-English copywriting" data-i18n-hans="中英双语文案">中英雙語文案</a>
+              </div>
+            </div>
+            <div class="dropdown-group has-submenu">
+              <a href="social-media-services.html" class="dropdown-item dropdown-parent">
+                <span data-i18n-hant="社交媒體營銷" data-i18n-en="Social media marketing" data-i18n-hans="社交媒体营销">社交媒體營銷</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="social-media-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="社交媒體營銷及代運營" data-i18n-en="Social media marketing and management" data-i18n-hans="社交媒体营销及代运营">社交媒體營銷及代運營</a>
+                <a href="short-video-production.html" class="dropdown-item dropdown-subitem" data-i18n-hant="Reels 及短片製作" data-i18n-en="Reels and short video production" data-i18n-hans="Reels 及短片制作">Reels 及短片製作</a>
+                <a href="kol-marketing.html" class="dropdown-item dropdown-subitem" data-i18n-hant="KOL 及 KOC 營銷" data-i18n-en="KOL and KOC marketing" data-i18n-hans="KOL 及 KOC 营销">KOL 及 KOC 營銷</a>
+              </div>
+            </div>
+            <div class="dropdown-group has-submenu">
+              <a href="web-design-services.html" class="dropdown-item dropdown-parent active">
+                <span data-i18n-hant="網頁設計及 CRO" data-i18n-en="Web design and CRO" data-i18n-hans="网页设计及 CRO">網頁設計及 CRO</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="web-design-services.html" class="dropdown-item dropdown-subitem" data-i18n-hant="網頁設計" data-i18n-en="Web design" data-i18n-hans="网页设计">網頁設計</a>
+                <a href="landing-page-design.html" class="dropdown-item dropdown-subitem active" data-i18n-hant="Landing Page 及 UI/UX 優化" data-i18n-en="Landing pages and UI/UX optimisation" data-i18n-hans="Landing Page 及 UI/UX 优化">Landing Page 及 UI/UX 優化</a>
+              </div>
+            </div>
+            <a href="graphic-design.html" class="dropdown-item" data-i18n-hant="平面及品牌設計" data-i18n-en="Graphic and brand design" data-i18n-hans="平面及品牌设计">平面及品牌設計</a>
+            <div class="dropdown-group has-submenu">
+              <a href="xiaohongshu-marketing.html" class="dropdown-item dropdown-parent">
+                <span data-i18n-hant="內地跨境營銷" data-i18n-en="Mainland cross-border marketing" data-i18n-hans="内地跨境营销">內地跨境營銷</span>
+                <svg class="dropdown-submenu-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M4 3L8 6L4 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="dropdown-submenu">
+                <a href="xiaohongshu-marketing.html" class="dropdown-item dropdown-subitem" data-i18n-hant="小紅書營銷" data-i18n-en="Xiaohongshu marketing" data-i18n-hans="小红书营销">小紅書營銷</a>
+                <a href="wechat-marketing.html" class="dropdown-item dropdown-subitem" data-i18n-hant="微信營銷" data-i18n-en="WeChat marketing" data-i18n-hans="微信营销">微信營銷</a>
+                <a href="douyin-marketing.html" class="dropdown-item dropdown-subitem" data-i18n-hant="抖音及視頻號營銷" data-i18n-en="Douyin and Channels marketing" data-i18n-hans="抖音及视频号营销">抖音及視頻號營銷</a>
+              </div>
+            </div>
+            <a href="ecommerce-services.html" class="dropdown-item" data-i18n-hant="網上開店及 Shopify" data-i18n-en="Online store and Shopify" data-i18n-hans="网上开店及 Shopify">網上開店及 Shopify</a>
+          </div>
+        </div>
+
+        <a href="blog.html" class="nav-link" data-i18n-hant="博客和新聞" data-i18n-en="Blogs and News" data-i18n-hans="博客和新闻">博客和新聞</a>
+        <a href="contact.html" class="nav-link" data-i18n-hant="聯絡我們" data-i18n-en="Contact us" data-i18n-hans="联系我们">聯絡我們</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn" type="button" data-lang="zh-Hant">繁</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="zh-Hans">简</button>
+        </div>
+        <a href="contact.html" class="nav-cta" data-i18n-hant="立即查詢" data-i18n-en="Enquire now" data-i18n-hans="立即查询">立即查詢</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="about-us.html" class="mobile-link" data-i18n-hant="關於我們" data-i18n-en="About us" data-i18n-hans="关于我们">關於我們</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-link mobile-dropdown-toggle">
+          <span data-i18n-hant="數碼營銷方案" data-i18n-en="Digital marketing solutions" data-i18n-hans="数字营销方案">數碼營銷方案</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+                <div class="mobile-dropdown-menu">
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="SEO與GEO優化" data-i18n-en="SEO and GEO optimisation" data-i18n-hans="SEO 与 GEO 优化">SEO與GEO優化</span>
+            <a href="seo-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="SEO (Google SEO)" data-i18n-en="SEO (Google SEO)" data-i18n-hans="SEO (Google SEO)">SEO (Google SEO)</a>
+            <a href="ai-seo-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="生成式 AI 搜索引擎優化 (GEO / AI SEO)" data-i18n-en="Generative Engine Optimisation (GEO / AI SEO)" data-i18n-hans="生成式 AI 搜索引擎优化 (GEO / AI SEO)">生成式 AI 搜索引擎優化 (GEO / AI SEO)</a>
+            <a href="local-seo-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="本地搜索優化 (Local SEO)" data-i18n-en="Local SEO" data-i18n-hans="本地搜索优化 (Local SEO)">本地搜索優化 (Local SEO)</a>
+            <a href="seo-audit-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="SEO 審計與內容重構 (SEO Audit)" data-i18n-en="SEO audit and content restructuring" data-i18n-hans="SEO 审计与内容重构 (SEO Audit)">SEO 審計與內容重構 (SEO Audit)</a>
+          </div>
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="SEM 及付費廣告" data-i18n-en="SEM and paid ads" data-i18n-hans="SEM 及付费广告">SEM 及付費廣告</span>
+            <a href="sem-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="Google 廣告及 Microsoft Bing 廣告" data-i18n-en="Google Ads and Microsoft Bing Ads" data-i18n-hans="Google 广告及 Microsoft Bing 广告">Google 廣告及 Microsoft Bing 廣告</a>
+            <a href="baidu-ads.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="百度廣告" data-i18n-en="Baidu Ads" data-i18n-hans="百度广告">百度廣告</a>
+            <a href="meta-ads.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="Meta 廣告" data-i18n-en="Meta Ads" data-i18n-hans="Meta 广告">Meta 廣告</a>
+          </div>
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="網絡聲譽管理及數碼公關" data-i18n-en="ORM and digital PR" data-i18n-hans="网络声誉管理及数字公关">網絡聲譽管理及數碼公關</span>
+            <a href="press-release.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="新聞稿發布" data-i18n-en="Press release distribution" data-i18n-hans="新闻稿发布">新聞稿發布</a>
+            <a href="orm-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="網絡聲譽管理" data-i18n-en="Online reputation management" data-i18n-hans="网络声誉管理">網絡聲譽管理</a>
+            <a href="social-listening.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="社群輿情監控" data-i18n-en="Social listening" data-i18n-hans="社群舆情监控">社群輿情監控</a>
+          </div>
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="內容營銷及文案" data-i18n-en="Content marketing and copywriting" data-i18n-hans="内容营销及文案">內容營銷及文案</span>
+            <a href="thought-leadership.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="白皮書及思想領導力" data-i18n-en="Whitepapers and thought leadership" data-i18n-hans="白皮书及思想领导力">白皮書及思想領導力</a>
+            <a href="content-marketing-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="SEO 內容行銷" data-i18n-en="SEO content marketing" data-i18n-hans="SEO 内容行销">SEO 內容行銷</a>
+            <a href="copywriting.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="中英雙語文案" data-i18n-en="Bilingual Chinese-English copywriting" data-i18n-hans="中英双语文案">中英雙語文案</a>
+          </div>
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="社交媒體營銷" data-i18n-en="Social media marketing" data-i18n-hans="社交媒体营销">社交媒體營銷</span>
+            <a href="social-media-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="社交媒體營銷及代運營" data-i18n-en="Social media marketing and management" data-i18n-hans="社交媒体营销及代运营">社交媒體營銷及代運營</a>
+            <a href="short-video-production.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="Reels 及短片製作" data-i18n-en="Reels and short video production" data-i18n-hans="Reels 及短片制作">Reels 及短片製作</a>
+            <a href="kol-marketing.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="KOL 及 KOC 營銷" data-i18n-en="KOL and KOC marketing" data-i18n-hans="KOL 及 KOC 营销">KOL 及 KOC 營銷</a>
+          </div>
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="網頁設計及 CRO" data-i18n-en="Web design and CRO" data-i18n-hans="网页设计及 CRO">網頁設計及 CRO</span>
+            <a href="web-design-services.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="網頁設計" data-i18n-en="Web design" data-i18n-hans="网页设计">網頁設計</a>
+            <a href="landing-page-design.html" class="mobile-dropdown-item mobile-dropdown-subitem active" data-i18n-hant="Landing Page 及 UI/UX 優化" data-i18n-en="Landing pages and UI/UX optimisation" data-i18n-hans="Landing Page 及 UI/UX 优化">Landing Page 及 UI/UX 優化</a>
+          </div>
+          <a href="graphic-design.html" class="mobile-dropdown-item" data-i18n-hant="平面及品牌設計" data-i18n-en="Graphic and brand design" data-i18n-hans="平面及品牌设计">平面及品牌設計</a>
+          <div class="mobile-dropdown-group">
+            <span class="mobile-dropdown-heading" data-i18n-hant="內地跨境營銷" data-i18n-en="Mainland cross-border marketing" data-i18n-hans="内地跨境营销">內地跨境營銷</span>
+            <a href="xiaohongshu-marketing.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="小紅書營銷" data-i18n-en="Xiaohongshu marketing" data-i18n-hans="小红书营销">小紅書營銷</a>
+            <a href="wechat-marketing.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="微信營銷" data-i18n-en="WeChat marketing" data-i18n-hans="微信营销">微信營銷</a>
+            <a href="douyin-marketing.html" class="mobile-dropdown-item mobile-dropdown-subitem" data-i18n-hant="抖音及視頻號營銷" data-i18n-en="Douyin and Channels marketing" data-i18n-hans="抖音及视频号营销">抖音及視頻號營銷</a>
+          </div>
+          <a href="ecommerce-services.html" class="mobile-dropdown-item" data-i18n-hant="網上開店及 Shopify" data-i18n-en="Online store and Shopify" data-i18n-hans="网上开店及 Shopify">網上開店及 Shopify</a>
+        </div>
+      </div>
+
+      <a href="blog.html" class="mobile-link" data-i18n-hant="博客和新聞" data-i18n-en="Blogs and News" data-i18n-hans="博客和新闻">博客和新聞</a>
+      <a href="contact.html" class="mobile-link" data-i18n-hant="聯絡我們" data-i18n-en="Contact us" data-i18n-hans="联系我们">聯絡我們</a>
+      <div class="mobile-lang">
+        <button class="lang-btn" type="button" data-lang="zh-Hant">繁體中文</button>
+        <button class="lang-btn" type="button" data-lang="en">English</button>
+        <button class="lang-btn" type="button" data-lang="zh-Hans">简体中文</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="service-hero">
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="container">
+      <div class="service-hero-content">
+        <nav class="breadcrumb reveal-item" aria-label="Breadcrumb">
+          <a href="index.html">首頁</a><span class="breadcrumb-separator">›</span><a href="index.html#services">數碼營銷方案</a><span class="breadcrumb-separator">›</span><a href="web-design-services.html">網頁設計及 CRO</a><span class="breadcrumb-separator">›</span><span>Landing Page 及 UI/UX 優化</span>
+        </nav>
+        <div class="hero-tag reveal-item"><span class="tag-dot"></span><span class="tag-text">網頁設計及 CRO</span></div>
+        <h1 class="service-hero-title reveal-item">Landing Page 及 UI/UX 優化：流量來了，要在這一頁變成查詢</h1>
+        <p class="service-hero-subtitle reveal-item">有流量沒查詢，通常不是廣告的問題，而是頁面：訊息對不上廣告、按鈕找不到、手機版難用、載入太慢。</p>
+        <div class="hero-cta reveal-item">
+          <a href="contact.html" class="btn-primary"><span>預約 Landing Page 及 UX 審計</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-ai-seo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// WHY UNIQUE LOGIC</span>
+        <h2 class="section-title reveal-text">為甚麼選擇 Unique Logic？</h2>
+        <p class="section-desc reveal-item">很多公司把廣告流量帶到首頁：訪客要自己找服務、找價錢、找聯絡方法，大部分人幾秒就離開。另一個常見做法是「覺得不好看就改版」，改完不知道是好了還是差了。</p>
+      </div>
+      <div class="services-track is-grid paid-why-grid">
+<article class="service-card reveal-item">
+            <div class="card-icon" aria-hidden="true"><span class="icon-placeholder"></span></div>
+            <h3 class="card-title">頁面逐句對應廣告：</h3>
+            <p class="card-desc">廣告講甚麼，落地頁就接著講甚麼。</p>
+          </article>
+<article class="service-card reveal-item">
+            <div class="card-icon" aria-hidden="true"><span class="icon-placeholder"></span></div>
+            <h3 class="card-title">首屏講清三件事：</h3>
+            <p class="card-desc">你是誰、客戶得到甚麼、下一步按哪裡。</p>
+          </article>
+<article class="service-card reveal-item">
+            <div class="card-icon" aria-hidden="true"><span class="icon-placeholder"></span></div>
+            <h3 class="card-title">找出流失點：</h3>
+            <p class="card-desc">由進站到查詢逐步檢查，修改建議按影響排序。</p>
+          </article>
+<article class="service-card reveal-item">
+            <div class="card-icon" aria-hidden="true"><span class="icon-placeholder"></span></div>
+            <h3 class="card-title">三個出口都追蹤：</h3>
+            <p class="card-desc">表格、WhatsApp、電話。</p>
+          </article>
+<article class="service-card reveal-item">
+            <div class="card-icon" aria-hidden="true"><span class="icon-placeholder"></span></div>
+            <h3 class="card-title">按流量選方法：</h3>
+            <p class="card-desc">流量足夠就做 A/B 測試；流量少就先用熱圖、錄影及用戶回饋找問題，不做沒有結論的測試。</p>
+          </article>
+      </div>
+    </div>
+  </section>
+  <section class="service-categories geo-modules">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// SERVICES</span>
+        <h2 class="section-title reveal-text">服務內容</h2>
+      </div>
+      <div class="categories-grid">
+          <article class="category-card reveal-item">
+            <div class="category-header"><div class="category-icon" aria-hidden="true"><span class="icon-placeholder"></span></div><h3>Landing Page 設計及開發：</h3></div>
+            <ul class="category-features"><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>文案、結構、設計、追蹤設定；每個廣告活動或服務一頁。</span></li></ul>
+          </article>
+<article class="category-card reveal-item">
+            <div class="category-header"><div class="category-icon" aria-hidden="true"><span class="icon-placeholder"></span></div><h3>UX 審計：</h3></div>
+            <ul class="category-features"><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>GA4 轉換漏斗、熱圖、用戶操作錄影、表格欄位分析、手機版及速度（Core Web Vitals）。</span></li></ul>
+          </article>
+<article class="category-card reveal-item">
+            <div class="category-header"><div class="category-icon" aria-hidden="true"><span class="icon-placeholder"></span></div><h3>表格及查詢路徑優化：</h3></div>
+            <ul class="category-features"><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>減少欄位、預填 WhatsApp 訊息、電話一按即撥。</span></li></ul>
+          </article>
+<article class="category-card reveal-item">
+            <div class="category-header"><div class="category-icon" aria-hidden="true"><span class="icon-placeholder"></span></div><h3>信任元素：</h3></div>
+            <ul class="category-features"><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>客戶標誌、評價、認證、常見問題，放在訪客猶豫的位置。</span></li></ul>
+          </article>
+<article class="category-card reveal-item">
+            <div class="category-header"><div class="category-icon" aria-hidden="true"><span class="icon-placeholder"></span></div><h3>A/B 測試及持續優化：</h3></div>
+            <ul class="category-features"><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>每次測試一個假設，記錄結果，勝出版本才推出。</span></li></ul>
+          </article>
+      </div>
+      <p class="section-desc reveal-item">內鏈：廣告投放見<a href="sem-services.html" style="color:var(--accent-cyan)">分類 2</a>；整站重建見 <a href="web-design-services.html" style="color:var(--accent-cyan)">6.1</a>。</p>
+    </div>
+  </section>
+  <section class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// COMPARE</span>
+        <h2 class="section-title reveal-text">比較</h2>
+      </div>
+      <div class="compare-table-wrap"><table class="compare-table"><thead><tr><th>比較</th><th>官網服務頁</th><th>Landing Page</th></tr></thead><tbody><tr><td>目的</td><td>介紹全部服務、SEO 排名</td><td>一個廣告、一個行動</td></tr><tr><td>導覽</td><td>完整選單</td><td>精簡或沒有選單</td></tr><tr><td>內容</td><td>較全面</td><td>只講與廣告相關的重點</td></tr><tr><td>搜尋引擎</td><td>需要被索引</td><td>純廣告版本可設 noindex</td></tr><tr><td>衡量</td><td>自然流量、查詢</td><td>轉換率、每次查詢成本</td></tr></tbody></table></div>
+<div class="compare-table-wrap" style="margin-top:28px"><table class="compare-table"><thead><tr><th>審計項目</th><th>檢查甚麼</th></tr></thead><tbody><tr><td>首屏</td><td>標題是否對應廣告、主要按鈕是否一眼看到</td></tr><tr><td>訊息</td><td>賣點、價錢或報價方式、適合誰</td></tr><tr><td>行動呼籲</td><td>按鈕文字、位置、數量</td></tr><tr><td>信任</td><td>案例、評價、認證、保證</td></tr><tr><td>表格</td><td>欄位數目、錯誤提示、提交後頁面</td></tr><tr><td>手機</td><td>按鈕大小、字體、載入速度</td></tr><tr><td>追蹤</td><td>表格、WhatsApp、電話事件是否正確記錄</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// PROCESS</span>
+        <h2 class="section-title reveal-text">合作流程</h2>
+        <p class="section-desc reveal-item">1 數據及追蹤檢查➔2 找出流失點➔3 假設及優先次序➔4 設計及開發➔5 測試或上線➔6 檢討及下一輪</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step reveal-item" style="--delay: 0">
+          <div class="step-number">01</div>
+          <div class="step-content"><h3>數據及追蹤檢查</h3></div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="process-step reveal-item" style="--delay: 1">
+          <div class="step-number">02</div>
+          <div class="step-content"><h3>找出流失點</h3></div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="process-step reveal-item" style="--delay: 2">
+          <div class="step-number">03</div>
+          <div class="step-content"><h3>假設及優先次序</h3></div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="process-step reveal-item" style="--delay: 3">
+          <div class="step-number">04</div>
+          <div class="step-content"><h3>設計及開發</h3></div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="process-step reveal-item" style="--delay: 4">
+          <div class="step-number">05</div>
+          <div class="step-content"><h3>測試或上線</h3></div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="process-step reveal-item" style="--delay: 5">
+          <div class="step-number">06</div>
+          <div class="step-content"><h3>檢討及下一輪</h3></div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="scope-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// SCOPE</span>
+        <h2 class="section-title reveal-text">交付項目</h2>
+      </div>
+      <div class="scope-grid">
+        <div class="scope-card reveal-item">
+          <h3>包括</h3>
+          <ul><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>審計報告</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>修改建議</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>落地頁文案及設計</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>開發</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>追蹤設定</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>測試設定及結果報告</span></li></ul>
+        </div>
+        <div class="scope-card reveal-item scope-card-out">
+          <h3>不包括（另計）</h3>
+          <ul><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>廣告媒體費及投放管理（見<a href="sem-services.html" style="color:var(--accent-cyan)">分類 2</a>）</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>整站改版（見 <a href="web-design-services.html" style="color:var(--accent-cyan)">6.1</a>）</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>專業攝影</span></li><li style="display:flex;gap:10px;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>付費熱圖或測試工具年費</span></li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// FAQ</span>
+        <h2 class="section-title reveal-text">常見問題</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal-item" style="--delay: 0">
+          <button class="faq-question" type="button">
+            <span class="faq-number">01</span>
+            <span class="faq-text">可以只做頁面，不做廣告嗎？</span>
+            <span class="faq-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer"><p>可以。</p></div>
+        </div>
+        <div class="faq-item reveal-item" style="--delay: 1">
+          <button class="faq-question" type="button">
+            <span class="faq-number">02</span>
+            <span class="faq-text">一定要整個網站改版嗎？</span>
+            <span class="faq-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer"><p>不一定。多數問題可以在現有網站上修正。</p></div>
+        </div>
+        <div class="faq-item reveal-item" style="--delay: 2">
+          <button class="faq-question" type="button">
+            <span class="faq-number">03</span>
+            <span class="faq-text">流量很少，可以做 A/B 測試嗎？</span>
+            <span class="faq-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer"><p>流量及轉換太少，A/B 測試需要很長時間才有結論。這時我們會先用熱圖、操作錄影及前線回饋找出明顯問題，做較大幅度的修改，再比較前後數據。</p></div>
+        </div>
+        <div class="faq-item reveal-item" style="--delay: 3">
+          <button class="faq-question" type="button">
+            <span class="faq-number">04</span>
+            <span class="faq-text">多久才看到結果？</span>
+            <span class="faq-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer"><p>修正明顯問題（例如按鈕、表格、速度）通常很快見到變化；A/B 測試需要累積足夠轉換數才可下結論。</p></div>
+        </div>
+        <div class="faq-item reveal-item" style="--delay: 4">
+          <button class="faq-question" type="button">
+            <span class="faq-number">05</span>
+            <span class="faq-text">落地頁放在哪裡？會影響 SEO 嗎？</span>
+            <span class="faq-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer"><p>落地頁可以放在你的網站或子網域，同樣以你名義持有。只用於廣告的版本可設定不被搜尋引擎收錄，避免與官網服務頁搶排名。</p></div>
+        </div>
+        <div class="faq-item reveal-item" style="--delay: 5">
+          <button class="faq-question" type="button">
+            <span class="faq-number">06</span>
+            <span class="faq-text">會用甚麼工具？</span>
+            <span class="faq-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+          </button>
+          <div class="faq-answer"><p>GA4、Google 代碼管理工具，以及熱圖及操作錄影工具。數據留在你的帳戶。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta" id="contact">
+    <div class="cta-border"></div>
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-header">
+          <h2 class="cta-title reveal-text">預約 Landing Page 及 UX 審計</h2>
+          <p class="cta-desc reveal-item">留下資料，我們的顧問會盡快聯絡你。</p>
+        </div>
+        <a href="contact.html" class="btn-primary reveal-item"><span>預約 Landing Page 及 UX 審計</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><img src="asset/textlogo.svg" alt="Unique Logic" class="logo-img"></a>
+          <p class="footer-tagline">Boost Traffic. Boost Profit.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/UniqueLogicDigital" class="social-link" aria-label="Facebook"></a>
+            <a href="https://www.linkedin.com/company/unique-logic/" class="social-link" aria-label="LinkedIn"></a>
+            <a href="https://www.instagram.com/uniquelogic_digital?igshid=YmMyMTA2M2Y%3D" class="social-link" aria-label="Instagram"></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-title" data-i18n-hant="數碼營銷方案" data-i18n-en="Digital marketing solutions" data-i18n-hans="数字营销方案">數碼營銷方案</h4>
+          <ul>
+            <li><a href="seo-services.html" data-i18n-hant="SEO (Google SEO)" data-i18n-en="SEO (Google SEO)" data-i18n-hans="SEO (Google SEO)">SEO (Google SEO)</a></li>
+            <li><a href="ai-seo-services.html" data-i18n-hant="生成式 AI 搜索引擎優化 (GEO / AI SEO)" data-i18n-en="Generative Engine Optimisation (GEO / AI SEO)" data-i18n-hans="生成式 AI 搜索引擎优化 (GEO / AI SEO)">生成式 AI 搜索引擎優化 (GEO / AI SEO)</a></li>
+            <li><a href="local-seo-services.html" data-i18n-hant="本地搜索優化 (Local SEO)" data-i18n-en="Local SEO" data-i18n-hans="本地搜索优化 (Local SEO)">本地搜索優化 (Local SEO)</a></li>
+            <li><a href="seo-audit-services.html" data-i18n-hant="SEO 審計與內容重構 (SEO Audit)" data-i18n-en="SEO audit and content restructuring" data-i18n-hans="SEO 审计与内容重构 (SEO Audit)">SEO 審計與內容重構 (SEO Audit)</a></li>
+            <li><a href="orm-services.html" data-i18n-hant="網上聲譽管理服務" data-i18n-en="Online Reputation Management Services" data-i18n-hans="网上声誉管理服务">網上聲譽管理服務</a></li>
+            <li><a href="sem-services.html" data-i18n-hant="搜尋引擎行銷服務 (SEM)" data-i18n-en="Search Engine Marketing Services (SEM)" data-i18n-hans="搜索引擎营销服务 (SEM)">搜尋引擎行銷服務 (SEM)</a></li>
+            <li><a href="content-marketing-services.html" data-i18n-hant="內容營銷服務" data-i18n-en="Content marketing" data-i18n-hans="内容营销服务">內容營銷服務</a></li>
+            <li><a href="social-media-services.html" data-i18n-hant="社交媒體營銷服務" data-i18n-en="Social media marketing" data-i18n-hans="社交媒体营销服务">社交媒體營銷服務</a></li>
+            <li><a href="web-design-services.html" data-i18n-hant="網頁及設計服務" data-i18n-en="Web design services" data-i18n-hans="网页及设计服务">網頁及設計服務</a></li>
+            <li><a href="ecommerce-services.html" data-i18n-hant="網上開店服務" data-i18n-en="E-commerce services" data-i18n-hans="网上开店服务">網上開店服務</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-title" data-i18n-hant="博客和新聞" data-i18n-en="Blogs and News" data-i18n-hans="博客和新闻">博客和新聞</h4>
+          <ul>
+            <li><a href="blog.html" data-i18n-hant="AI搜尋引擎行銷" data-i18n-en="AI search marketing" data-i18n-hans="AI搜索引擎营销">AI搜尋引擎行銷</a></li>
+            <li><a href="blog.html" data-i18n-hant="SEO搜尋引擎優化" data-i18n-en="SEO and search optimisation" data-i18n-hans="SEO搜索引擎优化">SEO搜尋引擎優化</a></li>
+            <li><a href="blog.html" data-i18n-hant="SEM搜尋引擎行銷" data-i18n-en="SEM and search marketing" data-i18n-hans="SEM搜索引擎营销">SEM搜尋引擎行銷</a></li>
+            <li><a href="blog.html" data-i18n-hant="數碼營銷" data-i18n-en="Digital marketing" data-i18n-hans="数字营销">數碼營銷</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-title" data-i18n-hant="聯絡我們" data-i18n-en="Contact us" data-i18n-hans="联系我们">聯絡我們</h4>
+          <address>
+            <p data-i18n-html-hant="香港九龍灣啟祥道 17 號&lt;br&gt;太豐匯 1007 室" data-i18n-html-en="Room 1007, The Bay Hub,&lt;br&gt;17 Kai Cheung Road, Kowloon Bay, Hong Kong" data-i18n-html-hans="香港九龙湾启祥道 17 号&lt;br&gt;太丰汇 1007 室">香港九龍灣啟祥道 17 號<br>太豐匯 1007 室</p>
+            <p>+852 8400 7393 / +852 3860 7900</p>
+            <p data-i18n-hant="微信：UniqueLogic393" data-i18n-en="WeChat: UniqueLogic393" data-i18n-hans="微信：UniqueLogic393">微信：UniqueLogic393</p>
+            <p><a href="mailto:info@uniquelogic.com">info@uniquelogic.com</a></p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n-hant="© 2026 Unique Logic Limited | 版權所有" data-i18n-en="© 2026 Unique Logic Limited | All Rights Reserved" data-i18n-hans="© 2026 Unique Logic Limited | 版权所有">&copy; 2026 Unique Logic Limited | 版權所有</p>
+        <div class="footer-legal"><a href="privacy-policy.html" data-i18n-hant="隱私政策和 Cookie" data-i18n-en="Privacy Policy and Cookies" data-i18n-hans="隐私政策和 Cookie">隱私政策和 Cookie</a><a href="terms-and-conditions.html" data-i18n-hant="條款和細則" data-i18n-en="Terms and Conditions" data-i18n-hans="条款和细则">條款和細則</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=language-memory-20261106"></script>
+  <script>
+    (function () {
+      var section = document.querySelector(".geo-modules");
+      if (!section) return;
+      var grid = section.querySelector(".categories-grid");
+      var cards = Array.prototype.slice.call(section.querySelectorAll(".category-card"));
+      var state = "closed";
+      var timers = [];
+
+      function clearTimers() {
+        timers.forEach(clearTimeout);
+        timers = [];
+      }
+
+      var onGrowEnd = null;
+
+      function settle() {
+        if (state === "closed") return;
+        var full = Math.ceil(grid.scrollHeight);
+        if (full > 0) grid.style.height = full + "px";
+        grid.style.overflow = "visible";
+      }
+
+      function collapse() {
+        if (state === "closed") return;
+        clearTimers();
+        if (onGrowEnd) grid.removeEventListener("transitionend", onGrowEnd);
+        onGrowEnd = null;
+        state = "closed";
+        section.classList.remove("is-reserved", "is-measuring");
+        cards.forEach(function (card) {
+          card.classList.remove("is-open");
+          card.style.minHeight = "";
+          var button = card.querySelector(".category-expand");
+          if (button) button.setAttribute("aria-expanded", "false");
+        });
+        grid.style.height = "";
+        grid.style.minHeight = "";
+        grid.style.overflow = "";
+        grid.style.transition = "";
+      }
+
+      function begin() {
+        if (state !== "closed") return;
+        state = "opening";
+        var from = grid.getBoundingClientRect().height;
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        section.classList.add("is-measuring", "is-reserved");
+        cards.forEach(function (card) { card.classList.add("is-open", "revealed"); });
+        void grid.offsetHeight;
+        cards.forEach(function (card) {
+          card.style.minHeight = Math.ceil(card.getBoundingClientRect().height) + "px";
+          if (!reduce) card.classList.remove("is-open");
+        });
+        void grid.offsetHeight;
+        var to = Math.ceil(grid.scrollHeight);
+        grid.style.minHeight = "0px";
+        grid.style.overflow = "hidden";
+        grid.style.height = from + "px";
+        void grid.offsetHeight;
+        section.classList.remove("is-measuring");
+        if (reduce) {
+          grid.style.height = to + "px";
+          state = "open";
+          settle();
+          return;
+        }
+        onGrowEnd = function (event) {
+          if (event.propertyName !== "height") return;
+          grid.removeEventListener("transitionend", onGrowEnd);
+          onGrowEnd = null;
+          settle();
+        };
+        grid.addEventListener("transitionend", onGrowEnd);
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            grid.style.transition = "height 1.5s cubic-bezier(0.22, 1, 0.36, 1)";
+            grid.style.height = to + "px";
+          });
+        });
+        cards.forEach(function (card, index) {
+          timers.push(setTimeout(function () {
+            card.classList.add("is-open");
+            var button = card.querySelector(".category-expand");
+            if (button) button.setAttribute("aria-expanded", "true");
+            if (index === cards.length - 1) state = "open";
+          }, 380 + index * 720));
+        });
+      }
+
+      cards.forEach(function (card) {
+        card.addEventListener("mouseenter", begin);
+        card.addEventListener("click", begin);
+      });
+
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) collapse();
+          });
+        }, { threshold: 0 });
+        observer.observe(section);
+      }
+    })();
+  </script>
+  <script src="ul-whatsapp-dock.js"></script>
+
+</body>
+</html>

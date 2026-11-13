@@ -15,7 +15,57 @@ document.addEventListener('DOMContentLoaded', () => {
   initFloatingCTA();
   initTrustCounters();
   initProcessTimeline();
+  initHeroRotate();
 });
+
+function initHeroRotate() {
+  const rotator = document.querySelector('.hero-rotate');
+  if (!rotator) return;
+  const lines = [...rotator.querySelectorAll('.hero-rotate-line')];
+  if (lines.length < 2) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let index = Math.max(0, lines.findIndex(line => line.classList.contains('is-active')));
+  if (index < 0) index = 0;
+  let timer = null;
+  let busy = false;
+
+  const show = (next) => {
+    if (busy || next === index) return;
+    busy = true;
+    const current = lines[index];
+    const incoming = lines[next];
+
+    current.classList.remove('is-active');
+    current.classList.add('is-leaving');
+
+    window.setTimeout(() => {
+      incoming.classList.add('is-active');
+    }, 120);
+
+    window.setTimeout(() => {
+      current.classList.remove('is-leaving');
+      index = next;
+      busy = false;
+    }, 700);
+  };
+
+  const start = () => {
+    if (timer) return;
+    timer = window.setInterval(() => {
+      show((index + 1) % lines.length);
+    }, 3200);
+  };
+
+  const stop = () => {
+    window.clearInterval(timer);
+    timer = null;
+  };
+
+  rotator.addEventListener('mouseenter', stop);
+  rotator.addEventListener('mouseleave', start);
+  start();
+}
 
 /* ============================================
    CUSTOM CURSOR
@@ -216,6 +266,16 @@ function initNavigation() {
       pageTitle.textContent = lang === 'en'
         ? pageTitle.dataset.titleEn
         : (lang === 'zh-Hans' ? pageTitle.dataset.titleHans : pageTitle.dataset.titleHant);
+    }
+
+    const pageDesc = document.querySelector('meta[name="description"][data-desc-hant][data-desc-hans][data-desc-en]');
+    if (pageDesc) {
+      pageDesc.setAttribute(
+        'content',
+        lang === 'en'
+          ? pageDesc.dataset.descEn
+          : (lang === 'zh-Hans' ? pageDesc.dataset.descHans : pageDesc.dataset.descHant)
+      );
     }
   }
 

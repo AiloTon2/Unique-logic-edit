@@ -4,9 +4,11 @@
    the shared blocks in styles.css.
    ============================================ */
 
-/* Language-specific blocks (FAQ, industries, form) */
-html[lang="en"] [data-lang-only="zh"],
-html:not([lang="en"]) [data-lang-only="en"] {
+/* Language-specific blocks (FAQ, challenges, form) */
+html:not([lang="zh-Hant"]) [data-lang-only="zh"],
+html:not([lang="zh-Hans"]) [data-lang-only="zh-Hans"],
+html:not([lang="en"]) [data-lang-only="en"],
+html[lang="zh-Hans"] [data-lang-hide="zh-Hans"] {
   display: none !important;
 }
 
@@ -15,6 +17,58 @@ html:not([lang="en"]) [data-lang-only="en"] {
   max-width: 820px;
   margin: 0 auto 40px;
   line-height: 1.7;
+}
+
+.hero-rotate {
+  display: grid;
+  min-height: 1.7em;
+  perspective: 900px;
+  perspective-origin: 50% 40%;
+}
+
+.hero-rotate-line {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transform: rotateX(-82deg);
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition:
+    opacity 0.35s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-rotate-line.is-active {
+  opacity: 1;
+  transform: rotateX(0deg);
+  transition:
+    opacity 0.45s ease 0.12s,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;
+}
+
+.hero-rotate-line.is-leaving {
+  opacity: 0;
+  transform: rotateX(78deg);
+  transition:
+    opacity 0.32s ease,
+    transform 0.35s cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rotate-line,
+  .hero-rotate-line.is-active,
+  .hero-rotate-line.is-leaving {
+    transition: none;
+    transform: none;
+  }
+
+  .hero-rotate-line {
+    opacity: 0;
+  }
+
+  .hero-rotate-line.is-active {
+    opacity: 1;
+  }
 }
 
 .hero-trust {
@@ -32,13 +86,35 @@ html[lang="en"] .hero-title {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
 }
 
+html[lang="zh-Hant"] .hero-title,
+html[lang="zh-Hans"] .hero-title {
+  font-size: 0;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+html[lang="zh-Hant"] .hero-title .title-line,
+html[lang="zh-Hans"] .hero-title .title-line {
+  display: inline;
+}
+
+html[lang="zh-Hant"] .hero-title .glitch-text,
+html[lang="zh-Hans"] .hero-title .glitch-text {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
 /* Client wall heading keeps the original label scale */
 h2.clients-label {
   font-weight: 400;
 }
 
-/* Challenges: three cards per row */
+/* Challenges: three cards per row; five-card SC grid wraps 3 + 2 */
 .challenges-grid.is-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.challenges-grid.is-five {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -233,6 +309,7 @@ h2.clients-label {
 .home-cases .testimonial-card {
   display: flex;
   flex-direction: column;
+  padding: 24px;
   background: var(--bg-card);
 }
 
@@ -240,8 +317,8 @@ h2.clients-label {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding-bottom: 18px;
-  margin-bottom: 20px;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -262,7 +339,7 @@ h2.clients-label {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .case-focus-value {
@@ -283,7 +360,7 @@ h2.clients-label {
 .case-stats {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 .case-stat {
@@ -386,6 +463,12 @@ h2.clients-label {
   padding: 8px 0 56px;
 }
 
+.review-tag {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .review-label {
   margin: 0 0 28px;
   text-align: center;
@@ -422,7 +505,17 @@ h2.clients-label {
 .review-track .quote-card {
   width: 340px;
   flex-shrink: 0;
+  padding: 18px 22px;
   background: var(--bg-card);
+}
+
+.review-track .quote-card .testimonial-rating {
+  margin-bottom: 8px;
+}
+
+.review-track .quote-card .testimonial-text {
+  flex: 0 0 auto;
+  margin-bottom: 12px;
 }
 
 .review-track .quote-card.featured {
@@ -432,7 +525,7 @@ h2.clients-label {
 }
 
 .review-track .testimonial-author {
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -592,7 +685,8 @@ h2.clients-label {
 }
 
 @media (max-width: 1024px) {
-  .challenges-grid.is-three {
+  .challenges-grid.is-three,
+  .challenges-grid.is-five {
     grid-template-columns: 1fr;
   }
 }
