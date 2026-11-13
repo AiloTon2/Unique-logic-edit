@@ -1,12 +1,4 @@
 /* SEM & paid ads service pages */
-.icon-placeholder {
-  display: block;
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(0, 212, 232, 0.35), rgba(0, 212, 232, 0.08));
-  border: 1px solid rgba(0, 212, 232, 0.35);
-}
 
 .paid-why-grid {
   display: grid;
@@ -145,6 +137,136 @@
 @media (max-width: 1024px) {
   .paid-why-grid,
   .scope-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Match the SEO feature-card icon, with room under the icon and a tight title-to-copy gap. */
+.paid-why-grid .service-card,
+.categories-grid .category-card,
+.scope-card {
+  position: relative;
+  text-align: left;
+}
+
+.paid-why-grid .card-icon,
+.category-icon {
+  position: static;
+  opacity: 1;
+  width: 72px;
+  height: 72px;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 16px;
+  color: var(--accent-cyan);
+}
+
+.paid-why-grid .card-title,
+.category-header h3,
+.scope-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.paid-why-grid .card-desc,
+.category-features {
+  margin: 0;
+}
+
+.category-header {
+  display: block;
+  margin-bottom: 0;
+}
+
+.category-features li {
+  align-items: flex-start;
+}
+
+.compare-section .section-header {
+  margin-bottom: 28px;
+}
+
+.compare-subhead {
+  margin: 28px 0 12px;
+}
+
+/* These pages reused the homepage bento and the GEO mosaic.
+   Both force odd grid areas and leave empty cells. Reset to equal cards. */
+.services-track.is-grid.paid-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-track.is-grid.paid-why-grid .service-card,
+.services-track.is-grid.paid-why-grid .service-card:nth-child(n) {
+  grid-area: auto;
+  width: auto;
+  max-width: none;
+}
+
+.service-categories.geo-modules .categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.service-categories.geo-modules .category-card,
+.service-categories.geo-modules .category-card.large,
+.service-categories.geo-modules .category-card:nth-child(n) {
+  grid-column: auto;
+  grid-row: auto;
+  align-self: stretch;
+}
+
+.category-header h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.category-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 4px 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.category-features svg {
+  flex-shrink: 0;
+  color: var(--accent-cyan);
+  margin-top: 2px;
+}
+
+.category-features li:only-child {
+  display: block;
+  padding: 0;
+}
+
+.category-features li:only-child svg {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .services-track.is-grid.paid-why-grid,
+  .service-categories.geo-modules .categories-grid {
     grid-template-columns: 1fr;
   }
 }

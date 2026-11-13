@@ -769,3 +769,230 @@ h2.clients-label {
     grid-template-columns: 1fr;
   }
 }
+
+/* Homepage success-case slider. Same motion as a full-slide carousel, slowed down,
+   drawn with this site's card, type and cyan scale. */
+.case-showcase {
+  margin: 0 0 56px;
+}
+
+.case-showcase-viewport {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(0, 212, 255, 0.08), transparent 46%),
+    var(--bg-card);
+}
+
+.case-showcase-track {
+  display: flex;
+  width: 100%;
+  transition: transform 1.2s cubic-bezier(0.22, 0.7, 0.2, 1);
+  will-change: transform;
+}
+
+.case-showcase-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 36px;
+  align-items: center;
+  padding: 40px 44px;
+  box-sizing: border-box;
+}
+
+.case-showcase-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.case-showcase-client {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+
+.case-showcase-service {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+}
+
+.case-showcase-slide h3 {
+  margin: 0 0 22px;
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.case-showcase-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.case-showcase-metrics li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.case-showcase-metrics strong {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.2vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-cyan);
+}
+
+.case-showcase-metrics span,
+.case-showcase-points li {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.case-showcase-points {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.case-showcase-points li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.case-showcase-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+}
+
+.case-showcase-visual {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #070b10;
+  border: 1px solid rgba(0, 212, 255, 0.16);
+}
+
+.case-showcase-visual img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.brand-mask {
+  position: absolute;
+  border-radius: 8px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background: rgba(8, 12, 18, 0.18);
+  pointer-events: none;
+}
+
+.case-showcase-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.case-showcase-arrow {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.case-showcase-arrow:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.case-showcase-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.case-showcase-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+}
+
+.case-showcase-dots button.is-active {
+  background: var(--accent-cyan);
+  transform: scale(1.15);
+}
+
+.case-study-saved {
+  margin: 8px 0 18px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .case-showcase-slide {
+    grid-template-columns: 1fr;
+    padding: 28px 22px;
+    gap: 22px;
+  }
+
+  .case-showcase-visual {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-showcase-track {
+    transition: none;
+  }
+}

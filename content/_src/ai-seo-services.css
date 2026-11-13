@@ -20,6 +20,9 @@
   z-index: 2;
   text-align: center;
   max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Breadcrumb */
@@ -82,6 +85,14 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
+}
+
+/* Long titles: same large scale, slightly under the 5rem cap so a line does not end on one character. */
+.service-hero-title:not(:has(.title-line)) {
+  font-size: clamp(2.5rem, 5.2vw, 4rem);
+  line-height: 1.15;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .title-line {

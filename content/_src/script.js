@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTrustCounters();
   initProcessTimeline();
   initHeroRotate();
+  initCaseShowcase();
 });
 
 function initHeroRotate() {
@@ -70,6 +71,74 @@ function initHeroRotate() {
 /* ============================================
    CUSTOM CURSOR
    ============================================ */
+
+function initCaseShowcase() {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-case-showcase]').forEach((root) => {
+    const track = root.querySelector('.case-showcase-track');
+    const slides = [...track.children];
+    const dotsWrap = root.querySelector('.case-showcase-dots');
+    if (!slides.length) return;
+    let index = 0;
+    let timer = null;
+    let dragX = null;
+
+    const go = (next, animate) => {
+      index = (next + slides.length) % slides.length;
+      track.style.transition = animate === false || reduce ? 'none' : '';
+      track.style.transform = 'translateX(' + (-index * 100) + '%)';
+      dotsWrap.querySelectorAll('button').forEach((btn, i) => {
+        btn.classList.toggle('is-active', i === index);
+        if (i === index) btn.setAttribute('aria-current', 'true');
+        else btn.removeAttribute('aria-current');
+      });
+    };
+
+    slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.setAttribute('aria-label', '案例 ' + (i + 1));
+      btn.addEventListener('click', () => {
+        go(i);
+        arm();
+      });
+      dotsWrap.appendChild(btn);
+    });
+
+    root.querySelectorAll('[data-dir]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        go(index + Number(btn.dataset.dir));
+        arm();
+      });
+    });
+
+    const arm = () => {
+      window.clearInterval(timer);
+      if (reduce || slides.length < 2) return;
+      timer = window.setInterval(() => go(index + 1), 6800);
+    };
+
+    root.addEventListener('mouseenter', () => window.clearInterval(timer));
+    root.addEventListener('mouseleave', arm);
+
+    root.querySelector('.case-showcase-viewport').addEventListener('pointerdown', (event) => {
+      if (event.button !== 0) return;
+      dragX = event.clientX;
+      window.clearInterval(timer);
+    });
+    window.addEventListener('pointerup', (event) => {
+      if (dragX === null) return;
+      const delta = event.clientX - dragX;
+      dragX = null;
+      if (Math.abs(delta) > 48) go(index + (delta < 0 ? 1 : -1));
+      arm();
+    });
+
+    go(0, false);
+    arm();
+  });
+}
+
 function initCursorGlow() {
   const cursorGlow = document.querySelector('.cursor-glow');
   const cursorDot = document.querySelector('.cursor-dot');
