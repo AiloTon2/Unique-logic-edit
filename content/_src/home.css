@@ -123,8 +123,9 @@ h2.clients-label {
   line-height: 1.7;
 }
 
-/* Services follow the copy order. AI SEO is the featured 2 x 2 cell;
-   the other eight stay in that same order around it. */
+/* Services follow the copy order. AI SEO spans two columns on one row;
+   the other eight keep a single cell and flow in the same order. Five columns
+   fills both rows, so the second row is not left two cells short. */
 @media (min-width: 769px) {
   .services-track.is-grid {
     display: grid;
@@ -139,15 +140,17 @@ h2.clients-label {
 }
 
 @media (min-width: 1025px) {
-  .services-track.is-grid .service-card:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
-  .services-track.is-grid .service-card:nth-child(2) { grid-area: 1 / 2 / 3 / 4; }
-  .services-track.is-grid .service-card:nth-child(3) { grid-area: 1 / 4 / 2 / 5; }
-  .services-track.is-grid .service-card:nth-child(4) { grid-area: 2 / 1 / 3 / 2; }
-  .services-track.is-grid .service-card:nth-child(5) { grid-area: 2 / 4 / 3 / 5; }
-  .services-track.is-grid .service-card:nth-child(6) { grid-area: 3 / 1 / 4 / 2; }
-  .services-track.is-grid .service-card:nth-child(7) { grid-area: 3 / 2 / 4 / 3; }
-  .services-track.is-grid .service-card:nth-child(8) { grid-area: 3 / 3 / 4 / 4; }
-  .services-track.is-grid .service-card:nth-child(9) { grid-area: 3 / 4 / 4 / 5; }
+  .services-track.is-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .services-track.is-grid .service-card.is-wide {
+    grid-column: span 2;
+  }
+
+  .services-track.is-grid .service-card.is-wide .service-title {
+    white-space: nowrap;
+  }
 }
 
 .services-track.is-grid .service-features li strong {
@@ -157,6 +160,62 @@ h2.clients-label {
 
 .service-card-link {
   margin-top: auto;
+}
+
+.service-more {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s ease;
+}
+
+.service-more.is-open {
+  grid-template-rows: 1fr;
+}
+
+.service-more-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.service-more-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0 16px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #c8c8d2;
+  cursor: pointer;
+}
+
+.service-more-toggle::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.45s ease;
+}
+
+.service-more-toggle[aria-expanded="true"]::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+
+.service-more-toggle .less-label {
+  display: none;
+}
+
+.service-more-toggle[aria-expanded="true"] .more-label {
+  display: none;
+}
+
+.service-more-toggle[aria-expanded="true"] .less-label {
+  display: inline;
 }
 
 @media (min-width: 769px) {
@@ -798,7 +857,7 @@ h2.clients-label {
   max-width: 100%;
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 36px;
   align-items: center;
   padding: 40px 44px;
@@ -822,17 +881,26 @@ h2.clients-label {
 }
 
 .case-showcase-service {
+  order: -1;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--accent-cyan);
+  color: #041318;
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.16em;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
   text-transform: uppercase;
-  color: var(--accent-cyan);
 }
 
 .case-showcase-slide h3 {
   margin: 0 0 22px;
   font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-size: clamp(1.3rem, 1.75vw, 1.6rem);
+  text-wrap: balance;
   font-weight: 700;
   line-height: 1.25;
   color: var(--text-primary);
@@ -895,23 +963,80 @@ h2.clients-label {
 
 .case-showcase-visual {
   position: relative;
-  margin: 0;
+  height: 460px;
+  margin: 0 -44px 0 0;
   min-width: 0;
-  aspect-ratio: 4 / 3;
-  border-radius: 18px;
+  background: none;
+  border: 0;
   overflow: hidden;
-  background: #070b10;
-  border: 1px solid rgba(0, 212, 255, 0.16);
 }
 
-.case-showcase-visual img {
+/* Devices are sized by height so every slide uses the same scale. */
+.case-device {
   position: absolute;
-  inset: 0;
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
+  width: auto;
+  height: auto;
+  max-width: none;
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.45));
+}
+
+/* Laptop height is ~80% of the card and centred vertically. The right offset pushes
+   the right 30% of the laptop body past the card edge, where the card clips it.
+   Standard art has ~14% transparent margin on the right, so the offset is 0.39 × width. */
+.case-device-laptop {
+  height: 94%;
+  left: auto;
+  right: -300px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Full-bleed laptop art (XLC, Turbo) fills its canvas, so it is drawn shorter
+   to give the same visible body width as the other slides. */
+.case-device-laptop.case-device-wide {
+  height: 80%;
+  right: -196px;
+}
+
+/* Secondary devices (phone, tablets) sit in the bottom-left corner, fully inside the
+   stage, side by side with a small gap. Tablet art is opaque only on its left 75%,
+   and phone art has a ~12% transparent margin on the left; the offsets below allow for that. */
+.case-device-tablet {
+  height: 34%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.case-device-phone {
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.case-device-tablet ~ .case-device-phone {
+  left: 203px;
+}
+
+/* Laptop-only slides have no devices on the left, so the laptop sits further left. */
+.case-device-laptop:only-child {
+  right: -230px;
+}
+
+/* Phone next to a laptop alone overlaps the laptop's lower-left corner. */
+.case-device-laptop + .case-device-phone {
+  left: 135px;
+}
+
+.case-device-login {
+  height: 34%;
+  left: 222px;
+  bottom: 0;
+  z-index: 3;
 }
 
 .brand-mask {
@@ -987,12 +1112,41 @@ h2.clients-label {
   }
 
   .case-showcase-visual {
-    aspect-ratio: 16 / 10;
+    height: 300px;
+    margin: 0 -22px 0 0;
+  }
+
+  .case-device-laptop {
+    height: 78%;
+    right: -163px;
+  }
+
+  .case-device-laptop.case-device-wide {
+    height: 66%;
+    right: -106px;
+  }
+
+  .case-device-tablet ~ .case-device-phone {
+    left: 133px;
+  }
+
+  .case-device-laptop:only-child {
+    right: -125px;
+  }
+
+  .case-device-laptop + .case-device-phone {
+    left: 18px;
+  }
+
+  .case-device-login {
+    left: 145px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .case-showcase-track {
+  .case-showcase-track,
+  .service-more,
+  .service-more-toggle::after {
     transition: none;
   }
 }

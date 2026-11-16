@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProcessTimeline();
   initHeroRotate();
   initCaseShowcase();
+  initServiceMore();
 });
 
 function initHeroRotate() {
@@ -72,6 +73,31 @@ function initHeroRotate() {
    CUSTOM CURSOR
    ============================================ */
 
+function initServiceMore() {
+  document.querySelectorAll('.service-more-toggle').forEach((btn) => {
+    const card = btn.closest('.service-card');
+    const more = card.querySelector('.service-more');
+    let timer = null;
+
+    const setOpen = (open) => {
+      btn.setAttribute('aria-expanded', String(open));
+      more.classList.toggle('is-open', open);
+    };
+
+    btn.addEventListener('click', () => {
+      window.clearTimeout(timer);
+      setOpen(btn.getAttribute('aria-expanded') !== 'true');
+    });
+
+    card.addEventListener('mouseenter', () => window.clearTimeout(timer));
+    card.addEventListener('mouseleave', () => {
+      window.clearTimeout(timer);
+      if (btn.getAttribute('aria-expanded') !== 'true') return;
+      timer = window.setTimeout(() => setOpen(false), 10000);
+    });
+  });
+}
+
 function initCaseShowcase() {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('[data-case-showcase]').forEach((root) => {
@@ -79,14 +105,50 @@ function initCaseShowcase() {
     const slides = [...track.children];
     const dotsWrap = root.querySelector('.case-showcase-dots');
     if (!slides.length) return;
+    const count = slides.length;
     let index = 0;
+    let pos = 0;
     let timer = null;
     let dragX = null;
 
-    const go = (next, animate) => {
-      index = (next + slides.length) % slides.length;
+    // Copies of the last and first slide sit at each end of the track, so going past
+    // either end still slides one step in the same direction, then jumps to the real slide.
+    const loop = count > 1;
+    if (loop) {
+      const makeClone = (slide) => {
+        const clone = slide.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        clone.querySelectorAll('a, button, [tabindex]').forEach((el) => el.setAttribute('tabindex', '-1'));
+        return clone;
+      };
+      track.insertBefore(makeClone(slides[count - 1]), slides[0]);
+      track.appendChild(makeClone(slides[0]));
+    }
+    const offset = loop ? 1 : 0;
+
+    const place = (p, animate) => {
+      pos = p;
       track.style.transition = animate === false || reduce ? 'none' : '';
-      track.style.transform = 'translateX(' + (-index * 100) + '%)';
+      track.style.transform = 'translateX(' + (-p * 100) + '%)';
+    };
+
+    const settle = () => {
+      if (!loop) return;
+      if (pos === 0) place(count, false);
+      else if (pos === count + 1) place(1, false);
+      else return;
+      void track.offsetWidth;
+    };
+
+    track.addEventListener('transitionend', (event) => {
+      if (event.target === track && event.propertyName === 'transform') settle();
+    });
+
+    const go = (next, animate) => {
+      settle();
+      index = (next + count) % count;
+      place((reduce ? index : next) + offset, animate);
+      if (reduce) settle();
       dotsWrap.querySelectorAll('button').forEach((btn, i) => {
         btn.classList.toggle('is-active', i === index);
         if (i === index) btn.setAttribute('aria-current', 'true');
