@@ -1,0 +1,133 @@
+<!-- WHY UNIQUE LOGIC 01: five rounded tiles, saved from sem-services.html before the bento redesign.
+     Original file: _src/sem-services.html (SEM 及付費廣告 / Google 廣告及 Microsoft Bing 廣告). -->
+<style>
+/* SEM page only: "WHY UNIQUE LOGIC" as five rounded tiles, laid out like the reference "Our Core Services" grid. */
+
+.why-tiles {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.why-tile {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px 26px;
+  border-radius: 22px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.why-tile--dark {
+  background: #07080b;
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.why-tile--accent {
+  background: var(--accent-cyan);
+  border-color: transparent;
+}
+
+.why-tile-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent-cyan);
+}
+
+.why-tile-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.why-tile--accent .why-tile-icon {
+  background: rgba(4, 19, 24, 0.14);
+  color: #041318;
+}
+
+.why-tile h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+
+.why-tile p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  text-wrap: pretty;
+}
+
+.why-tile--accent h3 {
+  color: #041318;
+}
+
+.why-tile--accent p {
+  color: rgba(4, 19, 24, 0.8);
+}
+
+/* Tablet: three columns; the last tile takes two so no cell is left empty. */
+@media (max-width: 1100px) {
+  .why-tiles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .why-tiles .why-tile:nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
+/* Phone: one column. */
+@media (max-width: 640px) {
+  .why-tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .why-tiles .why-tile:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .why-tile-icon {
+    margin-bottom: 24px;
+  }
+}
+
+</style>
+<div class="why-tiles reveal-item">
+        <article class="why-tile why-tile--dark">
+          <div class="why-tile-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><path d="M21 5L32 10V19C32 27 27.2 33 21 36C14.8 33 10 27 10 19V10L21 5Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M15 21L19 25L27 16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Unique Portal 全程歸因</h3>
+          <p>連接 Google Ads、Microsoft Advertising、GA4 及 CRM，由點擊追到表格、WhatsApp、來電及成交。</p>
+        </article>
+        <article class="why-tile">
+          <div class="why-tile-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><path d="M8 32H34" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M12 28V21M21 28V14M30 28V10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M10 17L18 13L24 16L32 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>每週清理無效搜尋</h3>
+          <p>分析搜尋字詞，排除高消耗、無購買意圖的流量，預算留給會查詢的人。</p>
+        </article>
+        <article class="why-tile">
+          <div class="why-tile-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><circle cx="21" cy="21" r="14" stroke="currentColor" stroke-width="2.2"/><path d="M7 21H35M21 7C25 11 27 15.5 27 21C27 26.5 25 31 21 35M21 7C17 11 15 15.5 15 21C15 26.5 17 31 21 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>廣告與落地頁一起做</h3>
+          <p>廣告文案、搜尋字詞及落地頁逐句對應，提升品質分數、降低 CPC。</p>
+        </article>
+        <article class="why-tile why-tile--accent">
+          <div class="why-tile-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 18H40" stroke="currentColor" stroke-width="2"/><path d="M14 26H24M14 30H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="28" r="4" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3>帳戶屬於你</h3>
+          <p>帳戶以你公司名義持有，最高權限、花費及出價紀錄全部透明，換代理也帶得走。</p>
+        </article>
+        <article class="why-tile">
+          <div class="why-tile-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="10" y="6" width="24" height="34" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 15H28M16 21H28M16 27H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M29 41L39 31L43 35L33 45H29V41Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <h3>先 Google，後 Bing</h3>
+          <p>香港搜尋市場約九成在 Google；Microsoft 渠道只在 B2B、桌面用戶或海外市場有需要時才加，不會為加而加。</p>
+        </article>
+      </div>

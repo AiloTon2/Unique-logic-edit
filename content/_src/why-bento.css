@@ -1,0 +1,59 @@
+/* WHY cards use the same service-card chrome. This file only places the photo and the link. */
+
+.paid-why-grid .service-card {
+  width: auto;
+  max-width: none;
+}
+
+.why-card-media {
+  height: 148px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md, 12px);
+  background: radial-gradient(circle at 50% 58%, rgba(0, 212, 232, .14), transparent 68%);
+}
+
+.why-card-media img {
+  display: block;
+  max-width: 78%;
+  max-height: 132px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.paid-why-grid .card-title {
+  text-wrap: balance;
+}
+
+.paid-why-grid .card-desc {
+  text-wrap: pretty;
+}
+
+.why-card-link {
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--accent-cyan, #00d4e8);
+  font-size: .9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.why-card-link:hover {
+  color: #00e5ff;
+}
+
+.service-categories .category-header h3 {
+  text-wrap: balance;
+}
+
+.service-categories .category-features span {
+  text-wrap: pretty;
+}
+
+.compare-table td,
+.compare-table th {
+  text-wrap: pretty;
+}
