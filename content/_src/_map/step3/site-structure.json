@@ -44,9 +44,9 @@
     },
     {
       "slug": "ai-seo-services",
-      "title": "AI SEO服務 (GEO) | Unique Logic - AI 數碼營銷專家",
-      "navLabel": "AI SEO服務 (GEO)",
-      "breadcrumb": ["主頁", "數碼營銷方案", "AI SEO服務 (GEO)"],
+      "title": "GEO（AI搜索優化） | Unique Logic - AI 數碼營銷專家",
+      "navLabel": "GEO（AI搜索優化）",
+      "breadcrumb": ["主頁", "數碼營銷方案", "GEO（AI搜索優化）"],
       "source": "ai-seo-services.html",
       "level": 2,
       "parent": "services",
@@ -135,7 +135,7 @@
     },
     {
       "slug": "blog-article-1",
-      "title": "AI SEO 如何推動高品質 B2B 潛在客戶開發？ | Unique Logic",
+      "title": "GEO 如何推動高品質 B2B 潛在客戶開發？ | Unique Logic",
       "source": "blog-article-1.html",
       "level": 2,
       "parent": "blog",

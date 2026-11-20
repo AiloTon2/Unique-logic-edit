@@ -12,7 +12,7 @@
       "contact": "Contact us"
     },
     "dropdown": {
-      "ai_seo": "AI SEO Services (GEO)",
+      "ai_seo": "GEO Services (GEO)",
       "seo": "SEO Services",
       "orm": "Online Reputation Management",
       "sem": "SEM Services",
@@ -36,7 +36,7 @@
       "contact": "Contact us"
     },
     "dropdown": {
-      "ai_seo": "AI SEO Services (GEO)",
+      "ai_seo": "GEO Services (GEO)",
       "seo": "SEO Services",
       "orm": "Online Reputation Management",
       "sem": "SEM Services",
@@ -67,10 +67,10 @@
   },
   "posts": {
     "p1": {
-      "image_alt": "How AI SEO Drives High-Quality B2B Lead Generation",
+      "image_alt": "How GEO Drives High-Quality B2B Lead Generation",
       "category": "AI Search Marketing",
       "date": "06/02/2026",
-      "title": "How AI SEO Drives High-Quality B2B Lead Generation",
+      "title": "How GEO Drives High-Quality B2B Lead Generation",
       "link_text": "Read article",
       "link_href": "blog-article-1.html"
     },
@@ -83,10 +83,10 @@
       "link_href": "#"
     },
     "p3": {
-      "image_alt": "Is AI SEO Really as Effective as Traditional SEO?",
+      "image_alt": "Is GEO Really as Effective as Traditional SEO?",
       "category": "AI Search Marketing",
       "date": "21/01/2026",
-      "title": "Is AI SEO Really as Effective as Traditional SEO?",
+      "title": "Is GEO Really as Effective as Traditional SEO?",
       "link_text": "Read article",
       "link_href": "#"
     }
@@ -111,7 +111,7 @@
     "featured": {
       "title": "Latest Articles",
       "category": "AI Search Marketing",
-      "headline": "How AI SEO Drives High-Quality B2B Lead Generation",
+      "headline": "How GEO Drives High-Quality B2B Lead Generation",
       "date": "06/02/2026",
       "link": "Read full article",
       "href": "blog-article-1.html"
@@ -126,7 +126,7 @@
     "tagline": "Boost Traffic. Boost Profit.",
     "menu": {
       "title": "Digital Marketing Plans",
-      "ai_seo": "AI SEO Services (GEO)",
+      "ai_seo": "GEO Services (GEO)",
       "seo": "SEO Services",
       "orm": "Online Reputation Management",
       "sem": "SEM Services",

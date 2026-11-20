@@ -95,6 +95,18 @@
   text-wrap: balance;
 }
 
+.service-hero-title .hero-lead,
+.service-hero-title .hero-follow {
+  display: block;
+}
+
+.service-hero-title .hero-follow {
+  margin-top: 0.18em;
+  font-size: 0.78em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .title-line {
   display: block;
 }

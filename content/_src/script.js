@@ -15,59 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initFloatingCTA();
   initTrustCounters();
   initProcessTimeline();
-  initHeroRotate();
   initCaseShowcase();
   initServiceMore();
 });
-
-function initHeroRotate() {
-  const rotator = document.querySelector('.hero-rotate');
-  if (!rotator) return;
-  const lines = [...rotator.querySelectorAll('.hero-rotate-line')];
-  if (lines.length < 2) return;
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  let index = Math.max(0, lines.findIndex(line => line.classList.contains('is-active')));
-  if (index < 0) index = 0;
-  let timer = null;
-  let busy = false;
-
-  const show = (next) => {
-    if (busy || next === index) return;
-    busy = true;
-    const current = lines[index];
-    const incoming = lines[next];
-
-    current.classList.remove('is-active');
-    current.classList.add('is-leaving');
-
-    window.setTimeout(() => {
-      incoming.classList.add('is-active');
-    }, 120);
-
-    window.setTimeout(() => {
-      current.classList.remove('is-leaving');
-      index = next;
-      busy = false;
-    }, 700);
-  };
-
-  const start = () => {
-    if (timer) return;
-    timer = window.setInterval(() => {
-      show((index + 1) % lines.length);
-    }, 3200);
-  };
-
-  const stop = () => {
-    window.clearInterval(timer);
-    timer = null;
-  };
-
-  rotator.addEventListener('mouseenter', stop);
-  rotator.addEventListener('mouseleave', start);
-  start();
-}
 
 /* ============================================
    CUSTOM CURSOR
@@ -384,6 +334,12 @@ function initNavigation() {
       if (el.hasAttribute('data-text')) {
         el.setAttribute('data-text', el.textContent);
       }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder-hant][data-i18n-placeholder-hans][data-i18n-placeholder-en]').forEach(el => {
+      el.placeholder = lang === 'en'
+        ? el.dataset.i18nPlaceholderEn
+        : (lang === 'zh-Hans' ? el.dataset.i18nPlaceholderHans : el.dataset.i18nPlaceholderHant);
     });
 
     document.querySelectorAll('[data-i18n-html-hant][data-i18n-html-hans][data-i18n-html-en]').forEach(el => {
