@@ -1104,16 +1104,18 @@ h2.clients-label {
 
 @media (max-width: 640px) {
   .partner-badges {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px 10px;
   }
 
   .partner-badges li {
-    min-height: 120px;
+    min-height: 0;
+    padding: 4px;
   }
 
   .partner-badges img {
-    height: 88px;
+    width: 100%;
+    height: 72px;
   }
 }
 
@@ -1469,8 +1471,9 @@ h2.clients-label {
     right: -125px;
   }
 
+  /* Sit the phone on the laptop's lower-left corner, with most of the phone beside the screen. */
   .case-device-laptop + .case-device-phone {
-    left: 18px;
+    left: max(12px, calc(100% - 325px));
   }
 
   .case-device-login {
@@ -1483,5 +1486,81 @@ h2.clients-label {
   .service-more,
   .service-more-toggle::after {
     transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Keep decorative WHY corner marks from widening the mobile layout viewport. */
+  .solutions {
+    overflow-x: clip;
+  }
+
+  .why-frame {
+    margin-inline: 12px;
+  }
+
+  .why-frame::before {
+    inset: -12px;
+  }
+
+  .services-track.is-grid {
+    align-items: stretch;
+  }
+
+  /* Trailing padding and margin are dropped from the scroll width, so a flex item keeps the end gap. */
+  .services-track.is-grid::after {
+    content: "";
+    flex: 0 0 1px;
+  }
+
+  /* The first title line must stay on one line, so scale it down on narrow phones. */
+  html[lang="zh-Hant"] .hero-title,
+  html[lang="zh-Hans"] .hero-title {
+    font-size: min(2rem, calc((100vw - 48px) / 10.4));
+    line-height: 1.1;
+  }
+
+  html[lang="zh-Hant"] .hero-title .title-line,
+  html[lang="zh-Hans"] .hero-title .title-line {
+    display: block;
+  }
+
+  html[lang="zh-Hant"] .hero-title .glitch-text,
+  html[lang="zh-Hans"] .hero-title .glitch-text {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.125;
+  }
+
+  :where(h1, h2, p) {
+    text-wrap: pretty;
+  }
+
+  .floating-cta,
+  .floating-cta.visible {
+    bottom: 0;
+    transition: none;
+  }
+
+  .footer {
+    padding-bottom: calc(40px + var(--ul-cta-offset, 140px));
+  }
+
+  /* The WhatsApp dock injects its own styles after this file, so it needs the extra specificity. */
+  body #ul-wa-dock {
+    bottom: calc(var(--ul-cta-offset, 123px) + 12px);
+  }
+
+  .footer-links li {
+    font-size: 1.142rem;
+  }
+
+  .cta-form input,
+  .cta-form select,
+  .cta-form textarea {
+    font-size: 1.142rem;
   }
 }
