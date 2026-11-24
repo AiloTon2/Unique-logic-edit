@@ -272,12 +272,37 @@
   margin-bottom: 18px;
 }
 
-/* SEO 核心服務範疇: 01 keeps the blue panel. 02 and 03 stay on the original dark panel. */
+/* SEO 核心服務範疇: 01 uses the same dark panel as 02 and 03. */
 .solutions-page .seo-modules-section .seo-module-keyword {
+  background: linear-gradient(135deg, rgba(18, 18, 26, 0.98), rgba(10, 10, 14, 0.96));
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.solutions-page .seo-module-tech .tech-lane span img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.solutions-page .seo-modules-section .seo-module-index {
+  display: none;
+  width: 48px;
+  height: 28px;
+  border-radius: 9px;
+  color: #dffbff;
   background:
-    radial-gradient(80% 70% at 0% 0%, rgba(0, 212, 232, 0.22), transparent 48%),
-    linear-gradient(165deg, #143044 0%, #0e1c28 100%);
-  border-color: rgba(0, 212, 232, 0.22);
+    linear-gradient(145deg, rgba(20, 37, 50, 0.98), rgba(12, 19, 28, 0.98));
+  border: 1px solid rgba(0, 212, 255, 0.34);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 10px 22px rgba(0, 0, 0, 0.18);
+  font-family: "Space Grotesk", "Arial Narrow", var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+  line-height: 1;
 }
 
 .solutions-page .seo-modules-section .seo-module-tech,
@@ -290,6 +315,7 @@
   .solutions-page .seo-module-keyword .seo-module-heading,
   .solutions-page .seo-module-tech .seo-module-heading,
   .solutions-page .seo-module-backlink .seo-module-heading {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,20 +323,71 @@
     margin-bottom: 40px;
   }
 
+  .solutions-page .seo-modules-section .seo-module-index {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 72px);
+  }
+
+  .solutions-page .seo-modules-section .seo-module-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
   .solutions-page .seo-modules-section .seo-module-heading p {
     max-width: 760px;
   }
 
-  .solutions-page .seo-module-keyword {
+  .solutions-page .seo-modules-section .seo-module-backlink .seo-module-index {
+    color: #f7fcff;
+    background:
+      linear-gradient(145deg, rgba(18, 26, 38, 0.99), rgba(9, 13, 20, 0.99));
+    border-color: rgba(130, 205, 255, 0.38);
+  }
+
+  .solutions-page .seo-modules-section .seo-module-keyword {
     overflow: visible;
-    border-bottom: 0;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
     border-radius: 32px 32px 0 0;
     padding-bottom: 20px;
     margin-bottom: 120px;
   }
 
+  .solutions-page .seo-module-keyword::before {
+    bottom: -78px;
+    border-radius: 32px;
+    background:
+      radial-gradient(65% 58% at 8% 10%, rgba(0, 212, 232, 0.16), transparent 58%),
+      radial-gradient(55% 52% at 92% 14%, rgba(130, 205, 255, 0.1), transparent 62%),
+      radial-gradient(70% 46% at 50% 100%, rgba(0, 212, 232, 0.08), transparent 68%),
+      linear-gradient(
+        180deg,
+        rgba(18, 18, 26, 0.98) 0,
+        rgba(12, 18, 25, 0.97) 52%,
+        rgba(10, 10, 14, 0.92) calc(100% - 150px),
+        rgba(12, 12, 15, 0) 100%
+      );
+  }
+
+  .solutions-page .seo-module-keyword::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 -78px 0;
+    border-radius: 32px;
+    pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.08) calc(100% - 72px), transparent 100%) left top / 1px 100% no-repeat,
+      linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.08) calc(100% - 72px), transparent 100%) right top / 1px 100% no-repeat,
+      linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1) 12%, rgba(255, 255, 255, 0.1) 88%, transparent) left top / 100% 1px no-repeat;
+  }
+
   .solutions-page .seo-module-keyword .intent-table {
-    margin-bottom: 28px;
+    margin-bottom: 0;
     border-top: 0;
   }
 
@@ -424,23 +501,41 @@
     background: linear-gradient(90deg, rgba(0, 212, 255, 0.07), rgba(0, 212, 255, 0.02));
   }
 
+  .solutions-page .seo-module-keyword .intent-row:last-child {
+    border-bottom: 0;
+  }
+
   .solutions-page .seo-module-keyword .module-points.two-col {
     position: relative;
     z-index: 2;
-    margin-top: 18px;
-    margin-bottom: -96px;
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 68px;
+    margin-bottom: -120px;
   }
 
   .solutions-page .seo-module-keyword .module-points > div {
     border-style: solid;
-    border-color: rgba(94, 214, 214, 0.42);
-    background: linear-gradient(165deg, #1c4a52 0%, #143840 100%);
+    border-color: rgba(0, 212, 232, 0.24);
+    background:
+      radial-gradient(90% 90% at 0% 0%, rgba(0, 212, 232, 0.08), transparent 58%),
+      linear-gradient(160deg, rgba(17, 31, 40, 0.98) 0%, rgba(12, 17, 24, 0.98) 100%);
     box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
   }
 
   .solutions-page .seo-module-keyword .module-points > div:nth-child(2) {
-    border-color: rgba(154, 176, 255, 0.42);
-    background: linear-gradient(165deg, #2a3a62 0%, #1c2a4a 100%);
+    border-color: rgba(130, 205, 255, 0.2);
+    background:
+      radial-gradient(90% 90% at 100% 0%, rgba(130, 205, 255, 0.08), transparent 58%),
+      linear-gradient(160deg, rgba(18, 24, 36, 0.98) 0%, rgba(11, 15, 23, 0.98) 100%);
+  }
+
+  .solutions-page .seo-module-keyword .module-points h4 {
+    color: #ffffff;
+  }
+
+  .solutions-page .seo-module-keyword .module-points p {
+    color: rgba(238, 245, 250, 0.88);
   }
 
   .solutions-page .seo-module-tech .tech-lane > div {
@@ -455,12 +550,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
+    width: 72px;
+    height: 72px;
     margin: 0 auto 18px;
-    border-radius: 16px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.24);
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    font-size: 0;
   }
 
   .solutions-page .seo-module-tech .tech-lane h4,
@@ -471,6 +567,10 @@
   .solutions-page .seo-module-backlink .backlink-grid > div {
     align-items: center;
     text-align: center;
+  }
+
+  .solutions-page .seo-module-backlink .backlink-art {
+    align-self: stretch;
   }
 
   .solutions-page .seo-module-backlink .backlink-grid h4,
@@ -553,12 +653,14 @@
     line-height: 1.1;
   }
 
-  .tpl-page .service-hero-title .hero-lead {
+  .tpl-page .service-hero-title .hero-lead,
+  .sem-page .service-hero-title .hero-lead {
     display: block;
     font-size: 1em;
   }
 
-  .tpl-page .service-hero-title .hero-follow {
+  .tpl-page .service-hero-title .hero-follow,
+  .sem-page .service-hero-title .hero-follow {
     display: block;
     margin-top: 12px;
     font-size: 0.625em;
@@ -908,10 +1010,10 @@
   }
 
   .solutions-page .seo-module-index {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    font-size: 1rem;
+    width: 44px;
+    height: 26px;
+    border-radius: 8px;
+    font-size: 0.88rem;
   }
 
   .solutions-page .seo-module-heading > div {

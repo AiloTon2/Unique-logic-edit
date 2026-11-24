@@ -1,8 +1,8 @@
 /**
  * Static preview + WordPress-safe WhatsApp dock.
  * Desktop (>=1025px): standard floating WhatsApp button.
- * Mobile/tablet (<=1024px): right-edge semicircle tab that pops out
- * WhatsApp + same-size empty slot diagonally above the CTA banner.
+ * Mobile/tablet (<=1024px): one WhatsApp button, same size and place on every page.
+ * It sits 12px above the offer bar when that bar is on screen.
  * Does not modify rerenderer.js.
  */
 (function () {
@@ -22,19 +22,11 @@
       "@media (min-width:1025px){#ul-whatsapp-btn{right:90px!important;bottom:15px!important;width:60px!important;height:60px!important}#ul-wa-dock{display:none!important}}",
       "@media (max-width:1024px){",
       "#ul-whatsapp-btn{animation:none!important}",
-      "#ul-wa-dock #ul-whatsapp-btn::before{display:none!important;opacity:0!important}",
-      "#ul-wa-dock #ul-whatsapp-btn:hover{transform:none!important;animation:none!important}",
-      "#ul-wa-dock{position:fixed;right:0;bottom:24px;width:0;height:0;z-index:2147482000}",
-      "#ul-wa-stack{position:absolute;right:6px;bottom:30px;width:190px;height:190px;pointer-events:none;transform-origin:bottom right;transition:transform .45s cubic-bezier(.34,1.56,.64,1),opacity .32s ease}",
-      "#ul-wa-dock:not(.ul-wa-open) #ul-wa-stack{transform:translate(46px,56px) scale(.3) rotate(-6deg);opacity:0}",
-      "#ul-wa-dock.ul-wa-open #ul-wa-stack{transform:none;opacity:1}",
-      "#ul-wa-stack>*{position:absolute;pointer-events:auto}",
-      "#ul-wa-dock #ul-whatsapp-btn{position:absolute!important;right:30px!important;bottom:52px!important;left:auto!important;top:auto!important;margin:0!important;width:72px!important;height:72px!important;opacity:1!important;transform:none!important;pointer-events:auto!important}",
-      "#ul-wa-dock #ul-whatsapp-btn svg{width:36px!important;height:36px!important}",
-      "#ul-wa-slot{right:88px;bottom:-8px;width:72px;height:72px;border-radius:50%;border:2px dashed rgba(0,212,232,.4);background:rgba(0,212,232,.06)}",
-      "#ul-wa-tab{position:absolute;right:0;bottom:0;width:36px;height:84px;padding:0;cursor:pointer;pointer-events:auto;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a24 100%);border:1.5px solid rgba(0,212,232,.45);border-right:0;border-top-left-radius:84px;border-bottom-left-radius:84px;box-shadow:none;display:flex;align-items:center;justify-content:center}",
-      "#ul-wa-tab svg{width:20px;height:20px;transition:transform .4s ease}",
-      "#ul-wa-dock.ul-wa-open #ul-wa-tab svg{transform:rotate(180deg)}",
+      "#ul-wa-slot,#ul-wa-tab{display:none!important}",
+      "#ul-wa-dock{position:fixed;right:0;bottom:0;width:0;height:0;z-index:2147482000;pointer-events:none}",
+      "#ul-wa-stack,#ul-wa-dock:not(.ul-wa-open) #ul-wa-stack,#ul-wa-dock.ul-wa-open #ul-wa-stack{position:static!important;transform:none!important;opacity:1!important;width:0!important;height:0!important;overflow:visible!important;pointer-events:none!important}",
+      "#ul-wa-dock #ul-whatsapp-btn{position:fixed!important;right:16px!important;bottom:24px!important;left:auto!important;top:auto!important;margin:0!important;width:56px!important;height:56px!important;opacity:1!important;transform:none!important;pointer-events:auto!important;z-index:2147482001!important}",
+      "#ul-wa-dock #ul-whatsapp-btn svg{width:24px!important;height:24px!important}",
       "}"
     ].join("");
     document.head.appendChild(style);
@@ -124,15 +116,40 @@
         close();
       }
     }
+    function liftAboveCta() {
+      if (!isMT()) {
+        btn.style.removeProperty("bottom");
+        return;
+      }
+      var cta = document.querySelector(".floating-cta");
+      var bottom = 24;
+      if (cta) {
+        var rect = cta.getBoundingClientRect();
+        if (rect.height > 20 && rect.top < window.innerHeight - 8 && rect.bottom > window.innerHeight - 4) {
+          bottom = Math.round(window.innerHeight - rect.top) + 12;
+        }
+      }
+      btn.style.setProperty("bottom", bottom + "px", "important");
+    }
     window.addEventListener("resize", function () {
       placeBtn();
+      liftAboveCta();
       if (!isMT()) close();
     });
+    window.addEventListener("scroll", liftAboveCta, { passive: true });
+    var cta = document.querySelector(".floating-cta");
+    if (cta) {
+      cta.addEventListener("transitionend", liftAboveCta);
+      if (window.MutationObserver) {
+        new MutationObserver(liftAboveCta).observe(cta, { attributes: true, attributeFilter: ["class", "style"] });
+      }
+    }
     document.addEventListener("click", function (e) {
       if (!dock.contains(e.target)) close();
     }, true);
     btn.addEventListener("click", function () { close(); });
     placeBtn();
+    liftAboveCta();
   }
 
   ready(function () {

@@ -1545,13 +1545,113 @@ h2.clients-label {
     transition: none;
   }
 
+  /* One rhythm from CHALLENGES through FAQ: the colour boundary to the next label. */
+  .challenges,
+  .services,
+  .home-cases,
+  .home-quotes,
+  .partners,
+  .solutions,
+  .process-section,
+  .faq {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /* Same device composition as desktop, scaled to the card width.
+     Laptops stay on one horizontal line because every stage is the same
+     size and sits on the bottom edge of an equal-height card. */
+  .case-showcase-slide {
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 12px;
+    padding: 44px 18px 16px;
+    align-items: stretch;
+  }
+
+  .case-showcase-copy {
+    align-self: start;
+  }
+
+  .case-showcase-visual {
+    align-self: end;
+    width: calc((100% + 18px) * 0.82);
+    height: auto;
+    aspect-ratio: 708 / 460;
+    margin: 0 -18px 0 auto;
+  }
+
+  .case-device-laptop {
+    height: 94%;
+    right: calc(-300 / 708 * 100%);
+  }
+
+  .case-device-laptop.case-device-wide {
+    height: 80%;
+    right: calc(-196 / 708 * 100%);
+  }
+
+  .case-device-tablet ~ .case-device-phone {
+    left: calc(203 / 708 * 100%);
+  }
+
+  .case-device-laptop:only-child {
+    right: calc(-230 / 708 * 100%);
+  }
+
+  .case-device-laptop + .case-device-phone {
+    left: calc(135 / 708 * 100%);
+  }
+
+  .case-device-login {
+    left: calc(222 / 708 * 100%);
+  }
+
   .footer {
     padding-bottom: calc(40px + var(--ul-cta-offset, 140px));
   }
 
-  /* The WhatsApp dock injects its own styles after this file, so it needs the extra specificity. */
+  /* Live mobile button: 56px, 16px from the right, 12px above the pinned bar.
+     The dock stylesheet is injected later and uses !important. */
+  body #ul-wa-slot,
+  body #ul-wa-tab {
+    display: none !important;
+  }
+
   body #ul-wa-dock {
-    bottom: calc(var(--ul-cta-offset, 123px) + 12px);
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+
+  body #ul-wa-dock #ul-wa-stack,
+  body #ul-wa-dock:not(.ul-wa-open) #ul-wa-stack,
+  body #ul-wa-dock.ul-wa-open #ul-wa-stack {
+    transform: none !important;
+    opacity: 1 !important;
+    width: 0 !important;
+    height: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    pointer-events: none !important;
+  }
+
+  body #ul-wa-dock #ul-whatsapp-btn {
+    position: fixed !important;
+    width: 56px !important;
+    height: 56px !important;
+    right: 16px !important;
+    bottom: 135px !important;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    z-index: 2147482000 !important;
+  }
+
+  body #ul-wa-dock #ul-whatsapp-btn svg {
+    width: 24px !important;
+    height: 24px !important;
   }
 
   .footer-links li {

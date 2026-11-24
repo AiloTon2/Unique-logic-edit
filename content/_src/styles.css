@@ -2476,6 +2476,16 @@ section {
     gap: 12px;
     text-align: center;
   }
+
+  .floating-cta,
+  .floating-cta.visible {
+    bottom: 0;
+    transition: none;
+  }
+
+  .footer {
+    padding-bottom: calc(40px + 140px);
+  }
   
   .footer-grid {
     grid-template-columns: 1fr;
