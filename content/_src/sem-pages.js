@@ -90,6 +90,13 @@
       wrap.classList.toggle('is-ms-locked', locked);
     }
 
+    function showGoogle(lock) {
+      clearReset();
+      locked = !!lock;
+      wrap.classList.remove('is-ms-active');
+      wrap.classList.toggle('is-ms-locked', locked);
+    }
+
     function reset() {
       clearReset();
       locked = false;
@@ -103,14 +110,17 @@
     }
 
     msCells.forEach(function (cell) {
-      cell.addEventListener('mouseenter', function () { showMicrosoft(false); });
+      cell.addEventListener('mouseenter', function () {
+        if (!locked) showMicrosoft(false);
+      });
       cell.addEventListener('click', function () { showMicrosoft(true); });
     });
 
     googleCells.forEach(function (cell) {
       cell.addEventListener('mouseenter', function () {
-        if (!locked) reset();
+        if (!locked) showGoogle(false);
       });
+      cell.addEventListener('click', function () { showGoogle(true); });
     });
 
     wrap.addEventListener('mouseleave', queueHoverReset);
