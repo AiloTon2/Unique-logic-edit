@@ -135,9 +135,62 @@
     }
   }
 
+  function setupColumnGlow(wrap) {
+    var rows = Array.prototype.slice.call(wrap.querySelectorAll('tr'));
+    var cols = rows.length ? rows[0].children.length : 0;
+    if (cols < 3) return;
+
+    var active = 1;
+    var locked = false;
+    var resetTimer = null;
+
+    function show(col, lock) {
+      if (resetTimer) {
+        window.clearTimeout(resetTimer);
+        resetTimer = null;
+      }
+      active = col;
+      locked = !!lock;
+      rows.forEach(function (row) {
+        Array.prototype.forEach.call(row.children, function (cell, n) {
+          cell.classList.toggle('is-on', n === active);
+        });
+      });
+      var triTone = wrap.classList.contains('sem-mv-wrap--tri-tone');
+      wrap.classList.toggle('is-mid', triTone && active === 2);
+      wrap.classList.toggle('is-alt', triTone ? active === 3 : active !== 1);
+    }
+
+    rows.forEach(function (row) {
+      Array.prototype.forEach.call(row.children, function (cell, n) {
+        if (n === 0) return;
+        cell.addEventListener('mouseenter', function () {
+          if (!locked) show(n, false);
+        });
+        cell.addEventListener('click', function () { show(n, true); });
+      });
+    });
+
+    wrap.addEventListener('mouseleave', function () {
+      if (locked) return;
+      resetTimer = window.setTimeout(function () { show(1, false); }, 3000);
+    });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) show(1, false);
+        });
+      }, { threshold: 0.05 }).observe(wrap);
+    }
+
+    show(1, false);
+  }
+
   function init() {
     document.querySelectorAll('[data-sem-carousel]').forEach(setup);
     document.querySelectorAll('.sem-vs-wrap').forEach(setupCompareGlow);
+    document.querySelectorAll('.sem-mv-wrap').forEach(setupColumnGlow);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

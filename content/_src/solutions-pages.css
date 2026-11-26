@@ -152,18 +152,18 @@
 
 /* ---------- Template pages: process ---------- */
 
-.tpl-page .process-section .process-timeline {
+.tpl-page:not(.sem-page) .process-section .process-timeline {
   display: grid;
   grid-template-columns: repeat(var(--steps, 6), minmax(0, 1fr));
   gap: 0;
   max-width: 1200px;
 }
 
-.tpl-page .process-timeline:has(> .process-step:nth-child(7)) {
+.tpl-page:not(.sem-page) .process-timeline:has(> .process-step:nth-child(7)) {
   --steps: 7;
 }
 
-.tpl-page .process-section .process-step {
+.tpl-page:not(.sem-page) .process-section .process-step {
   flex-direction: column;
   align-items: center;
   gap: 18px;
@@ -171,7 +171,7 @@
   text-align: center;
 }
 
-.tpl-page .process-section .step-number {
+.tpl-page:not(.sem-page) .process-section .step-number {
   width: 64px;
   height: 64px;
   color: var(--accent-cyan);
@@ -180,23 +180,23 @@
   box-shadow: 0 0 22px rgba(0, 212, 255, 0.18);
 }
 
-.tpl-page .process-section .step-content {
+.tpl-page:not(.sem-page) .process-section .step-content {
   padding-top: 0;
 }
 
-.tpl-page .process-section .step-content h3 {
+.tpl-page:not(.sem-page) .process-section .step-content h3 {
   margin-bottom: 8px;
   font-size: 1rem;
   line-height: 1.45;
 }
 
-.tpl-page .process-section .step-content p {
+.tpl-page:not(.sem-page) .process-section .step-content p {
   font-size: 0.875rem;
   line-height: 1.65;
 }
 
-.tpl-page .process-section .step-connector,
-.tpl-page .process-timeline.falling .process-step .step-connector {
+.tpl-page:not(.sem-page) .process-section .step-connector,
+.tpl-page:not(.sem-page) .process-timeline.falling .process-step .step-connector {
   left: calc(50% + 40px);
   right: calc(-50% + 40px);
   top: 31px;
@@ -205,12 +205,12 @@
   background: linear-gradient(90deg, var(--accent-cyan), rgba(0, 212, 255, 0.15));
 }
 
-.tpl-page .process-section .process-step:last-child .step-connector {
+.tpl-page:not(.sem-page) .process-section .process-step:last-child .step-connector {
   display: none;
 }
 
 /* Steps with copy read better as cards than as a narrow stepper. */
-.tpl-page .process-section .process-timeline:has(.step-content p) {
+.tpl-page:not(.sem-page) .process-section .process-timeline:has(.step-content p) {
   --per: 3;
   display: flex;
   flex-direction: row;
@@ -220,11 +220,11 @@
   gap: 20px;
 }
 
-.tpl-page .process-section .process-timeline:has(.step-content p):has(> .process-step:nth-child(7)) {
+.tpl-page:not(.sem-page) .process-section .process-timeline:has(.step-content p):has(> .process-step:nth-child(7)) {
   --per: 4;
 }
 
-.tpl-page .process-timeline:has(.step-content p) .process-step {
+.tpl-page:not(.sem-page) .process-timeline:has(.step-content p) .process-step {
   flex: 0 0 calc((100% - (var(--per) - 1) * 20px) / var(--per));
   align-items: flex-start;
   gap: 16px;
@@ -235,14 +235,14 @@
   text-align: left;
 }
 
-.tpl-page .process-timeline:has(.step-content p) .step-number {
+.tpl-page:not(.sem-page) .process-timeline:has(.step-content p) .step-number {
   width: 48px;
   height: 48px;
   font-size: 1rem;
 }
 
-.tpl-page .process-timeline:has(.step-content p) .step-connector,
-.tpl-page .process-timeline.falling:has(.step-content p) .process-step .step-connector {
+.tpl-page:not(.sem-page) .process-timeline:has(.step-content p) .step-connector,
+.tpl-page:not(.sem-page) .process-timeline.falling:has(.step-content p) .process-step .step-connector {
   display: none;
 }
 
@@ -602,19 +602,19 @@
     --cols: 2;
   }
 
-  .tpl-page .process-section .process-timeline,
-  .tpl-page .process-timeline:has(> .process-step:nth-child(7)) {
+  .tpl-page:not(.sem-page) .process-section .process-timeline,
+  .tpl-page:not(.sem-page) .process-timeline:has(> .process-step:nth-child(7)) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     row-gap: 40px;
   }
 
-  .tpl-page .process-section .step-connector,
-  .tpl-page .process-timeline.falling .process-step .step-connector {
+  .tpl-page:not(.sem-page) .process-section .step-connector,
+  .tpl-page:not(.sem-page) .process-timeline.falling .process-step .step-connector {
     display: none;
   }
 
-  .tpl-page .process-section .process-timeline:has(.step-content p),
-  .tpl-page .process-section .process-timeline:has(.step-content p):has(> .process-step:nth-child(7)) {
+  .tpl-page:not(.sem-page) .process-section .process-timeline:has(.step-content p),
+  .tpl-page:not(.sem-page) .process-section .process-timeline:has(.step-content p):has(> .process-step:nth-child(7)) {
     --per: 2;
   }
 }
@@ -862,13 +862,13 @@
   }
 
   /* Process: two-up step cards when steps have titles only; a tidy rail when they have copy. */
-  .tpl-page .process-section .process-timeline,
-  .tpl-page .process-timeline:has(> .process-step:nth-child(7)) {
+  .tpl-page:not(.sem-page) .process-section .process-timeline,
+  .tpl-page:not(.sem-page) .process-timeline:has(> .process-step:nth-child(7)) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
 
-  .tpl-page .process-section .process-step {
+  .tpl-page:not(.sem-page) .process-section .process-step {
     align-items: flex-start;
     gap: 12px;
     padding: 18px;
@@ -878,29 +878,29 @@
     text-align: left;
   }
 
-  .tpl-page .process-section .step-number {
+  .tpl-page:not(.sem-page) .process-section .step-number {
     width: 40px;
     height: 40px;
     font-size: 0.875rem;
   }
 
-  .tpl-page .process-section .step-content h3 {
+  .tpl-page:not(.sem-page) .process-section .step-content h3 {
     margin: 0;
     font-size: 0.9375rem;
   }
 
-  .tpl-page .process-section .process-timeline:has(.step-content p) {
+  .tpl-page:not(.sem-page) .process-section .process-timeline:has(.step-content p) {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .tpl-page .process-timeline:has(.step-content p) .process-step {
+  .tpl-page:not(.sem-page) .process-timeline:has(.step-content p) .process-step {
     display: grid;
     grid-template-columns: 40px minmax(0, 1fr);
     column-gap: 16px;
   }
 
-  .tpl-page .process-timeline:has(.step-content p) .step-content h3 {
+  .tpl-page:not(.sem-page) .process-timeline:has(.step-content p) .step-content h3 {
     margin-bottom: 6px;
   }
 
