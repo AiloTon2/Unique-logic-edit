@@ -187,10 +187,121 @@
     show(1, false);
   }
 
+  function setupApproachAccordion(wrap) {
+    var cards = Array.prototype.slice.call(wrap.querySelectorAll('.approach-card'));
+    if (!cards.length) return;
+
+    function setActive(index, focusCard) {
+      cards.forEach(function (card, n) {
+        var active = n === index;
+        card.classList.toggle('is-active', active);
+        card.setAttribute('aria-expanded', active ? 'true' : 'false');
+      });
+      if (focusCard) cards[index].focus({ preventScroll: true });
+    }
+
+    cards.forEach(function (card, index) {
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-expanded', card.classList.contains('is-active') ? 'true' : 'false');
+      card.addEventListener('mouseenter', function () { setActive(index, false); });
+      card.addEventListener('focus', function () { setActive(index, false); });
+      card.addEventListener('click', function () { setActive(index, false); });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setActive(index, false);
+        }
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          setActive((index - 1 + cards.length) % cards.length, true);
+        }
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          setActive((index + 1) % cards.length, true);
+        }
+      });
+    });
+
+    if (!cards.some(function (card) { return card.classList.contains('is-active'); })) {
+      setActive(0, false);
+    }
+  }
+
+  function setupQuoteQuestionReplay(wrap) {
+    var items = Array.prototype.slice.call(wrap.querySelectorAll('.quote-question-list li'));
+    if (!items.length || !('IntersectionObserver' in window)) return;
+
+    var canReplay = true;
+    var lastScrollY = window.scrollY || window.pageYOffset || 0;
+    var scrollDirection = 'down';
+
+    function updateDirection() {
+      var currentY = window.scrollY || window.pageYOffset || 0;
+      if (Math.abs(currentY - lastScrollY) > 2) {
+        scrollDirection = currentY > lastScrollY ? 'down' : 'up';
+        lastScrollY = currentY;
+      }
+    }
+
+    function play() {
+      var reversed = scrollDirection === 'up';
+      var lastIndex = items.length - 1;
+
+      wrap.classList.remove('is-animating');
+      items.forEach(function (item, index) {
+        item.style.setProperty('--q', reversed ? lastIndex - index : index);
+      });
+
+      // Force a fresh animation frame so quoteItemIn can replay on every re-entry.
+      void wrap.offsetWidth;
+      wrap.classList.add('revealed', 'is-animating');
+      canReplay = false;
+    }
+
+    window.addEventListener('scroll', updateDirection, { passive: true });
+
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          if (canReplay) play();
+          return;
+        }
+
+        canReplay = true;
+        wrap.classList.remove('is-animating', 'revealed');
+      });
+    }, { threshold: 0 }).observe(wrap);
+  }
+
+  function setupSocialPlatformReveal(grid) {
+    function play() {
+      grid.classList.add('is-platform-in');
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      play();
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        play();
+        observer.disconnect();
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px 18% 0px' });
+
+    observer.observe(grid);
+  }
+
   function init() {
     document.querySelectorAll('[data-sem-carousel]').forEach(setup);
     document.querySelectorAll('.sem-vs-wrap').forEach(setupCompareGlow);
     document.querySelectorAll('.sem-mv-wrap').forEach(setupColumnGlow);
+    document.querySelectorAll('[data-approach-accordion]').forEach(setupApproachAccordion);
+    document.querySelectorAll('.quote-question-items--full').forEach(setupQuoteQuestionReplay);
+    document.querySelectorAll('.social-platform-grid').forEach(setupSocialPlatformReveal);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
